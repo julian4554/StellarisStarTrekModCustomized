@@ -1,0 +1,15 @@
+###DESTROYER
+inline_script = { script = "ships/destroyer" MAP_ICON = "confederation_of_earth" SHIP = "confederation_of_earth_ferocious" TIER = "3" TARGET_LOCATORS = "3" CREW_COST = "default" }
+
+###LIGHT CRUISER
+inline_script = { script = "ships/light_cruiser" MAP_ICON = "confederation_of_earth" SHIP = "confederation_of_earth_conquest" TIER = "8" TARGET_LOCATORS = "4" CREW_COST = "default" }
+
+###CRUISER
+inline_script = { script = "ships/cruiser" MAP_ICON = "confederation_of_earth" SHIP = "confederation_of_earth_conquistador" TIER = "8" TARGET_LOCATORS = "4" CREW_COST = "default" }
+inline_script = { script = "ships/cruiser_xc" MAP_ICON = "confederation_of_earth" SHIP = "confederation_of_earth_conquistador" TIER = "8" TARGET_LOCATORS = "4" CREW_COST = "default" }
+
+###BATTLECRUISER
+inline_script = { script = "ships/battlecruiser" MAP_ICON = "confederation_of_earth" SHIP = "confederation_of_earth_ravager" TIER = "4" TARGET_LOCATORS = "4" CREW_COST = "default" }
+
+###DREADNOUGHT
+inline_script = { script = "ships/dreadnought" MAP_ICON = "confederation_of_earth_world" SHIP = "confederation_of_earth_world_razer" TIER = "8" TARGET_LOCATORS = "4" CREW_COST = "default" }

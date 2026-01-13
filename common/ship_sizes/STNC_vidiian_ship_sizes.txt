@@ -1,0 +1,40 @@
+###FRIGATE###
+inline_script = { script = "ships/frigate" MAP_ICON = "vidiian" SHIP = "vidiian_grace" TIER = "0" TARGET_LOCATORS = "3" CREW_COST = "default" }
+
+###SCOUT###
+inline_script = { script = "ships/scout" MAP_ICON = "vidiian" SHIP = "vidiian_prognosis" TIER = "0" TARGET_LOCATORS = "3" CREW_COST = "default" }
+
+###SUPPORT WING###
+inline_script = { script = "ships/support_wing" MAP_ICON = "vidiian" SHIP = "vidiian_innoculation" TIER = "6" TARGET_LOCATORS = "3" CREW_COST = "default" }
+
+###DESTROYERS###
+inline_script = { script = "ships/destroyer" MAP_ICON = "vidiian" SHIP = "vidiian_mercy" TIER = "2" TARGET_LOCATORS = "5" CREW_COST = "default" }
+
+###HEAVY ESCORT###
+inline_script = { script = "ships/heavy_escort" MAP_ICON = "vidiian" SHIP = "vidiian_comfort" TIER = "5" TARGET_LOCATORS = "2" CREW_COST = "default" }
+
+###LIGHT CRUISER###
+inline_script = { script = "ships/light_cruiser" MAP_ICON = "vidiian" SHIP = "vidiian_respite" TIER = "9" TARGET_LOCATORS = "5" CREW_COST = "default" }
+
+###SUPPORT CRUISER###
+inline_script = { script = "ships/support_cruiser" MAP_ICON = "vidiian" SHIP = "vidiian_remedy" TIER = "5" TARGET_LOCATORS = "5" CREW_COST = "default" }
+
+###CRUISERS###
+inline_script = { script = "ships/cruiser" MAP_ICON = "vidiian" SHIP = "vidiian_ward" TIER = "3" TARGET_LOCATORS = "4" CREW_COST = "default" }
+inline_script = { script = "ships/cruiser_xc" MAP_ICON = "vidiian" SHIP = "vidiian_ward" TIER = "3" TARGET_LOCATORS = "4" CREW_COST = "default" }
+
+###BATTLECRUISERS###
+inline_script = { script = "ships/battlecruiser" MAP_ICON = "vidiian" SHIP = "vidiian_triage" TIER = "7" TARGET_LOCATORS = "6" CREW_COST = "default" }
+
+###HEAVY CRUISER###
+inline_script = { script = "ships/heavy_cruiser" MAP_ICON = "vidiian" SHIP = "vidiian_preserver" TIER = "4" TARGET_LOCATORS = "6" CREW_COST = "default" }
+
+###BATTLESHIP###
+inline_script = { script = "ships/battleship" MAP_ICON = "vidiian" SHIP = "vidiian_quarantine" TIER = "5" TARGET_LOCATORS = "2" CREW_COST = "default" }
+
+###COMMAND CRUISER###
+inline_script = { script = "ships/command_cruiser" MAP_ICON = "vidiian" SHIP = "vidiian_saviour" TIER = "5" TARGET_LOCATORS = "7" CREW_COST = "default" }
+inline_script = { script = "ships/command_cruiser_xc" MAP_ICON = "vidiian" SHIP = "vidiian_saviour" TIER = "5" TARGET_LOCATORS = "7" CREW_COST = "default" }
+
+###FLEET COMMAND CRUISER###
+inline_script = { script = "ships/fleet_command_cruiser" MAP_ICON = "vidiian" SHIP = "vidiian_salvation" TIER = "9" TARGET_LOCATORS = "8" CREW_COST = "default" }

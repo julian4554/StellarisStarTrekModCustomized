@@ -1,0 +1,14 @@
+###SCOUT###
+inline_script = { script = "ships/scout" MAP_ICON = "qomar" SHIP = "qomar_index" TIER = "0" TARGET_LOCATORS = "3" CREW_COST = "default" }
+
+#Light Cruiser
+inline_script = { script = "ships/light_cruiser" MAP_ICON = "qomar" SHIP = "qomar_operand" TIER = "2" TARGET_LOCATORS = "4" CREW_COST = "default" }
+
+#Cruiser
+inline_script = { script = "ships/cruiser" MAP_ICON = "qomar" SHIP = "qomar_quotient" TIER = "4" TARGET_LOCATORS = "6" CREW_COST = "default" }
+
+#Command Cruiser
+inline_script = { script = "ships/command_cruiser" MAP_ICON = "qomar" SHIP = "qomar_integral" TIER = "6" TARGET_LOCATORS = "5" CREW_COST = "default" }
+
+#Fleet Command Cruiser
+inline_script = { script = "ships/fleet_command_cruiser" MAP_ICON = "qomar" SHIP = "qomar_exponent" TIER = "8" TARGET_LOCATORS = "7" CREW_COST = "default" }

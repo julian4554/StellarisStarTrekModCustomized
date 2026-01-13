@@ -1,0 +1,251 @@
+### STNC 4.2 Compatible ###
+
+
+# The Species Classes defined here are the ones you can choose from in the character creator. The portraits for prescripted races are grabbed straight from the .gfx file.
+# There is also portrait_sets database that contains sets of portraits associated with species classes.
+# 'graphical_culture' is connected to the looks used for ships and cities; see "common/graphical_culture/".
+# playable = yes/no/trigger (default: yes)		if this species class can is playable
+# randomized = yes/no/trigger (default: yes)	if this species class is randomized
+# species_trait_points							base number of species trait points available for this species class
+# species_max_traits							maximum number of traits that species of this class can have (doesn't count those with cost == 0)
+# possible										ethics/government requirements; see common/governments/readme_requirements.txt
+# gender = yes/no (default: yes)				whether the species has a gender
+# portrait_modding yes/no (default: yes)		whether the portrait can be modified with e.g. genemodding or robomodding
+# random_weight									increases/reduces the chance of spawning this species class
+# ethics_to_prefer								list of ethics certain species class will preffer over others
+# preferred_ethics_weight						increases/reduces the chance of this species class choosing one of the preferred ethics
+
+MAM = {
+	archetype = BIOLOGICAL
+	playable = { always = no }
+	possible = { always = no }
+	randomized = { always = no }
+	
+	graphical_culture = mammalian_01
+	move_pop_sound_effect = "moving_pop_confirmation"
+
+	resources = {}		   
+}
+
+REP = {
+	archetype = BIOLOGICAL
+	playable = { always = no }
+	possible = { always = no }
+	randomized = { always = no }
+
+	graphical_culture = reptilian_01
+	move_pop_sound_effect = "reptilian_pops_move"
+
+	resources = {}		   
+}
+
+AVI = {
+	archetype = BIOLOGICAL
+    
+	playable = { always = no }
+	possible = { always = no }
+	randomized = { always = no }
+	graphical_culture = avian_01
+	move_pop_sound_effect = "avian_pops_move"
+
+	resources = {}		   
+}
+
+ART = {
+	archetype = BIOLOGICAL
+    
+	playable = { always = no }
+	possible = { always = no }
+	randomized = { always = no }
+	
+	graphical_culture = arthropoid_01
+	move_pop_sound_effect = "arthopoid_pops_move"
+
+	resources = {}		   
+}
+
+MOL = {
+	archetype = BIOLOGICAL
+    
+	playable = { always = no }
+	possible = { always = no }
+	randomized = { always = no }
+
+	graphical_culture = molluscoid_01
+	move_pop_sound_effect = "molluscoid_pops_move"
+}
+
+FUN = {
+	archetype = BIOLOGICAL
+    
+	playable = { always = no }
+	possible = { always = no }
+	randomized = { always = no }
+	
+	graphical_culture = fungoid_01
+	move_pop_sound_effect = "fungoid_pops_move"
+
+	resources = {}		   
+}
+
+PLANT = {
+	archetype = BIOLOGICAL
+    
+	playable = { always = no }
+	possible = { always = no }
+	randomized = { always = no }
+
+	graphical_culture = plantoid_01
+}
+
+LITHOID = {
+	archetype = LITHOID
+
+	playable = { always = no }
+	possible = { always = no }
+	randomized = { always = no }
+
+	graphical_culture = lithoid_01
+	move_pop_sound_effect = "reptilian_pops_move"
+
+	resources = {}
+
+	trait = "trait_lithoid"
+}
+
+NECROID = {
+	archetype = BIOLOGICAL
+
+	playable = { always = no }
+	possible = { always = no }
+	randomized = { always = no }
+
+	gender = yes
+	
+	graphical_culture = necroid_01
+	move_pop_sound_effect = "molluscoid_pops_move"
+
+	resources = {}
+}
+
+# This species class should only be used for its ship set
+IMPERIAL = {
+	playable = { always = no }
+	randomized = { always = no }
+	graphical_culture = nemesis_01
+}
+
+AQUATIC = {
+	archetype = BIOLOGICAL
+
+	playable = { always = no }
+	possible = { always = no }
+	randomized = { always = no }
+	gender = yes
+
+	graphical_culture = aquatic_01
+	move_pop_sound_effect = "molluscoid_pops_move"
+
+	resources = {}
+}	
+
+TOX = {
+	archetype = BIOLOGICAL
+
+	playable = { always = no }
+	possible = { always = no }
+
+	randomized = { always = no }
+
+	gender = yes
+
+	graphical_culture = toxoid_01
+	move_pop_sound_effect = "molluscoid_pops_move"
+
+	resources = {}
+}
+
+CYBERNETIC = {
+	playable = { always = no }
+	possible = { always = no }
+	randomized = { always = no }
+	graphical_culture = cybernetics_01
+}
+
+	   
+       
+       # Deliberately before BIOGENESIS_01 so that the "friendlier" biological ships are shown first.
+BIOGENESIS_02 = {
+	# This species class should only be used for its ship set
+	playable = { always = no }
+	possible = { always = no }
+	randomized = { always = no }
+	graphical_culture = biogenesis_02
+}
+
+BIOGENESIS_01 = {
+	archetype = BIOLOGICAL
+
+	playable = { always = no }
+	possible = { always = no }
+	randomized = { always = no }
+	# trait = "trait_organic"
+	# gender = yes
+	graphical_culture = biogenesis_01
+	# move_pop_sound_effect = "molluscoid_pops_move"
+	# resources = {}
+}
+
+WILDERNESS = {
+	# This species class should only be used for its city set
+	playable = { always = no }
+	possible = { always = no }
+	randomized = { always = no }
+	graphical_culture = wilderness_01
+	generate_shipset = no
+}
+
+PSIONIC = {
+	# This species class should only be used for its ship set
+	playable = { always = no }
+	possible = { always = no }
+	randomized = { always = no }
+	graphical_culture = psionic_01
+}
+
+MINDWARDEN = {
+	archetype = BIOLOGICAL
+
+	playable = { always = no }
+	possible = { always = no }
+	randomized = { always = no }
+	trait = "trait_organic"
+	gender = yes
+	graphical_culture = mindwarden_01
+	move_pop_sound_effect = "moving_pop_confirmation"
+	resources = {}
+}
+
+INF = {
+	archetype = BIOLOGICAL
+
+	playable = {
+		always = no
+	}
+	possible = {
+		always = no
+	}
+	randomized = {
+		always = no
+	}
+
+	gender = yes
+	graphical_culture = infernal_01
+	move_pop_sound_effect = "molluscoid_pops_move"
+	resources = {}
+	# trait = "trait_infernal"
+	# removed_climate_labels = {TYPE_HEADER_03}
+	# added_climate_labels = {TYPE_HEADER_04}
+	# removed_planet_types = {pc_arctic pc_alpine pc_tundra}
+	# added_planet_types = {pc_volcanic}
+}

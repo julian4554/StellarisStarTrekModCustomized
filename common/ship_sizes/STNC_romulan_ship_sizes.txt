@@ -1,0 +1,277 @@
+###FRIGATE###
+inline_script = { script = "ships/frigate" MAP_ICON = "romulan" SHIP = "romulan_rea" TIER = "0" TARGET_LOCATORS = "2" CREW_COST = "default" }
+inline_script = { script = "ships/frigate" MAP_ICON = "romulan" SHIP = "romulan_stanet" TIER = "4" TARGET_LOCATORS = "2" CREW_COST = "default" }
+inline_script = { script = "ships/frigate" MAP_ICON = "romulan" SHIP = "romulan_arhael" TIER = "8" TARGET_LOCATORS = "4" CREW_COST = "default" }
+inline_script = { script = "ships/frigate" MAP_ICON = "romulan" SHIP = "romulan_amar" TIER = "11" TARGET_LOCATORS = "2" CREW_COST = "default" }
+
+###SCOUT###
+inline_script = { script = "ships/scout" MAP_ICON = "romulan" SHIP = "romulan_lanora" TIER = "0" TARGET_LOCATORS = "2" CREW_COST = "default" }
+inline_script = { script = "ships/scout" MAP_ICON = "romulan" SHIP = "romulan_talon" TIER = "6" TARGET_LOCATORS = "2" CREW_COST = "default" }
+
+###ATTACK WINGS###
+inline_script = { script = "ships/attack_wing" MAP_ICON = "romulan" SHIP = "romulan_neirhh" TIER = "7" TARGET_LOCATORS = "2" CREW_COST = "default" }
+
+###SUPPORT WINGS###
+inline_script = { script = "ships/support_wing" MAP_ICON = "romulan" SHIP = "romulan_tiercel" TIER = "8" TARGET_LOCATORS = "2" CREW_COST = "default" }
+
+###HEAVY FRIGATES###
+inline_script = { script = "ships/heavy_frigate" MAP_ICON = "romulan" SHIP = "romulan_tellum" TIER = "3" TARGET_LOCATORS = "4" CREW_COST = "default" }
+inline_script = { script = "ships/heavy_frigate" MAP_ICON = "romulan" SHIP = "romulan_heracis" TIER = "9" TARGET_LOCATORS = "4" CREW_COST = "default" }
+
+###DESTROYERS###
+inline_script = { script = "ships/destroyer" MAP_ICON = "romulan" SHIP = "romulan_tvaro" TIER = "1" TARGET_LOCATORS = "2" CREW_COST = "default" }
+inline_script = { script = "ships/destroyer_xc" MAP_ICON = "romulan" SHIP = "romulan_tvaro" TIER = "1" TARGET_LOCATORS = "2" CREW_COST = "default" }
+inline_script = { script = "ships/destroyer" MAP_ICON = "romulan" SHIP = "romulan_tshen" TIER = "3" TARGET_LOCATORS = "2" CREW_COST = "default" }
+inline_script = { script = "ships/destroyer" MAP_ICON = "romulan" SHIP = "romulan_tliss" TIER = "4" TARGET_LOCATORS = "2" CREW_COST = "default" }
+inline_script = { script = "ships/destroyer_xc" MAP_ICON = "romulan" SHIP = "romulan_tliss" TIER = "4" TARGET_LOCATORS = "2" CREW_COST = "default" }
+inline_script = { script = "ships/destroyer" MAP_ICON = "romulan" SHIP = "romulan_tmara" TIER = "5" TARGET_LOCATORS = "2" CREW_COST = "default" }
+inline_script = { script = "ships/destroyer" MAP_ICON = "romulan" SHIP = "romulan_tkela" TIER = "6" TARGET_LOCATORS = "3" CREW_COST = "default" }
+inline_script = { script = "ships/destroyer" MAP_ICON = "romulan" SHIP = "romulan_vreedex" TIER = "7" TARGET_LOCATORS = "2" CREW_COST = "default" }
+inline_script = { script = "ships/destroyer" MAP_ICON = "romulan" SHIP = "romulan_sabelah" TIER = "11" TARGET_LOCATORS = "4" CREW_COST = "default" }
+
+###HEAVY ESCORT###
+inline_script = { script = "ships/heavy_escort" MAP_ICON = "romulan" SHIP = "romulan_tdair" TIER = "6" TARGET_LOCATORS = "2" CREW_COST = "default" }
+inline_script = { script = "ships/heavy_escort" MAP_ICON = "romulan" SHIP = "romulan_deresus" TIER = "8" TARGET_LOCATORS = "3" CREW_COST = "default" }
+inline_script = { script = "ships/heavy_escort" MAP_ICON = "romulan" SHIP = "romulan_pvor" TIER = "10" TARGET_LOCATORS = "3" CREW_COST = "default" }
+
+###LIGHT CRUISER###
+inline_script = { script = "ships/light_cruiser" MAP_ICON = "romulan" SHIP = "romulan_tellus" TIER = "2" TARGET_LOCATORS = "2" CREW_COST = "default" }
+inline_script = { script = "ships/light_cruiser" MAP_ICON = "romulan" SHIP = "romulan_cordanilus" TIER = "5" TARGET_LOCATORS = "3" CREW_COST = "default" }
+inline_script = { script = "ships/light_cruiser" MAP_ICON = "romulan" SHIP = "romulan_sapotius" TIER = "7" TARGET_LOCATORS = "3" CREW_COST = "default" }
+inline_script = { script = "ships/light_cruiser" MAP_ICON = "romulan" SHIP = "romulan_vadenius" TIER = "11" TARGET_LOCATORS = "3" CREW_COST = "default" }
+inline_script = { script = "ships/light_cruiser" MAP_ICON = "romulan" SHIP = "romulan_rderex" TIER = "12" TARGET_LOCATORS = "3" CREW_COST = "default" }
+
+##CRUISER###
+inline_script = { script = "ships/cruiser" MAP_ICON = "romulan" SHIP = "romulan_malem" TIER = "2" TARGET_LOCATORS = "4" CREW_COST = "default" }
+inline_script = { script = "ships/cruiser" MAP_ICON = "romulan" SHIP = "romulan_stasek" TIER = "4" TARGET_LOCATORS = "2" CREW_COST = "default" }
+inline_script = { script = "ships/cruiser" MAP_ICON = "romulan_vas" SHIP = "romulan_vas_deletham" TIER = "5" TARGET_LOCATORS = "2" CREW_COST = "default" }
+inline_script = { script = "ships/cruiser" MAP_ICON = "romulan" SHIP = "romulan_kanassarum" TIER = "8" TARGET_LOCATORS = "4" CREW_COST = "default" }
+inline_script = { script = "ships/cruiser" MAP_ICON = "romulan_vas" SHIP = "romulan_vas_kalabam" TIER = "9" TARGET_LOCATORS = "2" CREW_COST = "default" }
+
+##BATTLECRUISER###
+inline_script = { script = "ships/battlecruiser" MAP_ICON = "romulan" SHIP = "romulan_valkis" TIER = "6" TARGET_LOCATORS = "2" CREW_COST = "default" }
+inline_script = { script = "ships/battlecruiser" MAP_ICON = "romulan" SHIP = "romulan_sharien" TIER = "7" TARGET_LOCATORS = "2" CREW_COST = "default" }
+inline_script = { script = "ships/battlecruiser" MAP_ICON = "romulan" SHIP = "romulan_mogai" TIER = "9" TARGET_LOCATORS = "2" CREW_COST = "default" }
+
+##HEAVY CRUISER###
+inline_script = { script = "ships/heavy_cruiser" MAP_ICON = "romulan" SHIP = "romulan_debrune" TIER = "5" TARGET_LOCATORS = "2" CREW_COST = "default" }
+inline_script = { script = "ships/heavy_cruiser" MAP_ICON = "romulan" SHIP = "romulan_imderia" TIER = "6" TARGET_LOCATORS = "2" CREW_COST = "default" }
+inline_script = { script = "ships/heavy_cruiser" MAP_ICON = "romulan" SHIP = "romulan_ralek" TIER = "7" TARGET_LOCATORS = "2" CREW_COST = "default" }
+inline_script = { script = "ships/heavy_cruiser" MAP_ICON = "romulan" SHIP = "romulan_draliel" TIER = "8" TARGET_LOCATORS = "2" CREW_COST = "default" }
+inline_script = { script = "ships/heavy_cruiser" MAP_ICON = "romulan" SHIP = "romulan_dhailkhina" TIER = "11" TARGET_LOCATORS = "4" CREW_COST = "default" }
+
+###BATTLESHIP
+inline_script = { script = "ships/battleship" MAP_ICON = "romulan" SHIP = "romulan_ibis" TIER = "7" TARGET_LOCATORS = "2" CREW_COST = "default" }
+inline_script = { script = "ships/battleship" MAP_ICON = "romulan" SHIP = "romulan_kerchan" TIER = "10" TARGET_LOCATORS = "5" CREW_COST = "default" }
+
+##COMMAND CRUISER###
+inline_script = { script = "ships/command_cruiser" MAP_ICON = "romulan" SHIP = "romulan_pontilus" TIER = "6" TARGET_LOCATORS = "2" CREW_COST = "default" }
+inline_script = { script = "ships/command_cruiser" MAP_ICON = "romulan" SHIP = "romulan_dderidex" TIER = "8" TARGET_LOCATORS = "2" CREW_COST = "default" }
+inline_script = { script = "ships/command_cruiser_xc" MAP_ICON = "romulan" SHIP = "romulan_dderidex" TIER = "8" TARGET_LOCATORS = "2" CREW_COST = "default" }
+inline_script = { script = "ships/command_cruiser" MAP_ICON = "romulan_ael" SHIP = "romulan_ael_hatham" TIER = "10" TARGET_LOCATORS = "6" CREW_COST = "default" }
+inline_script = { script = "ships/command_cruiser_xc" MAP_ICON = "romulan_ael" SHIP = "romulan_ael_hatham" TIER = "10" TARGET_LOCATORS = "6" CREW_COST = "default" }
+
+###FLEET COMMAND CRUISER###
+inline_script = { script = "ships/fleet_command_cruiser" MAP_ICON = "romulan" SHIP = "romulan_fvillhu" TIER = "3" TARGET_LOCATORS = "4" CREW_COST = "default" }
+romulan_fvillhu_pk = {
+	entity = romulan_fvillhu_entity
+    formation_priority = @dreadnought_formation_priority
+	max_speed = @dreadnought_max_speed_3
+	acceleration = @dreadnought_acceleration_3
+	rotation_speed = @dreadnought_rotation_speed_3
+	collision_radius = 3
+	max_hitpoints = @dreadnought_max_hitpoints_3
+	resources = {
+		category = ships
+		upkeep = { crew = @default_heavy_weapon_platform_crew_upkeep }
+		cost = { crew = @default_heavy_weapon_platform_crew_cost }
+	}
+	modifier = {
+		sh_heavy_weapon_platform_base_stats = 1
+	}
+	combat_disengage_chance = @heavy_weapon_platform_disengagement_chance
+	ship_modifier = {
+		ship_size_value = @heavy_weapon_platform_size
+		ship_type_value = @heavy_weapon_platform_class_id
+        ship_class_value = @shipclass_military_special_value
+        ship_tier_value = 3
+	}
+	is_space_object = yes
+	size_multiplier = 16
+	fleet_slot_size = 8
+	num_target_locators = 4
+	is_space_station = no
+	icon = ship_size_romulan_fvillhu
+	base_buildtime = @dreadnought_base_buildtime_3
+	can_have_federation_design = no
+	enable_default_design = yes
+	default_behavior = artillery
+	prerequisites = { "tech_romulan_fvillhu_1" }
+	potential_country = { can_design_ship = { ship = "romulan_fvillhu" } }
+	class = shipclass_military_special
+	ship_roles = { brawler gunship explosive carrier screen artillery }
+	construction_type = starbase_shipyard
+	section_slots = { "mid" = { locator = "part1" } }
+	
+	required_component_set = "required_sensor_dreadnought"
+	required_component_set = "required_warp_dreadnought"
+	required_component_set = "required_impulse_dreadnought"
+	required_component_set = "required_hull_dreadnought"	
+	required_component_set = "required_shield_dreadnought"
+	required_component_set = "required_unique_dreadnought"
+	required_component_set = "required_countermeasures_dreadnought"
+    required_component_set = "required_mission_dreadnought"
+	potential_construction = {
+		host_has_dlc = "Apocalypse"
+        can_construct_ship = { ship = "romulan_fvillhu" }
+        owner = { planet_killers_banned = no }
+	}
+	ai_ship_data = {
+		min = @heavy_weapon_platform_min
+        max = @heavy_weapon_platform_max
+    }
+}
+inline_script = { script = "ships/dreadnought" MAP_ICON = "romulan" SHIP = "romulan_tomia" TIER = "10" TARGET_LOCATORS = "4" CREW_COST = "default" }
+romulan_tomia_pk = {
+	entity = romulan_tomia_entity
+    formation_priority = @dreadnought_formation_priority
+	max_speed = @dreadnought_max_speed_10
+	acceleration = @dreadnought_acceleration_10
+	rotation_speed = @dreadnought_rotation_speed_10
+	collision_radius = 3
+	max_hitpoints = @dreadnought_max_hitpoints_10
+	resources = {
+		category = ships
+		upkeep = { crew = @default_heavy_weapon_platform_crew_upkeep }
+		cost = { crew = @default_heavy_weapon_platform_crew_cost }
+	}
+	modifier = {
+		sh_heavy_weapon_platform_base_stats = 1
+	}
+	combat_disengage_chance = @heavy_weapon_platform_disengagement_chance
+	ship_modifier = {
+		ship_size_value = @heavy_weapon_platform_size
+		ship_type_value = @heavy_weapon_platform_class_id
+        ship_class_value = @shipclass_military_special_value
+        ship_tier_value = 10
+	}
+	is_space_object = yes
+	size_multiplier = 16
+	fleet_slot_size = 8
+	num_target_locators = 4
+	is_space_station = no
+	icon = ship_size_romulan_tomia
+	base_buildtime = @dreadnought_base_buildtime_10
+	can_have_federation_design = no
+	enable_default_design = yes
+	default_behavior = artillery
+	prerequisites = { "tech_romulan_tomia_1" }
+	potential_country = { can_design_ship = { ship = "romulan_tomia" } }
+	class = shipclass_military_special
+	ship_roles = { brawler gunship explosive carrier screen artillery }
+	construction_type = starbase_shipyard
+	section_slots = { "mid" = { locator = "part1" } }
+	
+	required_component_set = "required_sensor_dreadnought"
+	required_component_set = "required_warp_dreadnought"
+	required_component_set = "required_impulse_dreadnought"
+	required_component_set = "required_hull_dreadnought"	
+	required_component_set = "required_shield_dreadnought"
+	required_component_set = "required_unique_dreadnought"
+	required_component_set = "required_countermeasures_dreadnought"
+    required_component_set = "required_mission_dreadnought"
+	potential_construction = {
+		host_has_dlc = "Apocalypse"
+        can_construct_ship = { ship = "romulan_tomia" }
+        owner = { planet_killers_banned = no }
+	}
+	ai_ship_data = {
+		min = @heavy_weapon_platform_min
+        max = @heavy_weapon_platform_max
+    }
+}
+
+inline_script = { script = "ships/dreadnought" MAP_ICON = "romulan" SHIP = "romulan_narada" TIER = "13" TARGET_LOCATORS = "3" CREW_COST = "default" }
+
+###SPECIAL###
+romulan_mimus = {
+	formation_priority = @destroyer_formation_priority
+	max_speed = @destroyer_max_speed_1
+	acceleration = @destroyer_acceleration_1
+	rotation_speed = @destroyer_rotation_speed_1
+	collision_radius = 2
+	max_hitpoints = @destroyer_max_hitpoints_1
+	resources = {
+		category = ships
+		cost = { trigger = { from = { NOT = { has_country_flag = "romulan_mimus_needs_pilot" } } } crew = @default_light_support_cruiser_crew_cost }
+		upkeep = { trigger = { from = { NOT = { has_country_flag = "romulan_mimus_needs_pilot" } } } crew = @default_light_support_cruiser_crew_upkeep }
+	}
+	modifier = {
+		sh_light_support_cruiser_base_stats = 1
+	}
+	combat_disengage_chance = @light_support_cruiser_disengagement_chance
+	ship_modifier = {
+		ship_size_value = @light_support_cruiser_size
+		ship_type_value = @light_support_cruiser_class_id
+        ship_class_value = @shipclass_military_value
+        ship_tier_value = 1
+        ship_crew_default = @default_light_support_cruiser_crew_cost
+        sh_light_support_cruiser_base_stats_2 = 1
+        sh_ships_tier_1 = 1
+	}
+    map_icon_override = {
+		normal = GFX_fleet_presence_icons_romulan
+		mixed = GFX_fleet_presence_icons_mixed_romulan
+		cloaked = GFX_fleet_presence_icons_cloaked_romulan
+	}
+	is_space_object = yes
+	size_multiplier = 2
+	fleet_slot_size = 2
+	num_target_locators = 2
+	is_space_station = no
+	icon = ship_size_romulan_mimus
+	base_buildtime = @destroyer_base_buildtime_1
+	can_have_federation_design = no
+	enable_default_design = yes
+	default_behavior = swarm
+	prerequisites = { "tech_romulan_mimus_1" }
+	potential_country = { 
+		can_design_ship = { ship = "romulan_mimus" }
+		NOT = { has_country_flag = "romulan_mimus_cancelled" }
+	}
+	class = shipclass_military
+	ship_roles = { brawler gunship explosive carrier screen artillery }
+	construction_type = starbase_shipyard
+	section_slots = { "mid" = { locator = "part1" } }
+	
+	required_component_set = "required_sensor_destroyer"
+	required_component_set = "required_warp_destroyer"
+	required_component_set = "required_impulse_destroyer"
+	required_component_set = "required_hull_destroyer"	
+	required_component_set = "required_shield_destroyer"	
+	required_component_set = "required_unique_destroyer" 
+	required_component_set = "required_countermeasures_destroyer"
+    required_component_set = "required_mission_destroyer"
+	possible_construction = {
+		custom_tooltip = {
+			fail_text = STNC_romulan_mimus_needs_pilots
+			success_text = STNC_romulan_mimus_has_pilots
+			exists = owner
+			owner = { 
+				OR = {
+					check_variable = { which = "drone_ship_operators" value > 0 } 
+					NOT = { has_country_flag = "romulan_mimus_needs_pilot" }
+				}
+			}
+		}		
+	}
+	potential_construction = {
+		can_construct_ship = { ship = "romulan_mimus" }
+	}
+	ai_ship_data = {
+		fraction = { 
+            base = @destroyer_fraction 
+            # modifier = { factor = 1.5 country_prefer_destroyer_ships = yes }
+        }
+    }
+}

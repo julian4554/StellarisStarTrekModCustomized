@@ -1,0 +1,161 @@
+###FRIGATES###
+inline_script = { script = "ships/frigate" MAP_ICON = "dominion" SHIP = "dominion_hoplia" TIER = "0" TARGET_LOCATORS = "2" CREW_COST = "default" }
+inline_script = { script = "ships/frigate" MAP_ICON = "dominion" SHIP = "dominion_acoma" TIER = "9" TARGET_LOCATORS = "3" CREW_COST = "default" }
+
+###HEAVY FRIGATES###
+inline_script = { script = "ships/heavy_frigate" MAP_ICON = "dominion" SHIP = "dominion_carabus" TIER = "8" TARGET_LOCATORS = "2" CREW_COST = "default" }
+
+###SCOUTS###
+inline_script = { script = "ships/scout" MAP_ICON = "dominion" SHIP = "dominion_mantura" TIER = "0" TARGET_LOCATORS = "2" CREW_COST = "default" }
+
+###DESTROYERS
+inline_script = { script = "ships/destroyer" MAP_ICON = "dominion" SHIP = "dominion_valgus" TIER = "1" TARGET_LOCATORS = "4" CREW_COST = "default" }
+inline_script = { script = "ships/destroyer" MAP_ICON = "dominion" SHIP = "dominion_scarab" TIER = "5" TARGET_LOCATORS = "4" CREW_COST = "default" }
+inline_script = { script = "ships/destroyer" MAP_ICON = "dominion" SHIP = "dominion_leomid" TIER = "6" TARGET_LOCATORS = "4" CREW_COST = "default" }
+
+###HEAVY ESCORTS
+inline_script = { script = "ships/heavy_escort" MAP_ICON = "dominion" SHIP = "dominion_chimera" TIER = "7" TARGET_LOCATORS = "2" CREW_COST = "default" }
+inline_script = { script = "ships/heavy_escort" MAP_ICON = "dominion" SHIP = "dominion_formicidae" TIER = "11" TARGET_LOCATORS = "4" CREW_COST = "default" }
+
+###CRUISERS###
+inline_script = { script = "ships/cruiser" MAP_ICON = "dominion" SHIP = "dominion_lucanid" TIER = "4" TARGET_LOCATORS = "6" CREW_COST = "default" }
+inline_script = { script = "ships/cruiser" MAP_ICON = "dominion" SHIP = "dominion_dascilloi" TIER = "5" TARGET_LOCATORS = "4" CREW_COST = "default" }
+inline_script = { script = "ships/cruiser" MAP_ICON = "dominion" SHIP = "dominion_clerida" TIER = "10" TARGET_LOCATORS = "6" CREW_COST = "default" }
+
+###BATTLECRUISERS###
+inline_script = { script = "ships/battlecruiser" MAP_ICON = "dominion" SHIP = "dominion_rutela" TIER = "3" TARGET_LOCATORS = "5" CREW_COST = "default" }
+inline_script = { script = "ships/battlecruiser" MAP_ICON = "dominion" SHIP = "dominion_byrrhoi" TIER = "5" TARGET_LOCATORS = "6" CREW_COST = "default" }
+
+###HEAVY CRUISER###
+inline_script = { script = "ships/heavy_cruiser" MAP_ICON = "dominion" SHIP = "dominion_elateroi" TIER = "5" TARGET_LOCATORS = "4" CREW_COST = "default" }
+inline_script = { script = "ships/heavy_cruiser" MAP_ICON = "dominion" SHIP = "dominion_tenebrion" TIER = "8" TARGET_LOCATORS = "5" CREW_COST = "default" }
+
+##BATTLESHIPS###
+inline_script = { script = "ships/battleship" MAP_ICON = "dominion" SHIP = "dominion_dialytes" TIER = "6" TARGET_LOCATORS = "6" CREW_COST = "default" }
+
+###COMMAND CRUISERS###
+inline_script = { script = "ships/command_cruiser" MAP_ICON = "dominion" SHIP = "dominion_tomarus" TIER = "8" TARGET_LOCATORS = "5" CREW_COST = "default" }
+
+###DREADNOUGHTS###
+inline_script = { script = "ships/dreadnought" MAP_ICON = "dominion" SHIP = "dominion_goliathus" TIER = "8" TARGET_LOCATORS = "5" CREW_COST = "default" }
+inline_script = { script = "ships/dreadnought" MAP_ICON = "dominion" SHIP = "dominion_chalcosoma" TIER = "11" TARGET_LOCATORS = "5" CREW_COST = "default" }
+
+dominion_goliathus_pk = {
+	entity = dominion_goliathus_entity
+    formation_priority = @dreadnought_formation_priority
+	max_speed = @dreadnought_max_speed_8
+	acceleration = @dreadnought_acceleration_8
+	rotation_speed = @dreadnought_rotation_speed_8
+	collision_radius = 2
+	max_hitpoints = @dreadnought_max_hitpoints_8
+	resources = {
+		category = ships
+		upkeep = { crew = @default_heavy_weapon_platform_crew_upkeep }
+		cost = { crew = @default_heavy_weapon_platform_crew_cost }
+	}
+	modifier = {
+		sh_heavy_weapon_platform_base_stats = 1
+	}
+	combat_disengage_chance = @heavy_weapon_platform_disengagement_chance
+	ship_modifier = {
+		ship_size_value = @heavy_weapon_platform_size
+		ship_type_value = @heavy_weapon_platform_class_id
+        ship_class_value = @shipclass_military_special_value
+		ship_tier_value = 8
+	}
+	is_space_object = yes
+	size_multiplier = 16
+	fleet_slot_size = 8
+	num_target_locators = 5
+	is_space_station = no
+	icon = ship_size_dominion_goliathus
+	base_buildtime = @dreadnought_base_buildtime_8
+	can_have_federation_design = no
+	enable_default_design = yes
+	default_behavior = artillery
+	prerequisites = { "tech_dominion_goliathus_1" }
+	potential_country = { can_design_ship = { ship = "dominion_goliathus" } }
+	class = shipclass_military_special
+	ship_roles = { brawler gunship explosive carrier screen artillery }
+	construction_type = starbase_shipyard
+	section_slots = { "mid" = { locator = "part1" } }
+	
+	required_component_set = "required_sensor_dreadnought"
+	required_component_set = "required_warp_dreadnought"
+	required_component_set = "required_impulse_dreadnought"
+	required_component_set = "required_hull_dreadnought"	
+	required_component_set = "required_shield_dreadnought"
+	required_component_set = "required_unique_dreadnought"
+	required_component_set = "required_countermeasures_dreadnought"
+    required_component_set = "required_mission_dreadnought"
+	potential_construction = {
+        host_has_dlc = "Apocalypse"
+        can_construct_ship = { ship = "dominion_goliathus" }
+        owner = { planet_killers_banned = no }
+	}
+    ai_ship_data = {
+		min = 1
+        max = 2
+    }
+}
+dominion_chalcosoma_pk = {
+	entity = dominion_chalcosoma_entity
+    formation_priority = @dreadnought_formation_priority
+	max_speed = @dreadnought_max_speed_11
+	acceleration = @dreadnought_acceleration_11
+	rotation_speed = @dreadnought_rotation_speed_11
+	collision_radius = 2
+	max_hitpoints = @dreadnought_max_hitpoints_11
+	resources = {
+		category = ships
+		upkeep = { crew = @default_heavy_weapon_platform_crew_upkeep }
+		cost = { crew = @default_heavy_weapon_platform_crew_cost }
+	}
+	modifier = {
+		sh_heavy_weapon_platform_base_stats = 1
+	}
+	combat_disengage_chance = @heavy_weapon_platform_disengagement_chance
+	ship_modifier = {
+		ship_size_value = @heavy_weapon_platform_size
+		ship_type_value = @heavy_weapon_platform_class_id
+        ship_class_value = @shipclass_military_special_value
+		ship_tier_value = 11
+	}
+	is_space_object = yes
+	size_multiplier = 16
+	fleet_slot_size = 8
+	num_target_locators = 5
+	is_space_station = no
+	icon = ship_size_dominion_chalcosoma
+	base_buildtime = @dreadnought_base_buildtime_11
+	can_have_federation_design = no
+	enable_default_design = yes
+	default_behavior = artillery
+	prerequisites = { "tech_dominion_chalcosoma_1" }
+	potential_country = { can_design_ship = { ship = "dominion_chalcosoma" } }
+	class = shipclass_military_special
+	ship_roles = { brawler gunship explosive carrier screen artillery }
+	construction_type = starbase_shipyard
+	section_slots = { "mid" = { locator = "part1" } }
+	
+	required_component_set = "required_sensor_dreadnought"
+	required_component_set = "required_warp_dreadnought"
+	required_component_set = "required_impulse_dreadnought"
+	required_component_set = "required_hull_dreadnought"	
+	required_component_set = "required_shield_dreadnought"
+	required_component_set = "required_unique_dreadnought"
+	required_component_set = "required_countermeasures_dreadnought"
+    required_component_set = "required_mission_dreadnought"
+	potential_construction = {
+        host_has_dlc = "Apocalypse"
+        can_construct_ship = { ship = "dominion_chalcosoma" }
+        owner = { planet_killers_banned = no }
+	}
+    ai_ship_data = {
+		min = 1
+        max = 2
+    }
+}
+
+###FLEET COMMAND CRUISER###
+inline_script = { script = "ships/fleet_command_cruiser" MAP_ICON = "dominion" SHIP = "dominion_actias" TIER = "11" TARGET_LOCATORS = "7" CREW_COST = "default" }

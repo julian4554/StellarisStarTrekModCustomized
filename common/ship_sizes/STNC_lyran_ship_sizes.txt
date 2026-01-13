@@ -1,0 +1,8 @@
+###SCOUT###
+inline_script = { script = "ships/scout" MAP_ICON = "lyran" SHIP = "lyran_cheetah" TIER = "0" TARGET_LOCATORS = "3" CREW_COST = "default" }
+
+###LIGHT CRUISER###
+inline_script = { script = "ships/light_cruiser" MAP_ICON = "lyran" SHIP = "lyran_panther" TIER = "3" TARGET_LOCATORS = "3" CREW_COST = "default" }
+
+###DREADNOUGHT###
+inline_script = { script = "ships/dreadnought" MAP_ICON = "lyran" SHIP = "lyran_lion" TIER = "6" TARGET_LOCATORS = "6" CREW_COST = "default" }

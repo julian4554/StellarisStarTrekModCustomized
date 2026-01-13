@@ -1,0 +1,22 @@
+###SCOUT###
+# inline_script = { script = "ships/scout" MAP_ICON = "hydran" SHIP = "hydran_outrider" TIER = "0" TARGET_LOCATORS = "2" CREW_COST = "default" }
+
+###HEAVY FRIGATE###
+inline_script = { script = "ships/heavy_frigate" MAP_ICON = "iconian" SHIP = "iconian_baltim" TIER = "13" TARGET_LOCATORS = "2" CREW_COST = "default" }
+
+# ###DESTROYER###
+# inline_script = { script = "ships/destroyer" MAP_ICON = "hydran" SHIP = "hydran_ranger" TIER = "2" TARGET_LOCATORS = "2" CREW_COST = "default" }
+
+# ##CRUISER###
+# inline_script = { script = "ships/cruiser" MAP_ICON = "hydran" SHIP = "hydran_corsair" TIER = "4" TARGET_LOCATORS = "2" CREW_COST = "default" }
+# inline_script = { script = "ships/cruiser_xc" MAP_ICON = "hydran" SHIP = "hydran_corsair" TIER = "4" TARGET_LOCATORS = "2" CREW_COST = "default" }
+
+###BATTLECRUISER###
+inline_script = { script = "ships/battlecruiser" MAP_ICON = "iconian" SHIP = "iconian_quas" TIER = "13" TARGET_LOCATORS = "5" CREW_COST = "default" }
+
+# ##COMMAND CRUISER###
+# inline_script = { script = "ships/command_cruiser" MAP_ICON = "hydran" SHIP = "hydran_monarch" TIER = "6" TARGET_LOCATORS = "2" CREW_COST = "default" }
+
+
+# ##SUPER DREADNOUGHT###
+inline_script = { script = "ships/super_dreadnought" MAP_ICON = "iconian" SHIP = "iconian_iaidon" TIER = "13" TARGET_LOCATORS = "2" CREW_COST = "default" }

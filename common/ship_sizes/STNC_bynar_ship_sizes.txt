@@ -1,0 +1,28 @@
+###SCOUT###
+inline_script = { script = "ships/scout" MAP_ICON = "bynar" SHIP = "bynar_bivisus" TIER = "0" TARGET_LOCATORS = "3" CREW_COST = "default" }
+
+###FRIGATE###
+# inline_script = { script = "ships/frigate" SHIP = "betazoid_dekoa" TIER = "5" TARGET_LOCATORS = "4" CREW_COST = "default" }
+
+# ###DESTROYER###
+# inline_script = { script = "ships/light_cruiser" SHIP = "betazoid_merandar" TIER = "4" TARGET_LOCATORS = "2" CREW_COST = "default" }
+
+# ###LIGHT CRUISER###
+inline_script = { script = "ships/light_cruiser" MAP_ICON = "bynar" SHIP = "bynar_duplex" TIER = "3" TARGET_LOCATORS = "3" CREW_COST = "default" }
+inline_script = { script = "ships/light_cruiser_xc" MAP_ICON = "bynar" SHIP = "bynar_duplex" TIER = "3" TARGET_LOCATORS = "3" CREW_COST = "default" }
+
+# ###CRUISER###
+# inline_script = { script = "ships/cruiser" SHIP = "betazoid_arandel" TIER = "8" TARGET_LOCATORS = "2" CREW_COST = "default" }
+# inline_script = { script = "ships/cruiser_xc" SHIP = "betazoid_arandel" TIER = "8" TARGET_LOCATORS = "2" CREW_COST = "default" }
+
+###BATTLECRUISER###
+# inline_script = { script = "ships/battlecruiser" SHIP = "flaxian_julasa" TIER = "4" TARGET_LOCATORS = "2" CREW_COST = "default" }
+
+# ###HEAVY CRUISER###
+inline_script = { script = "ships/cruiser" MAP_ICON = "bynar" SHIP = "bynar_nido" TIER = "5" TARGET_LOCATORS = "4" CREW_COST = "default" }
+
+# ###COMMAND CRUISER###
+# inline_script = { script = "ships/command_cruiser" SHIP = "betazoid_indar" TIER = "6" TARGET_LOCATORS = "3" CREW_COST = "default" }
+
+# ###FLEET COMMAND CRUISER
+# inline_script = { script = "ships/fleet_command_cruiser" SHIP = "betazoid_iscandar" TIER = "7" TARGET_LOCATORS = "4" CREW_COST = "default" }

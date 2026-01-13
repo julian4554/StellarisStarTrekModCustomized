@@ -1,0 +1,955 @@
+#reloadable with 'reload stats'
+# This file is where you start when you want to configure something new, then go to sections
+
+####################
+# NOTE FOR MODDERS #
+####################
+# modifier = { } For non-starbase ships, only takes the following modifiers:
+#	hull, shield & armor add/mult and regen add perc/static
+#	evasion add/mult
+#	speed/base speed mult
+#	weapon damage mult
+#	upkeep mult
+#	For other modifiers, use ship_modifier = { }
+# use_shipnames_from = other_size # allows a ship size to use names from another size
+# icon = ship_size_military_1
+		#ship_size_military_1 is default. The following sprite keys are generated from it:
+			#GFX_text_<key>
+			#GFX_<key>
+			#GFX_<key>_top
+			#GFX_<key>_top_damaged
+# icon_frame: now only used for starbases. Value of 2 or more means it shows up on the galaxy map, 1-5 denote which icon it uses on starbase sprite sheets (e.g. gfx/interface/icons/starbase_ship_sizes.dds)
+# ai_ship_data = {					#For determining how many ships the AI wants. Ships it can't recruit (i.e. missing tech prereqs or fails potential_country or possible_country) are pre-filtered out.
+# 	fraction = { }					#As standard, base, modifier = { factor }, etc. The AI will want this divided by the total fraction it is able to recruit. Note: it is the fraction of the naval cap, so the final value is divided by size_multiplier
+#									#Note: if the fraction is > 0, the following lines will not be applied
+#	min = 1							#Sets a minimum absolute number the country will aim to have
+#	system_mult/planet_mult = 0.1	#Adds this amount for each system/planet the country owns. I.e. min + ( num planets * planet_mult ) + ( num systems * system_mult )
+#	max = 5							#Sets a maximum absolute number the country will aim to have. Note that it will still want only the minimum unless you define a system_mult or planet_mult
+#}
+# ship_roles = { name1 name2 } # Show up as selectable roles in the ship designer
+# never_lost = <yes/no> # Removes the chance for the ship size to instantly get killed by emergency ftl. It can still be killed by the random Emergency FTL damage effect.                                                     
+# triggered_ship_roles = { { name = test1 trigger = {} } { name = test1 trigger = {} } } # List of triggered ship roles, show up in the ship designer when the trigger is true, executes on country scope                                                                                 
+# evaluation_resource = food # strategic resource to evaluate the cost of a ship design associated with this size
+							 # default is energy
+							 # this is used to determine if a ship design is more advanced than another:
+							 #  the one that costs more is considered an upgrade compared to the cheaper one
+#
+# is_bio_ship = yes					# this indicates that this ship uses bioship mechanic
+# upgrades_to = mauler_stage_2		# the next stage of the bioship growth
+#
+# bioship_growth_progress_required  = 150	# for bioships: growth threshold at which the ship will grow into its next stage
+#                                 			# for hero ships that are NOT bioships: if > 0 this activates the manual growth interface. threshold at which the manual growth is enabled
+#
+# is_hero_ship = yes		 # If yes, ship can't be merged or disbanded, and has a special UI that splits its potential orders into two bars
+#							 # If its combat computer allows it to unlock from combat, it also exposes its actions during combat in the combat view
+#							 # default: no
+#
+# hero_ship_fleet_background = "GFX_fleet_view_behemoth_stage_4"	# Name of sprite to use as a background for Fleet UI for single-ship hero-ship fleets.
+#																	# default: empty (uses default background)
+#
+# custom_state_loc_prefix = "STATUS_LOC_KEY_PREFIX" # for single-ship fleets with a single hero ship, if not empty this activates the status bar on the fleet UI
+#													# the status bar consists of two scripted localization driven strings (scope: selected fleet)
+#													# the localization keys for those two strings result from appending to this prefix "_title" or "_value"
+#													# (in this example, "STATUS_LOC_KEY_PREFIX_title" and "STATUS_LOC_KEY_PREFIX_value")
+#
+# on_click_sound = "sound_clip_name"	# Sound clip to play when selecting a single fleet that contains exclusively a single ship of this size
+# family_name = "bioship_family"		# root for the name used to described the whole set (so "mauler" for bantam mauler, absolute mauler, etc). This is also used to localize the variant (ie mauler_cap, mauler_pluralized, etc) through localization
+# growth_stage_descriptor = "ship_growth_stage_1"	# localization for the growth stage of the current ship size (so "bantam", "absolute", etc.)                                                                                                      
+
+####################
+
+############
+# STANDARD #
+############
+
+corvette = {
+	formation_priority = @corvette_formation_priority
+	max_speed = @speed_very_fast
+	acceleration = 0.35
+	rotation_speed = 0.1
+	collision_radius = @corvette_collision_radius
+	max_hitpoints = @corvette_hp
+	graphical_culture = { "plantoid_01" "mammalian_01" "reptilian_01" "avian_01" "molluscoid_01" "fungoid_01" "arthropoid_01" }
+	modifier = {
+		ship_evasion_add = @corvette_evasion
+		# ship_piracy_suppression_add = 10
+	}
+	size_multiplier = 1
+	fleet_slot_size = 1
+	section_slots = { "mid" = { locator = "part1" } }											  
+	num_target_locators = 2
+	is_space_station = no
+	icon = ship_size_military_1
+	base_buildtime = 120
+	can_have_federation_design = no
+	enable_default_design = yes
+    enable_3dview_in_ship_browser = no #if yes, ship design will have a 3d view in the ship browser                                                                                             
+	default_behavior = swarm
+	# prerequisites = { "tech_patrol_frigate" }
+	combat_disengage_chance = 1.00						   
+	class = shipclass_military
+	construction_type = starbase_shipyard
+	
+	
+	required_component_set = "required_mission_frigate"
+	required_component_set = "required_sensor_frigate"
+	required_component_set = "required_warp_frigate"
+	required_component_set = "required_impulse_frigate"
+	required_component_set = "required_hull_frigate"	
+	required_component_set = "required_shield_frigate"
+	required_component_set = "required_countermeasures_frigate"
+	
+	resources = {
+		category = ships
+		upkeep = { crew = @default_frigate_crew_upkeep }
+		cost = { crew = @default_frigate_crew_cost }
+	}
+    is_space_object = yes
+    potential_country = { always = no }
+}
+
+frigate = {
+	formation_priority = @frigate_formation_priority
+    entity = corvette_entity
+	max_speed = @speed_very_fast
+	acceleration = 0.35
+	rotation_speed = 0.1
+	collision_radius = @frigate_collision_radius
+	max_hitpoints = @frigate_hp
+	graphical_culture = { "plantoid_01" "mammalian_01" "reptilian_01" "avian_01" "molluscoid_01" "fungoid_01" "arthropoid_01" }
+	modifier = {
+		ship_evasion_add = @frigate_evasion
+		# ship_piracy_suppression_add = 10
+	}
+	size_multiplier = 1
+	fleet_slot_size = 1
+	section_slots = { "mid" = { locator = "part1" } }											  
+	num_target_locators = 2
+	is_space_station = no
+	icon = ship_size_military_1
+	base_buildtime = 120
+	can_have_federation_design = no
+	enable_default_design = yes
+    enable_3dview_in_ship_browser = no #if yes, ship design will have a 3d view in the ship browser                                                                                             
+	default_behavior = swarm
+	# prerequisites = { "tech_patrol_frigate" }
+	combat_disengage_chance = 1.00						   
+	class = shipclass_military
+	construction_type = starbase_shipyard
+	
+	
+	required_component_set = "required_mission_frigate"
+	required_component_set = "required_sensor_frigate"
+	required_component_set = "required_warp_frigate"
+	required_component_set = "required_impulse_frigate"
+	required_component_set = "required_hull_frigate"	
+	required_component_set = "required_shield_frigate"
+	required_component_set = "required_countermeasures_frigate"
+	
+	resources = {
+		category = ships
+		upkeep = { crew = @default_frigate_crew_upkeep }
+		cost = { crew = @default_frigate_crew_cost }
+	}
+    is_space_object = yes
+    potential_country = { always = no }
+}
+
+destroyer = {
+	formation_priority = @destroyer_formation_priority
+	max_speed = @speed_fast
+	acceleration = 0.3
+	rotation_speed = 0.2
+	collision_radius = @destroyer_collision_radius
+	max_hitpoints = @destroyer_hp
+	graphical_culture = { "plantoid_01" "mammalian_01" "reptilian_01" "avian_01" "molluscoid_01" "fungoid_01" "arthropoid_01" }
+	is_space_object = yes
+	size_multiplier = 2
+	fleet_slot_size = 2
+	section_slots = { "bow" = { locator = "part1" } "stern" = { locator = "part2" } }																			  
+	num_target_locators = 4
+	is_space_station = no
+	icon = ship_size_military_2
+	base_buildtime = 120
+	can_have_federation_design = no
+	enable_default_design = yes
+	default_behavior = picket
+	combat_disengage_chance = 1.50								  
+	class = shipclass_military
+	construction_type = starbase_shipyard
+	potential_country = { always = no }
+	required_component_set = "required_mission_destroyer"
+	required_component_set = "required_sensor_destroyer"
+	required_component_set = "required_warp_destroyer"
+	required_component_set = "required_impulse_destroyer"
+	required_component_set = "required_hull_destroyer"	
+	required_component_set = "required_shield_destroyer"
+	required_component_set = "required_unique_destroyer" 
+	required_component_set = "required_countermeasures_destroyer"
+	resources = {
+		category = ships
+		upkeep = { crew = @default_destroyer_crew_upkeep }
+		cost = { crew = @default_destroyer_crew_cost }
+	}
+}
+
+cruiser = {
+	formation_priority = @cruiser_formation_priority
+	max_speed = @speed_default
+	acceleration = 0.25
+	rotation_speed = 0.175
+	collision_radius = @cruiser_collision_radius
+	max_hitpoints = @cruiser_hp
+	modifier = {
+		ship_evasion_add = @cruiser_evasion
+		# ship_piracy_suppression_add = 6
+	}
+	graphical_culture = { "plantoid_01" "mammalian_01" "reptilian_01" "avian_01" "molluscoid_01" "fungoid_01" "arthropoid_01" }
+	is_space_object = yes
+	size_multiplier = 4
+	fleet_slot_size = 3
+	section_slots = { "bow" = { locator = "part1" } "mid" = { locator = "part2" } "stern" = { locator = "part3" } }																																									
+	num_target_locators = 4
+	is_space_station = no
+	icon = ship_size_military_4
+	base_buildtime = 120
+	can_have_federation_design = no
+	enable_default_design = yes
+	default_behavior = line
+	combat_disengage_chance = 1.50								
+	class = shipclass_military
+	construction_type = starbase_shipyard
+	potential_country = { always = no }
+	required_component_set = "required_mission_cruiser"
+	required_component_set = "required_sensor_cruiser"
+	required_component_set = "required_warp_cruiser"
+	required_component_set = "required_impulse_cruiser"
+	required_component_set = "required_hull_cruiser"	
+	required_component_set = "required_shield_cruiser"
+	required_component_set = "required_unique_cruiser"
+	required_component_set = "required_countermeasures_cruiser"
+	resources = {
+		category = ships
+		upkeep = { crew = @default_cruiser_crew_upkeep }
+		cost = { crew = @default_cruiser_crew_cost }
+	}
+}
+
+battleship = {
+	formation_priority = @battleship_formation_priority
+	max_speed = @speed_slow
+	acceleration = 0.2
+	rotation_speed = 0.15
+	collision_radius = @battleship_collision_radius
+	max_hitpoints = @battleship_hp
+	modifier = {
+		ship_evasion_add = @battleship_evasion
+		# ship_piracy_suppression_add = 4												   
+	}
+	graphical_culture = { "plantoid_01" "mammalian_01" "reptilian_01" "avian_01" "molluscoid_01" "fungoid_01" "arthropoid_01" }
+	is_space_object = yes
+	size_multiplier = 8
+	fleet_slot_size = 4
+	section_slots = { "bow" = { locator = "part1" } "mid" = { locator = "part2" } "stern" = { locator = "part3" } }
+	num_target_locators = 4
+	is_space_station = no
+	icon = ship_size_military_8
+	base_buildtime = 120
+	can_have_federation_design = no
+	enable_default_design = yes
+	default_behavior = line
+	
+	combat_disengage_chance = 1.25
+	class = shipclass_military
+	construction_type = starbase_shipyard
+	potential_country = { always = no }
+	required_component_set = "required_mission_battleship"
+	required_component_set = "required_sensor_battleship"
+	required_component_set = "required_warp_battleship"
+	required_component_set = "required_impulse_battleship"
+	required_component_set = "required_hull_battleship"	
+	required_component_set = "required_shield_battleship"
+	required_component_set = "required_unique_battleship"
+	required_component_set = "required_countermeasures_battleship"
+	resources = {
+		category = ships
+		upkeep = { crew = @default_battleship_crew_upkeep }
+		cost = { crew = @default_battleship_crew_cost }
+	}
+}
+
+titan = {
+	formation_priority = 20
+	max_speed = 115
+	acceleration = 0.35
+	rotation_speed = 0.2
+	collision_radius = 2
+	max_hitpoints = 750
+	resources = { category = ships upkeep = { energy = 0.2 alloys = 0.1 } }
+	graphical_culture = { "plantoid_01" "mammalian_01" "reptilian_01" "avian_01" "molluscoid_01" "fungoid_01" "arthropoid_01" }
+	is_space_object = yes
+	size_multiplier = 4
+	fleet_slot_size = 1
+	num_target_locators = 2
+	is_space_station = no
+	icon = ship_size_military_16
+	base_buildtime = 120
+	can_have_federation_design = no
+	enable_default_design = yes
+	default_behavior = charge_default
+	class = shipclass_military
+	construction_type = starbase_shipyard
+	potential_country = { always = no }
+	section_slots = { "mid" = { locator = "part1" } }
+}
+
+#Use for Prescripted Entry
+science = {
+    max_speed = @frigate_max_speed_5
+    acceleration = @frigate_acceleration_5
+    rotation_speed = @frigate_rotation_speed_5
+    max_hitpoints = @frigate_max_hitpoints_5
+    resources = {
+        category = ship_science
+		upkeep = { energy = 1 crew = @default_scout_crew_upkeep }
+		cost = { crew = @default_scout_crew_cost }
+    }
+    modifier = {
+        ship_evasion_add = @frigate_evasion
+    }
+    ship_modifier = {
+		ship_size_value = @scout_size
+		ship_type_value = @scout_class_id
+        ship_class_value = @shipclass_science_ship_value
+		ship_tier_value = 0
+	}
+	is_space_object = yes
+	fleet_slot_size = 1
+	num_target_locators = 0
+	is_space_station = no
+	icon = ship_size_science
+	base_buildtime = 60
+	enable_default_design = yes
+    enable_3dview_in_ship_browser = yes #if yes, ship design will have a 3d view in the ship browser
+	# prerequisites = { "tech_civilian_infrastructure" }
+	combat_disengage_chance = 2
+	class = shipclass_science_ship
+	construction_type = starbase_shipyard
+	is_civilian = yes
+	valid_target_aggressive_stance = no
+	section_slots = { "mid" = { locator = "part1" } }
+	#TODO: Change
+	
+	required_component_set = "required_sensor_frigate"
+	required_component_set = "required_warp_frigate"
+	required_component_set = "required_impulse_frigate"
+	required_component_set = "required_hull_frigate"	
+	required_component_set = "required_shield_frigate"
+    required_component_set = "required_countermeasures_frigate"
+    required_component_set = "required_mission_civilian"
+	potential_construction = {
+		can_construct_ship = { ship = "science" }
+	}
+    potential_country = {
+        is_great_house_country = no
+        has_science_scout_type_size = no
+    }
+    
+    ai_ship_data = {
+		min = value:desired_science_ships
+		system_mult = value:desired_science_ships_system_mult
+		max = 5
+	}
+}
+
+constructor = {
+	max_speed = @destroyer_max_speed_5
+    acceleration = @destroyer_acceleration_5
+    rotation_speed = @destroyer_rotation_speed_5
+    max_hitpoints = @frigate_max_hitpoints_5
+	resources = {
+		category = ships
+		upkeep = { energy = 1 crew = @default_frigate_crew_upkeep }
+		cost = { crew = @default_frigate_crew_cost }
+	}
+	modifier = {
+		ship_evasion_add = @destroyer_evasion
+	}
+    ship_modifier = {
+		ship_size_value = @constructor_size
+		ship_type_value = @constructor_class_id
+        ship_class_value = @shipclass_constructor_value
+		ship_tier_value = 0
+	}
+	is_space_object = yes
+	fleet_slot_size = 1
+	num_target_locators = 0
+	is_space_station = no
+	icon = ship_size_constructor
+	base_buildtime = 60
+	enable_default_design = yes
+	# prerequisites = { "tech_civilian_infrastructure" }
+	combat_disengage_chance = 1
+	class = shipclass_constructor
+	construction_type = starbase_shipyard
+	is_civilian = yes
+	valid_target_aggressive_stance = no
+	section_slots = { "mid" = { locator = "part1" } }
+    #TODO: Change
+	
+	required_component_set = "required_sensor_destroyer"
+	required_component_set = "required_warp_destroyer"
+	required_component_set = "required_impulse_destroyer"
+	required_component_set = "required_hull_destroyer"	
+	required_component_set = "required_shield_destroyer"
+    required_component_set = "required_unique_constructor" 
+    required_component_set = "required_mission_civilian"
+	potential_construction = {
+		can_construct_ship = { ship = "constructor" }
+	}
+    ai_ship_data = {
+		min = value:desired_constructors_min
+		system_mult = 0.15
+		max = value:desired_constructors_max
+	}
+}
+   
+transport = {
+	max_speed = @destroyer_max_speed_5
+    acceleration = @destroyer_acceleration_5
+    rotation_speed = @destroyer_rotation_speed_5
+    max_hitpoints = @frigate_max_hitpoints_5
+	modifier = {
+		ship_armor_add = 100
+		ship_evasion_add = @destroyer_evasion
+	}
+    ship_modifier = {
+		ship_size_value = @transport_size
+		ship_type_value = @transport_class_id
+        ship_class_value = @shipclass_transport_value
+		ship_tier_value = 0
+	}
+	is_space_object = yes
+	fleet_slot_size = 1
+	num_target_locators = 0
+	is_space_station = no
+	icon = ship_size_transport
+	is_designable = no
+	components_add_to_cost = no
+	auto_upgrade = yes
+	enable_default_design = yes
+	combat_disengage_chance = 1.5
+	class = shipclass_transport
+	section_slots = { "mid" = { locator = "part1" } }
+	#TODO: Change
+	
+	required_component_set = "required_sensor_frigate"
+	required_component_set = "required_warp_frigate"
+	required_component_set = "required_impulse_frigate"
+	required_component_set = "required_hull_frigate"	
+	required_component_set = "required_shield_frigate"	
+    required_component_set = "required_mission_civilian"
+}
+   
+colonizer = {
+	max_speed = @destroyer_max_speed_5
+    acceleration = @destroyer_acceleration_5
+    rotation_speed = @destroyer_rotation_speed_5
+    max_hitpoints = @frigate_max_hitpoints_5
+	resources = {
+		category = colonies
+		cost = { trigger = { from = { owner_main_species = { is_organic_species = yes } is_regular_empire = yes } } alloys = 200 food = 200 consumer_goods = 200 }
+		cost = { trigger = { from = { owner_main_species = { is_organic_species = no } is_regular_empire = yes } } alloys = 200 minerals = 200 consumer_goods = 200 }
+        cost = { trigger = { from = { is_assimilator = yes } } alloys = 300 nanites = 300 }
+        cost = { trigger = { from = { is_undine_empire = yes } } alloys = 300 food = 300 }
+		upkeep = { energy = 1 crew = @default_frigate_crew_upkeep }
+		cost = { crew = @default_frigate_crew_cost }
+	}
+	modifier = {
+		ship_evasion_add = @destroyer_evasion
+	}
+    ship_modifier = {
+		ship_size_value = @colony_size
+		ship_type_value = @colony_class_id
+        ship_class_value = @shipclass_colonizer_value
+		ship_tier_value = 0
+	}
+	is_space_object = yes
+	fleet_slot_size = 1
+	num_target_locators = 0
+	is_space_station = no
+	icon = ship_size_colonizer
+	base_buildtime = 360
+	is_designable = no
+	components_add_to_cost = no
+	auto_upgrade = yes
+	enable_default_design = yes
+	prerequisites = { "tech_colonization_1" }
+	combat_disengage_chance = 0.5
+	class = shipclass_colonizer
+	construction_type = starbase_shipyard
+	is_civilian = yes
+	valid_target_aggressive_stance = no
+	section_slots = { "mid" = { locator = "part1" } }
+	#TODO: Change
+	
+	required_component_set = "required_sensor_frigate"
+	required_component_set = "required_warp_frigate"
+	required_component_set = "required_impulse_frigate"
+	required_component_set = "required_hull_frigate"	
+	required_component_set = "required_shield_frigate"	
+    required_component_set = "required_mission_civilian"
+	potential_construction = {
+		can_construct_ship = { ship = "colonizer" }
+	}
+	potential_country = {
+		country_can_colonise = yes
+	}
+    ai_ship_data = {
+		min = value:desired_colonizers
+	}
+}
+   
+sponsored_colonizer ={
+	max_speed = @destroyer_max_speed_5
+    acceleration = @destroyer_acceleration_5
+    rotation_speed = @destroyer_rotation_speed_5
+    max_hitpoints = @frigate_max_hitpoints_5
+	resources = {
+		category = ships
+		cost = { energy = 500 }
+		upkeep = { energy = 1 crew = @default_frigate_crew_upkeep }
+		cost = { crew = @default_frigate_crew_cost }
+	}
+	modifier = {
+		ship_evasion_add = @destroyer_evasion
+	}
+    ship_modifier = {
+		ship_size_value = @colony_size
+		ship_type_value = @colony_class_id
+        ship_class_value = @shipclass_colonizer_value
+		ship_tier_value = 0
+	}
+	is_space_object = yes
+	fleet_slot_size = 1
+	num_target_locators = 0
+	is_space_station = no
+	icon = ship_size_colonizer
+	base_buildtime = 360
+	is_designable = no
+	components_add_to_cost = no
+	auto_upgrade = yes
+	enable_default_design = yes
+	prerequisites = { "tech_colonization_1" }
+	combat_disengage_chance = 0.5
+	class = shipclass_colonizer
+	construction_type = starbase_shipyard
+	is_civilian = yes
+	valid_target_aggressive_stance = no
+	section_slots = { "mid" = { locator = "part1" } }
+    #TODO: Change
+	
+	required_component_set = "required_sensor_frigate"
+	required_component_set = "required_warp_frigate"
+	required_component_set = "required_impulse_frigate"
+	required_component_set = "required_hull_frigate"	
+	required_component_set = "required_shield_frigate"	
+    required_component_set = "required_mission_civilian"
+	potential_construction = {
+		can_construct_ship = { ship = "sponsored_colonizer" }
+	}
+    potential_country = {
+		OR = {
+			has_civic = civic_corporate_dominion
+			has_civic = civic_private_prospectors
+		}
+        country_can_colonise = yes
+	}
+    ai_ship_data = {
+		min = value:desired_colonizers_base
+	}
+}
+
+lithoid_colonizer = {
+	graphical_culture = no
+	entity = "lithoid_01_meteor_colonyship_entity"
+	max_speed = @destroyer_max_speed_5
+    acceleration = @destroyer_acceleration_5
+    rotation_speed = @destroyer_rotation_speed_5
+    max_hitpoints = @frigate_max_hitpoints_5
+	modifier = {
+		ship_evasion_add = @destroyer_evasion
+	}
+    ship_modifier = {
+		ship_size_value = @colony_size
+		ship_type_value = @colony_class_id
+        ship_class_value = @shipclass_colonizer_value
+		ship_tier_value = 0
+	}
+	size_multiplier = 1
+	fleet_slot_size = 1
+	section_slots = { "mid" = { locator = "part1" } }
+	num_target_locators = 0
+	is_space_station = no
+	icon = ship_size_colonizer
+	base_buildtime = 150
+
+	combat_disengage_chance = 0.2
+
+	enable_default_design = yes	#if yes, countries will have an auto-generated design at start
+	prerequisites = { "tech_colonization_1" }
+	is_civilian = yes
+	is_designable = no
+	components_add_to_cost = no
+	class = shipclass_colonizer
+	construction_type = starbase_shipyard
+	
+	required_component_set = "required_sensor_frigate"
+	required_component_set = "required_warp_frigate"
+	required_component_set = "required_impulse_frigate"
+	required_component_set = "required_hull_frigate"	
+	required_component_set = "required_shield_frigate"	
+    required_component_set = "required_mission_civilian"
+	valid_target_aggressive_stance = no
+	auto_upgrade = yes
+
+	resources = {
+		category = ships
+		cost = { minerals = 500 }
+	}
+	potential_country = { 
+		always = no 
+		# country_can_colonise = yes
+	}
+    ai_ship_data = {
+		min = value:desired_colonizers_base
+	}
+}
+
+guided_sapience_colonizer = {
+	max_speed = @speed_very_slow
+    entity = "lithoid_01_meteor_colonyship_entity"
+	acceleration = 0.3
+	rotation_speed = 0.2
+	max_hitpoints = @colony_hp
+	modifier = {
+		ship_evasion_add = @colony_evasion
+	}
+	size_multiplier = 1
+	fleet_slot_size = 1
+	section_slots = { "mid" = { locator = "part1" } }
+	num_target_locators = 0
+	is_space_station = no
+	icon = ship_size_colonizer
+	base_buildtime = @colony_build_time
+
+	combat_disengage_chance = 0.5
+
+	enable_default_design = yes	#if yes, countries will have an auto-generated design at start
+	enable_3dview_in_ship_browser = no #if yes, ship design will have a 3d view in the ship browser
+	prerequisites = { "tech_colonization_1" }
+	is_civilian = yes
+	is_designable = no
+	components_add_to_cost = no
+	class = shipclass_colonizer
+	construction_type = { starbase_shipyard starbase_beastport }
+	required_component_set = "power_core"
+	required_component_set = "ftl_components"
+	required_component_set = "thruster_components"
+	required_component_set = "sensor_components"
+	valid_target_aggressive_stance = no
+	auto_upgrade = yes
+	use_shipnames_from = colonizer
+
+	potential_country = {
+		always = no 
+	}
+
+	# available_to_everyone = yes
+
+	ai_ship_data = {
+		min = value:desired_colonizers_base
+	}
+
+	resources = {
+		category = colonies
+		cost = { minerals = 500 }
+    }
+}
+
+   
+mining_station ={
+	max_speed = 0
+	acceleration = 0
+	rotation_speed = 0
+	max_hitpoints = 2000
+	resources = {
+		category = station_gatherers
+		cost = { minerals = 100 }
+		upkeep = { energy = 1 crew = @station_crew_upkeep }
+		cost = { crew = @station_crew_cost }
+	}
+	modifier = {
+		ship_evasion_mult = -1
+		ship_armor_add = 1000
+	}
+	size_multiplier = 1
+	fleet_slot_size = 1
+	num_target_locators = 0
+	is_space_station = yes
+	is_designable = no
+	components_add_to_cost = no
+	auto_upgrade = yes
+	enable_default_design = yes
+	# prerequisites = { "tech_basic_industry" }
+	class = shipclass_mining_station
+	build_block_radius = 20
+	is_civilian = no
+	valid_target_aggressive_stance = no
+	section_slots = { "mid" = { locator = "part1" } }
+}
+   
+research_station ={
+	max_speed = 0
+	acceleration = 0
+	rotation_speed = 0
+	max_hitpoints = 2000
+	resources = {
+		category = station_researchers
+		cost = { minerals = 100 }
+		upkeep = { energy = 1 crew = @station_crew_upkeep }
+		cost = { crew = @station_crew_cost }
+	}
+	modifier = {
+		ship_evasion_mult = -1
+		ship_armor_add = 1000
+	}
+	size_multiplier = 1
+	fleet_slot_size = 1
+	num_target_locators = 1
+	is_space_station = yes
+	is_designable = no
+	components_add_to_cost = no
+	auto_upgrade = yes
+	enable_default_design = yes
+	# prerequisites = { "tech_physics_11001" }
+	class = shipclass_research_station
+	build_block_radius = 20
+	is_civilian = no
+	valid_target_aggressive_stance = no
+	section_slots = { "mid" = { locator = "part1" } }
+}
+   
+observation_station ={
+    max_speed = 0
+    acceleration = 0
+    rotation_speed = 0
+    max_hitpoints = 2000
+    resources = {
+        category = station_observers
+        cost = { minerals = 100 }
+        upkeep = { energy = 1 crew = @station_crew_upkeep }
+        cost = { crew = @station_crew_cost }
+    }
+    modifier = {
+        ship_evasion_mult = -1
+        ship_armor_add = 1000
+    }
+    size_multiplier = 1
+    fleet_slot_size = 1
+    num_target_locators = 0
+    is_space_station = yes
+    is_designable = no
+    components_add_to_cost = no
+    auto_upgrade = yes
+    enable_default_design = yes
+    class = shipclass_observation_station
+    build_block_radius = 20
+    is_civilian = yes
+    valid_target_aggressive_stance = no
+}
+
+   
+   
+military_station_small ={
+	max_speed = 6
+	acceleration = 10
+	rotation_speed = 10
+	max_hitpoints = 1000
+	modifier = {
+		ship_evasion_mult = -1
+		ships_upkeep_mult = -0.25
+		# ship_piracy_suppression_add = 2
+		ship_armor_add = 1000		
+	}
+	ship_modifier = {
+		ship_weapon_range_mult = 0.20
+	}
+	combat_size_multiplier = 2
+	size_multiplier = 1
+	fleet_slot_size = 2
+	section_slots = { 
+		"mid" = { locator = "part1" } 
+	}
+	is_designable = yes
+	uses_name_prefix = no
+	takes_name_from_ship_design = yes
+	num_target_locators = 0
+	is_space_station = yes
+	base_buildtime = 120
+	enable_default_design = yes
+	prerequisites = { "tech_space_construction_0" }
+	class = shipclass_military_station
+	construction_type = starbase_defenses
+	required_component_set = "required_sensor_destroyer"
+	required_component_set = "required_hull_destroyer"	
+	required_component_set = "required_shield_destroyer"
+	required_component_set = "required_station_reactor_destroyer"
+	build_block_radius = 200
+	potential_construction = {
+		is_scope_type = starbase
+		OR = {
+			has_starbase_size >= starbase_outpost
+			has_starbase_size >= planetary_starbase_outpost
+		}
+	}
+	resources = {
+		category = ship_military_station_small
+		# upkeep = { crew = @default_destroyer_crew_upkeep }
+		cost = { crew = @default_destroyer_crew_cost }
+	}
+	default_behavior = platform	
+}
+   
+military_station_medium = {
+	max_speed = 6
+	acceleration = 10
+	rotation_speed = 10
+	max_hitpoints = 1000
+	modifier = {
+		ship_evasion_mult = -1
+		ships_upkeep_mult = -0.25
+		# ship_piracy_suppression_add = 2
+		ship_armor_add = 1000		
+	}
+	ship_modifier = {
+		ship_weapon_range_mult = 0.20
+	}
+	combat_size_multiplier = 2
+	size_multiplier = 1
+	fleet_slot_size = 2
+	section_slots = { 
+		"mid" = { locator = "part1" } 
+	}
+	is_designable = no
+	uses_name_prefix = no
+	takes_name_from_ship_design = yes
+	num_target_locators = 0
+	is_space_station = yes
+	is_listed = no
+	base_buildtime = 120
+	enable_default_design = yes
+	# prerequisites = { "tech_starbase_defences_2" }
+	class = shipclass_military_station
+	construction_type = starbase_defenses
+	required_component_set = "required_sensor_cruiser"
+	required_component_set = "required_hull_cruiser"	
+	required_component_set = "required_shield_cruiser"
+	required_component_set = "required_station_reactor_cruiser"
+	build_block_radius = 200
+	potential_country = { always = no }
+	resources = {
+		category = starbase_stations
+	}
+	default_behavior = platform	
+}
+   
+military_station_large ={
+	max_speed = 6
+	acceleration = 10
+	rotation_speed = 10
+	max_hitpoints = 4000
+	modifier = {
+		ship_evasion_mult = -1
+		ship_armor_add = 4000		
+        ships_upkeep_mult = -0.25
+	}
+	ship_modifier = {
+		ship_weapon_range_mult = 0.20
+	}
+	combat_size_multiplier = 8
+	size_multiplier = 4
+	fleet_slot_size = 8
+	section_slots = { 
+		"mid" = { locator = "part1" } 
+	}
+	is_designable = yes
+	uses_name_prefix = no
+	takes_name_from_ship_design = yes
+	num_target_locators = 0
+	is_space_station = yes
+	base_buildtime = 360
+	enable_default_design = yes
+	prerequisites = { "tech_starbase_defences_2" }
+	class = shipclass_military_station
+	construction_type = starbase_defenses
+	required_component_set = "required_sensor_battleship"
+	required_component_set = "required_hull_battleship"	
+	required_component_set = "required_shield_battleship"
+	required_component_set = "required_station_reactor_battleship"
+	build_block_radius = 200
+	potential_construction = {
+		is_scope_type = starbase
+        OR = {
+			has_starbase_size >= starbase_starport
+			has_starbase_size >= planetary_starbase_starport
+		}
+	}
+	resources = {
+		category = ship_military_station_large
+		# upkeep = { crew = @default_battleship_crew_upkeep }
+		cost = { crew = @default_battleship_crew_cost }
+	}
+	default_behavior = platform	
+}
+   
+ion_cannon ={
+	max_speed = 6
+	acceleration = 10
+	rotation_speed = 10
+	max_hitpoints = 3000
+	uses_name_prefix = no
+	takes_name_from_ship_design = yes
+	resources = {
+		category = starbase_stations
+		cost = { alloys = 900 }
+	}
+	modifier = {
+		ship_armor_add = 2000
+		ship_weapon_damage = 0.1
+		ships_upkeep_mult = -0.25
+	}
+	ship_modifier = { ship_weapon_range_mult = 0.20 }
+	size_multiplier = 8
+	fleet_slot_size = 2
+	num_target_locators = 0
+	is_space_station = yes
+	base_buildtime = 600
+	is_designable = no
+	is_listed = no
+	components_add_to_cost = no
+	auto_upgrade = yes
+	can_have_federation_design = no
+	enable_default_design = yes
+	default_behavior = platform
+	# prerequisites = { "tech_starbase_defences_4" }
+	potential_country = { always = no }
+	class = shipclass_military_station
+	construction_type = starbase_defenses
+	build_block_radius = 200
+	section_slots = {  "west" = { locator = "part1" } "east" = { locator = "part1" } }
+	required_component_set = "required_sensor_frigate"
+	required_component_set = "required_hull_frigate"	
+	required_component_set = "required_shield_frigate"	
+}  
+   

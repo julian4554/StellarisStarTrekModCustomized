@@ -1,0 +1,28 @@
+###SCOUTS
+inline_script = { script = "ships/scout" MAP_ICON = "generic_03" SHIP = "generic_03_salec" TIER = "0" TARGET_LOCATORS = "2" CREW_COST = "default" }
+
+###FRIGATES
+inline_script = { script = "ships/frigate" MAP_ICON = "generic_03" SHIP = "generic_03_brok" TIER = "0" TARGET_LOCATORS = "2" CREW_COST = "default" }
+inline_script = { script = "ships/frigate" MAP_ICON = "generic_03" SHIP = "generic_03_daraster" TIER = "3" TARGET_LOCATORS = "2" CREW_COST = "default" }
+inline_script = { script = "ships/frigate" MAP_ICON = "generic_03" SHIP = "generic_03_gav" TIER = "6" TARGET_LOCATORS = "2" CREW_COST = "default" }
+inline_script = { script = "ships/frigate" MAP_ICON = "generic_03" SHIP = "generic_03_chir" TIER = "9" TARGET_LOCATORS = "2" CREW_COST = "default" }
+
+###DESTROYER
+inline_script = { script = "ships/destroyer" MAP_ICON = "generic_03" SHIP = "generic_03_oroster" TIER = "1" TARGET_LOCATORS = "2" CREW_COST = "default" }
+inline_script = { script = "ships/destroyer" MAP_ICON = "generic_03" SHIP = "generic_03_cherok" TIER = "4" TARGET_LOCATORS = "5" CREW_COST = "default" }
+inline_script = { script = "ships/destroyer" MAP_ICON = "generic_03" SHIP = "generic_03_dhev" TIER = "7" TARGET_LOCATORS = "2" CREW_COST = "default" }
+
+###CRUISER
+inline_script = { script = "ships/cruiser" MAP_ICON = "generic_03" SHIP = "generic_03_orsara" TIER = "2" TARGET_LOCATORS = "2" CREW_COST = "default" }
+
+##BATTLECRUISER###
+inline_script = { script = "ships/battlecruiser" MAP_ICON = "generic_03" SHIP = "generic_03_aklev" TIER = "4" TARGET_LOCATORS = "2" CREW_COST = "default" }
+inline_script = { script = "ships/battlecruiser" MAP_ICON = "generic_03" SHIP = "generic_03_akreven" TIER = "8" TARGET_LOCATORS = "2" CREW_COST = "default" }
+
+##HEAVY CRUISER###
+inline_script = { script = "ships/heavy_cruiser" MAP_ICON = "generic_03" SHIP = "generic_03_morbren" TIER = "5" TARGET_LOCATORS = "2" CREW_COST = "default" }
+inline_script = { script = "ships/heavy_cruiser" MAP_ICON = "generic_03" SHIP = "generic_03_morlav" TIER = "9" TARGET_LOCATORS = "2" CREW_COST = "default" }
+
+###BATTLESHIP
+inline_script = { script = "ships/battleship" MAP_ICON = "generic_03" SHIP = "generic_03_baral" TIER = "5" TARGET_LOCATORS = "2" CREW_COST = "default" }
+inline_script = { script = "ships/battleship" MAP_ICON = "generic_03" SHIP = "generic_03_basara" TIER = "10" TARGET_LOCATORS = "2" CREW_COST = "default" }

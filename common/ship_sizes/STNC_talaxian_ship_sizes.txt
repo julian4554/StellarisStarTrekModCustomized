@@ -1,0 +1,15 @@
+###SCOUT###
+inline_script = { script = "ships/scout" MAP_ICON = "talaxian" SHIP = "talaxian_drexia" TIER = "0" TARGET_LOCATORS = "2" CREW_COST = "default" }
+
+###FRIGATE###
+inline_script = { script = "ships/frigate" MAP_ICON = "talaxian" SHIP = "talaxian_axiana" TIER = "2" TARGET_LOCATORS = "2" CREW_COST = "default" }
+
+
+###DESTROYER
+inline_script = { script = "ships/destroyer" MAP_ICON = "talaxian" SHIP = "talaxian_paxau" TIER = "1" TARGET_LOCATORS = "2" CREW_COST = "default" }
+
+###CRUISER
+inline_script = { script = "ships/cruiser" MAP_ICON = "talaxian" SHIP = "talaxian_heelox" TIER = "3" TARGET_LOCATORS = "2" CREW_COST = "default" }
+
+##COMMAND CRUISER###
+inline_script = { script = "ships/command_cruiser" MAP_ICON = "talaxian" SHIP = "talaxian_godo" TIER = "4" TARGET_LOCATORS = "2" CREW_COST = "default" }

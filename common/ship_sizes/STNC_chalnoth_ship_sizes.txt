@@ -1,0 +1,8 @@
+###SCOUT###
+inline_script = { script = "ships/scout" MAP_ICON = "chalnoth" SHIP = "chalnoth_kolag" TIER = "0" TARGET_LOCATORS = "2" CREW_COST = "default" }
+
+###LIGHT CRUISER###
+inline_script = { script = "ships/light_cruiser" MAP_ICON = "chalnoth" SHIP = "chalnoth_crocota" TIER = "3" TARGET_LOCATORS = "42" CREW_COST = "default" }
+
+###BATTLESHIP
+inline_script = { script = "ships/battleship" MAP_ICON = "chalnoth" SHIP = "chalnoth_satyral" TIER = "6" TARGET_LOCATORS = "2" CREW_COST = "default" }

@@ -1,0 +1,8 @@
+###SCOUT###
+inline_script = { script = "ships/scout" MAP_ICON = "generic_04" SHIP = "generic_04_telosi" TIER = "0" TARGET_LOCATORS = "2" CREW_COST = "default" }
+
+###LIGHT CRUISER###
+inline_script = { script = "ships/light_cruiser" MAP_ICON = "generic_04" SHIP = "generic_04_osinala" TIER = "3" TARGET_LOCATORS = "2" CREW_COST = "default" }
+
+##HEAVY CRUISER###
+inline_script = { script = "ships/heavy_cruiser" MAP_ICON = "generic_04" SHIP = "generic_04_relasi" TIER = "6" TARGET_LOCATORS = "2" CREW_COST = "default" }

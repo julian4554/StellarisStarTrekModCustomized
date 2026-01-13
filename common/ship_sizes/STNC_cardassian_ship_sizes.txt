@@ -1,0 +1,109 @@
+###FRIGATES
+inline_script = { script = "ships/frigate" MAP_ICON = "cardassian" SHIP = "cardassian_ocett" TIER = "3" TARGET_LOCATORS = "3" CREW_COST = "default" }
+inline_script = { script = "ships/frigate" MAP_ICON = "cardassian" SHIP = "cardassian_entek" TIER = "5" TARGET_LOCATORS = "2" CREW_COST = "default" }
+inline_script = { script = "ships/frigate" MAP_ICON = "cardassian" SHIP = "cardassian_chintoka" TIER = "8" TARGET_LOCATORS = "4" CREW_COST = "default" }
+
+###SCOUT###
+inline_script = { script = "ships/scout" MAP_ICON = "cardassian" SHIP = "cardassian_hideki" TIER = "0" TARGET_LOCATORS = "2" CREW_COST = "default" }
+inline_script = { script = "ships/scout" MAP_ICON = "cardassian" SHIP = "cardassian_sartan" TIER = "4" TARGET_LOCATORS = "2" CREW_COST = "default" }
+inline_script = { script = "ships/scout" MAP_ICON = "cardassian" SHIP = "cardassian_plaktar" TIER = "10" TARGET_LOCATORS = "2" CREW_COST = "default" }
+
+###Attack Wing###
+inline_script = { script = "ships/attack_wing" MAP_ICON = "cardassian" SHIP = "cardassian_zhoden" TIER = "7" TARGET_LOCATORS = "2" CREW_COST = "default" }
+
+###DESTROYER###
+inline_script = { script = "ships/destroyer" MAP_ICON = "cardassian" SHIP = "cardassian_vasad" TIER = "1" TARGET_LOCATORS = "3" CREW_COST = "default" }
+inline_script = { script = "ships/destroyer" MAP_ICON = "cardassian" SHIP = "cardassian_norin" TIER = "4" TARGET_LOCATORS = "3" CREW_COST = "default" }
+
+###HEAVY ESCORT###
+inline_script = { script = "ships/heavy_escort" MAP_ICON = "cardassian" SHIP = "cardassian_korinar" TIER = "6" TARGET_LOCATORS = "2" CREW_COST = "default" }
+inline_script = { script = "ships/heavy_escort" MAP_ICON = "cardassian" SHIP = "cardassian_malacar" TIER = "10" TARGET_LOCATORS = "4" CREW_COST = "default" }
+
+###LIGHT CRUISER
+inline_script = { script = "ships/light_cruiser" MAP_ICON = "cardassian" SHIP = "cardassian_tonga" TIER = "4" TARGET_LOCATORS = "5" CREW_COST = "default" }
+inline_script = { script = "ships/light_cruiser" MAP_ICON = "cardassian" SHIP = "cardassian_kondal" TIER = "8" TARGET_LOCATORS = "2" CREW_COST = "default" }
+
+###CRUISER###
+inline_script = { script = "ships/cruiser" MAP_ICON = "cardassian" SHIP = "cardassian_birinok" TIER = "3" TARGET_LOCATORS = "4" CREW_COST = "default" }
+inline_script = { script = "ships/cruiser" MAP_ICON = "cardassian" SHIP = "cardassian_goram" TIER = "5" TARGET_LOCATORS = "4" CREW_COST = "default" }
+
+###HEAVY CRUISER
+inline_script = { script = "ships/heavy_cruiser" MAP_ICON = "cardassian" SHIP = "cardassian_galor" TIER = "5" TARGET_LOCATORS = "5" CREW_COST = "default" }
+inline_script = { script = "ships/heavy_cruiser_xc" MAP_ICON = "cardassian" SHIP = "cardassian_galor" TIER = "5" TARGET_LOCATORS = "5" CREW_COST = "default" }
+inline_script = { script = "ships/heavy_cruiser" MAP_ICON = "cardassian" SHIP = "cardassian_kahtis" TIER = "11" TARGET_LOCATORS = "5" CREW_COST = "default" }
+
+###BATTLECRUISERS###
+inline_script = { script = "ships/battlecruiser" MAP_ICON = "cardassian" SHIP = "cardassian_chambana" TIER = "6" TARGET_LOCATORS = "2" CREW_COST = "default" }
+
+###BATTLESHIP###
+inline_script = { script = "ships/battleship" MAP_ICON = "cardassian" SHIP = "cardassian_keldon" TIER = "6" TARGET_LOCATORS = "6" CREW_COST = "default" }
+inline_script = { script = "ships/battleship" MAP_ICON = "cardassian" SHIP = "cardassian_hebitian" TIER = "10" TARGET_LOCATORS = "5" CREW_COST = "default" }
+
+###COMMAND CRUISER###
+inline_script = { script = "ships/command_cruiser" MAP_ICON = "cardassian" SHIP = "cardassian_bakrus" TIER = "9" TARGET_LOCATORS = "5" CREW_COST = "default" }
+
+###DREADNOUGHT###
+inline_script = { script = "ships/dreadnought" MAP_ICON = "cardassian" SHIP = "cardassian_hutet" TIER = "8" TARGET_LOCATORS = "6" CREW_COST = "default" }
+
+###FLEET COMMAND CRUISER###
+inline_script = { script = "ships/fleet_command_cruiser" MAP_ICON = "cardassian" SHIP = "cardassian_exar" TIER = "10" TARGET_LOCATORS = "7" CREW_COST = "default" }
+
+###
+cardassian_hutet_pk = {
+	entity = cardassian_hutet_entity
+    formation_priority = @dreadnought_formation_priority
+	max_speed = @dreadnought_max_speed_8
+	acceleration = @dreadnought_acceleration_8
+	rotation_speed = @dreadnought_rotation_speed_8
+	collision_radius = 2
+	max_hitpoints = @dreadnought_max_hitpoints_8
+	resources = {
+		category = ships
+		upkeep = { crew = @default_heavy_weapon_platform_crew_upkeep }
+		cost = { crew = @default_heavy_weapon_platform_crew_cost }
+	}
+	modifier = {
+		sh_heavy_weapon_platform_base_stats = 1
+	}
+	combat_disengage_chance = @heavy_weapon_platform_disengagement_chance
+	ship_modifier = {
+		ship_size_value = @heavy_weapon_platform_size
+		ship_type_value = @heavy_weapon_platform_class_id
+        ship_class_value = @shipclass_military_special_value
+		ship_tier_value = 8
+	}
+	is_space_object = yes
+	size_multiplier = 16
+	fleet_slot_size = 8
+	num_target_locators = 2
+	is_space_station = no
+	icon = ship_size_cardassian_hutet
+	base_buildtime = @dreadnought_base_buildtime_8
+	can_have_federation_design = no
+	enable_default_design = yes
+	default_behavior = artillery
+	prerequisites = { "tech_cardassian_hutet_1" }
+	potential_country = { can_design_ship = { ship = "cardassian_hutet" } }
+	class = shipclass_military_special
+	ship_roles = { brawler gunship explosive carrier screen artillery }
+	construction_type = starbase_shipyard
+	section_slots = { "mid" = { locator = "part1" } }
+	
+	required_component_set = "required_sensor_dreadnought"
+	required_component_set = "required_warp_dreadnought"
+	required_component_set = "required_impulse_dreadnought"
+	required_component_set = "required_hull_dreadnought"	
+	required_component_set = "required_shield_dreadnought"
+	required_component_set = "required_unique_dreadnought"
+	required_component_set = "required_countermeasures_dreadnought"
+    required_component_set = "required_mission_dreadnought"
+	potential_construction = {
+        host_has_dlc = "Apocalypse"
+        can_construct_ship = { ship = "cardassian_hutet" }
+        owner = { planet_killers_banned = no }
+	}
+    ai_ship_data = {
+		min = 1
+        max = 2        
+    }
+}

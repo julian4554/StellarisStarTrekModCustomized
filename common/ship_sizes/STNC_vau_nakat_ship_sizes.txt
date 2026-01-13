@@ -1,0 +1,18 @@
+###SCOUT###
+inline_script = { script = "ships/scout" MAP_ICON = "vau_nakat" SHIP = "vau_nakat_kel" TIER = "0" TARGET_LOCATORS = "2" CREW_COST = "default" }
+
+###DESTROYER###
+inline_script = { script = "ships/destroyer" MAP_ICON = "vau_nakat" SHIP = "vau_nakat_vun" TIER = "2" TARGET_LOCATORS = "4" CREW_COST = "default" }
+
+###LIGHT CRUISER###
+inline_script = { script = "ships/light_cruiser" MAP_ICON = "vau_nakat" SHIP = "vau_nakat_dar" TIER = "5" TARGET_LOCATORS = "3" CREW_COST = "default" }
+
+###CRUISER###
+inline_script = { script = "ships/cruiser" MAP_ICON = "vau_nakat" SHIP = "vau_nakat_dyd" TIER = "4" TARGET_LOCATORS = "3" CREW_COST = "default" }
+inline_script = { script = "ships/cruiser_xc" MAP_ICON = "vau_nakat" SHIP = "vau_nakat_dyd" TIER = "4" TARGET_LOCATORS = "3" CREW_COST = "default" }
+
+###DREADNOUGHT###
+inline_script = { script = "ships/battleship" MAP_ICON = "vau_nakat" SHIP = "vau_nakat_zel" TIER = "9" TARGET_LOCATORS = "5" CREW_COST = "default" }
+
+###DREADNOUGHT###
+inline_script = { script = "ships/dreadnought" MAP_ICON = "vau_nakat" SHIP = "vau_nakat_rev" TIER = "6" TARGET_LOCATORS = "4" CREW_COST = "default" }

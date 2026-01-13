@@ -1,0 +1,231 @@
+ASSIMILATED = {     
+    aenar_assimilated = { name = "Assimilated Aenar" plural = "Assimilated Aenar" home_planet = "Andoria" home_system = "Andoria" name_list = Borg }
+    aldean_assimilated = { name = "Assimilated Aldean" plural = "Assimilated Aldeans" home_planet = "Aldea" home_system = "Espilon Myons" name_list = Borg }
+    amaralan_assimilated = { name = "Assimilated Amaralan" plural = "Assimilated Amaralans" home_planet = "Amar" home_system = "Amara" name_list = Borg }    
+    andorian_assimilated = { name = "Assimilated Andorian" plural = "Assimilated Andorians" home_planet = "Andoria" home_system = "Andoria" name_list = Borg }
+    angelan_assimilated = { name = "Assimilated Angelan" plural = "Assimilated Angelans" home_planet = "Angel I" home_system = "Angel" name_list = Borg }
+    antaran_assimilated = { name = "Assimilated Antaran" plural = "Assimilated Antarans" home_planet = "Antares Prime" home_system = "Antares" name_list = Borg }
+    antedian_assimilated = { name = "Assimilated Antedian" plural = "Assimilated Antedians" home_planet = "Antede III" home_system = "Antede" name_list = Borg }
+    antican_assimilated = { name = "Assimilated Antican" plural = "Assimilated Anticans" home_planet = "Beta Renner VI" home_system = "Beta Renner" name_list = Borg }
+    apergosian_assimilated = { name = "Assimilated Apergosian" plural = "Assimilated Apergosians" home_planet = "Apergos" home_system = "Apergos" name_list = Borg }
+    argrathian_assimilated = { name = "Assimilated Argrathi" plural = "Assimilated Argrathians" home_planet = "Argratha Prime" home_system = "Argratha" name_list = Borg }
+    axanari_assimilated = { name = "Assimilated Axanari" plural = "Assimilated Axanaris" home_planet = "Axanar" home_system = "Epsilon Eridani" name_list = Borg }
+    bajoran_assimilated = { name = "Assimilated Bajoran" plural = "Assimilated Bajorans" home_planet = "Bajor" home_system = "Bajor" name_list = Borg }
+    baul_assimilated = { name = "Assimilated Ba'ul" plural = "Assimilated Ba'ul" home_planet = "Kaminar" home_system = "Kaminar" name_list = Borg }
+    benzite_assimilated = { name = "Assimilated Benzite" plural = "Assimilated Benzite" home_planet = "Benzar" home_system = "Delta Pavonis" name_list = Borg }
+    betazoid_assimilated = { name = "Assimilated Betazoid" plural = "Assimilated Betazoids" home_planet = "Betazed" home_system = "Beta Veldonna" name_list = Borg }
+    betelgeusian_assimilated = { name = "Assimilated Betelgeusian" plural = "Assimilated Betelgeusians" home_planet = "Hav'a'halar" home_system = "Betelgeuse" name_list = Borg }
+    bogosrin_assimilated = { name = "Assimilated Bogosrin" plural = "Assimilated Bogosrins" home_planet = "Cherela" home_system = "Fesarius" name_list = Borg }
+    bolian_assimilated = { name = "Assimilated Bolian" plural = "Assimilated Bolian" home_planet = "Boliax" home_system = "Bolarus" name_list = Borg }
+    borg_assimilated = { name = "Assimilated Borg" plural = "Assimilated Borg" home_planet = "Unimatrix One" home_system = "Unimatrix One" name_list = Borg }
+    breen_assimilated = { name = "Assimilated Breen" plural = "Assimilated Breen" home_planet = "Breen Prime" home_system = "Breen" name_list = Borg }
+    brinn_assimilated = { name = "Assimilated B'rinn" plural = "Assimilated B'rinns" home_planet = "B'rinn" home_system = "B'lani" name_list = Borg }
+    bynar_assimilated = { name = "Assimilated Bynar" plural = "Assimilated Bynar" home_planet = "Bynaus" home_system = "Beta Magellan" name_list = Borg }
+    caitian_assimilated = { name = "Assimilated Caitian" plural = "Assimilated Caitians" home_planet = "Cait" home_system = "Cait" name_list = Borg }
+    capellan_assimilated = { name = "Assimilated Capellan" plural = "Assimilated Capellans" home_planet = "Capella" home_system = "Capella" name_list = Borg }
+    cardassian_assimilated = { name = "Assimilated Cardassian" plural = "Assimilated Cardassians" home_planet = "Cardassia" home_system = "Cardassia" name_list = Borg }
+    chalnoth_assimilated = { name = "Assimilated Chalnoth" plural = "Assimilated Chalnoth" home_planet = "Chalna" home_system = "Kaus Borealis" name_list = Borg }
+    changeling_assimilated = { name = "Assimilated Changeling" plural = "Assimilated Changelings" home_planet = "Founder's Homeworld" home_system = "Orias Nebula" name_list = Borg }
+    cheronite_assimilated = { name = "Assimilated Cheronite" plural = "Assimilated Cheronites" home_planet = "Cheron" home_system = "83 Leonis" name_list = Borg }
+    deltan_assimilated = { name = "Assimilated Deltan" plural = "Assimilated Deltans" home_planet = "Dhei" home_system = "Lta" name_list = Borg }
+    denobulan_assimilated = { name = "Assimilated Denobulan" plural = "Assimilated Denobulan" home_planet = "Denobula" home_system = "Denobula Triaxa" name_list = Borg }
+    devore_assimilated = { name = "Assimilated Devore" plural = "Assimilated Devore" home_planet = "Devore" home_system = "Devore" name_list = Borg }
+    dramen_assimilated = { name = "Assimilated Dramen" plural = "Assimilated Dramen" home_planet = "Dramia" home_system = "Dramen" name_list = Borg }
+    durnen_assimilated = { name = "Assimilated Durnen" plural = "Assimilated Durnen" home_planet = "Dulam" home_system = "Dula" name_list = Borg }
+    enolian_assimilated = { name = "Assimilated Enolian" plural = "Assimilated Enolians" home_planet = "Enol" home_system = "Keto-Enol" name_list = Borg }
+    excalbian_assimilated = { name = "Assimilated Excalbian" plural = "Assimilated Excalbians" home_planet = "Excalbia" home_system = "Excalbia" name_list = Borg }
+    fen_domar_assimilated = { name = "Assimilated Fen Domar" plural = "Assimilated Fen Domar" home_planet = "Fen Domar Prime" home_system = "Fen Domar" name_list = Borg }
+    ferengi_assimilated = { name = "Assimilated Ferengi" plural = "Assimilated Ferengi" home_planet = "Ferenginar" home_system = "Ventarus Idrilon" name_list = Borg }
+    fiilestii_assimilated = { name = "Assimilated Fiilestii" plural = "Assimilated Fiilestiis" home_planet = "Cherela" home_system = "Fesarius" name_list = Borg }
+    flaxian_assimilated = { name = "Assimilated Flaxian" plural = "Assimilated Flaxians" home_planet = "Flaxos" home_system = "Flaxia" name_list = Borg }
+    garidian_assimilated = { name = "Assimilated Garidian" plural = "Assimilated Garidians" home_planet = "Garid" home_system = "Garid" name_list = Borg }
+    gorn_assimilated = { name = "Assimilated Gorn" plural = "Assimilated Gorn" home_planet = "Gornar" home_system = "Gorn" name_list = Borg }
+    hazari_assimilated = { name = "Assimilated Hazari" plural = "Assimilated Hazaris" home_planet = "Hazar Prime" home_system = "Hazar" name_list = Borg }    
+    hirogen_assimilated = { name = "Assimilated Hirogen" plural = "Assimilated Hirogen" home_planet = "Idrin's Lodge" home_system = "Idrin's Star" name_list = Borg }    
+    human_assimilated = { name = "Assimilated Human" plural = "Assimilated Humans" home_planet = "Earth" home_system = "Sol" name_list = Borg }
+    hunock_assimilated = { name = "Assimilated Husnock" plural = "Assimilated Husnocks" home_planet = "Hus III" home_system = "Hus" name_list = Borg }
+    hupyrian_assimilated = { name = "Assimilated Hupyrian" plural = "Assimilated Hupyrians" home_planet = "Hupyria Prime" home_system = "Hupyria" name_list = Borg }
+    jem_hadar_assimilated = { name = "Assimilated Jem'Hadar" plural = "Assimilated Jem'Hadar" home_planet = "Gar Sitra" home_system = "Gar Sitra" name_list = Borg }    
+    karemma_assimilated = { name = "Assimilated Karemma" plural = "Assimilated Karemma" home_planet = "Karemma" home_system = "Karemma" name_list = Borg }
+    kazon_assimilated = { name = "Assimilated Kazon" plural = "Assimilated Kazon" home_planet = "Kazon Prime" home_system = "Kazon" name_list = Borg }
+    kessok_assimilated = { name = "Assimilated Kessok" plural = "Assimilated Kessok" home_planet = "Kes'al" home_system = "Kes'ora" name_list = Borg }
+    kisaja_assimilated = { name = "Assimilated Kisaja" plural = "Assimilated Kisajas" home_planet = "Cherela" home_system = "Fesarius" name_list = Borg }
+    klingon_assimilated = { name = "Assimilated Klingon" plural = "Assimilated Klingons" home_planet = "Qo'Nos" home_system = "Qo'Nos" name_list = Borg }
+    kraylor_assimilated = { name = "Assimilated Kraylor" plural = "Assimilated Kraylor" home_planet = "Kraylora" home_system = "Krayus" name_list = Borg }
+    kreetassan_assimilated = { name = "Assimilated Kreetassan" plural = "Assimilated Kreetassans" home_planet = "Kreetassa" home_system = "Kreetassa" name_list = Borg }
+    krenim_assimilated = { name = "Assimilated Krenim" plural = "Assimilated Krenim" home_planet = "Krenim Prime" home_system = "Krenim" name_list = Borg }
+    kzinti_assimilated = { name = "Assimilated Kzinti" plural = "Assimilated Kzinti" home_planet = "Kzin" home_system = "Kzin" name_list = Borg }
+    linnik_assimilated = { name = "Assimilated Linnik" plural = "Assimilated Linniks" home_planet = "Cherela" home_system = "Fesarius" name_list = Borg }
+    lissepian_assimilated = { name = "Assimilated Lissepian" plural = "Assimilated Lissepians" home_planet = "Lissepia" home_system = "Lis" name_list = Borg }
+    lyran_assimilated = { name = "Assimilated Lyran" plural = "Assimilated Lyrans" home_planet = "Lyra" home_system = "Lyra" name_list = Borg }
+    meskeen_assimilated = { name = "Assimilated Meskeen" plural = "Assimilated Meskeen" home_planet = "Meska" home_system = "Meskal" name_list = Borg }
+    morali_assimilated = { name = "Assimilated Morali" plural = "Assimilated Moralis" home_planet = "Morales" home_system = "Sergane" name_list = Borg }
+    nakuhl_assimilated = { name = "Assimilated Na'kuhl" plural = "Assimilated Na'kuhl" home_planet = "Na'kuhl Prime" home_system = "Na'kuhl" name_list = Borg }
+    nausicaan_assimilated = { name = "Assimilated Nausicaan" plural = "Assimilated Nausicaan" home_planet = "Nausicaa" home_system = "Nausicaa" name_list = Borg }
+    neryj_assimilated = { name = "Assimilated Neryj" plural = "Assimilated Neryji" home_planet = "Ner" home_system = "Nej" name_list = Borg }
+    niatoko_assimilated = { name = "Assimilated Niatoko" plural = "Assimilated Niatoko" home_planet = "Cherela" home_system = "Fesarius" name_list = Borg }
+    nyberrite_assimilated = { name = "Assimilated Nyberrite" plural = "Assimilated Nyberrites" home_planet = "Nyberon Prime" home_system = "Nyberon" name_list = Borg }
+    orion_assimilated = { name = "Assimilated Orion" plural = "Assimilated Orion" home_planet = "Vondem" home_system = "Orion" name_list = Borg }
+    oschean_assimilated = { name = "Assimilated Oschean" plural = "Assimilated Oschean" home_planet = "Ma'kor" home_system = "Za'id" name_list = Borg }
+    rakhari_assimilated = { name = "Assimilated Rakhari" plural = "Assimilated Rakhari" home_planet = "Rakhar" home_system = "Rakh" name_list = Borg }    
+    reman_assimilated = { name = "Assimilated Reman" plural = "Assimilated Remans" home_planet = "Remus" home_system = "Romulus" name_list = Borg }
+    romulan_assimilated = { name = "Assimilated Romulan" plural = "Assimilated Romulans" home_planet = "Romulus" home_system = "Romulus" name_list = Borg }
+    saurian_assimilated = { name = "Assimilated Saurian" plural = "Assimilated Saurians" home_planet = "Lyaksti'kton" home_system = "Psi Serpentis" name_list = Borg }
+    selay_assimilated = { name = "Assimilated Selay" plural = "Assimilated Selay" home_planet = "Beta Renner Secunda IV" home_system = "Beta Renner Secunda" name_list = Borg }
+    serilian_assimilated = { name = "Assimilated Serilian" plural = "Assimilated Serilians" home_planet = "Serilia" home_system = "Serilia" name_list = Borg }
+    sheliak_assimilated = { name = "Assimilated Sheliak" plural = "Assimilated Sheliak" home_planet = "Shelia" home_system = "Sheliak" name_list = Borg }
+    skorr_assimilated = { name = "Assimilated Skorr" plural = "Assimilated Skorr" home_planet = "Skorra" home_system = "Skorrel" name_list = Borg }
+    suliban_assimilated = { name = "Assimilated Suliban" plural = "Assimilated Suliban" home_planet = "Helix 01" home_system = "Exile" name_list = Borg }
+    talaxian_assimilated = { name = "Assimilated Talaxian" plural = "Assimilated Talaxian" home_planet = "Talax" home_system = "Talax" name_list = Borg }
+    tamarian_assimilated = { name = "Assimilated Tamarian" plural = "Assimilated Tamarians" home_planet = "Sigma Tama IV" home_system = "Sigma Tama" name_list = Borg }
+    tellarite_assimilated = { name = "Assimilated Tellarite" plural = "Assimilated Tellarite" home_planet = "Tellarus" home_system = "Tellar" name_list = Borg }
+    tessegri_assimilated = { name = "Assimilated Tessegri" plural = "Assimilated Tessegris" home_planet = "Cherela" home_system = "Fesarius" name_list = Borg }
+    tholian_assimilated = { name = "Assimilated Tholian" plural = "Assimilated Tholian" home_planet = "Tholia Prime" home_system = "Tholia" name_list = Borg }
+    trabe_assimilated = { name = "Assimilated Trabe" plural = "Assimilated Trabe" home_planet = "Trabe Prime" home_system = "Trabe" name_list = Borg }    
+    trelian_assimilated = { name = "Assimilated Trelian" plural = "Assimilated Trelians" home_planet = "Trelia Prime" home_system = "Trelia" name_list = Borg }    
+    trill_assimilated = { name = "Assimilated Trill" plural = "Assimilated Trill" home_planet = "Trill Prime" home_system = "Trill" name_list = Borg }
+    trogoran_assimilated = { name = "Assimilated T'Rogoran" plural = "Assimilated T'Rogoran" home_planet = "T'Rogoran Prime" home_system = "T'Rogoran Prime" name_list = Borg }
+    turei_assimilated = { name = "Assimilated Turei" plural = "Assimilated Turei" home_planet = "Turei Prime" home_system = "Turei" name_list = Borg }    
+    tzenkethi_assimilated = { name = "Assimilated Tzenkethi" plural = "Assimilated Tzenkethi" home_planet = "Ab-Tzenketh" home_system = "Tzenketh" name_list = Borg }
+    undine_assimilated = { name = "Assimilated Undine" plural = "Assimilated Undine" home_planet = "Unda" home_system = "Fluidic Space" name_list = Borg }
+    vaadwaur_assimilated = { name = "Assimilated Vaadwaur" plural = "Assimilated Vaadwaur" home_planet = "Vaadwaur Prime" home_system = "Vaadwaur" name_list = Borg }
+    vendorian_assimilated = { name = "Assimilated Vendorian" plural = "Assimilated Vendorians" home_planet = "Vendor" home_system = "Vendor" name_list = Borg }
+    vorgon_assimilated = { name = "Assimilated Vorgon" plural = "Assimilated Vorgons" home_planet = "Vorgos" home_system = "Vorgos" name_list = Borg }
+    vorta_assimilated = { name = "Assimilated Vorta" plural = "Assimilated Vorta" home_planet = "Kurill" home_system = "Kurill Prime" name_list = Borg }
+    voth_assimilated = { name = "Assimilated Voth" plural = "Assimilated Voth" home_planet = "Voth Prime" home_system = "Voth" name_list = Borg }
+    vulcan_assimilated = { name = "Assimilated Vulcan" plural = "Assimilated Vulcans" home_planet = "Vulcan" home_system = "40 Eridani" name_list = Borg }
+    wadi_assimilated = { name = "Assimilated Wadi" plural = "Assimilated Wadi" home_planet = "Tomerela" home_system = "Wadi" name_list = Borg }
+    xepolite_assimilated = { name = "Assimilated Xepolite" plural = "Assimilated Xepolites" home_planet = "Xepol" home_system = "Xepola" name_list = Borg }
+    xindi_aquatic_assimilated = { name = "Assimilated Xindi Aquatic" plural = "Assimilated Xindi Aquatic" home_planet = "Azati Prime" home_system = "Azati" name_list = Borg }
+    xindi_arboreal_assimilated = { name = "Assimilated Xindi Arboreal" plural = "Assimilated Xindi Arboreal" home_planet = "Azati Prime" home_system = "Azati" name_list = Borg }
+    xindi_insectoid_assimilated = { name = "Assimilated Xindi Insectoid" plural = "Assimilated Xindi Insectoid" home_planet = "Azati Prime" home_system = "Azati" name_list = Borg }
+    xindi_mammalian_assimilated = { name = "Assimilated Xindi Primate" plural = "Assimilated Xindi Primates" home_planet = "Azati Prime" home_system = "Azati" name_list = Borg }
+    xindi_reptilian_assimilated = { name = "Assimilated Xindi Reptilian" plural = "Assimilated Xindi Reptilian" home_planet = "Azati Prime" home_system = "Azati" name_list = Borg }
+    xindi_avian_assimilated = { name = "Assimilated Xindi Avian" plural = "Assimilated Xindi Avian" home_planet = "Azati Prime" home_system = "Azati" name_list = Borg }
+    yaderan_assimilated = { name = "Assimilated Yaderan" plural = "Assimilated Yaderans" home_planet = "Yadera Prime" home_system = "Yadera" name_list = Borg }
+    yridian_assimilated = { name = "Assimilated Yridian" plural = "Assimilated Yridians" home_planet = "Yridia Prime" home_system = "Yridia" name_list = Borg }
+    zahl_assimilated = { name = "Assimilated Zahl" plural = "Assimilated Zahl" home_planet = "Zahl II" home_system = "Zahl" name_list = Borg }
+    zakdorn_assimilated = { name = "Assimilated Zakdorn" plural = "Assimilated Zakdorn" home_planet = "Zakdorn" home_system = "Zakdorn" name_list = Borg }
+    zibalian_assimilated = { name = "Assimilated Zibalian" plural = "Assimilated Zibalians" home_planet = "Theta Zibal" home_system = "Zibal" name_list = Borg }    
+    
+    
+    acamarian_assimilated = { name = "Assimilated Acamarian" plural = "Assimilated Acamarians" home_planet = "WIP" home_system = "WIP" name_list = Borg }
+    android_assimilated = { name = "Assimilated Android" plural = "Assimilated Androids" home_planet = "WIP" home_system = "WIP" name_list = Borg }
+    agimus_assimilated = { name = "Assimilated Agimus" plural = "Assimilated Agimus" home_planet = "WIP" home_system = "WIP" name_list = Borg }
+    argelian_assimilated = { name = "Assimilated Argelian" plural = "Assimilated Argelians" home_planet = "WIP" home_system = "WIP" name_list = Borg }
+    akaali_assimilated = { name = "Assimilated Akaali" plural = "Assimilated Akaalis" home_planet = "WIP" home_system = "WIP" name_list = Borg }
+    akritirian_assimilated = { name = "Assimilated Akritirian" plural = "Assimilated Akritirians" home_planet = "WIP" home_system = "WIP" name_list = Borg }
+    altamid_assimilated = { name = "Assimilated Altamidian" plural = "Assimilated Altamidians" home_planet = "WIP" home_system = "WIP" name_list = Borg }
+    altairian_assimilated = { name = "Assimilated Altairian" plural = "Assimilated Altairians" home_planet = "WIP" home_system = "WIP" name_list = Borg }
+    android_assimilated = { name = "Assimilated Android" plural = "Assimilated Androids" home_planet = "WIP" home_system = "WIP" name_list = Borg }
+    antosian_assimilated = { name = "Assimilated Antosian" plural = "Assimilated Antosians" home_planet = "WIP" home_system = "WIP" name_list = Borg }
+    apu_assimilated = { name = "Assimilated APU" plural = "Assimilated APUs" home_planet = "WIP" home_system = "WIP" name_list = Borg }
+    arbazian_assimilated = { name = "Assimilated Arbazian" plural = "Assimilated Arbazians" home_planet = "WIP" home_system = "WIP" name_list = Borg }
+    ardanan_assimilated = { name = "Assimilated Ardanan" plural = "Assimilated Ardanans" home_planet = "WIP" home_system = "WIP" name_list = Borg }
+    argelian_assimilated = { name = "Assimilated Argelian" plural = "Assimilated Argelians" home_planet = "WIP" home_system = "WIP" name_list = Borg }
+    baku_assimilated = { name = "Assimilated Baku" plural = "Assimilated Bakus" home_planet = "WIP" home_system = "WIP" name_list = Borg }
+    banea_assimilated = { name = "Assimilated Banea" plural = "Assimilated Baneas" home_planet = "WIP" home_system = "WIP" name_list = Borg }
+    barzan_assimilated = { name = "Assimilated Barzan" plural = "Assimilated Barzans" home_planet = "WIP" home_system = "WIP" name_list = Borg }
+    beranavian_assimilated = { name = "Assimilated Beranavian" plural = "Assimilated Beranavians" home_planet = "WIP" home_system = "WIP" name_list = Borg }
+    blue_orion_assimilated = { name = "Assimilated Orion" plural = "Assimilated Orions" home_planet = "WIP" home_system = "WIP" name_list = Borg }
+    borg_assimilated = { name = "Assimilated Borg" plural = "Assimilated Borgs" home_planet = "WIP" home_system = "WIP" name_list = Borg }
+    brunali_assimilated = { name = "Assimilated Brunali" plural = "Assimilated Brunalis" home_planet = "WIP" home_system = "WIP" name_list = Borg }
+    betan_assimilated = { name = "Assimilated Betan" plural = "Assimilated Betans" home_planet = "WIP" home_system = "WIP" name_list = Borg }
+    centauri_assimilated = { name = "Assimilated Centauri" plural = "Assimilated Centauris" home_planet = "WIP" home_system = "WIP" name_list = Borg }
+    chodak_assimilated = { name = "Assimilated Chodak" plural = "Assimilated Chodaks" home_planet = "WIP" home_system = "WIP" name_list = Borg }
+    coridanite_assimilated = { name = "Assimilated Coridanite" plural = "Assimilated Coridanites" home_planet = "WIP" home_system = "WIP" name_list = Borg }
+    cravic_assimilated = { name = "Assimilated Cravic" plural = "Assimilated Cravics" home_planet = "WIP" home_system = "WIP" name_list = Borg }
+    photonic_cube_assimilated = { name = "Assimilated Photonic Cube" plural = "Assimilated Photonic Cubes" home_planet = "WIP" home_system = "WIP" name_list = Borg }
+    cytherian_assimilated = { name = "Assimilated Cytherian" plural = "Assimilated Cytherians" home_planet = "WIP" home_system = "WIP" name_list = Borg }
+    dorvans_assimilated = { name = "Assimilated Dorvans" plural = "Assimilated Dorvanss" home_planet = "WIP" home_system = "WIP" name_list = Borg }
+    dosi_assimilated = { name = "Assimilated Dosi" plural = "Assimilated Dosis" home_planet = "WIP" home_system = "WIP" name_list = Borg }
+    drednok_assimilated = { name = "Assimilated Drednok" plural = "Assimilated Drednoks" home_planet = "WIP" home_system = "WIP" name_list = Borg }
+    dwemari_assimilated = { name = "Assimilated Dwemari" plural = "Assimilated Dwemaris" home_planet = "WIP" home_system = "WIP" name_list = Borg }
+    edo_assimilated = { name = "Assimilated Edo" plural = "Assimilated Edos" home_planet = "WIP" home_system = "WIP" name_list = Borg }
+    efrosian_assimilated = { name = "Assimilated Efrosian" plural = "Assimilated Efrosians" home_planet = "WIP" home_system = "WIP" name_list = Borg }
+    ekosian_assimilated = { name = "Assimilated Ekosian" plural = "Assimilated Ekosians" home_planet = "WIP" home_system = "WIP" name_list = Borg }
+    elasian_assimilated = { name = "Assimilated Elasian" plural = "Assimilated Elasians" home_planet = "WIP" home_system = "WIP" name_list = Borg }
+    elachi_assimilated = { name = "Assimilated Elachi" plural = "Assimilated Elachis" home_planet = "WIP" home_system = "WIP" name_list = Borg }
+    ellora_assimilated = { name = "Assimilated Ellora" plural = "Assimilated Elloras" home_planet = "WIP" home_system = "WIP" name_list = Borg }
+    future_guy_assimilated = { name = "Assimilated Future_Guy" plural = "Assimilated Future_Guys" home_planet = "WIP" home_system = "WIP" name_list = Borg }
+    grazerite_assimilated = { name = "Assimilated Grazerite" plural = "Assimilated Grazerites" home_planet = "WIP" home_system = "WIP" name_list = Borg }
+    guardian_of_forever_assimilated = { name = "Assimilated Guardian" plural = "Assimilated Guardians" home_planet = "WIP" home_system = "WIP" name_list = Borg }
+    haakonian_assimilated = { name = "Assimilated Haakonian" plural = "Assimilated Haakonians" home_planet = "WIP" home_system = "WIP" name_list = Borg }
+    hill_people_assimilated = { name = "Assimilated Hill People" plural = "Assimilated Hill People" home_planet = "WIP" home_system = "WIP" name_list = Borg }
+    horta_assimilated = { name = "Assimilated Horta" plural = "Assimilated Hortas" home_planet = "WIP" home_system = "WIP" name_list = Borg }
+    hydran_assimilated = { name = "Assimilated Hydran" plural = "Assimilated Hydrans" home_planet = "WIP" home_system = "WIP" name_list = Borg }
+    iconian_assimilated = { name = "Assimilated Iconian" plural = "Assimilated Iconians" home_planet = "WIP" home_system = "WIP" name_list = Borg }
+    iotian_assimilated = { name = "Assimilated Iotian" plural = "Assimilated Iotians" home_planet = "WIP" home_system = "WIP" name_list = Borg }
+    kaylar_assimilated = { name = "Assimilated Kaylar" plural = "Assimilated Kaylars" home_planet = "WIP" home_system = "WIP" name_list = Borg }
+    kelpien_assimilated = { name = "Assimilated Kelpien" plural = "Assimilated Kelpiens" home_planet = "WIP" home_system = "WIP" name_list = Borg }
+    klaha_assimilated = { name = "Assimilated Klaha" plural = "Assimilated Klahas" home_planet = "WIP" home_system = "WIP" name_list = Borg }
+    kelvan_assimilated = { name = "Assimilated Kelvan" plural = "Assimilated Kelvans" home_planet = "WIP" home_system = "WIP" name_list = Borg }
+    kobali_assimilated = { name = "Assimilated Kobali" plural = "Assimilated Kobalis" home_planet = "WIP" home_system = "WIP" name_list = Borg }
+    kolaati_assimilated = { name = "Assimilated Kolaati" plural = "Assimilated Kolaatis" home_planet = "WIP" home_system = "WIP" name_list = Borg }
+    kradin_assimilated = { name = "Assimilated Kradin" plural = "Assimilated Kradins" home_planet = "WIP" home_system = "WIP" name_list = Borg }
+    tamarian_assimilated = { name = "Assimilated Tamarian" plural = "Assimilated Tamarians" home_planet = "WIP" home_system = "WIP" name_list = Borg }
+    kriosian_assimilated = { name = "Assimilated Kriosian" plural = "Assimilated Kriosians" home_planet = "WIP" home_system = "WIP" name_list = Borg }
+    lorillian_assimilated = { name = "Assimilated Lorillian" plural = "Assimilated Lorillians" home_planet = "WIP" home_system = "WIP" name_list = Borg }
+    lyran_assimilated = { name = "Assimilated Lyran" plural = "Assimilated Lyrans" home_planet = "WIP" home_system = "WIP" name_list = Borg }
+    lukari_assimilated = { name = "Assimilated Lukari" plural = "Assimilated Lukaris" home_planet = "WIP" home_system = "WIP" name_list = Borg }
+    lurian_assimilated = { name = "Assimilated Lurian" plural = "Assimilated Lurians" home_planet = "WIP" home_system = "WIP" name_list = Borg }
+    madenan_assimilated = { name = "Assimilated Madenan" plural = "Assimilated Madenans" home_planet = "WIP" home_system = "WIP" name_list = Borg }
+    malon_assimilated = { name = "Assimilated Malon" plural = "Assimilated Malons" home_planet = "WIP" home_system = "WIP" name_list = Borg }
+    meridian_assimilated = { name = "Assimilated Meridian" plural = "Assimilated Meridians" home_planet = "WIP" home_system = "WIP" name_list = Borg }
+    metron_assimilated = { name = "Assimilated Metron" plural = "Assimilated Metrons" home_planet = "WIP" home_system = "WIP" name_list = Borg }
+    mintakan_assimilated = { name = "Assimilated Mintakan" plural = "Assimilated Mintakans" home_planet = "WIP" home_system = "WIP" name_list = Borg }
+    malcorian_assimilated = { name = "Assimilated Malcorian" plural = "Assimilated Malcorians" home_planet = "WIP" home_system = "WIP" name_list = Borg }
+    monean_assimilated = { name = "Assimilated Monean" plural = "Assimilated Moneans" home_planet = "WIP" home_system = "WIP" name_list = Borg }
+    mugato_assimilated = { name = "Assimilated Mugato" plural = "Assimilated Mugatos" home_planet = "WIP" home_system = "WIP" name_list = Borg }
+    nygean_assimilated = { name = "Assimilated Nygean" plural = "Assimilated Nygeans" home_planet = "WIP" home_system = "WIP" name_list = Borg }
+    norcadian_assimilated = { name = "Assimilated Norcadian" plural = "Assimilated Norcadians" home_planet = "WIP" home_system = "WIP" name_list = Borg }
+    ocampa_assimilated = { name = "Assimilated Ocampa" plural = "Assimilated Ocampas" home_planet = "WIP" home_system = "WIP" name_list = Borg }
+    photonic_orbcube_assimilated = { name = "Assimilated Photonic Orbcube" plural = "Assimilated Photonic Orbcubes" home_planet = "WIP" home_system = "WIP" name_list = Borg }
+    onlies_assimilated = { name = "Assimilated Onlies" plural = "Assimilated Onliess" home_planet = "WIP" home_system = "WIP" name_list = Borg }
+    photonic_orb_assimilated = { name = "Assimilated Photonic Orb" plural = "Assimilated Photonic Orbs" home_planet = "WIP" home_system = "WIP" name_list = Borg }
+    pakled_assimilated = { name = "Assimilated Pakled" plural = "Assimilated Pakleds" home_planet = "WIP" home_system = "WIP" name_list = Borg }
+    palkeo_est_assimilated = { name = "Assimilated Palkeo Est" plural = "Assimilated Palkeo Ests" home_planet = "WIP" home_system = "WIP" name_list = Borg }
+    paradan_assimilated = { name = "Assimilated Paradan" plural = "Assimilated Paradans" home_planet = "WIP" home_system = "WIP" name_list = Borg }
+    photonic_assimilated = { name = "Assimilated Photonic" plural = "Assimilated Photonics" home_planet = "WIP" home_system = "WIP" name_list = Borg }
+    pralor_assimilated = { name = "Assimilated Pralor" plural = "Assimilated Pralors" home_planet = "WIP" home_system = "WIP" name_list = Borg }
+    mugato_assimilated = { name = "Assimilated Mugato" plural = "Assimilated Mugatos" home_planet = "WIP" home_system = "WIP" name_list = Borg }
+    promellian_assimilated = { name = "Assimilated Promellian" plural = "Assimilated Promellians" home_planet = "WIP" home_system = "WIP" name_list = Borg }
+    proto_jem_hadar_assimilated = { name = "Assimilated Proto-Jem'Hadar" plural = "Assimilated Proto-Jem'Hadars" home_planet = "WIP" home_system = "WIP" name_list = Borg }
+    proto_vorta_assimilated = { name = "Assimilated Proto-Vorta" plural = "Assimilated Proto-Vortas" home_planet = "WIP" home_system = "WIP" name_list = Borg }
+    prexian_assimilated = { name = "Assimilated Prexian" plural = "Assimilated Prexians" home_planet = "WIP" home_system = "WIP" name_list = Borg }
+    qomarian_assimilated = { name = "Assimilated Qomarian" plural = "Assimilated Qomarians" home_planet = "WIP" home_system = "WIP" name_list = Borg }
+    rigelian_assimilated = { name = "Assimilated Rigelian" plural = "Assimilated Rigelians" home_planet = "WIP" home_system = "WIP" name_list = Borg }
+    risian_assimilated = { name = "Assimilated Risian" plural = "Assimilated Risians" home_planet = "WIP" home_system = "WIP" name_list = Borg }
+    skagaran_assimilated = { name = "Assimilated Skagaran" plural = "Assimilated Skagarans" home_planet = "WIP" home_system = "WIP" name_list = Borg }
+    skrreean_assimilated = { name = "Assimilated Skrreean" plural = "Assimilated Skrreeans" home_planet = "WIP" home_system = "WIP" name_list = Borg }
+    solanae_assimilated = { name = "Assimilated Solanae" plural = "Assimilated Solanaes" home_planet = "WIP" home_system = "WIP" name_list = Borg }
+    sona_assimilated = { name = "Assimilated Sona" plural = "Assimilated Sonas" home_planet = "WIP" home_system = "WIP" name_list = Borg }
+    trill_assimilated = { name = "Assimilated Trill" plural = "Assimilated Trills" home_planet = "WIP" home_system = "WIP" name_list = Borg }
+    tarlac_assimilated = { name = "Assimilated Tarlac" plural = "Assimilated Tarlacs" home_planet = "WIP" home_system = "WIP" name_list = Borg }
+    orion_assimilated = { name = "Assimilated Orion" plural = "Assimilated Orions" home_planet = "WIP" home_system = "WIP" name_list = Borg }
+    teplan_assimilated = { name = "Assimilated Teplan" plural = "Assimilated Teplans" home_planet = "WIP" home_system = "WIP" name_list = Borg }
+    tkon_assimilated = { name = "Assimilated Tkon" plural = "Assimilated Tkons" home_planet = "WIP" home_system = "WIP" name_list = Borg }
+    talarian_assimilated = { name = "Assimilated Talarian" plural = "Assimilated Talarians" home_planet = "WIP" home_system = "WIP" name_list = Borg }
+    talosian_assimilated = { name = "Assimilated Talosian" plural = "Assimilated Talosians" home_planet = "WIP" home_system = "WIP" name_list = Borg }
+    torothan_assimilated = { name = "Assimilated Torothan" plural = "Assimilated Torothans" home_planet = "WIP" home_system = "WIP" name_list = Borg }
+    tosk_assimilated = { name = "Assimilated Tosk" plural = "Assimilated Tosks" home_planet = "WIP" home_system = "WIP" name_list = Borg }
+    tarellian_assimilated = { name = "Assimilated Tarellian" plural = "Assimilated Tarellians" home_planet = "WIP" home_system = "WIP" name_list = Borg }
+    troyian_assimilated = { name = "Assimilated Troyian" plural = "Assimilated Troyians" home_planet = "WIP" home_system = "WIP" name_list = Borg }
+    tuterian_assimilated = { name = "Assimilated Tuterian" plural = "Assimilated Tuterians" home_planet = "WIP" home_system = "WIP" name_list = Borg }
+    valtese_assimilated = { name = "Assimilated Valtese" plural = "Assimilated Valteses" home_planet = "WIP" home_system = "WIP" name_list = Borg }
+    valakian_assimilated = { name = "Assimilated Valakian" plural = "Assimilated Valakians" home_planet = "WIP" home_system = "WIP" name_list = Borg }
+    vau_nakat_assimilated = { name = "Assimilated Vau N'Akat" plural = "Assimilated Vau N'Akats" home_planet = "WIP" home_system = "WIP" name_list = Borg }
+    veridian_assimilated = { name = "Assimilated Veridian" plural = "Assimilated Veridians" home_planet = "WIP" home_system = "WIP" name_list = Borg }
+    vidiian_assimilated = { name = "Assimilated Vidiian" plural = "Assimilated Vidiians" home_planet = "WIP" home_system = "WIP" name_list = Borg }
+    vinoran_assimilated = { name = "Assimilated Vinoran" plural = "Assimilated Vinorans" home_planet = "WIP" home_system = "WIP" name_list = Borg }
+    valerian_assimilated = { name = "Assimilated Valerian" plural = "Assimilated Valerians" home_planet = "WIP" home_system = "WIP" name_list = Borg }
+    ventaxian_assimilated = { name = "Assimilated Ventaxian" plural = "Assimilated Ventaxians" home_planet = "WIP" home_system = "WIP" name_list = Borg }
+    vughal_assimilated = { name = "Assimilated Vughal" plural = "Assimilated Vughals" home_planet = "WIP" home_system = "WIP" name_list = Borg }
+    zeon_assimilated = { name = "Assimilated Zeon" plural = "Assimilated Zeons" home_planet = "WIP" home_system = "WIP" name_list = Borg }
+    
+    galardonian_assimilated = { name = "Assimilated Galardonian" plural = "Assimilated Galardonians" home_planet = "WIP" home_system = "WIP" name_list = Borg }
+    xyrillian_assimilated = { name = "Assimilated Xyrillian" plural = "Assimilated Xyrillians" home_planet = "WIP" home_system = "WIP" name_list = Borg }
+
+    
+    
+}

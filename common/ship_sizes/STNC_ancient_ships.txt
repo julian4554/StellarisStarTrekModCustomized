@@ -1,0 +1,66 @@
+###ATTACK WING###
+inline_script = { script = "ships/attack_wing" SHIP = "metar_jii" TIER = "10" TARGET_LOCATORS = "3" CREW_COST = "automated" MAP_ICON = "metar" }
+
+###FRIGATE###
+inline_script = { script = "ships/frigate" SHIP = "promellian_ekalal" TIER = "5" TARGET_LOCATORS = "2" CREW_COST = "default" MAP_ICON = "promellian" }
+
+###CRUISER###
+inline_script = { script = "ships/cruiser" SHIP = "hurq_vridyat" TIER = "7" TARGET_LOCATORS = "2" CREW_COST = "default" MAP_ICON = "hurq" }
+
+###BATTLECRUISER###
+inline_script = { script = "ships/battlecruiser" SHIP = "promellian_cleponji" TIER = "5" TARGET_LOCATORS = "2" CREW_COST = "default" MAP_ICON = "promellian" }
+
+###DREADNOUGHT###
+inline_script = { script = "ships/dreadnought" SHIP = "tkon_star_lifter" TIER = "15" TARGET_LOCATORS = "7" CREW_COST = "default" MAP_ICON = "tkon" }
+
+
+sleeper_ship = {
+	max_speed = 100
+	acceleration = 0.3
+	rotation_speed = 0.175
+	max_hitpoints = 300
+	resources = {
+		category = colonies
+		cost = { trigger = { from = { species = { is_organic_species = yes } } } alloys = 200 food = 200 consumer_goods = 200 }
+		cost = { trigger = { from = { species = { is_organic_species = no } } } alloys = 400 }
+		upkeep = { energy = 1 crew = @default_frigate_crew_upkeep }
+		cost = { crew = @default_frigate_crew_cost }
+	}
+	modifier = {
+		ship_evasion_mult = -0.25
+	}
+	graphical_culture = no
+	is_space_object = yes
+	fleet_slot_size = 1
+	num_target_locators = 0
+	is_space_station = no
+	icon = ship_size_sleeper_ship
+	base_buildtime = 360
+	is_designable = no
+	components_add_to_cost = no
+	auto_upgrade = yes
+	enable_default_design = yes
+	prerequisites = { "tech_colonization_1" }
+	combat_disengage_chance = 0.5
+	class = shipclass_colonizer
+	construction_type = starbase_shipyard
+	is_civilian = yes
+	valid_target_aggressive_stance = no
+	section_slots = { "mid" = { locator = "part1" } }
+	#TODO: Change
+	
+	required_component_set = "required_sensor_dreadnought"
+	required_component_set = "required_warp_dreadnought"
+	required_component_set = "required_impulse_dreadnought"
+	required_component_set = "required_hull_dreadnought"	
+	required_component_set = "required_shield_dreadnought"
+	required_component_set = "required_unique_colony"
+    required_component_set = "required_mission_dreadnought"
+	potential_construction = {
+		# can_construct_ship = { ship = "sleeper_ship" }
+	}
+	potential_country = {
+		# country_can_colonise = yes
+		always = no
+	}
+}

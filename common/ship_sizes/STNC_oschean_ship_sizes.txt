@@ -1,0 +1,15 @@
+###SCOUT###
+inline_script = { script = "ships/scout" MAP_ICON = "oschean" SHIP = "oschean_bilatu" TIER = "0" TARGET_LOCATORS = "2" CREW_COST = "default" }
+
+###FRIGATE###
+inline_script = { script = "ships/frigate" MAP_ICON = "oschean" SHIP = "oschean_tiratzailea" TIER = "3" TARGET_LOCATORS = "2" CREW_COST = "default" }
+
+###DESTROYER###
+inline_script = { script = "ships/destroyer" MAP_ICON = "oschean" SHIP = "oschean_jazarpen" TIER = "2" TARGET_LOCATORS = "2" CREW_COST = "default" }
+
+##CRUISER###
+inline_script = { script = "ships/cruiser" MAP_ICON = "oschean" SHIP = "oschean_basozain" TIER = "4" TARGET_LOCATORS = "3" CREW_COST = "default" }
+
+##COMMAND CRUISER###
+inline_script = { script = "ships/command_cruiser" MAP_ICON = "oschean" SHIP = "oschean_ehiztaria" TIER = "6" TARGET_LOCATORS = "4" CREW_COST = "default" }
+inline_script = { script = "ships/command_cruiser_xc" MAP_ICON = "oschean" SHIP = "oschean_ehiztaria" TIER = "6" TARGET_LOCATORS = "4" CREW_COST = "default" }

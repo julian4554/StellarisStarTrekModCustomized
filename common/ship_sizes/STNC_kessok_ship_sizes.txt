@@ -1,0 +1,8 @@
+###SCOUT###
+inline_script = { script = "ships/scout" MAP_ICON = "kessok_bax" SHIP = "kessok_bax_yen" TIER = "0" TARGET_LOCATORS = "2" CREW_COST = "default" }
+
+###LIGHT CRUISER###
+inline_script = { script = "ships/light_cruiser" MAP_ICON = "kessok_mal" SHIP = "kessok_mal_vor" TIER = "2" TARGET_LOCATORS = "32" CREW_COST = "default" }
+
+##HEAVY CRUISER###
+inline_script = { script = "ships/heavy_cruiser" MAP_ICON = "kessok_kel" SHIP = "kessok_kel_tan" TIER = "6" TARGET_LOCATORS = "5" CREW_COST = "default" }

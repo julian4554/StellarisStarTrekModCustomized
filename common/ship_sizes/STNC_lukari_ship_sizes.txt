@@ -1,0 +1,91 @@
+###SCOUT###
+inline_script = { script = "ships/scout" MAP_ICON = "lukari" SHIP = "lukari_nkaam" TIER = "0" TARGET_LOCATORS = "2" CREW_COST = "default" }
+
+###FRIGATE###
+# inline_script = { script = "ships/frigate" MAP_ICON = "betazoid" SHIP = "betazoid_dekoa" TIER = "5" TARGET_LOCATORS = "4" CREW_COST = "default" }
+
+# ###DESTROYER###
+inline_script = { script = "ships/destroyer" MAP_ICON = "lukari" SHIP = "lukari_heldae" TIER = "2" TARGET_LOCATORS = "5" CREW_COST = "default" }
+
+# ###LIGHT CRUISER###
+inline_script = { script = "ships/light_cruiser" MAP_ICON = "lukari" SHIP = "lukari_hokuun" TIER = "4" TARGET_LOCATORS = "4" CREW_COST = "default" }
+inline_script = { script = "ships/light_cruiser_xc" MAP_ICON = "lukari" SHIP = "lukari_hokuun" TIER = "4" TARGET_LOCATORS = "4" CREW_COST = "default" }
+
+# ###CRUISER###
+inline_script = { script = "ships/cruiser" MAP_ICON = "lukari" SHIP = "lukari_dranuur" TIER = "7" TARGET_LOCATORS = "5" CREW_COST = "default" }
+inline_script = { script = "ships/cruiser_xc" MAP_ICON = "lukari" SHIP = "lukari_dranuur" TIER = "7" TARGET_LOCATORS = "5" CREW_COST = "default" }
+
+###BATTLECRUISER###
+inline_script = { script = "ships/battlecruiser" MAP_ICON = "lukari" SHIP = "lukari_larelee" TIER = "8" TARGET_LOCATORS = "3" CREW_COST = "default" }
+
+###HEAVY CRUISER###
+# inline_script = { script = "ships/heavy_cruiser" MAP_ICON = "lukari" SHIP = "lukari_ekaara" TIER = "5" TARGET_LOCATORS = "5" CREW_COST = "default" }
+# inline_script = { script = "ships/heavy_cruiser_xc" MAP_ICON = "lukari" SHIP = "lukari_ekaara" TIER = "5" TARGET_LOCATORS = "5" CREW_COST = "default" }
+
+###COMMAND CRUISER###
+inline_script = { script = "ships/command_cruiser" MAP_ICON = "lukari" SHIP = "lukari_ekaara" TIER = "5" TARGET_LOCATORS = "5" CREW_COST = "default" }
+inline_script = { script = "ships/command_cruiser_xc" MAP_ICON = "lukari" SHIP = "lukari_ekaara" TIER = "5" TARGET_LOCATORS = "5" CREW_COST = "default" }
+
+# ###FLEET COMMAND CRUISER
+inline_script = { script = "ships/fleet_command_cruiser" MAP_ICON = "lukari" SHIP = "lukari_ndeelae" TIER = "10" TARGET_LOCATORS = "7" CREW_COST = "default" }
+
+
+
+lukari_ndeelae_pk = {
+	entity = lukari_ndeelae_entity
+    formation_priority = @dreadnought_formation_priority
+	max_speed = @dreadnought_max_speed_10
+	acceleration = @dreadnought_acceleration_10
+	rotation_speed = @dreadnought_rotation_speed_10
+	collision_radius = 2
+	max_hitpoints = @dreadnought_max_hitpoints_10
+	resources = {
+		category = ships
+		upkeep = { crew = @default_heavy_weapon_platform_crew_upkeep }
+		cost = { crew = @default_heavy_weapon_platform_crew_cost }
+	}
+	modifier = {
+		sh_heavy_weapon_platform_base_stats = 1
+	}
+	combat_disengage_chance = @heavy_weapon_platform_disengagement_chance
+	ship_modifier = {
+		ship_size_value = @heavy_weapon_platform_size
+		ship_type_value = @heavy_weapon_platform_class_id
+        ship_class_value = @shipclass_military_special_value
+		ship_tier_value = 10
+	}
+	is_space_object = yes
+	size_multiplier = 16
+	fleet_slot_size = 8
+	num_target_locators = 5
+	is_space_station = no
+	icon = ship_size_lukari_ndeelae
+	base_buildtime = @dreadnought_base_buildtime_10
+	can_have_federation_design = no
+	enable_default_design = yes
+	default_behavior = artillery
+	prerequisites = { "tech_lukari_ndeelae_1" }
+	potential_country = { can_design_ship = { ship = "lukari_ndeelae" } }
+	class = shipclass_military_special
+	ship_roles = { brawler gunship explosive carrier screen artillery }
+	construction_type = starbase_shipyard
+	section_slots = { "mid" = { locator = "part1" } }
+	
+	required_component_set = "required_sensor_dreadnought"
+	required_component_set = "required_warp_dreadnought"
+	required_component_set = "required_impulse_dreadnought"
+	required_component_set = "required_hull_dreadnought"	
+	required_component_set = "required_shield_dreadnought"
+	required_component_set = "required_unique_dreadnought"
+	required_component_set = "required_countermeasures_dreadnought"
+    required_component_set = "required_mission_dreadnought"
+	potential_construction = {
+        host_has_dlc = "Apocalypse"
+        can_construct_ship = { ship = "lukari_ndeelae" }
+        owner = { planet_killers_banned = no }
+	}
+    ai_ship_data = {
+		min = 1
+        max = 2
+    }
+}

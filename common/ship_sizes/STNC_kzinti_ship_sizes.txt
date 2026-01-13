@@ -1,0 +1,21 @@
+###SCOUT###
+inline_script = { script = "ships/scout" MAP_ICON = "kzinti" SHIP = "kzinti_bietir" TIER = "0" TARGET_LOCATORS = "4" CREW_COST = "default" }
+inline_script = { script = "ships/scout" MAP_ICON = "kzinti" SHIP = "kzinti_wariven" TIER = "6" TARGET_LOCATORS = "5" CREW_COST = "default" }
+
+###FRIGATE###
+inline_script = { script = "ships/frigate" MAP_ICON = "kzinti" SHIP = "kzinti_pardalisar" TIER = "3" TARGET_LOCATORS = "2" CREW_COST = "default" }
+
+###SUPPORT WING###
+inline_script = { script = "ships/support_wing" MAP_ICON = "kzinti" SHIP = "kzinti_silvestrir" TIER = "1" TARGET_LOCATORS = "2" CREW_COST = "default" }
+
+###DESTROYER###
+inline_script = { script = "ships/destroyer" MAP_ICON = "kzinti" SHIP = "kzinti_dastalkur" TIER = "10" TARGET_LOCATORS = "4" CREW_COST = "default" }
+
+###HEAVY ESCORT###
+inline_script = { script = "ships/heavy_escort" MAP_ICON = "kzinti" SHIP = "kzinti_chausr" TIER = "2" TARGET_LOCATORS = "2" CREW_COST = "default" }
+
+###BATTLECRUISER
+inline_script = { script = "ships/battlecruiser" MAP_ICON = "kzinti" SHIP = "kzinti_auratai" TIER = "4" TARGET_LOCATORS = "2" CREW_COST = "default" }
+
+###BATTLESHIP###
+inline_script = { script = "ships/battleship" MAP_ICON = "kzinti" SHIP = "kzinti_pardinenar" TIER = "6" TARGET_LOCATORS = "2" CREW_COST = "default" }

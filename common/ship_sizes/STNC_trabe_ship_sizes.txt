@@ -1,0 +1,29 @@
+###FRIGATE###
+inline_script = { 
+    script = "ships/frigate" MAP_ICON = "trabe" SHIP = "trabe_suzerain" TIER = "0" TARGET_LOCATORS = "2" CREW_COST = "default"
+}
+
+###ATTACK WING###
+inline_script = { 
+    script = "ships/attack_wing" MAP_ICON = "trabe" SHIP = "trabe_severance" TIER = "4" TARGET_LOCATORS = "2" CREW_COST = "default" 
+}
+
+###DESTROYER###
+inline_script = { 
+    script = "ships/destroyer" MAP_ICON = "trabe" SHIP = "trabe_director" TIER = "1" TARGET_LOCATORS = "2" CREW_COST = "default" 
+}
+
+##HEAVY CRUISER###
+inline_script = { 
+    script = "ships/heavy_cruiser" MAP_ICON = "trabe" SHIP = "trabe_autocrat" TIER = "2" TARGET_LOCATORS = "2" CREW_COST = "default" 
+}
+
+##BATTLESHIP###
+inline_script = { 
+    script = "ships/battleship" MAP_ICON = "trabe" SHIP = "trabe_subjugator" TIER = "4" TARGET_LOCATORS = "2" CREW_COST = "default" 
+}
+
+###DREADNOUGHT###
+inline_script = { 
+    script = "ships/dreadnought" MAP_ICON = "trabe" SHIP = "trabe_overlord" TIER = "6" TARGET_LOCATORS = "2" CREW_COST = "default" 
+}

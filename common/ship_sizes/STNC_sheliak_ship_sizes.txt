@@ -1,0 +1,11 @@
+###Frigate###
+inline_script = { script = "ships/frigate" MAP_ICON = "sheliak" SHIP = "sheliak_decree" TIER = "4" TARGET_LOCATORS = "2" CREW_COST = "default" }
+
+###SCOUT###
+inline_script = { script = "ships/scout" MAP_ICON = "sheliak" SHIP = "sheliak_precept" TIER = "0" TARGET_LOCATORS = "2" CREW_COST = "default" }
+
+###HEAVY ESCORT###
+inline_script = { script = "ships/heavy_escort" MAP_ICON = "sheliak" SHIP = "sheliak_dictum" TIER = "2" TARGET_LOCATORS = "2" CREW_COST = "default" }
+
+###BATTLESHIP###
+inline_script = { script = "ships/battleship" MAP_ICON = "sheliak" SHIP = "sheliak_edict" TIER = "6" TARGET_LOCATORS = "4" CREW_COST = "default" }

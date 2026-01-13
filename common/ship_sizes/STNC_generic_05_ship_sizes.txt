@@ -1,0 +1,19 @@
+###FRIGATES
+inline_script = { script = "ships/frigate" MAP_ICON = "generic_05" SHIP = "generic_05_osgrith" TIER = "0" TARGET_LOCATORS = "2" CREW_COST = "default" }
+inline_script = { script = "ships/frigate" MAP_ICON = "generic_05" SHIP = "generic_05_menkath" TIER = "5" TARGET_LOCATORS = "2" CREW_COST = "default" }
+
+###SCOUTS
+inline_script = { script = "ships/scout" MAP_ICON = "generic_05" SHIP = "generic_05_arbekav" TIER = "0" TARGET_LOCATORS = "2" CREW_COST = "default" }
+
+###DESTROYER
+inline_script = { script = "ships/destroyer" MAP_ICON = "generic_05" SHIP = "generic_05_dendrek" TIER = "1" TARGET_LOCATORS = "2" CREW_COST = "default" }
+inline_script = { script = "ships/destroyer" MAP_ICON = "generic_05" SHIP = "generic_05_nemdrek" TIER = "4" TARGET_LOCATORS = "2" CREW_COST = "default" }
+inline_script = { script = "ships/destroyer" MAP_ICON = "generic_05" SHIP = "generic_05_ardrek" TIER = "7" TARGET_LOCATORS = "2" CREW_COST = "default" }
+
+###CRUISER
+inline_script = { script = "ships/cruiser" MAP_ICON = "generic_05" SHIP = "generic_05_nolev" TIER = "4" TARGET_LOCATORS = "2" CREW_COST = "default" }
+inline_script = { script = "ships/cruiser" MAP_ICON = "generic_05" SHIP = "generic_05_parsen" TIER = "8" TARGET_LOCATORS = "2" CREW_COST = "default" }
+
+###BATTLESHIP
+inline_script = { script = "ships/battleship" MAP_ICON = "generic_05" SHIP = "generic_05_venkela" TIER = "6" TARGET_LOCATORS = "2" CREW_COST = "default" }
+inline_script = { script = "ships/battleship" MAP_ICON = "generic_05" SHIP = "generic_05_ternali" TIER = "10" TARGET_LOCATORS = "2" CREW_COST = "default" }

@@ -1,0 +1,18 @@
+###FRIGATE###
+inline_script = { script = "ships/frigate" MAP_ICON = "starfleet_kelvin" SHIP = "starfleet_kelvin_saladin" TIER = "3" TARGET_LOCATORS = "2" CREW_COST = "default" }
+
+###SCOUT###
+inline_script = { script = "ships/scout" MAP_ICON = "starfleet_kelvin" SHIP = "starfleet_kelvin_delphis" TIER = "4" TARGET_LOCATORS = "2" CREW_COST = "default" }
+
+###DESTROYER###
+inline_script = { script = "ships/destroyer" MAP_ICON = "starfleet_kelvin" SHIP = "starfleet_kelvin_kelvin" TIER = "3" TARGET_LOCATORS = "3" CREW_COST = "default" }
+
+###HEAVY CRUISER###
+inline_script = { script = "ships/heavy_cruiser" MAP_ICON = "starfleet_kelvin" SHIP = "starfleet_kelvin_walcott" TIER = "3" TARGET_LOCATORS = "2" CREW_COST = "default" }
+
+###COMMAND CRUISER###
+inline_script = { script = "ships/command_cruiser" MAP_ICON = "starfleet_kelvin" SHIP = "starfleet_kelvin_constitution" TIER = "4" TARGET_LOCATORS = "4" CREW_COST = "default" }
+inline_script = { script = "ships/command_cruiser_xc" MAP_ICON = "starfleet_kelvin" SHIP = "starfleet_kelvin_constitution" TIER = "4" TARGET_LOCATORS = "4" CREW_COST = "default" }
+
+###DREADNOUGHT
+inline_script = { script = "ships/dreadnought" MAP_ICON = "starfleet_kelvin" SHIP = "starfleet_kelvin_vengeance" TIER = "6" TARGET_LOCATORS = "7" CREW_COST = "default" }

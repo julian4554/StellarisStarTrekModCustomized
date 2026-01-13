@@ -1,0 +1,187 @@
+# from = country
+# this = species
+
+slavery_normal = {
+	pop_group_modifier = {
+		pop_bonus_workforce_mult = 0.10
+		pop_happiness = -0.30
+	}
+
+	potential = {
+		from = { is_any_hive_species = no }
+	}
+	
+	allow = {
+		hidden_trigger = { always = yes } #triggers covered in citizenship_slavery and potential trigger
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+slavery_domestic = {	
+	pop_group_modifier = {
+		pop_happiness = -0.20
+	}
+	
+	potential = {
+		host_has_dlc = "Utopia"
+		from = { is_any_hive_species = no }
+	}
+
+	allow = {
+		hidden_trigger = { always = yes }
+	}
+	ai_will_do = {
+		factor = 3
+		modifier = {
+			factor = 0
+			NOT = { has_trait = trait_charismatic }
+		}
+	}
+}
+
+slavery_military = {	
+	modifier = {
+		army_damage_mult = 0.2
+	}
+	
+	pop_group_modifier = {
+		pop_happiness = -0.20
+	}
+
+	potential = {
+		host_has_dlc = "Utopia"
+		from = { is_any_hive_species = no }
+	}
+	
+	allow = {
+		hidden_trigger = { always = yes }
+        is_sapient = yes          
+	}
+	ai_will_do = {
+		factor = 5
+		modifier = {
+			factor = 0
+			NOT = { has_trait = trait_very_strong }
+		}
+	}
+}
+
+slavery_indentured = {
+	pop_group_modifier = {
+		pop_happiness = -0.20
+		pop_political_power = 0.50
+	}
+
+	potential = {
+		host_has_dlc = "Utopia"
+		from = { NOT = { has_ethic = ethic_gestalt_consciousness } }
+	}
+
+	allow = {
+		hidden_trigger = { always = yes }
+        is_sapient = yes          
+	}
+    ai_can_colonize = yes #otherwise, AI will not colonise with enslaved species
+    
+	ai_will_do = {
+		factor = 30
+		modifier = {
+			factor = 10
+			from = { has_valid_civic = civic_indentured_assets }
+		}
+        modifier = { # Syncretic Slaver Guild starts need their primary species to be in Indentured Service to avoid unemployment at game start.
+			factor = 10
+			from = {
+				has_valid_civic = civic_slaver_guilds
+				has_origin = origin_syncretic_evolution
+			}
+			is_same_species = owner_main_species
+		}
+		modifier = {
+			factor = 0
+			has_trait = trait_syncretic_proles
+		}
+	}
+}
+
+slavery_matrix = {
+	pop_group_modifier = {
+		pop_happiness = -0.40
+	}
+
+    pop_tooltip = MATRIX_LIVESTOCK
+	pop_status_frame = 6                           
+    
+	potential = {
+		from = { is_machine_empire = yes }
+        hidden_trigger = { always = no }
+	}
+
+	allow = {
+		hidden_trigger = { exists = from }
+		custom_tooltip = {
+			fail_text = species_is_not_mechanical
+			is_any_mechanical_species = no ### Robots can't enslave other robots
+		}
+	}
+
+	ai_will_do = {
+		factor = 50		
+	}
+}
+
+slavery_livestock = {
+	pop_group_modifier = {
+		pop_happiness = -0.40
+	}
+    
+    pop_tooltip = LIVESTOCK
+	pop_status_frame = 6
+
+	potential = {
+		# host_has_dlc = "Utopia"
+		from = { is_any_hive_species = no }
+	}
+
+	allow = {
+		hidden_trigger = { exists = from }
+		custom_tooltip = {
+			fail_text = CANNOT_LIVESTOCK_MATRIX_MACHINES
+			is_organic_species = yes
+		}
+		custom_tooltip = {
+			fail_text = empire_not_fanatic_xenophobe_or_hunter
+            from = {
+                OR = {
+                    has_ethic = ethic_fanatic_xenophobe
+                    has_active_tradition = tr_the_hunt_adopt
+                }
+            }
+		}		
+	}
+	ai_will_do = {
+		factor = 3
+		modifier = {
+			factor = 0
+			NOR = {
+				has_trait = trait_delicious
+				has_trait = trait_naturally_delicious
+                has_trait = trait_engineered_prey
+			}
+		}
+		modifier = {
+			factor = 100
+			exists = from
+			from = { is_species_class = BAU }
+			is_species_class = KEL
+		}
+        modifier = {
+			factor = 100
+			exists = from
+			from = { has_origin = origin_oschean_hunters }
+			has_trait = trait_engineered_prey
+		}	
+	}
+}

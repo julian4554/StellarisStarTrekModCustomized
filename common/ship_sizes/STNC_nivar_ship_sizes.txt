@@ -1,0 +1,3 @@
+###LIGHT CRUISER###
+inline_script = { script = "ships/light_cruiser" MAP_ICON = "nivar" SHIP = "nivar_razor" TIER = "12" TARGET_LOCATORS = "4" CREW_COST = "default" }
+inline_script = { script = "ships/light_cruiser_xc" MAP_ICON = "nivar" SHIP = "nivar_razor" TIER = "12" TARGET_LOCATORS = "4" CREW_COST = "default" }

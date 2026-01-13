@@ -1,0 +1,8 @@
+###SCOUT###
+inline_script = { script = "ships/scout" SHIP = "betelgeusian_kana" TIER = "0" TARGET_LOCATORS = "2" CREW_COST = "default" MAP_ICON = "betelgeusian" }
+
+###DESTROYER###
+inline_script = { script = "ships/destroyer" SHIP = "betelgeusian_ceraka" TIER = "2" TARGET_LOCATORS = "2" CREW_COST = "default" MAP_ICON = "betelgeusian" }
+
+##CRUISER###
+inline_script = { script = "ships/cruiser" SHIP = "betelgeusian_juva" TIER = "3" TARGET_LOCATORS = "2" CREW_COST = "default" MAP_ICON = "betelgeusian" }

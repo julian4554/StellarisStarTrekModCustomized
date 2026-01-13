@@ -1,0 +1,13 @@
+###FRIGATE###
+inline_script = { script = "ships/frigate" MAP_ICON = "klingon_house" SHIP = "klingon_house_mchala" TIER = "3" TARGET_LOCATORS = "2" CREW_COST = "default" }
+
+###DESTROYER###
+inline_script = { script = "ships/destroyer" MAP_ICON = "klingon_house" SHIP = "klingon_house_batlh" TIER = "3" TARGET_LOCATORS = "2" CREW_COST = "default" }
+inline_script = { script = "ships/destroyer" MAP_ICON = "klingon_house" SHIP = "klingon_house_sech" TIER = "3" TARGET_LOCATORS = "2" CREW_COST = "default" }
+
+###CRUISER###
+inline_script = { script = "ships/cruiser" MAP_ICON = "klingon_house" SHIP = "klingon_house_qatlh" TIER = "3" TARGET_LOCATORS = "2" CREW_COST = "default" }
+inline_script = { script = "ships/cruiser" MAP_ICON = "klingon_house" SHIP = "klingon_house_jach" TIER = "3" TARGET_LOCATORS = "2" CREW_COST = "default" }
+
+###FLEET COMMAND CRUISER
+inline_script = { script = "ships/fleet_command_cruiser" MAP_ICON = "klingon_house_hegh" SHIP = "klingon_house_hegh_duj" TIER = "3" TARGET_LOCATORS = "5" CREW_COST = "default" }

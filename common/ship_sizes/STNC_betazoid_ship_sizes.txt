@@ -1,0 +1,25 @@
+###SCOUT###
+inline_script = { script = "ships/scout" SHIP = "betazoid_avandar" TIER = "0" TARGET_LOCATORS = "2" CREW_COST = "default" MAP_ICON = "betazoid" }
+
+###FRIGATE###
+inline_script = { script = "ships/frigate" SHIP = "betazoid_dekoa" TIER = "5" TARGET_LOCATORS = "4" CREW_COST = "default" MAP_ICON = "betazoid" }
+
+###DESTROYER###
+inline_script = { script = "ships/light_cruiser" SHIP = "betazoid_merandar" TIER = "4" TARGET_LOCATORS = "2" CREW_COST = "default" MAP_ICON = "betazoid" }
+
+###LIGHT CRUISER###
+inline_script = { script = "ships/light_cruiser" SHIP = "betazoid_khara" TIER = "2" TARGET_LOCATORS = "2" CREW_COST = "default" MAP_ICON = "betazoid" }
+inline_script = { script = "ships/light_cruiser_xc" SHIP = "betazoid_khara" TIER = "2" TARGET_LOCATORS = "2" CREW_COST = "default" MAP_ICON = "betazoid" }
+
+###CRUISER###
+inline_script = { script = "ships/cruiser" SHIP = "betazoid_arandel" TIER = "8" TARGET_LOCATORS = "2" CREW_COST = "default" MAP_ICON = "betazoid" }
+inline_script = { script = "ships/cruiser_xc" SHIP = "betazoid_arandel" TIER = "8" TARGET_LOCATORS = "2" CREW_COST = "default" MAP_ICON = "betazoid" }
+
+###HEAVY CRUISER###
+inline_script = { script = "ships/heavy_cruiser" SHIP = "betazoid_hedaya" TIER = "11" TARGET_LOCATORS = "2" CREW_COST = "default" MAP_ICON = "betazoid" }
+
+###COMMAND CRUISER###
+inline_script = { script = "ships/command_cruiser" SHIP = "betazoid_indar" TIER = "6" TARGET_LOCATORS = "3" CREW_COST = "default" MAP_ICON = "betazoid" }
+
+###FLEET COMMAND CRUISER
+inline_script = { script = "ships/fleet_command_cruiser" SHIP = "betazoid_iscandar" TIER = "7" TARGET_LOCATORS = "4" CREW_COST = "default" MAP_ICON = "betazoid" }

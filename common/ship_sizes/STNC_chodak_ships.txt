@@ -1,0 +1,8 @@
+###SCOUT###
+inline_script = { script = "ships/scout" MAP_ICON = "chodak" SHIP = "chodak_pax" TIER = "0" TARGET_LOCATORS = "2" CREW_COST = "default" }
+
+##CRUISER###
+inline_script = { script = "ships/cruiser" MAP_ICON = "chodak" SHIP = "chodak_concord" TIER = "4" TARGET_LOCATORS = "2" CREW_COST = "default" }
+
+###DREADNOUGHT###
+inline_script = { script = "ships/dreadnought" MAP_ICON = "chodak" SHIP = "chodak_harmony" TIER = "8" TARGET_LOCATORS = "2" CREW_COST = "default" }

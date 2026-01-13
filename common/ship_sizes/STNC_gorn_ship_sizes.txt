@@ -1,0 +1,26 @@
+###FRIGATE###
+inline_script = { script = "ships/frigate" MAP_ICON = "gorn" SHIP = "gorn_adder" TIER = "4" TARGET_LOCATORS = "2" CREW_COST = "default" }
+
+###HEAVY FRIGATE###
+inline_script = { script = "ships/heavy_frigate" MAP_ICON = "gorn" SHIP = "gorn_agama" TIER = "4" TARGET_LOCATORS = "3" CREW_COST = "default" }   #PIRATE
+
+###SCOUT###
+inline_script = { script = "ships/scout" MAP_ICON = "gorn" SHIP = "gorn_cobra" TIER = "0" TARGET_LOCATORS = "2" CREW_COST = "default" }
+
+###ATTACK WING
+inline_script = { script = "ships/attack_wing" MAP_ICON = "gorn" SHIP = "gorn_vivipara" TIER = "3" TARGET_LOCATORS = "2" CREW_COST = "default" }
+
+###DESTROYER###
+inline_script = { script = "ships/destroyer" MAP_ICON = "gorn" SHIP = "gorn_monitor" TIER = "1" TARGET_LOCATORS = "2" CREW_COST = "default" }
+inline_script = { script = "ships/destroyer" MAP_ICON = "gorn" SHIP = "gorn_anaconda" TIER = "5" TARGET_LOCATORS = "2" CREW_COST = "default" }
+
+##CRUISER###
+inline_script = { script = "ships/cruiser" MAP_ICON = "gorn" SHIP = "gorn_uromastyx" TIER = "3" TARGET_LOCATORS = "2" CREW_COST = "default" }
+inline_script = { script = "ships/cruiser_xc" MAP_ICON = "gorn" SHIP = "gorn_uromastyx" TIER = "3" TARGET_LOCATORS = "2" CREW_COST = "default" }
+
+##HEAVY CRUISER###
+inline_script = { script = "ships/heavy_cruiser" MAP_ICON = "gorn" SHIP = "gorn_varanid" TIER = "5" TARGET_LOCATORS = "2" CREW_COST = "default" }
+inline_script = { script = "ships/heavy_cruiser" MAP_ICON = "gorn" SHIP = "gorn_tegu" TIER = "8" TARGET_LOCATORS = "2" CREW_COST = "default" }
+
+##BATTLESHIP###
+inline_script = { script = "ships/battleship" MAP_ICON = "gorn" SHIP = "gorn_grendel" TIER = "7" TARGET_LOCATORS = "2" CREW_COST = "default" }

@@ -1,0 +1,78 @@
+###COMMAND CRUISER###
+inline_script = { script = "ships/command_cruiser" MAP_ICON = "starfleet_32" SHIP = "starfleet_32_friendship" TIER = "15" TARGET_LOCATORS = "5" CREW_COST = "default" }
+
+###DESTROYER###
+inline_script = { script = "ships/destroyer" MAP_ICON = "starfleet_32" SHIP = "starfleet_32_wells" TIER = "14" TARGET_LOCATORS = "3" CREW_COST = "default" }
+
+###LIGHT CRUISER###
+inline_script = { script = "ships/light_cruiser" MAP_ICON = "starfleet_32" SHIP = "starfleet_32_intrepid" TIER = "15" TARGET_LOCATORS = "5" CREW_COST = "default" }
+
+###CRUISER###
+inline_script = { script = "ships/cruiser" MAP_ICON = "starfleet_32" SHIP = "starfleet_32_wanderer" TIER = "15" TARGET_LOCATORS = "4" CREW_COST = "default" }
+
+###BATTLECRUISERS###
+inline_script = { script = "ships/battlecruiser" MAP_ICON = "starfleet_32" SHIP = "starfleet_32_kirk" TIER = "15" TARGET_LOCATORS = "5" CREW_COST = "default" }
+
+##HEAVY CRUISER###
+inline_script = { script = "ships/heavy_cruiser" MAP_ICON = "starfleet_32" SHIP = "starfleet_32_saturn" TIER = "15" TARGET_LOCATORS = "6" CREW_COST = "default" }
+
+##CITY SHIP###
+starfleet_32_universe = {
+	formation_priority = @city_ship_formation_priority
+	max_speed = @city_ship_max_speed_14
+	acceleration = @city_ship_acceleration_14
+	rotation_speed = @city_ship_rotation_speed_14
+	collision_radius = 2
+	max_hitpoints = @city_ship_max_hitpoints_14
+	resources = {
+		category = ships
+		upkeep = { crew = @default_city_ship_crew_upkeep }
+		cost = { crew = @default_city_ship_crew_cost }
+	}
+	modifier = {
+		sh_city_ship_base_stats = 1
+	}
+	combat_disengage_chance = @city_ship_disengagement_chance
+	ship_modifier = {
+		ship_size_value = @city_ship_size
+		ship_type_value = @city_ship_class_id
+        ship_class_value = @shipclass_cityship_value
+		ship_tier_value = 14
+	}
+	is_space_object = yes
+	combat_size_multiplier = 5
+	size_multiplier = 32
+	fleet_slot_size = 32
+	num_target_locators = 7
+	# is_space_station = no
+	can_disable = no
+	icon = ship_size_starfleet_32_universe
+	icon_frame = 7 #probably unused, but mobile starbases are special
+	ship_class_icon_frame = 35
+	base_buildtime = @city_ship_base_buildtime_14
+	can_have_federation_design = no
+	enable_default_design = yes
+	default_behavior = carrier
+	prerequisites = { "tech_starfleet_32_universe_1" }
+	potential_country = { can_design_ship = { ship = "starfleet_32_universe" } }
+	class = shipclass_starbase
+	construction_type = starbase_shipyard
+	section_slots = { "mid" = { locator = "part1" } }
+	
+	required_component_set = "required_sensor_dreadnought"
+	required_component_set = "required_warp_dreadnought"
+	required_component_set = "required_impulse_dreadnought"
+	required_component_set = "required_hull_dreadnought"	
+	required_component_set = "required_shield_dreadnought"
+	required_component_set = "required_unique_dreadnought"
+	required_component_set = "required_countermeasures_dreadnought"
+    required_component_set = "required_mission_dreadnought"
+	potential_construction = {
+		can_construct_ship = { ship = "starfleet_32_universe" }
+		# always = no
+	}
+	ai_ship_data = {
+		min = 1
+        max = 2        
+    }
+}

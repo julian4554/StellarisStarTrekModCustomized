@@ -1,0 +1,14 @@
+###SCOUT###
+inline_script = { script = "ships/scout" MAP_ICON = "skorr" SHIP = "skorr_raven" TIER = "0" TARGET_LOCATORS = "4" CREW_COST = "default" }
+
+###FRIGATE###
+inline_script = { script = "ships/frigate" MAP_ICON = "skorr" SHIP = "skorr_sparrow" TIER = "0" TARGET_LOCATORS = "2" CREW_COST = "default" }
+
+###HEAVY ESCORT
+inline_script = { script = "ships/heavy_escort" MAP_ICON = "skorr" SHIP = "skorr_hawk" TIER = "1" TARGET_LOCATORS = "2" CREW_COST = "default" }
+
+##BATTLECRUISER##
+inline_script = { script = "ships/battlecruiser" MAP_ICON = "skorr" SHIP = "skorr_kestrel" TIER = "2" TARGET_LOCATORS = "2" CREW_COST = "default" }
+
+##BATTLESHIP###
+inline_script = { script = "ships/battleship" MAP_ICON = "skorr" SHIP = "skorr_eagle" TIER = "4" TARGET_LOCATORS = "2" CREW_COST = "default" }

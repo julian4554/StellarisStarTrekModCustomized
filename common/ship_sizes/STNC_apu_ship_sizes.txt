@@ -1,0 +1,14 @@
+###FRIGATE###
+inline_script = { script = "ships/frigate" SHIP = "apu_coadjutor" TIER = "0" TARGET_LOCATORS = "2" CREW_COST = "default" MAP_ICON = "apu" }
+
+###SCOUT###
+inline_script = { script = "ships/scout" SHIP = "apu_evaluator" TIER = "0" TARGET_LOCATORS = "2" CREW_COST = "default" MAP_ICON = "apu" }
+
+###LIGHT CRUISER###
+inline_script = { script = "ships/light_cruiser" SHIP = "apu_interpreter" TIER = "3" TARGET_LOCATORS = "2" CREW_COST = "default" MAP_ICON = "apu" }
+
+###HEAVY CRUISER
+inline_script = { script = "ships/heavy_cruiser" SHIP = "apu_adjutant" TIER = "5" TARGET_LOCATORS = "2" CREW_COST = "default" MAP_ICON = "apu" }
+
+###BATTLESHIP###
+inline_script = { script = "ships/battleship" SHIP = "apu_facilitator" TIER = "6" TARGET_LOCATORS = "2" CREW_COST = "default" MAP_ICON = "apu" }

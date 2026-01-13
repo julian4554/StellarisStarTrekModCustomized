@@ -1,0 +1,237 @@
+###FRIGATES###
+inline_script = { script = "ships/frigate" SHIP = "borg_octohedron" TIER = "0" TARGET_LOCATORS = "2" CREW_COST = "default" MAP_ICON = "borg" }
+inline_script = { script = "ships/frigate" SHIP = "borg_interceptor" TIER = "5" TARGET_LOCATORS = "2" CREW_COST = "default" MAP_ICON = "borg" }
+
+
+###SCOUT###
+inline_script = { script = "ships/scout" SHIP = "borg_scout_cube" TIER = "0" TARGET_LOCATORS = "2" CREW_COST = "default" MAP_ICON = "borg" }
+inline_script = { script = "ships/scout" SHIP = "borg_probe" TIER = "6" TARGET_LOCATORS = "2" CREW_COST = "default" MAP_ICON = "borg" }
+
+###DESTROYERS###
+inline_script = { script = "ships/destroyer" SHIP = "borg_prism" TIER = "3" TARGET_LOCATORS = "2" CREW_COST = "default" MAP_ICON = "borg" }
+inline_script = { script = "ships/destroyer" SHIP = "borg_rhombohedron" TIER = "10" TARGET_LOCATORS = "3" CREW_COST = "default" MAP_ICON = "borg" }
+
+###HEAVY ESCORT###
+inline_script = { script = "ships/heavy_escort" SHIP = "borg_pyramid" TIER = "1" TARGET_LOCATORS = "2" CREW_COST = "default" MAP_ICON = "borg" }
+inline_script = { script = "ships/heavy_escort" SHIP = "borg_tetrahedron" TIER = "8" TARGET_LOCATORS = "4" CREW_COST = "default" MAP_ICON = "borg" }
+
+###LIGHT CRUISERS###
+inline_script = { script = "ships/light_cruiser" SHIP = "borg_demisphere" TIER = "5" TARGET_LOCATORS = "6" CREW_COST = "default" MAP_ICON = "borg" }
+
+###CRUISERS###
+inline_script = { script = "ships/cruiser" SHIP = "borg_sphere" TIER = "4" TARGET_LOCATORS = "2" CREW_COST = "default" MAP_ICON = "borg" }
+inline_script = { script = "ships/cruiser" SHIP = "borg_tactical_sphere" TIER = "9" TARGET_LOCATORS = "6" CREW_COST = "default" MAP_ICON = "borg" }
+
+###BATTLESHIPS####
+inline_script = { script = "ships/battleship" SHIP = "borg_sub_cube" TIER = "6" TARGET_LOCATORS = "2" CREW_COST = "default" MAP_ICON = "borg" }
+
+###COMMAND CRUISERS###
+inline_script = { script = "ships/command_cruiser" SHIP = "borg_diamond" TIER = "5" TARGET_LOCATORS = "2" CREW_COST = "default" MAP_ICON = "borg" }
+
+###DREADNOUGHTS###
+inline_script = { script = "ships/dreadnought" SHIP = "borg_cube" TIER = "7" TARGET_LOCATORS = "2" CREW_COST = "default" MAP_ICON = "borg" }
+inline_script = { script = "ships/dreadnought" SHIP = "borg_tactical_cube" TIER = "9" TARGET_LOCATORS = "2" CREW_COST = "default" MAP_ICON = "borg" }
+
+###FLEET COMMAND CRUISERS###
+inline_script = { script = "ships/fleet_command_cruiser" SHIP = "borg_command_cube" TIER = "8" TARGET_LOCATORS = "2" CREW_COST = "default" MAP_ICON = "borg" }
+
+###HEAVY WEAPON PLATFORM###
+borg_assimilator = {
+	entity = borg_assimilator_entity
+    formation_priority = @dreadnought_formation_priority
+	max_speed = @dreadnought_max_speed_10
+	acceleration = @dreadnought_acceleration_10
+	rotation_speed = @dreadnought_rotation_speed_10
+	collision_radius = 2
+	max_hitpoints = @dreadnought_max_hitpoints_10
+	resources = {
+		category = ships
+		upkeep = { crew = @default_heavy_weapon_platform_crew_upkeep }
+		cost = { crew = @default_heavy_weapon_platform_crew_cost }
+	}
+	modifier = {
+		sh_heavy_weapon_platform_base_stats = 1
+	}
+	combat_disengage_chance = @heavy_weapon_platform_disengagement_chance
+	ship_modifier = {
+		ship_size_value = @heavy_weapon_platform_size
+		ship_type_value = @heavy_weapon_platform_class_id
+        ship_class_value = @shipclass_military_special_value
+		ship_tier_value = 10
+	}
+    map_icon_override = {
+		normal = GFX_fleet_presence_icons_borg
+		mixed = GFX_fleet_presence_icons_mixed_borg
+		cloaked = GFX_fleet_presence_icons_cloaked_borg
+	}
+	is_space_object = yes
+	size_multiplier = 16
+	fleet_slot_size = 8
+	num_target_locators = 2
+	is_space_station = no
+	icon = ship_size_borg_assimilator
+	base_buildtime = @dreadnought_base_buildtime_10
+	can_have_federation_design = no
+	enable_default_design = yes
+	default_behavior = artillery
+	prerequisites = { "tech_borg_assimilator_1" }
+	potential_country = { can_design_ship = { ship = "borg_assimilator" } }
+	class = shipclass_military_special
+	ship_roles = { brawler gunship explosive carrier screen artillery }
+	construction_type = starbase_shipyard
+	section_slots = { "mid" = { locator = "part1" } }
+	
+	required_component_set = "required_sensor_dreadnought"
+	required_component_set = "required_warp_dreadnought"
+	required_component_set = "required_impulse_dreadnought"
+	required_component_set = "required_hull_dreadnought"	
+	required_component_set = "required_shield_dreadnought"
+	required_component_set = "required_unique_dreadnought"
+	required_component_set = "required_countermeasures_dreadnought"
+    required_component_set = "required_mission_dreadnought"
+	potential_construction = {
+        host_has_dlc = "Apocalypse"
+        can_construct_ship = { ship = "borg_assimilator" }
+        owner = { planet_killers_banned = no }
+	}
+    ai_ship_data = {
+		min = 1
+        max = 2        
+    }
+}
+
+##CITY SHIP###
+borg_unimatrix = {
+	formation_priority = @city_ship_formation_priority
+	max_speed = @city_ship_max_speed_9
+	acceleration = @city_ship_acceleration_9
+	rotation_speed = @city_ship_rotation_speed_9
+	collision_radius = 2
+	max_hitpoints = @city_ship_max_hitpoints_9
+	resources = {
+		category = ships
+		upkeep = { crew = @default_city_ship_crew_upkeep }
+		cost = { crew = @default_city_ship_crew_cost }
+	}
+	modifier = {
+		sh_city_ship_base_stats = 1
+		starbase_shipyard_capacity_add = 2
+	}
+    ship_modifier = {
+        ship_size_value = @city_ship_size
+        ship_tier_value = 9
+        ship_type_value = @city_ship_class_id
+        ship_class_value = @shipclass_cityship_value
+    }
+    map_icon_override = {
+		normal = GFX_fleet_presence_icons_borg
+		mixed = GFX_fleet_presence_icons_mixed_borg
+		cloaked = GFX_fleet_presence_icons_cloaked_borg
+	}
+	is_space_object = yes
+	combat_size_multiplier = 5
+	size_multiplier = 32
+	fleet_slot_size = 32
+	num_target_locators = 10
+	# is_space_station = no
+	can_disable = no
+	icon = ship_size_borg_unimatrix
+	ship_class_icon_frame = 35
+	base_buildtime = @city_ship_base_buildtime_9
+	can_have_federation_design = no
+	enable_default_design = yes
+	default_behavior = carrier
+	prerequisites = { "tech_borg_unimatrix_1" }
+	potential_country = { 
+        can_design_ship = { ship = "borg_unimatrix" } 
+    }
+    possible_country = {
+        command_limit >= 32
+    }
+	class = shipclass_starbase
+	construction_type = starbase_shipyard
+	section_slots = { "mid" = { locator = "part1" } }
+	
+	required_component_set = "required_sensor_dreadnought"
+	required_component_set = "required_warp_dreadnought"
+	required_component_set = "required_impulse_dreadnought"
+	required_component_set = "required_hull_dreadnought"	
+	required_component_set = "required_shield_dreadnought"
+	required_component_set = "required_unique_dreadnought"
+	required_component_set = "required_countermeasures_dreadnought"
+    required_component_set = "required_mission_dreadnought"
+	potential_construction = {
+		can_construct_ship = { ship = "borg_unimatrix" }
+	}
+    ai_ship_data = {
+		min = 0
+        max = 2
+    }
+}
+
+###SUPER DREADNOUGHT###
+borg_fusion_cube = {
+	formation_priority = @city_ship_formation_priority
+	max_speed = @city_ship_max_speed_12
+	acceleration = @city_ship_acceleration_12
+	rotation_speed = @city_ship_rotation_speed_12
+	collision_radius = 2
+	max_hitpoints = @city_ship_max_hitpoints_12
+	resources = {
+		category = ships
+		upkeep = { crew = @default_super_dreadnought_crew_upkeep }
+		cost = { crew = @default_super_dreadnought_crew_cost }
+	}
+	modifier = { 
+		sh_super_dreadnought_base_stats = 1
+		# starbase_shipyard_capacity_add = 2        
+        ship_hull_mult = 2
+        ship_armor_mult = 2
+        ship_shield_mult = 2
+        ship_weapon_damage = 2
+	}
+    ship_modifier = {
+        ship_size_value = @super_dreadnought_size
+        ship_tier_value = 12
+        ship_type_value = @super_dreadnought_class_id
+    }
+    map_icon_override = {
+		normal = GFX_fleet_presence_icons_borg
+		mixed = GFX_fleet_presence_icons_mixed_borg
+		cloaked = GFX_fleet_presence_icons_cloaked_borg
+	}
+	is_space_object = yes
+	combat_size_multiplier = 5
+	size_multiplier = 32
+	fleet_slot_size = 32
+	num_target_locators = 8
+	# is_space_station = no
+	can_disable = no
+	icon = ship_size_borg_fusion_cube
+	base_buildtime = @city_ship_base_buildtime_12
+	can_have_federation_design = no
+	enable_default_design = yes
+	default_behavior = carrier
+	prerequisites = { "tech_borg_fusion_cube_1" }
+	potential_country = { can_design_ship = { ship = "borg_fusion_cube" } }
+    possible_country = { command_limit >= 32 }
+	class = shipclass_military
+	construction_type = starbase_shipyard
+	section_slots = { "mid" = { locator = "part1" } }
+	
+	required_component_set = "required_sensor_dreadnought"
+	required_component_set = "required_warp_dreadnought"
+	required_component_set = "required_impulse_dreadnought"
+	required_component_set = "required_hull_dreadnought"	
+	required_component_set = "required_shield_dreadnought"
+	required_component_set = "required_unique_dreadnought"
+	required_component_set = "required_countermeasures_dreadnought"
+    required_component_set = "required_mission_dreadnought"
+	potential_construction = {
+		can_construct_ship = { ship = "borg_fusion_cube" }
+	}
+    ai_ship_data = {
+		min = 0
+        max = 2
+    }
+}

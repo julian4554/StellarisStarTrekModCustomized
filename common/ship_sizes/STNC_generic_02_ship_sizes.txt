@@ -1,0 +1,27 @@
+###FRIGATES
+inline_script = { script = "ships/frigate" MAP_ICON = "generic_02" SHIP = "generic_02_arrer" TIER = "2" TARGET_LOCATORS = "2" CREW_COST = "default" }
+inline_script = { script = "ships/frigate" MAP_ICON = "generic_02" SHIP = "generic_02_arlai" TIER = "4" TARGET_LOCATORS = "2" CREW_COST = "default" }
+
+###SCOUTS
+inline_script = { script = "ships/scout" MAP_ICON = "generic_02" SHIP = "generic_02_erepa" TIER = "0" TARGET_LOCATORS = "2" CREW_COST = "default" }
+
+###DESTROYER
+inline_script = { script = "ships/destroyer" MAP_ICON = "generic_02" SHIP = "generic_02_pelsu" TIER = "2" TARGET_LOCATORS = "2" CREW_COST = "default" }
+
+###HEAVY ESCORT
+inline_script = { script = "ships/heavy_escort" MAP_ICON = "generic_02_dar" SHIP = "generic_02_dar_lefa" TIER = "4" TARGET_LOCATORS = "2" CREW_COST = "default" }
+
+###LIGHT CRUISER###
+inline_script = { script = "ships/light_cruiser" MAP_ICON = "generic_02_dar" SHIP = "generic_02_dar_sel" TIER = "3" TARGET_LOCATORS = "2" CREW_COST = "default" }
+
+###CRUISER
+inline_script = { script = "ships/cruiser" MAP_ICON = "generic_02" SHIP = "generic_02_vela" TIER = "4" TARGET_LOCATORS = "2" CREW_COST = "default" }
+
+###BATTLECRUISERS
+inline_script = { script = "ships/battlecruiser" MAP_ICON = "generic_02" SHIP = "generic_02_qilu" TIER = "7" TARGET_LOCATORS = "2" CREW_COST = "default" }
+
+###BATTLESHIP
+inline_script = { script = "ships/battleship" MAP_ICON = "generic_02" SHIP = "generic_02_velonai" TIER = "8" TARGET_LOCATORS = "2" CREW_COST = "default" }
+
+###FLEET COMMAND CRUISER
+inline_script = { script = "ships/fleet_command_cruiser" MAP_ICON = "generic_02" SHIP = "generic_02_meral" TIER = "9" TARGET_LOCATORS = "2" CREW_COST = "default" }

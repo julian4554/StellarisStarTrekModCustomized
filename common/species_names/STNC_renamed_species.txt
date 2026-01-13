@@ -1,0 +1,33 @@
+named_lists = {
+	hebitian_name = {
+		Hebitian = {
+			name = Hebitian
+			plural = Hebitians
+		}
+	}
+	cardassian_name = {
+		Cardassian = {
+			name = Cardassian
+			plural = Cardassians
+		}
+	}
+	darsay_name = {
+		Darsay = {
+			name = "D'Arsay"
+			plural = "D'Arsay"
+		}
+	}
+	human_augment_name = {
+		Augment = {
+			name = "Human Augment"
+			plural = "Human Augments"
+		}
+	}
+    
+    human_onlies_name = {
+		Only = {
+			name = "Only"
+			plural = "Onlies"
+		}
+	}
+}

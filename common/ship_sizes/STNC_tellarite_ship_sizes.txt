@@ -1,0 +1,28 @@
+###FRIGATE###
+inline_script = { script = "ships/frigate" MAP_ICON = "tellarite" SHIP = "tellarite_degbaxis" TIER = "0" TARGET_LOCATORS = "2" CREW_COST = "default" }
+
+###SCOUT###
+inline_script = { script = "ships/scout" MAP_ICON = "tellarite" SHIP = "tellarite_skev" TIER = "0" TARGET_LOCATORS = "2" CREW_COST = "default" }
+
+###SUPPORT WING###
+inline_script = { script = "ships/support_wing" MAP_ICON = "tellarite" SHIP = "tellarite_linz" TIER = "4" TARGET_LOCATORS = "4" CREW_COST = "default" }
+
+###DESTROYER###
+inline_script = { script = "ships/destroyer" MAP_ICON = "tellarite" SHIP = "tellarite_shallash" TIER = "1" TARGET_LOCATORS = "2" CREW_COST = "default" }
+
+##CRUISER###
+inline_script = { script = "ships/cruiser" MAP_ICON = "tellarite" SHIP = "tellarite_kehra" TIER = "5" TARGET_LOCATORS = "2" CREW_COST = "default" }
+
+##BATTLECRUISER###
+inline_script = { script = "ships/battlecruiser" MAP_ICON = "tellarite" SHIP = "tellarite_pralim" TIER = "3" TARGET_LOCATORS = "2" CREW_COST = "default" }
+inline_script = { script = "ships/battlecruiser_xc" MAP_ICON = "tellarite" SHIP = "tellarite_pralim" TIER = "3" TARGET_LOCATORS = "2" CREW_COST = "default" }
+inline_script = { script = "ships/battlecruiser" MAP_ICON = "tellarite" SHIP = "tellarite_duroc" TIER = "6" TARGET_LOCATORS = "2" CREW_COST = "default" }
+
+##HEAVY CRUISER###
+inline_script = { script = "ships/heavy_cruiser" MAP_ICON = "tellarite" SHIP = "tellarite_phindra" TIER = "7" TARGET_LOCATORS = "2" CREW_COST = "default" }
+
+##COMMAND CRUISER###
+inline_script = { script = "ships/command_cruiser" MAP_ICON = "tellarite" SHIP = "tellarite_gral" TIER = "8" TARGET_LOCATORS = "2" CREW_COST = "default" }
+
+###FLEET COMMAND CRUISER###
+inline_script = { script = "ships/fleet_command_cruiser" MAP_ICON = "tellarite" SHIP = "tellarite_gomu" TIER = "10" TARGET_LOCATORS = "3" CREW_COST = "default" }

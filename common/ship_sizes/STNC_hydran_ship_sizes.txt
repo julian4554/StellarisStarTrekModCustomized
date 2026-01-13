@@ -1,0 +1,17 @@
+###SCOUT###
+inline_script = { script = "ships/scout" MAP_ICON = "hydran" SHIP = "hydran_outrider" TIER = "0" TARGET_LOCATORS = "2" CREW_COST = "default" }
+
+###FRIGATE###
+inline_script = { script = "ships/frigate" MAP_ICON = "hydran" SHIP = "hydran_lancer" TIER = "0" TARGET_LOCATORS = "2" CREW_COST = "default" }
+
+###DESTROYER###
+inline_script = { script = "ships/destroyer" MAP_ICON = "hydran" SHIP = "hydran_ranger" TIER = "2" TARGET_LOCATORS = "2" CREW_COST = "default" }
+
+##CRUISER###
+inline_script = { script = "ships/cruiser" MAP_ICON = "hydran" SHIP = "hydran_corsair" TIER = "4" TARGET_LOCATORS = "2" CREW_COST = "default" }
+inline_script = { script = "ships/cruiser_xc" MAP_ICON = "hydran" SHIP = "hydran_corsair" TIER = "4" TARGET_LOCATORS = "2" CREW_COST = "default" }
+inline_script = { script = "ships/cruiser" MAP_ICON = "hydran" SHIP = "hydran_knight" TIER = "8" TARGET_LOCATORS = "4" CREW_COST = "default" }
+inline_script = { script = "ships/cruiser_xc" MAP_ICON = "hydran" SHIP = "hydran_knight" TIER = "8" TARGET_LOCATORS = "4" CREW_COST = "default" }
+
+##COMMAND CRUISER###
+inline_script = { script = "ships/command_cruiser" MAP_ICON = "hydran" SHIP = "hydran_monarch" TIER = "6" TARGET_LOCATORS = "2" CREW_COST = "default" }

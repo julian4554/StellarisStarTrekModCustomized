@@ -1,0 +1,191 @@
+###SCOUT###
+inline_script = { script = "ships/scout" MAP_ICON = "klingon" SHIP = "klingon_borghel" TIER = "0" TARGET_LOCATORS = "2" CREW_COST = "default" }
+inline_script = { script = "ships/scout" MAP_ICON = "klingon" SHIP = "klingon_blasrika" TIER = "3" TARGET_LOCATORS = "2" CREW_COST = "default" }
+inline_script = { script = "ships/scout" MAP_ICON = "klingon" SHIP = "klingon_homcha" TIER = "4" TARGET_LOCATORS = "2" CREW_COST = "default" }
+inline_script = { script = "ships/scout" MAP_ICON = "klingon" SHIP = "klingon_brel" TIER = "5" TARGET_LOCATORS = "2" CREW_COST = "default" }
+inline_script = { script = "ships/scout" MAP_ICON = "klingon" SHIP = "klingon_pagh" TIER = "7" TARGET_LOCATORS = "2" CREW_COST = "default" }
+inline_script = { script = "ships/scout" MAP_ICON = "klingon" SHIP = "klingon_qud" TIER = "10" TARGET_LOCATORS = "2" CREW_COST = "default" }
+
+###FRIGATE###
+inline_script = { script = "ships/frigate" MAP_ICON = "klingon" SHIP = "klingon_maveq" TIER = "1" TARGET_LOCATORS = "2" CREW_COST = "default" }
+inline_script = { script = "ships/frigate" MAP_ICON = "klingon" SHIP = "klingon_aad" TIER = "8" TARGET_LOCATORS = "3" CREW_COST = "default" }
+inline_script = { script = "ships/frigate" MAP_ICON = "klingon" SHIP = "klingon_heghjop" TIER = "11" TARGET_LOCATORS = "2" CREW_COST = "default" }
+
+###ATTACK WING###
+inline_script = { script = "ships/attack_wing" MAP_ICON = "klingon_noh" SHIP = "klingon_noh_qad" TIER = "8" TARGET_LOCATORS = "2" CREW_COST = "default" }
+
+###SUPPORT WING###
+inline_script = { script = "ships/support_wing" MAP_ICON = "klingon" SHIP = "klingon_mul" TIER = "0" TARGET_LOCATORS = "3" CREW_COST = "default" }
+inline_script = { script = "ships/support_wing" MAP_ICON = "klingon_taj" SHIP = "klingon_taj_mindu" TIER = "2" TARGET_LOCATORS = "2" CREW_COST = "default" }
+
+###DESTROYER###
+inline_script = { script = "ships/destroyer" MAP_ICON = "klingon" SHIP = "klingon_bortas" TIER = "2" TARGET_LOCATORS = "2" CREW_COST = "default" }
+inline_script = { script = "ships/destroyer" MAP_ICON = "klingon" SHIP = "klingon_mehadraw" TIER = "5" TARGET_LOCATORS = "2" CREW_COST = "default" }
+inline_script = { script = "ships/destroyer" MAP_ICON = "klingon" SHIP = "klingon_tajhu" TIER = "6" TARGET_LOCATORS = "2" CREW_COST = "default" }
+inline_script = { script = "ships/destroyer" MAP_ICON = "klingon_ngaj" SHIP = "klingon_ngaj_ho" TIER = "8" TARGET_LOCATORS = "2" CREW_COST = "default" }
+
+##HEAVY ESCORT##
+inline_script = { script = "ships/heavy_escort" MAP_ICON = "klingon" SHIP = "klingon_somraw" TIER = "1" TARGET_LOCATORS = "2" CREW_COST = "default" }
+inline_script = { script = "ships/heavy_escort" MAP_ICON = "klingon" SHIP = "klingon_tiche" TIER = "3" TARGET_LOCATORS = "2" CREW_COST = "default" }
+inline_script = { script = "ships/heavy_escort" MAP_ICON = "klingon" SHIP = "klingon_lhsahbel" TIER = "8" TARGET_LOCATORS = "4" CREW_COST = "default" }
+inline_script = { script = "ships/heavy_escort" MAP_ICON = "klingon" SHIP = "klingon_chadohubwi" TIER = "11" TARGET_LOCATORS = "2" CREW_COST = "default" }
+
+###LIGHT CRUISER###
+inline_script = { script = "ships/light_cruiser" MAP_ICON = "klingon" SHIP = "klingon_valkon" TIER = "5" TARGET_LOCATORS = "3" CREW_COST = "default" }
+
+###CRUISER###
+inline_script = { script = "ships/cruiser" MAP_ICON = "klingon" SHIP = "klingon_knel" TIER = "3" TARGET_LOCATORS = "3" CREW_COST = "default" }
+inline_script = { script = "ships/cruiser" MAP_ICON = "klingon_iw" SHIP = "klingon_iw_tel" TIER = "5" TARGET_LOCATORS = "3" CREW_COST = "default" }
+inline_script = { script = "ships/cruiser" MAP_ICON = "klingon" SHIP = "klingon_duqwi" TIER = "7" TARGET_LOCATORS = "3" CREW_COST = "default" }
+inline_script = { script = "ships/cruiser" MAP_ICON = "klingon" SHIP = "klingon_tlhumoh" TIER = "12" TARGET_LOCATORS = "4" CREW_COST = "default" }
+
+##BATTLECRUISER###
+inline_script = { script = "ships/battlecruiser" MAP_ICON = "klingon" SHIP = "klingon_qahos" TIER = "4" TARGET_LOCATORS = "2" CREW_COST = "default" }
+inline_script = { script = "ships/battlecruiser" MAP_ICON = "klingon" SHIP = "klingon_norgh" TIER = "6" TARGET_LOCATORS = "2" CREW_COST = "default" }
+inline_script = { script = "ships/battlecruiser" MAP_ICON = "klingon" SHIP = "klingon_kvort" TIER = "7" TARGET_LOCATORS = "6" CREW_COST = "default" }
+inline_script = { script = "ships/battlecruiser" MAP_ICON = "klingon" SHIP = "klingon_kamarag" TIER = "7" TARGET_LOCATORS = "2" CREW_COST = "default" }
+inline_script = { script = "ships/battlecruiser" MAP_ICON = "klingon" SHIP = "klingon_quviw" TIER = "10" TARGET_LOCATORS = "3" CREW_COST = "default" }
+
+##HEAVY CRUISER###
+inline_script = { script = "ships/heavy_cruiser" MAP_ICON = "klingon" SHIP = "klingon_klothos" TIER = "3" TARGET_LOCATORS = "2" CREW_COST = "default" }
+inline_script = { script = "ships/heavy_cruiser" MAP_ICON = "klingon" SHIP = "klingon_ktagga" TIER = "4" TARGET_LOCATORS = "2" CREW_COST = "default" }
+inline_script = { script = "ships/heavy_cruiser_xc" MAP_ICON = "klingon" SHIP = "klingon_ktagga" TIER = "4" TARGET_LOCATORS = "2" CREW_COST = "default" }
+inline_script = { script = "ships/heavy_cruiser" MAP_ICON = "klingon" SHIP = "klingon_ktinga" TIER = "5" TARGET_LOCATORS = "2" CREW_COST = "default" }
+inline_script = { script = "ships/heavy_cruiser_xc" MAP_ICON = "klingon" SHIP = "klingon_ktinga" TIER = "5" TARGET_LOCATORS = "2" CREW_COST = "default" }
+inline_script = { script = "ships/heavy_cruiser" MAP_ICON = "klingon" SHIP = "klingon_kvek" TIER = "6" TARGET_LOCATORS = "2" CREW_COST = "default" }
+inline_script = { script = "ships/heavy_cruiser" MAP_ICON = "klingon" SHIP = "klingon_roj" TIER = "7" TARGET_LOCATORS = "2" CREW_COST = "default" }
+inline_script = { script = "ships/heavy_cruiser" MAP_ICON = "klingon_fek" SHIP = "klingon_fek_lhr" TIER = "8" TARGET_LOCATORS = "2" CREW_COST = "default" }
+inline_script = { script = "ships/heavy_cruiser_xc" MAP_ICON = "klingon_fek" SHIP = "klingon_fek_lhr" TIER = "8" TARGET_LOCATORS = "2" CREW_COST = "default" }
+
+##BATTLESHIP###
+inline_script = { script = "ships/battleship" MAP_ICON = "klingon" SHIP = "klingon_ghiqtal" TIER = "5" TARGET_LOCATORS = "4" CREW_COST = "default" }
+inline_script = { script = "ships/battleship" MAP_ICON = "klingon" SHIP = "klingon_vorcha" TIER = "8" TARGET_LOCATORS = "2" CREW_COST = "default" }
+inline_script = { script = "ships/battleship_xc" MAP_ICON = "klingon" SHIP = "klingon_vorcha" TIER = "8" TARGET_LOCATORS = "2" CREW_COST = "default" }
+inline_script = { script = "ships/battleship" MAP_ICON = "klingon" SHIP = "klingon_horcha" TIER = "9" TARGET_LOCATORS = "3" CREW_COST = "default" }
+inline_script = { script = "ships/battleship" MAP_ICON = "klingon" SHIP = "klingon_neghvar" TIER = "10" TARGET_LOCATORS = "2" CREW_COST = "default" }
+inline_script = { script = "ships/battleship" MAP_ICON = "klingon_jej" SHIP = "klingon_jej_pach" TIER = "11" TARGET_LOCATORS = "4" CREW_COST = "default" }
+
+###DREADNOUGHT###
+inline_script = { script = "ships/dreadnought" MAP_ICON = "klingon" SHIP = "klingon_qunhoh" TIER = "6" TARGET_LOCATORS = "2" CREW_COST = "default" }
+klingon_qunhoh_pk = {
+	entity = klingon_qunhoh_entity
+    formation_priority = @dreadnought_formation_priority
+	max_speed = @dreadnought_max_speed_6
+	acceleration = @dreadnought_acceleration_6
+	rotation_speed = @dreadnought_rotation_speed_6
+	collision_radius = 2
+	max_hitpoints = @dreadnought_max_hitpoints_6
+	resources = {
+		category = ships
+		upkeep = { crew = @default_heavy_weapon_platform_crew_upkeep }
+		cost = { crew = @default_heavy_weapon_platform_crew_cost }
+	}
+	modifier = {
+		sh_dreadnought_base_stats = 1
+	}
+	combat_disengage_chance = @dreadnought_disengagement_chance
+	ship_modifier = {
+		ship_size_value = @heavy_weapon_platform_size
+		ship_type_value = @heavy_weapon_platform_class_id
+        ship_class_value = @shipclass_military_special_value
+		ship_tier_value = 6
+	}
+	is_space_object = yes
+	size_multiplier = 16
+	fleet_slot_size = 8
+	num_target_locators = 2
+	is_space_station = no
+	icon = ship_size_klingon_qunhoh
+	base_buildtime = @dreadnought_base_buildtime_6
+	can_have_federation_design = no
+	enable_default_design = yes
+	default_behavior = artillery
+	prerequisites = { "tech_klingon_qunhoh_1" }
+	potential_country = { can_design_ship = { ship = "klingon_qunhoh" } }
+	class = shipclass_military_special
+	ship_roles = { brawler gunship explosive carrier screen artillery }
+	construction_type = starbase_shipyard
+	section_slots = { "mid" = { locator = "part1" } }
+	
+	required_component_set = "required_sensor_dreadnought"
+	required_component_set = "required_warp_dreadnought"
+	required_component_set = "required_impulse_dreadnought"
+	required_component_set = "required_hull_dreadnought"	
+	required_component_set = "required_shield_dreadnought"
+	required_component_set = "required_unique_dreadnought"
+	required_component_set = "required_countermeasures_dreadnought"
+    required_component_set = "required_mission_dreadnought"
+	potential_construction = {
+		host_has_dlc = "Apocalypse"
+        can_construct_ship = { ship = "klingon_qunhoh" }
+        owner = { planet_killers_banned = no }
+	}
+	ai_ship_data = {
+		min = @heavy_weapon_platform_min
+        max = @heavy_weapon_platform_max
+    }
+}
+inline_script = { script = "ships/dreadnought" MAP_ICON = "klingon" SHIP = "klingon_jehjhong" TIER = "9" TARGET_LOCATORS = "2" CREW_COST = "default" }
+klingon_jehjhong_pk = {
+	entity = klingon_jehjhong_entity
+    formation_priority = @dreadnought_formation_priority
+	max_speed = @dreadnought_max_speed_9
+	acceleration = @dreadnought_acceleration_9
+	rotation_speed = @dreadnought_rotation_speed_9
+	collision_radius = 2
+	max_hitpoints = @dreadnought_max_hitpoints_9
+	resources = {
+		category = ships
+		upkeep = { crew = @default_heavy_weapon_platform_crew_upkeep }
+		cost = { crew = @default_heavy_weapon_platform_crew_cost }
+	}
+	modifier = {
+		sh_dreadnought_base_stats = 1
+	}
+	combat_disengage_chance = @dreadnought_disengagement_chance
+	ship_modifier = {
+		ship_size_value = @heavy_weapon_platform_size
+		ship_type_value = @heavy_weapon_platform_class_id
+        ship_class_value = @shipclass_military_special_value
+		ship_tier_value = 9
+	}
+	is_space_object = yes
+	size_multiplier = 16
+	fleet_slot_size = 8
+	num_target_locators = 2
+	is_space_station = no
+	icon = ship_size_klingon_jehjhong
+	base_buildtime = @dreadnought_base_buildtime_9
+	can_have_federation_design = no
+	enable_default_design = yes
+	default_behavior = artillery
+	prerequisites = { "tech_klingon_jehjhong_1" }
+	potential_country = { can_design_ship = { ship = "klingon_jehjhong" } }
+	class = shipclass_military_special
+	ship_roles = { brawler gunship explosive carrier screen artillery }
+	construction_type = starbase_shipyard
+	section_slots = { "mid" = { locator = "part1" } }
+	
+	required_component_set = "required_sensor_dreadnought"
+	required_component_set = "required_warp_dreadnought"
+	required_component_set = "required_impulse_dreadnought"
+	required_component_set = "required_hull_dreadnought"	
+	required_component_set = "required_shield_dreadnought"
+	required_component_set = "required_unique_dreadnought"
+	required_component_set = "required_countermeasures_dreadnought"
+    required_component_set = "required_mission_dreadnought"
+	potential_construction = {
+		host_has_dlc = "Apocalypse"
+        can_construct_ship = { ship = "klingon_jehjhong" }
+        owner = { planet_killers_banned = no }
+	}
+	ai_ship_data = {
+		min = @heavy_weapon_platform_min
+        max = @heavy_weapon_platform_max
+    }
+    # empire_limit = { 
+		# base = 1
+		# naval_cap_div = 600
+        # show = { is_scope_valid = yes has_technology = "tech_klingon_jehjhong_1" }
+	# }
+}

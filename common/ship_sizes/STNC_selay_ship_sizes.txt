@@ -1,0 +1,17 @@
+###SCOUT###
+inline_script = { script = "ships/scout" MAP_ICON = "selay" SHIP = "selay_yssan" TIER = "0" TARGET_LOCATORS = "2" CREW_COST = "default" }
+
+###LIGHT CRUISER###
+inline_script = { script = "ships/light_cruiser" MAP_ICON = "selay" SHIP = "selay_eosslin" TIER = "2" TARGET_LOCATORS = "2" CREW_COST = "default" }
+
+##BATTLECRUISER###
+inline_script = { script = "ships/battlecruiser" MAP_ICON = "selay" SHIP = "selay_sseaj" TIER = "4" TARGET_LOCATORS = "4" CREW_COST = "default" }
+
+##HEAVY CRUISER###
+inline_script = { script = "ships/heavy_cruiser" MAP_ICON = "selay" SHIP = "selay_erssai" TIER = "5" TARGET_LOCATORS = "4" CREW_COST = "default" }
+
+##COMMAND CRUISER###
+inline_script = { script = "ships/command_cruiser" MAP_ICON = "selay" SHIP = "selay_raensa" TIER = "6" TARGET_LOCATORS = "5" CREW_COST = "default" }
+
+###DREADNOUGHT###
+inline_script = { script = "ships/dreadnought" MAP_ICON = "selay" SHIP = "selay_okshans" TIER = "8" TARGET_LOCATORS = "2" CREW_COST = "default" }

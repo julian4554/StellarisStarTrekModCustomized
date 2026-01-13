@@ -1,0 +1,11 @@
+###SCOUT###
+inline_script = { script = "ships/scout" MAP_ICON = "rigelian" SHIP = "rigelian_apprentice" TIER = "0" TARGET_LOCATORS = "2" CREW_COST = "default" }
+
+###DESTROYER
+inline_script = { script = "ships/destroyer" MAP_ICON = "rigelian" SHIP = "rigelian_journeyman" TIER = "3" TARGET_LOCATORS = "2" CREW_COST = "default" }
+
+###CRUISER
+inline_script = { script = "ships/cruiser" MAP_ICON = "rigelian" SHIP = "rigelian_craftsman" TIER = "7" TARGET_LOCATORS = "2" CREW_COST = "default" }
+
+##BATTLESHIP###
+inline_script = { script = "ships/battleship" MAP_ICON = "rigelian" SHIP = "rigelian_artisan" TIER = "5" TARGET_LOCATORS = "4" CREW_COST = "default" }

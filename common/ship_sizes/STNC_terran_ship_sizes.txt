@@ -1,0 +1,56 @@
+###CITY SHIP###
+terran_charon = {
+	formation_priority = @dreadnought_formation_priority
+	max_speed = @dreadnought_max_speed_3
+	acceleration = @dreadnought_acceleration_3
+	rotation_speed = @dreadnought_rotation_speed_3
+	collision_radius = 2
+	max_hitpoints = @dreadnought_max_hitpoints_3
+	resources = {
+		category = ships
+		upkeep = { crew = @default_city_ship_crew_upkeep }
+		cost = { crew = @default_city_ship_crew_cost }
+	}
+	modifier = {
+		sh_city_ship_base_stats = 1
+        starbase_shipyard_capacity_add = 1
+	}
+    ship_modifier = {
+        ship_size_value = @city_ship_size
+		ship_type_value = @city_ship_class_id
+        ship_class_value = @shipclass_cityship_value
+		ship_tier_value = 3
+    }
+	is_space_object = yes
+	size_multiplier = 16
+	fleet_slot_size = 8
+	num_target_locators = 4
+	is_space_station = no
+	icon = ship_size_terran_charon
+	base_buildtime = @dreadnought_base_buildtime_3
+	can_have_federation_design = no
+	enable_default_design = yes
+	default_behavior = artillery
+	prerequisites = { "tech_terran_charon_1" }
+	potential_country = { can_design_ship = { ship = "terran_charon" } }
+	class = shipclass_military_special
+	ship_roles = { brawler gunship explosive carrier screen artillery }
+	construction_type = starbase_shipyard
+	section_slots = { "mid" = { locator = "part1" } }
+	
+	required_component_set = "required_sensor_dreadnought"
+	required_component_set = "required_warp_dreadnought"
+	required_component_set = "required_impulse_dreadnought"
+	required_component_set = "required_hull_dreadnought"	
+	required_component_set = "required_shield_dreadnought"
+	required_component_set = "required_unique_dreadnought"
+	required_component_set = "required_countermeasures_dreadnought"
+    required_component_set = "required_mission_dreadnought"
+	potential_construction = {
+		can_construct_ship = { ship = "terran_charon" }
+	}
+    ai_ship_data = {
+		min = 1
+        max = 2
+    }
+}

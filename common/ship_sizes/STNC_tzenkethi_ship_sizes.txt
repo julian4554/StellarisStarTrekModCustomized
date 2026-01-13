@@ -1,0 +1,11 @@
+###SCOUT###
+inline_script = { script = "ships/scout" MAP_ICON = "tzenkethi_thas" SHIP = "tzenkethi_thas_hez" TIER = "0" TARGET_LOCATORS = "2" CREW_COST = "default" }
+
+###DESTROYER###
+inline_script = { script = "ships/destroyer" MAP_ICON = "tzenkethi_chel" SHIP = "tzenkethi_chel_vaz" TIER = "2" TARGET_LOCATORS = "2" CREW_COST = "default" }
+
+###HEAVY CRUISER
+inline_script = { script = "ships/light_cruiser" MAP_ICON = "tzenkethi_jek" SHIP = "tzenkethi_jek_zan" TIER = "4" TARGET_LOCATORS = "2" CREW_COST = "default" }
+
+##BATTLESHIP###
+inline_script = { script = "ships/battleship" MAP_ICON = "tzenkethi_czel" SHIP = "tzenkethi_czel_det" TIER = "5" TARGET_LOCATORS = "3" CREW_COST = "default" }

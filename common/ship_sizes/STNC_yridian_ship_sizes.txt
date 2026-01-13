@@ -1,0 +1,17 @@
+###SCOUT###
+inline_script = { script = "ships/scout" MAP_ICON = "yridian" SHIP = "yridian_pryer" TIER = "0" TARGET_LOCATORS = "2" CREW_COST = "default" }
+
+###DESTROYER###
+inline_script = { script = "ships/destroyer" MAP_ICON = "yridian" SHIP = "yridian_prowler" TIER = "2" TARGET_LOCATORS = "4" CREW_COST = "default" }
+
+###LIGHT CRUISER###
+inline_script = { script = "ships/light_cruiser" MAP_ICON = "yridian" SHIP = "yridian_snooper" TIER = "5" TARGET_LOCATORS = "3" CREW_COST = "default" }
+
+###CRUISER###
+inline_script = { script = "ships/cruiser" MAP_ICON = "yridian" SHIP = "yridian_inquirer" TIER = "4" TARGET_LOCATORS = "3" CREW_COST = "default" }
+
+###COMMAND CRUISER###
+inline_script = { script = "ships/command_cruiser" MAP_ICON = "yridian" SHIP = "yridian_scrutiniser" TIER = "6" TARGET_LOCATORS = "5" CREW_COST = "default" }
+
+###FLEET COMMAND CRUISER
+inline_script = { script = "ships/fleet_command_cruiser" MAP_ICON = "yridian" SHIP = "yridian_appraiser" TIER = "8" TARGET_LOCATORS = "5" CREW_COST = "default" }

@@ -1,0 +1,12 @@
+###SCOUT###
+inline_script = { script = "ships/scout" SHIP = "axanari_dukta_toras" TIER = "0" TARGET_LOCATORS = "2" CREW_COST = "default" MAP_ICON = "axanari" }
+
+###LIGHT CRUISER###
+inline_script = { script = "ships/light_cruiser" SHIP = "axanari_tunmeka" TIER = "3" TARGET_LOCATORS = "3" CREW_COST = "default" MAP_ICON = "axanari" }
+
+###CRUISER###
+inline_script = { script = "ships/cruiser" SHIP = "axanari_madringu" TIER = "5" TARGET_LOCATORS = "3" CREW_COST = "default" MAP_ICON = "axanari" }
+inline_script = { script = "ships/cruiser_xc" SHIP = "axanari_madringu" TIER = "5" TARGET_LOCATORS = "3" CREW_COST = "default" MAP_ICON = "axanari" }
+
+###BATTLESHIP###
+inline_script = { script = "ships/battleship" SHIP = "axanari_vektra_monak" TIER = "6" TARGET_LOCATORS = "5" CREW_COST = "default" MAP_ICON = "axanari" }

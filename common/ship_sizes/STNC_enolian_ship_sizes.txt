@@ -1,0 +1,15 @@
+###Scout###
+inline_script = { script = "ships/scout" MAP_ICON = "enolian" SHIP = "enolian_moesi" TIER = "0" TARGET_LOCATORS = "2" CREW_COST = "default" }
+
+###SUPPORT WING###
+inline_script = { script = "ships/support_wing" MAP_ICON = "enolian" SHIP = "enolian_noraes" TIER = "2" TARGET_LOCATORS = "3" CREW_COST = "default" }
+
+###DESTROYER###
+inline_script = { script = "ships/destroyer" MAP_ICON = "enolian" SHIP = "enolian_eduil" TIER = "3" TARGET_LOCATORS = "3" CREW_COST = "default" }
+
+###CRUISER###
+inline_script = { script = "ships/cruiser" MAP_ICON = "enolian" SHIP = "enolian_uneisa" TIER = "4" TARGET_LOCATORS = "4" CREW_COST = "default" }
+inline_script = { script = "ships/cruiser_xc" MAP_ICON = "enolian" SHIP = "enolian_uneisa" TIER = "4" TARGET_LOCATORS = "4" CREW_COST = "default" }
+
+###COMMAND CRUISER###
+# inline_script = { script = "ships/command_cruiser" MAP_ICON = "denobulan" SHIP = "denobulan_phelax" TIER = "6" TARGET_LOCATORS = "5" CREW_COST = "default" }

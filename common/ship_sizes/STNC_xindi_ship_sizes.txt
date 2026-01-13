@@ -1,0 +1,164 @@
+###SCOUT
+inline_script = { script = "ships/scout" MAP_ICON = "xindi" SHIP = "xindi_castroi" TIER = "0" TARGET_LOCATORS = "2" CREW_COST = "default" }
+inline_script = { script = "ships/scout" MAP_ICON = "xindi" SHIP = "xindi_nethal" TIER = "2" TARGET_LOCATORS = "2" CREW_COST = "default" }
+
+###FRIGATE###
+inline_script = { script = "ships/frigate" MAP_ICON = "xindi" SHIP = "xindi_benthoba" TIER = "1" TARGET_LOCATORS = "2" CREW_COST = "default" }
+inline_script = { script = "ships/frigate" MAP_ICON = "xindi" SHIP = "xindi_annulifera" TIER = "2" TARGET_LOCATORS = "2" CREW_COST = "default" }
+inline_script = { script = "ships/frigate" MAP_ICON = "xindi" SHIP = "xindi_dioclea" TIER = "3" TARGET_LOCATORS = "2" CREW_COST = "default" }
+
+###ATTACK WING###
+inline_script = { script = "ships/attack_wing" MAP_ICON = "xindi" SHIP = "xindi_tsekail" TIER = "8" TARGET_LOCATORS = "5" CREW_COST = "default" }
+
+###HEAVY ESCORTS###
+inline_script = { script = "ships/heavy_escort" MAP_ICON = "xindi" SHIP = "xindi_contortrix" TIER = "4" TARGET_LOCATORS = "2" CREW_COST = "default" }
+
+####DESTROYERS###
+inline_script = { script = "ships/destroyer" MAP_ICON = "xindi" SHIP = "xindi_olean" TIER = "3" TARGET_LOCATORS = "2" CREW_COST = "default" }
+inline_script = { script = "ships/destroyer" MAP_ICON = "xindi" SHIP = "xindi_elbali" TIER = "2" TARGET_LOCATORS = "4" CREW_COST = "default" }
+
+###LIGHT CRUISER###
+inline_script = { script = "ships/light_cruiser" MAP_ICON = "xindi" SHIP = "xindi_akoil" TIER = "5" TARGET_LOCATORS = "2" CREW_COST = "default" }
+
+###CRUISERS###
+inline_script = { script = "ships/cruiser" MAP_ICON = "xindi" SHIP = "xindi_erythrina" TIER = "2" TARGET_LOCATORS = "2" CREW_COST = "default" }
+inline_script = { script = "ships/cruiser" MAP_ICON = "xindi" SHIP = "xindi_liasis" TIER = "6" TARGET_LOCATORS = "3" CREW_COST = "default" }
+
+###HEAVY CRUISER###
+inline_script = { script = "ships/heavy_cruiser" MAP_ICON = "xindi" SHIP = "xindi_ateleth" TIER = "4" TARGET_LOCATORS = "2" CREW_COST = "default" }
+
+###BATTLECRUISERS###
+inline_script = { script = "ships/battlecruiser" MAP_ICON = "xindi" SHIP = "xindi_mobulai" TIER = "5" TARGET_LOCATORS = "2" CREW_COST = "default" }
+inline_script = { script = "ships/battlecruiser" MAP_ICON = "xindi" SHIP = "xindi_vizets" TIER = "6" TARGET_LOCATORS = "3" CREW_COST = "default" }
+
+###BATTLESHIPS###
+inline_script = { script = "ships/battleship" MAP_ICON = "xindi" SHIP = "xindi_eunectes" TIER = "5" TARGET_LOCATORS = "2" CREW_COST = "default" }
+
+###COMMAND CRUISERS###
+inline_script = { script = "ships/command_cruiser" MAP_ICON = "xindi" SHIP = "xindi_lethselan" TIER = "6" TARGET_LOCATORS = "3" CREW_COST = "default" }
+
+###DREADNOUGHT###
+inline_script = { script = "ships/dreadnought" MAP_ICON = "xindi" SHIP = "xindi_sulcata" TIER = "7" TARGET_LOCATORS = "3" CREW_COST = "default" }
+inline_script = { script = "ships/dreadnought" MAP_ICON = "xindi" SHIP = "xindi_heliolus" TIER = "8" TARGET_LOCATORS = "4" CREW_COST = "default" }
+inline_script = { script = "ships/dreadnought" MAP_ICON = "xindi" SHIP = "xindi_titanoboa" TIER = "9" TARGET_LOCATORS = "3" CREW_COST = "default" }
+
+###FLEET COMMAND CRUISER###
+inline_script = { script = "ships/fleet_command_cruiser" MAP_ICON = "xindi" SHIP = "xindi_narcine" TIER = "7" TARGET_LOCATORS = "5" CREW_COST = "default" }
+
+###WEAPON PLATFORM###
+xindi_probe = {
+	formation_priority = @cruiser_formation_priority
+	max_speed = @weapon_platform_max_speed_5
+	acceleration = @cruiser_acceleration_5
+	rotation_speed = @cruiser_rotation_speed_5
+	collision_radius = 2
+	max_hitpoints = @cruiser_max_hitpoints_5
+	resources = {
+		category = ships
+		upkeep = { crew = @default_weapon_platform_crew_upkeep }
+		cost = { crew = @default_weapon_platform_crew_cost }
+	}
+	modifier = {
+		sh_weapon_platform_base_stats = 1
+	}
+	combat_disengage_chance = @weapon_platform_disengagement_chance
+	ship_modifier = {
+		ship_size_value = @weapon_platform_size
+		ship_type_value = @weapon_platform_class_id
+        ship_class_value = @shipclass_military_special_value
+		ship_tier_value = 5
+	}
+	is_space_object = yes
+	size_multiplier = 4
+	fleet_slot_size = 3
+	num_target_locators = 2
+	is_space_station = no
+	icon = ship_size_xindi_probe
+	base_buildtime = @cruiser_base_buildtime_5
+	can_have_federation_design = no
+	enable_default_design = yes
+	default_behavior = line
+	prerequisites = { "tech_xindi_probe_1" }
+	potential_country = { can_design_ship = { ship = "xindi_probe" } }
+	class = shipclass_military_special
+	ship_roles = { brawler gunship explosive carrier screen artillery }
+	construction_type = starbase_shipyard
+	section_slots = { "mid" = { locator = "part1" } }
+	
+	required_component_set = "required_sensor_cruiser"
+	required_component_set = "required_warp_cruiser"
+	required_component_set = "required_impulse_cruiser"
+	required_component_set = "required_hull_cruiser"	
+	required_component_set = "required_shield_cruiser"
+	required_component_set = "required_unique_cruiser" 
+	required_component_set = "required_countermeasures_cruiser"
+    required_component_set = "required_mission_cruiser"
+	potential_construction = {
+		can_construct_ship = { ship = "xindi_probe" }
+        owner = { planet_killers_banned = no }
+	}
+	ai_ship_data = {
+		min = 1
+        max = 2
+    }
+}
+
+
+###HEAVY WEAPON PLATFORM###
+xindi_weapon = {
+	formation_priority = @dreadnought_formation_priority
+	max_speed = @heavy_weapon_platform_max_speed_7
+	acceleration = @dreadnought_acceleration_7
+	rotation_speed = @dreadnought_rotation_speed_7
+	collision_radius = 2
+	max_hitpoints = @dreadnought_max_hitpoints_7
+	resources = {
+		category = ships
+		upkeep = { crew = @default_heavy_weapon_platform_crew_upkeep }
+		cost = { crew = @default_heavy_weapon_platform_crew_cost }
+	}
+	modifier = {
+		sh_heavy_weapon_platform_base_stats = 1
+	}
+	combat_disengage_chance = @heavy_weapon_platform_disengagement_chance
+	ship_modifier = {
+		ship_size_value = @heavy_weapon_platform_size
+		ship_type_value = @heavy_weapon_platform_class_id
+        ship_class_value = @shipclass_military_special_value
+		ship_tier_value = 7
+	}
+	is_space_object = yes
+	size_multiplier = 16
+	fleet_slot_size = 8
+	num_target_locators = 2
+	is_space_station = no
+	icon = ship_size_xindi_weapon
+	base_buildtime = @dreadnought_base_buildtime_7
+	can_have_federation_design = no
+	enable_default_design = yes
+	default_behavior = artillery
+	prerequisites = { "tech_xindi_weapon_1" }
+	potential_country = { can_design_ship = { ship = "xindi_weapon" } }
+	class = shipclass_military_special
+	ship_roles = { brawler gunship explosive carrier screen artillery }
+	construction_type = starbase_shipyard
+	section_slots = { "mid" = { locator = "part1" } }
+	
+	required_component_set = "required_sensor_dreadnought"
+	required_component_set = "required_warp_dreadnought"
+	required_component_set = "required_impulse_dreadnought"
+	required_component_set = "required_hull_dreadnought"	
+	required_component_set = "required_shield_dreadnought"
+	required_component_set = "required_unique_dreadnought"
+	required_component_set = "required_countermeasures_dreadnought"
+    required_component_set = "required_mission_dreadnought"
+	potential_construction = {
+		can_construct_ship = { ship = "xindi_weapon" }
+        owner = { planet_killers_banned = no }
+	}
+	ai_ship_data = {
+		min = 1
+        max = 2
+    }
+}
+  

@@ -1,0 +1,11 @@
+###SCOUT###
+inline_script = { script = "ships/scout" SHIP = "zahl_orzhin" TIER = "0" TARGET_LOCATORS = "2" CREW_COST = "default" MAP_ICON = "zahl" }
+
+###LIGHT CRUISER###
+inline_script = { script = "ships/light_cruiser" SHIP = "zahl_razhel" TIER = "2" TARGET_LOCATORS = "2" CREW_COST = "default" MAP_ICON = "zahl" }
+
+##BATTLECRUISER###
+inline_script = { script = "ships/battlecruiser" SHIP = "zahl_phazhet" TIER = "3" TARGET_LOCATORS = "2" CREW_COST = "default" MAP_ICON = "zahl" }
+
+###BATTLESHIP###
+inline_script = { script = "ships/battleship" SHIP = "zahl_elozhu" TIER = "5" TARGET_LOCATORS = "2" CREW_COST = "default" MAP_ICON = "zahl" }

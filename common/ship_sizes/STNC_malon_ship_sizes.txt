@@ -1,0 +1,24 @@
+###FRIGATE###
+inline_script = { script = "ships/frigate" MAP_ICON = "malon" SHIP = "malon_smor" TIER = "0" TARGET_LOCATORS = "2" CREW_COST = "default" }
+
+###SCOUT###
+inline_script = { script = "ships/scout" MAP_ICON = "malon" SHIP = "malon_drek" TIER = "0" TARGET_LOCATORS = "3" CREW_COST = "default" }
+
+###DESTROYER###
+inline_script = { script = "ships/destroyer" MAP_ICON = "malon" SHIP = "malon_muhk" TIER = "2" TARGET_LOCATORS = "3" CREW_COST = "default" }
+
+###LIGHT CRUISER
+inline_script = { script = "ships/light_cruiser" MAP_ICON = "malon" SHIP = "malon_tyrdeh" TIER = "3" TARGET_LOCATORS = "3" CREW_COST = "default" }
+inline_script = { script = "ships/light_cruiser" MAP_ICON = "malon" SHIP = "malon_grohs" TIER = "8" TARGET_LOCATORS = "3" CREW_COST = "default" }
+
+###HEAVY CRUISER
+inline_script = { script = "ships/heavy_cruiser" MAP_ICON = "malon" SHIP = "malon_gryn" TIER = "3" TARGET_LOCATORS = "4" CREW_COST = "default" }
+
+###BATTLECRUISER
+inline_script = { script = "ships/battlecruiser" MAP_ICON = "malon" SHIP = "malon_dhyrt" TIER = "7" TARGET_LOCATORS = "3" CREW_COST = "default" }
+
+##BATTLESHIP###
+inline_script = { script = "ships/battleship" MAP_ICON = "malon" SHIP = "malon_polu" TIER = "5" TARGET_LOCATORS = "5" CREW_COST = "default" }
+
+###DREADNOUGHT###
+inline_script = { script = "ships/dreadnought" MAP_ICON = "malon" SHIP = "malon_axohn" TIER = "6" TARGET_LOCATORS = "5" CREW_COST = "default" }

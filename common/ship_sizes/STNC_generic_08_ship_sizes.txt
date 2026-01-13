@@ -1,0 +1,16 @@
+###FRIGATE###
+
+###SCOUT###
+inline_script = { script = "ships/scout" MAP_ICON = "generic_08" SHIP = "generic_08_tvyn" TIER = "0" TARGET_LOCATORS = "2" CREW_COST = "default" }
+
+##DESTROYER##
+inline_script = { script = "ships/destroyer" MAP_ICON = "generic_08" SHIP = "generic_08_sjak" TIER = "2" TARGET_LOCATORS = "3" CREW_COST = "default" }
+
+###LIGHT CRUISER###
+inline_script = { script = "ships/light_cruiser" MAP_ICON = "generic_08" SHIP = "generic_08_kyat" TIER = "7" TARGET_LOCATORS = "3" CREW_COST = "default" }
+
+###CRUISER###
+inline_script = { script = "ships/cruiser" MAP_ICON = "generic_08" SHIP = "generic_08_rmot" TIER = "3" TARGET_LOCATORS = "2" CREW_COST = "default" }
+
+##COMMAND CRUISERS###
+inline_script = { script = "ships/command_cruiser" MAP_ICON = "generic_08" SHIP = "generic_08_hgen" TIER = "6" TARGET_LOCATORS = "2" CREW_COST = "default" }

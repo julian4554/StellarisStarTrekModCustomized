@@ -1,0 +1,14 @@
+###FRIGATE###
+inline_script = { script = "ships/frigate" MAP_ICON = "first_federation" SHIP = "first_federation_kasan" TIER = "0" TARGET_LOCATORS = "2" CREW_COST = "default" }
+
+###DESTROYERS
+inline_script = { script = "ships/destroyer" MAP_ICON = "first_federation" SHIP = "first_federation_miratuli" TIER = "2" TARGET_LOCATORS = "2" CREW_COST = "default" }
+
+##CRUISER##
+inline_script = { script = "ships/cruiser" MAP_ICON = "first_federation" SHIP = "first_federation_chera" TIER = "4" TARGET_LOCATORS = "2" CREW_COST = "default" }
+
+###COMMAND CRUISER###
+inline_script = { script = "ships/command_cruiser" MAP_ICON = "first_federation" SHIP = "first_federation_deradia" TIER = "6" TARGET_LOCATORS = "2" CREW_COST = "default" }
+
+##DREADNOUGHT###
+inline_script = { script = "ships/dreadnought" MAP_ICON = "first_federation" SHIP = "first_federation_fesarius" TIER = "8" TARGET_LOCATORS = "2" CREW_COST = "default" }

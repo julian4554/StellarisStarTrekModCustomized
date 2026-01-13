@@ -1,0 +1,8 @@
+###SUPPORT WING###
+inline_script = { script = "ships/support_wing" MAP_ICON = "denobulan" SHIP = "denobulan_barzai" TIER = "0" TARGET_LOCATORS = "2" CREW_COST = "default" }
+
+###LIGHT CRUISER###
+inline_script = { script = "ships/light_cruiser" MAP_ICON = "denobulan" SHIP = "denobulan_ruzan" TIER = "3" TARGET_LOCATORS = "2" CREW_COST = "default" }
+
+###COMMAND CRUISER###
+inline_script = { script = "ships/command_cruiser" MAP_ICON = "denobulan" SHIP = "denobulan_phelax" TIER = "6" TARGET_LOCATORS = "5" CREW_COST = "default" }

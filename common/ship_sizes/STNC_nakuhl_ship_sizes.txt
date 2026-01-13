@@ -1,0 +1,74 @@
+
+###SCOUT###
+inline_script = { script = "ships/scout" MAP_ICON = "nakuhl" SHIP = "nakuhl_daekaari" TIER = "0" TARGET_LOCATORS = "3" CREW_COST = "default" }
+
+###DESTROYER###
+inline_script = { script = "ships/destroyer" MAP_ICON = "nakuhl" SHIP = "nakuhl_kelaari" TIER = "2" TARGET_LOCATORS = "2" CREW_COST = "default" }
+
+###LIGHT CRUISER###
+inline_script = { script = "ships/light_cruiser" MAP_ICON = "nakuhl" SHIP = "nakuhl_aemoros" TIER = "3" TARGET_LOCATORS = "2" CREW_COST = "default" }
+inline_script = { script = "ships/light_cruiser_xc" MAP_ICON = "nakuhl" SHIP = "nakuhl_aemoros" TIER = "3" TARGET_LOCATORS = "2" CREW_COST = "default" }
+
+###HEAVY CRUISERS###
+inline_script = { script = "ships/heavy_cruiser" MAP_ICON = "nakuhl" SHIP = "nakuhl_taremosh" TIER = "4" TARGET_LOCATORS = "2" CREW_COST = "default" }
+
+###DREADNOUGHT###
+inline_script = { script = "ships/dreadnought" MAP_ICON = "nakuhl" SHIP = "nakuhl_telkeshi" TIER = "9" TARGET_LOCATORS = "2" CREW_COST = "default" }
+nakuhl_telkeshi_pk = {
+	entity = nakuhl_telkeshi_entity
+    formation_priority = @dreadnought_formation_priority
+	max_speed = @dreadnought_max_speed_9
+	acceleration = @dreadnought_acceleration_9
+	rotation_speed = @dreadnought_rotation_speed_9
+	collision_radius = 2
+	max_hitpoints = @dreadnought_max_hitpoints_9
+	resources = {
+		category = ships
+		upkeep = { crew = @default_heavy_weapon_platform_crew_upkeep }
+		cost = { crew = @default_heavy_weapon_platform_crew_cost }
+	}
+	modifier = {
+		sh_heavy_weapon_platform_base_stats = 1
+	}
+	combat_disengage_chance = @heavy_weapon_platform_disengagement_chance
+	ship_modifier = {
+		ship_size_value = @heavy_weapon_platform_size
+		ship_type_value = @heavy_weapon_platform_class_id
+        ship_class_value = @shipclass_military_special_value
+		ship_tier_value = 9
+	}
+	is_space_object = yes
+	size_multiplier = 16
+	fleet_slot_size = 8
+	num_target_locators = 2
+	is_space_station = no
+	icon = ship_size_nakuhl_telkeshi
+	base_buildtime = @dreadnought_base_buildtime_9
+	can_have_federation_design = no
+	enable_default_design = yes
+	default_behavior = artillery
+	prerequisites = { "tech_nakuhl_telkeshi_1" }
+	potential_country = { can_design_ship = { ship = "nakuhl_telkeshi" } }
+	class = shipclass_military_special
+	ship_roles = { brawler gunship explosive carrier screen artillery }
+	construction_type = starbase_shipyard
+	section_slots = { "mid" = { locator = "part1" } }
+	
+	required_component_set = "required_sensor_dreadnought"
+	required_component_set = "required_warp_dreadnought"
+	required_component_set = "required_impulse_dreadnought"
+	required_component_set = "required_hull_dreadnought"	
+	required_component_set = "required_shield_dreadnought"
+	required_component_set = "required_unique_dreadnought"
+	required_component_set = "required_countermeasures_dreadnought"
+    required_component_set = "required_mission_dreadnought"
+	potential_construction = {
+		host_has_dlc = "Apocalypse"
+        can_construct_ship = { ship = "nakuhl_telkeshi" }
+        owner = { planet_killers_banned = no }
+	}
+    ai_ship_data = {
+		min = 1
+        max = 2
+    }
+}

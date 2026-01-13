@@ -1,0 +1,327 @@
+### STNC 3.12 Compatible ###
+
+
+@must_have_spawn_weight = 10000
+@should_have_spawn_weight = 100
+
+# The Species Classes defined here are generally not available to the character creator, but will instead appear in AI empires across the galaxy.
+# There is also portrait_sets database that contains sets of portraits associated with species classes.
+# 'graphical_culture' is connected to the looks used for ships and cities; see "common/graphical_culture/".
+# playable = yes/no/trigger (default: yes)		if this species class can is playable
+# randomized = yes/no/trigger (default: yes)	if this species class is randomized
+# species_trait_points							base number of species trait points available for this species class
+# species_max_traits							maximum number of traits that species of this class can have (doesn't count those with cost == 0)
+# possible										ethics/government requirements; see common/governments/readme_requirements.txt
+# gender = yes/no (default: yes)				whether the species has a gender
+# portrait_modding yes/no (default: yes)		whether the portrait can be modified with e.g. genemodding or robomodding
+# random_weight									increases/reduces the chance of spawning this species class
+# ethics_to_prefer								list of ethics certain species class will preffer over others
+# preferred_ethics_weight						increases/reduces the chance of this species class choosing one of the preferred ethics
+
+
+###VERY MAJOR###
+HUM = { archetype = BIOLOGICAL playable = { OR = { has_alpha_quadrant = yes has_alpha_octant = yes has_botf_galaxy = yes scen_romulan_war = yes scen_border_war = yes } } graphical_culture = human move_pop_sound_effect = "moving_pop_confirmation" uplifted_into = "HUM"  random_weight = { base = @must_have_spawn_weight } trait = "trait_organic" }
+KLI = { archetype = BIOLOGICAL playable = { OR = { has_beta_quadrant = yes has_alpha_octant = yes has_botf_galaxy = yes } } graphical_culture = klingon move_pop_sound_effect = "moving_pop_confirmation" uplifted_into = "KLI" random_weight = { base = @must_have_spawn_weight } trait = "trait_organic" }
+ROM = { archetype = BIOLOGICAL playable = { OR = { has_beta_quadrant = yes has_alpha_octant = yes has_botf_galaxy = yes scen_romulan_war = yes } } graphical_culture = romulan move_pop_sound_effect = "moving_pop_confirmation" uplifted_into = "ROM" random_weight = { base = @must_have_spawn_weight } trait = "trait_organic" }
+BRG = { archetype = BIOLOGICAL playable = { has_delta_quadrant = yes } graphical_culture = borg move_pop_sound_effect = "moving_pop_confirmation" uplifted_into = "BRG" random_weight = { base = @must_have_spawn_weight } trait = "trait_organic" }
+CAR = { archetype = BIOLOGICAL playable = { OR = { has_alpha_quadrant = yes has_botf_galaxy = yes scen_border_war = yes } } graphical_culture = cardassian move_pop_sound_effect = "moving_pop_confirmation" uplifted_into = "CAR" random_weight = { base = @must_have_spawn_weight } trait = "trait_organic" }
+VOR = { archetype = BIOLOGICAL playable = { 
+    # is_scope_valid = no
+    # if = { limit = { num_galaxy_systems > 400 } log = "VOR scope valid" always = no } else = { log = "VOR scope not valid" always = yes }
+    has_gamma_quadrant = yes 
+
+} graphical_culture = dominion move_pop_sound_effect = "moving_pop_confirmation" uplifted_into = "VOR" leader_age_min = 2 leader_age_max = 5 trait = "trait_organic" }
+DOM = { archetype = CHANGELING playable = { in_game = no } graphical_culture = dominion move_pop_sound_effect = "moving_pop_confirmation" uplifted_into = "DOM" random_weight = { base = @must_have_spawn_weight } }
+FER = { archetype = BIOLOGICAL playable = { OR = { has_alpha_quadrant = yes has_botf_galaxy = yes } } graphical_culture = ferengi move_pop_sound_effect = "moving_pop_confirmation" uplifted_into = "FER" random_weight = { base = @must_have_spawn_weight } trait = "trait_organic" }
+
+###MAJOR###
+ADR = { archetype = BIOLOGICAL playable = { OR = { has_beta_quadrant = yes has_alpha_octant = yes has_botf_galaxy = yes scen_romulan_war = yes scen_border_war = yes } } graphical_culture = andorian move_pop_sound_effect = "moving_pop_confirmation" uplifted_into = "ADR"  random_weight = { base = @must_have_spawn_weight } trait = "trait_organic" }
+AEN = { archetype = BIOLOGICAL playable = { in_game = no } graphical_culture = andorian move_pop_sound_effect = "moving_pop_confirmation" uplifted_into = "AEN" random_weight = { base = @must_have_spawn_weight } trait = "trait_organic" }
+BRE = { archetype = BIOLOGICAL playable = { has_alpha_quadrant = yes } graphical_culture = breen move_pop_sound_effect = "moving_pop_confirmation" uplifted_into = "BRE" random_weight = { base = @should_have_spawn_weight } trait = "trait_organic" }
+GOR = { archetype = BIOLOGICAL playable = { OR = { has_beta_quadrant = yes has_alpha_octant = yes } } graphical_culture = generic_01 move_pop_sound_effect = "moving_pop_confirmation" uplifted_into = "GOR" random_weight = { base = @should_have_spawn_weight } trait = "trait_organic" }
+KZI = { archetype = BIOLOGICAL playable = { OR = { has_beta_quadrant = yes has_alpha_octant = yes } } graphical_culture = generic_01 move_pop_sound_effect = "moving_pop_confirmation" uplifted_into = "KZI" random_weight = { base = @should_have_spawn_weight } trait = "trait_organic" }
+KRE = { archetype = BIOLOGICAL playable = { has_delta_quadrant = yes } graphical_culture = krenim move_pop_sound_effect = "moving_pop_confirmation" uplifted_into = "KRE" random_weight = { base = @should_have_spawn_weight } trait = "trait_organic" }
+NAK = { archetype = BIOLOGICAL playable = { has_alpha_quadrant = yes } graphical_culture = nakuhl move_pop_sound_effect = "moving_pop_confirmation" uplifted_into = "NAK" random_weight = { base = @should_have_spawn_weight } trait = "trait_organic" }
+ORI = { archetype = BIOLOGICAL playable = { OR = { has_beta_quadrant = yes scen_romulan_war = yes scen_border_war = yes } } graphical_culture = orion move_pop_sound_effect = "moving_pop_confirmation" uplifted_into = "ORI" random_weight = { base = @should_have_spawn_weight } trait = "trait_organic" }
+BORI = { archetype = BIOLOGICAL playable = { OR = { has_beta_quadrant = yes scen_romulan_war = yes scen_border_war = yes } } graphical_culture = orion move_pop_sound_effect = "moving_pop_confirmation" uplifted_into = "BORI" random_weight = { base = @should_have_spawn_weight } trait = "trait_organic" }
+TEL = { archetype = BIOLOGICAL playable = { OR = { has_alpha_quadrant = yes has_alpha_octant = yes scen_romulan_war = yes scen_border_war = yes } } graphical_culture = tellarite move_pop_sound_effect = "moving_pop_confirmation" uplifted_into = "TEL" random_weight = { base = @must_have_spawn_weight } trait = "trait_organic" }
+THO = { archetype = LITHOID playable = { OR = { has_alpha_quadrant = yes has_alpha_octant = yes } } graphical_culture = tholian move_pop_sound_effect = "moving_pop_confirmation" uplifted_into = "THO" random_weight = { base = @should_have_spawn_weight } trait = "trait_lithoid" }
+UND = { archetype = BIOLOGICAL playable = { in_game = no } graphical_culture = undine move_pop_sound_effect = "moving_pop_confirmation" uplifted_into = "UND" trait = "trait_organic" }
+VUL = { archetype = BIOLOGICAL playable = { OR = { has_beta_quadrant = yes has_alpha_octant = yes has_botf_galaxy = yes scen_romulan_war = yes scen_border_war = yes } } graphical_culture = vulcan move_pop_sound_effect = "moving_pop_confirmation" uplifted_into = "VUL" random_weight = { base = @must_have_spawn_weight } trait = "trait_organic" }
+
+###SFU Major###
+HYD = { archetype = BIOLOGICAL playable = { OR = { has_beta_quadrant = yes has_alpha_octant = yes } } graphical_culture = hydran move_pop_sound_effect = "moving_pop_confirmation" uplifted_into = "HYD" trait = "trait_organic" }
+MES = { archetype = BIOLOGICAL playable = { OR = { has_beta_quadrant = yes has_alpha_octant = yes } } graphical_culture = concordium move_pop_sound_effect = "moving_pop_confirmation" uplifted_into = "MES" trait = "trait_organic" }
+KLV = { archetype = BIOLOGICAL playable = { in_game = no } graphical_culture = kelvan move_pop_sound_effect = "moving_pop_confirmation" uplifted_into = "KLV" trait = "trait_organic" }
+
+###MINOR###
+ACA = { archetype = BIOLOGICAL playable = { OR = { has_beta_quadrant = yes has_botf_galaxy = yes } } graphical_culture = generic_02 move_pop_sound_effect = "moving_pop_confirmation" uplifted_into = "ACA" trait = "trait_organic" }
+AKR = { archetype = BIOLOGICAL playable = { has_delta_quadrant = yes } graphical_culture = akritirian move_pop_sound_effect = "moving_pop_confirmation" uplifted_into = "AKR" trait = "trait_organic" }
+ANG = { archetype = BIOLOGICAL playable = { has_beta_quadrant = yes } graphical_culture = generic_02 move_pop_sound_effect = "moving_pop_confirmation" uplifted_into = "ANG" trait = "trait_organic" }
+ANT = { archetype = BIOLOGICAL playable = { OR = { has_alpha_quadrant = yes has_botf_galaxy = yes } } graphical_culture = antican move_pop_sound_effect = "moving_pop_confirmation" uplifted_into = "ANT" trait = "trait_organic" }
+
+CRA = { archetype = BIOLOGICAL playable = { has_delta_quadrant = yes } graphical_culture = cravic move_pop_sound_effect = "moving_pop_confirmation" uplifted_into = "CRA"  }
+PRA = { archetype = BIOLOGICAL playable = { has_delta_quadrant = yes } graphical_culture = cravic move_pop_sound_effect = "moving_pop_confirmation" uplifted_into = "PRA"  }
+
+APU = { archetype = ANDROID playable = { has_delta_quadrant = yes } use_climate_preference = no gender = no graphical_culture = pralor move_pop_sound_effect = "moving_pop_confirmation" uplifted_into = "APU" trait = "trait_android" }
+
+APR = { archetype = BIOLOGICAL playable = { has_alpha_quadrant = yes } graphical_culture = antican move_pop_sound_effect = "moving_pop_confirmation" uplifted_into = "APR" trait = "trait_organic" }
+ARG = { archetype = BIOLOGICAL playable = { has_gamma_quadrant = yes } graphical_culture = generic_02 move_pop_sound_effect = "moving_pop_confirmation" uplifted_into = "ARG" trait = "trait_organic" }
+ATE = { archetype = BIOLOGICAL playable = { OR = { has_alpha_quadrant = yes has_botf_galaxy = yes } } graphical_culture = generic_02 move_pop_sound_effect = "moving_pop_confirmation" uplifted_into = "ATE" trait = "trait_organic" }
+AXA = { archetype = BIOLOGICAL playable = { OR = { has_alpha_quadrant = yes scen_romulan_war = yes scen_border_war =  yes } } graphical_culture = generic_02 move_pop_sound_effect = "moving_pop_confirmation" uplifted_into = "AXA" trait = "trait_organic" }
+BAJ = { archetype = BIOLOGICAL playable = { OR = { has_alpha_quadrant = yes has_botf_galaxy = yes scen_border_war = yes } } graphical_culture = bajoran move_pop_sound_effect = "moving_pop_confirmation" uplifted_into = "BAJ" trait = "trait_organic" }
+BAK = { archetype = BIOLOGICAL playable = { in_game = no } graphical_culture = generic_02 move_pop_sound_effect = "moving_pop_confirmation" uplifted_into = "BAK" trait = "trait_organic" }
+BAN = { archetype = BIOLOGICAL playable = { has_delta_quadrant = yes } graphical_culture = generic_02 move_pop_sound_effect = "moving_pop_confirmation" uplifted_into = "BAN" trait = "trait_organic" }
+BAR = { archetype = BIOLOGICAL playable = { in_game = no } graphical_culture = generic_02 move_pop_sound_effect = "moving_pop_confirmation" uplifted_into = "BAR" trait = "trait_organic" }
+BEN = { archetype = BIOLOGICAL playable = { OR = { has_beta_quadrant = yes has_botf_galaxy = yes scen_romulan_war = yes } } graphical_culture = generic_02 move_pop_sound_effect = "moving_pop_confirmation" uplifted_into = "BEN" trait = "trait_organic" }
+BET = { archetype = BIOLOGICAL playable = { OR = { has_alpha_quadrant = yes has_botf_galaxy = yes scen_border_war = yes } } graphical_culture = betazoid move_pop_sound_effect = "moving_pop_confirmation" uplifted_into = "BET" trait = "trait_organic" }
+BOL = { archetype = BIOLOGICAL playable = { OR = { has_beta_quadrant = yes has_botf_galaxy = yes scen_romulan_war = yes } } graphical_culture = bolian move_pop_sound_effect = "moving_pop_confirmation" uplifted_into = "BOL" trait = "trait_organic" }
+BRI = { archetype = BIOLOGICAL playable = { in_game = no } graphical_culture = husnock move_pop_sound_effect = "moving_pop_confirmation" uplifted_into = "BRI" trait = "trait_organic" }
+BRU = { archetype = BIOLOGICAL playable = { has_delta_quadrant = yes } graphical_culture = generic_02 move_pop_sound_effect = "moving_pop_confirmation" uplifted_into = "BRU" trait = "trait_organic" }
+BTL = { archetype = BIOLOGICAL playable = { has_beta_quadrant = yes } graphical_culture = betelgeusian move_pop_sound_effect = "moving_pop_confirmation" uplifted_into = "BTL" trait = "trait_organic" }
+BYN = { archetype = BIOLOGICAL playable = { OR = { has_alpha_quadrant = yes has_botf_galaxy = yes } } graphical_culture = bynar move_pop_sound_effect = "moving_pop_confirmation" uplifted_into = "BYN" trait = "trait_organic" }
+CAT = { archetype = BIOLOGICAL playable = { has_alpha_quadrant = yes } graphical_culture = caitian move_pop_sound_effect = "moving_pop_confirmation" uplifted_into = "CAT" trait = "trait_organic" }
+CHE = { archetype = BIOLOGICAL playable = { in_game = no } graphical_culture = cheronite move_pop_sound_effect = "moving_pop_confirmation" uplifted_into = "CHE" trait = "trait_organic" }
+CHA = { archetype = BIOLOGICAL playable = { has_alpha_quadrant = yes } graphical_culture = generic_01 move_pop_sound_effect = "moving_pop_confirmation" uplifted_into = "CHA" trait = "trait_organic" }
+CRL = { archetype = BIOLOGICAL playable = { in_game = no } graphical_culture = generic_02 move_pop_sound_effect = "moving_pop_confirmation" uplifted_into = "CRL" trait = "trait_organic" }
+CYT = { archetype = BIOLOGICAL playable = { in_game = no } graphical_culture = cytherian move_pop_sound_effect = "moving_pop_confirmation" uplifted_into = "CYT" trait = "trait_organic" }
+DEL = { archetype = BIOLOGICAL playable = { OR = { has_alpha_quadrant = yes scen_romulan_war = yes } } graphical_culture = generic_08 move_pop_sound_effect = "moving_pop_confirmation" uplifted_into = "DEL" trait = "trait_organic" }
+DEN = { archetype = BIOLOGICAL playable = { OR = { has_alpha_quadrant = yes scen_romulan_war = yes } } graphical_culture = denobulan move_pop_sound_effect = "moving_pop_confirmation" uplifted_into = "DEN" trait = "trait_organic" }
+DEV = { archetype = BIOLOGICAL playable = { has_delta_quadrant = yes } graphical_culture = devore move_pop_sound_effect = "moving_pop_confirmation" uplifted_into = "DEV" trait = "trait_organic" }
+DOS = { archetype = BIOLOGICAL playable = { has_gamma_quadrant = yes } graphical_culture = generic_02 move_pop_sound_effect = "moving_pop_confirmation" uplifted_into = "DOS" trait = "trait_organic" }
+DUR = { archetype = BIOLOGICAL playable = { in_game = no } graphical_culture = husnock move_pop_sound_effect = "moving_pop_confirmation" uplifted_into = "DUR" trait = "trait_organic" }
+DRA = { archetype = BIOLOGICAL playable = { has_alpha_quadrant = yes } graphical_culture = generic_02 move_pop_sound_effect = "moving_pop_confirmation" uplifted_into = "DRA" trait = "trait_organic" }
+EDO = { archetype = BIOLOGICAL playable = { in_game = no } graphical_culture = generic_02 move_pop_sound_effect = "moving_pop_confirmation" uplifted_into = "EDO" trait = "trait_organic" }
+ELA = { archetype = BIOLOGICAL playable = { in_game = no } graphical_culture = generic_02 move_pop_sound_effect = "moving_pop_confirmation" uplifted_into = "ELA" trait = "trait_organic" }
+ELC = { archetype = BIOLOGICAL playable = { in_game = no } graphical_culture = elachi move_pop_sound_effect = "moving_pop_confirmation" uplifted_into = "ELC" trait = "trait_organic" }
+
+ICO = { archetype = BIOLOGICAL playable = { in_game = no } graphical_culture = iconian move_pop_sound_effect = "moving_pop_confirmation" uplifted_into = "ICO"  }
+SOL = { archetype = BIOLOGICAL playable = { in_game = no } graphical_culture = iconian move_pop_sound_effect = "moving_pop_confirmation" uplifted_into = "SOL" trait = "trait_organic" }
+
+ELL = { archetype = BIOLOGICAL playable = { in_game = no } graphical_culture = generic_02 move_pop_sound_effect = "moving_pop_confirmation" uplifted_into = "ELL" trait = "trait_organic" }
+ENO = { archetype = BIOLOGICAL playable = { OR = { has_beta_quadrant = yes scen_romulan_war = yes } } graphical_culture = generic_05 move_pop_sound_effect = "moving_pop_confirmation" uplifted_into = "ENO" trait = "trait_organic" }
+EXC = { archetype = LITHOID playable = { has_alpha_quadrant = yes } graphical_culture = generic_02 move_pop_sound_effect = "moving_pop_confirmation" uplifted_into = "EXC" trait = "trait_lithoid" }
+FEN = { archetype = BIOLOGICAL playable = { has_delta_quadrant = yes } graphical_culture = generic_01 move_pop_sound_effect = "moving_pop_confirmation" uplifted_into = "FEN" trait = "trait_organic" }
+FLA = { archetype = BIOLOGICAL playable = { has_beta_quadrant = yes } graphical_culture = flaxian move_pop_sound_effect = "moving_pop_confirmation" uplifted_into = "FLA" trait = "trait_organic" }
+GAR = { archetype = BIOLOGICAL playable = { OR = { has_beta_quadrant = yes scen_romulan_war = yes } } graphical_culture = garidian move_pop_sound_effect = "moving_pop_confirmation" uplifted_into = "GAR" trait = "trait_organic" }
+HAA = { archetype = BIOLOGICAL playable = { has_delta_quadrant = yes } graphical_culture = generic_02 move_pop_sound_effect = "moving_pop_confirmation" uplifted_into = "HAA" trait = "trait_organic" }
+HIR = { archetype = BIOLOGICAL playable = { has_delta_quadrant = yes } graphical_culture = hirogen move_pop_sound_effect = "moving_pop_confirmation" uplifted_into = "HIR" trait = "trait_organic" }
+HUP = { archetype = BIOLOGICAL playable = { has_alpha_quadrant = yes } graphical_culture = generic_05 move_pop_sound_effect = "moving_pop_confirmation" uplifted_into = "HUP" trait = "trait_organic" }
+HUS = { archetype = BIOLOGICAL playable = { has_beta_quadrant = yes } graphical_culture = husnock move_pop_sound_effect = "moving_pop_confirmation" uplifted_into = "HUS" trait = "trait_organic" }
+JEM = { archetype = BIOLOGICAL playable = { in_game = no } graphical_culture = dominion move_pop_sound_effect = "moving_pop_confirmation" uplifted_into = "JEM" leader_age_min = 1 leader_age_max = 5 trait = "trait_organic" }
+KAR = { archetype = BIOLOGICAL playable = { has_gamma_quadrant = yes } graphical_culture = karemma move_pop_sound_effect = "moving_pop_confirmation" uplifted_into = "KAR" trait = "trait_organic" }
+KAZ = { archetype = BIOLOGICAL playable = { has_delta_quadrant = yes } graphical_culture = kazon move_pop_sound_effect = "moving_pop_confirmation" uplifted_into = "KAZ" trait = "trait_organic" }
+KEL = { archetype = BIOLOGICAL playable = { has_beta_quadrant = yes } graphical_culture = kelpien move_pop_sound_effect = "moving_pop_confirmation" uplifted_into = "KEL" trait = "trait_organic" }
+KES = { archetype = LITHOID playable = { has_alpha_quadrant = yes } graphical_culture = kessok move_pop_sound_effect = "moving_pop_confirmation" uplifted_into = "KES" trait = "trait_lithoid" }
+KOB = { archetype = BIOLOGICAL playable = { has_delta_quadrant = yes } graphical_culture = kobali move_pop_sound_effect = "moving_pop_confirmation" uplifted_into = "KOB" trait = "trait_organic" }
+KRA = { archetype = BIOLOGICAL playable = { has_delta_quadrant = yes } graphical_culture = generic_01 move_pop_sound_effect = "moving_pop_confirmation" uplifted_into = "KRA" trait = "trait_organic" }
+KRD = { archetype = BIOLOGICAL playable = { has_delta_quadrant = yes } graphical_culture = generic_03 move_pop_sound_effect = "moving_pop_confirmation" uplifted_into = "KRD" trait = "trait_organic" }
+KRT = { archetype = BIOLOGICAL playable = { OR = { has_beta_quadrant = yes scen_border_war = yes } } graphical_culture = kreetassan move_pop_sound_effect = "moving_pop_confirmation" uplifted_into = "KRT" trait = "trait_organic" }
+KRI = { archetype = BIOLOGICAL playable = { has_beta_quadrant = yes } graphical_culture = generic_02 move_pop_sound_effect = "moving_pop_confirmation" uplifted_into = "KRI" trait = "trait_organic" }
+LIS = { archetype = BIOLOGICAL playable = { OR = { has_alpha_quadrant = yes scen_border_war = yes } } graphical_culture = generic_08 move_pop_sound_effect = "moving_pop_confirmation" uplifted_into = "LIS" trait = "trait_organic" }
+LUR = { archetype = BIOLOGICAL playable = { has_alpha_quadrant = yes } graphical_culture = lurian move_pop_sound_effect = "moving_pop_confirmation" uplifted_into = "LUR" trait = "trait_organic" }
+LUK = { archetype = BIOLOGICAL playable = { has_alpha_quadrant = yes } graphical_culture = generic_02 move_pop_sound_effect = "moving_pop_confirmation" uplifted_into = "LUK" trait = "trait_organic" }
+LYR = { archetype = BIOLOGICAL playable = { has_delta_quadrant = yes } graphical_culture = generic_03 move_pop_sound_effect = "moving_pop_confirmation" uplifted_into = "LYR" trait = "trait_organic" }
+LRN = { archetype = BIOLOGICAL playable = { OR = { has_alpha_octant = yes has_beta_quadrant = yes } } graphical_culture = lyran move_pop_sound_effect = "moving_pop_confirmation" uplifted_into = "LRN" trait = "trait_organic" }
+MAL = { archetype = BIOLOGICAL playable = { has_delta_quadrant = yes } graphical_culture = malon move_pop_sound_effect = "moving_pop_confirmation" uplifted_into = "MAL" trait = "trait_organic" }
+MET = { archetype = BIOLOGICAL playable = { in_game = no } graphical_culture = generic_04 move_pop_sound_effect = "moving_pop_confirmation" uplifted_into = "MET" trait = "trait_organic" }
+MOR = { archetype = BIOLOGICAL playable = { has_beta_quadrant = yes } graphical_culture = generic_04 move_pop_sound_effect = "moving_pop_confirmation" uplifted_into = "MOR" trait = "trait_organic" }
+MON = { archetype = BIOLOGICAL playable = { has_delta_quadrant = yes } graphical_culture = monean move_pop_sound_effect = "moving_pop_confirmation" uplifted_into = "MON" trait = "trait_organic" }
+NAU = { archetype = BIOLOGICAL playable = { OR = { has_beta_quadrant = yes has_botf_galaxy = yes } } graphical_culture = nausicaan move_pop_sound_effect = "moving_pop_confirmation" uplifted_into = "NAU" trait = "trait_organic" }
+NER = { archetype = BIOLOGICAL playable = { in_game = no } graphical_culture = husnock move_pop_sound_effect = "moving_pop_confirmation" uplifted_into = "NER" trait = "trait_organic" }
+NRC = { archetype = BIOLOGICAL playable = { has_delta_quadrant = yes } graphical_culture = generic_01 move_pop_sound_effect = "moving_pop_confirmation" uplifted_into = "NRC" trait = "trait_organic" }
+NYB = { archetype = BIOLOGICAL playable = { OR = { has_gamma_quadrant = yes } } graphical_culture = nyberrite move_pop_sound_effect = "moving_pop_confirmation" uplifted_into = "NYB" trait = "trait_organic" }
+OCA = { archetype = BIOLOGICAL playable = { in_game = no } graphical_culture = generic_02 move_pop_sound_effect = "moving_pop_confirmation" uplifted_into = "OCA" trait = "trait_organic" }
+OSC = { archetype = BIOLOGICAL playable = { has_gamma_quadrant = yes } graphical_culture = oschean move_pop_sound_effect = "moving_pop_confirmation" uplifted_into = "OSC" trait = "trait_organic" }
+PAR = { archetype = BIOLOGICAL playable = { has_gamma_quadrant = yes } graphical_culture = generic_03 move_pop_sound_effect = "moving_pop_confirmation" uplifted_into = "PAR" trait = "trait_organic" }
+RAK = { archetype = BIOLOGICAL playable = { has_gamma_quadrant = yes } graphical_culture = generic_01 move_pop_sound_effect = "moving_pop_confirmation" uplifted_into = "RAK" trait = "trait_organic" }
+REM = { archetype = BIOLOGICAL playable = { in_game = no } graphical_culture = reman move_pop_sound_effect = "moving_pop_confirmation" uplifted_into = "REM" trait = "trait_organic" }
+RIG = { archetype = BIOLOGICAL playable = { has_beta_quadrant = yes } graphical_culture = rigelian move_pop_sound_effect = "moving_pop_confirmation" uplifted_into = "RIG" trait = "trait_organic" }
+SAU = { archetype = BIOLOGICAL playable = { OR = { has_alpha_quadrant = yes scen_romulan_war = yes } } graphical_culture = generic_08 move_pop_sound_effect = "moving_pop_confirmation" uplifted_into = "SAU" trait = "trait_organic" }
+SEL = { archetype = BIOLOGICAL playable = { OR = { has_alpha_quadrant = yes has_botf_galaxy = yes } } graphical_culture = generic_04 move_pop_sound_effect = "moving_pop_confirmation" uplifted_into = "SEL" trait = "trait_organic" }
+SHE = { archetype = LITHOID playable = { OR = { has_alpha_quadrant = yes has_botf_galaxy = yes } } graphical_culture = sheliak move_pop_sound_effect = "moving_pop_confirmation" uplifted_into = "SHE" trait = "trait_lithoid" }
+SKA = { archetype = BIOLOGICAL playable = { in_game = no } graphical_culture = generic_02 move_pop_sound_effect = "moving_pop_confirmation" uplifted_into = "SKA" trait = "trait_organic" }
+SKO = { archetype = BIOLOGICAL playable = { has_alpha_quadrant = yes } graphical_culture = skorr move_pop_sound_effect = "moving_pop_confirmation" uplifted_into = "SKO" trait = "trait_organic" }
+SKR = { archetype = BIOLOGICAL playable = { has_gamma_quadrant = yes } graphical_culture = generic_02 move_pop_sound_effect = "moving_pop_confirmation" uplifted_into = "SKR" trait = "trait_organic" }
+SON = { archetype = BIOLOGICAL playable = { in_game = no } graphical_culture = sona move_pop_sound_effect = "moving_pop_confirmation" uplifted_into = "SON" trait = "trait_organic" }
+SUL = { archetype = BIOLOGICAL playable = { has_beta_quadrant = yes } graphical_culture = suliban move_pop_sound_effect = "moving_pop_confirmation" uplifted_into = "SUL" trait = "trait_organic" }
+TAL = { archetype = BIOLOGICAL playable = { has_delta_quadrant = yes } graphical_culture = talaxian move_pop_sound_effect = "moving_pop_confirmation" uplifted_into = "TAL" trait = "trait_organic" }
+TAM = { archetype = BIOLOGICAL playable = { OR = { has_alpha_quadrant = yes has_botf_galaxy = yes } } graphical_culture = generic_02 move_pop_sound_effect = "moving_pop_confirmation" uplifted_into = "TAM" trait = "trait_organic" }
+TAR = { archetype = BIOLOGICAL playable = { in_game = no } graphical_culture = generic_02 move_pop_sound_effect = "moving_pop_confirmation" uplifted_into = "TAR" trait = "trait_organic" }
+TEP = { archetype = BIOLOGICAL playable = { has_gamma_quadrant = yes } graphical_culture = generic_04 move_pop_sound_effect = "moving_pop_confirmation" uplifted_into = "TEP" trait = "trait_organic" }
+TLR = { archetype = BIOLOGICAL playable = { OR = { has_alpha_quadrant = yes has_botf_galaxy = yes scen_border_war = yes } } graphical_culture = generic_02 move_pop_sound_effect = "moving_pop_confirmation" uplifted_into = "TLR" trait = "trait_organic" }
+TLS = { archetype = BIOLOGICAL playable = { in_game = no } graphical_culture = generic_02 move_pop_sound_effect = "moving_pop_confirmation" uplifted_into = "TLS" trait = "trait_organic" }
+TOS = { archetype = BIOLOGICAL playable = { in_game = no } graphical_culture = generic_04 move_pop_sound_effect = "moving_pop_confirmation" uplifted_into = "TOS" trait = "trait_organic" }
+TRA = { archetype = BIOLOGICAL playable = { has_delta_quadrant = yes } graphical_culture = trabe move_pop_sound_effect = "moving_pop_confirmation" uplifted_into = "TRA" trait = "trait_organic" }
+TRE = { archetype = BIOLOGICAL playable = { has_gamma_quadrant = yes } graphical_culture = generic_06 move_pop_sound_effect = "moving_pop_confirmation" uplifted_into = "TRE" trait = "trait_organic" }
+TRI = { archetype = BIOLOGICAL playable = { OR = { has_alpha_quadrant = yes has_botf_galaxy = yes scen_border_war = yes } } graphical_culture = generic_02 move_pop_sound_effect = "moving_pop_confirmation" uplifted_into = "TRI" trait = "trait_organic" }
+TRL = { archetype = BIOLOGICAL playable = { in_game = no } graphical_culture = generic_02 move_pop_sound_effect = "moving_pop_confirmation" uplifted_into = "TRL" trait = "trait_organic" }
+TRO = { archetype = BIOLOGICAL playable = { has_gamma_quadrant = yes } graphical_culture = generic_06 move_pop_sound_effect = "moving_pop_confirmation" uplifted_into = "TRO" trait = "trait_organic" }
+TRY = { archetype = BIOLOGICAL playable = { in_game = no } graphical_culture = generic_02 move_pop_sound_effect = "moving_pop_confirmation" uplifted_into = "TRY" trait = "trait_organic" }
+TUR = { archetype = BIOLOGICAL playable = { has_delta_quadrant = yes } graphical_culture = turei move_pop_sound_effect = "moving_pop_confirmation" uplifted_into = "TUR" trait = "trait_organic" }
+TUT = { archetype = BIOLOGICAL playable = { in_game = no } graphical_culture = tuterian move_pop_sound_effect = "moving_pop_confirmation" uplifted_into = "TUT" trait = "trait_organic" }
+TZE = { archetype = BIOLOGICAL playable = { OR = { has_alpha_quadrant = yes scen_border_war = yes } } graphical_culture = generic_02 move_pop_sound_effect = "moving_pop_confirmation" uplifted_into = "TZE" trait = "trait_organic" }
+VAA = { archetype = BIOLOGICAL playable = { in_game = no } graphical_culture = vaadwaur move_pop_sound_effect = "moving_pop_confirmation" uplifted_into = "VAA" trait = "trait_organic" }
+VAL = { archetype = BIOLOGICAL playable = { has_beta_quadrant = yes } graphical_culture = generic_02 move_pop_sound_effect = "moving_pop_confirmation" uplifted_into = "VAL" trait = "trait_organic" }
+VAU = { archetype = BIOLOGICAL playable = { has_delta_quadrant = yes } graphical_culture = generic_02 move_pop_sound_effect = "moving_pop_confirmation" uplifted_into = "VAU" trait = "trait_organic" }
+VID = { archetype = BIOLOGICAL playable = { has_delta_quadrant = yes } graphical_culture = vidiian move_pop_sound_effect = "moving_pop_confirmation" uplifted_into = "VID" trait = "trait_organic" }
+VLR = { archetype = BIOLOGICAL playable = { OR = { has_alpha_quadrant = yes scen_border_war = yes } } graphical_culture = generic_08 move_pop_sound_effect = "moving_pop_confirmation" uplifted_into = "VLR" trait = "trait_organic" }
+
+VOT = { archetype = BIOLOGICAL playable = { has_delta_quadrant = yes } graphical_culture = voth move_pop_sound_effect = "moving_pop_confirmation" uplifted_into = "VOT" trait = "trait_organic" }
+VRG = { archetype = BIOLOGICAL playable = { has_delta_quadrant = yes } graphical_culture = vorgon move_pop_sound_effect = "moving_pop_confirmation" uplifted_into = "VRG" trait = "trait_organic" }
+WAD = { archetype = BIOLOGICAL playable = { has_gamma_quadrant = yes } graphical_culture = wadi move_pop_sound_effect = "moving_pop_confirmation" uplifted_into = "WAD" trait = "trait_organic" }
+XEP = { archetype = BIOLOGICAL playable = { OR = { has_alpha_quadrant = yes scen_border_war = yes } } graphical_culture = generic_08 move_pop_sound_effect = "moving_pop_confirmation" uplifted_into = "XEP" trait = "trait_organic" }
+XINAQU = { archetype = BIOLOGICAL playable = { in_game = no } graphical_culture = xindi move_pop_sound_effect = "moving_pop_confirmation" uplifted_into = "XINAQU" trait = "trait_organic" }
+XINARB = { archetype = BIOLOGICAL playable = { in_game = no } graphical_culture = xindi move_pop_sound_effect = "moving_pop_confirmation" uplifted_into = "XINARB" trait = "trait_organic" }
+XINAVI = { archetype = BIOLOGICAL playable = { in_game = no } graphical_culture = xindi move_pop_sound_effect = "moving_pop_confirmation" uplifted_into = "XINAVI" trait = "trait_organic" }
+XININS = { archetype = BIOLOGICAL playable = { in_game = no } graphical_culture = xindi move_pop_sound_effect = "moving_pop_confirmation" uplifted_into = "XININS" trait = "trait_organic" }
+XINMAM = { archetype = BIOLOGICAL playable = { has_alpha_quadrant = yes } graphical_culture = xindi move_pop_sound_effect = "moving_pop_confirmation" uplifted_into = "XINMAM" trait = "trait_organic" }
+XINREP = { archetype = BIOLOGICAL playable = { in_game = no } graphical_culture = xindi move_pop_sound_effect = "moving_pop_confirmation" uplifted_into = "XINREP" trait = "trait_organic" }
+YAD = { archetype = BIOLOGICAL playable = { has_gamma_quadrant = yes } graphical_culture = generic_04 move_pop_sound_effect = "moving_pop_confirmation" uplifted_into = "YAD" trait = "trait_organic" }
+YRI = { archetype = BIOLOGICAL playable = { OR = { has_alpha_quadrant = yes has_botf_galaxy = yes } } graphical_culture = yridian move_pop_sound_effect = "moving_pop_confirmation" uplifted_into = "YRI" trait = "trait_organic" }
+VEN = { archetype = BIOLOGICAL playable = { OR = { has_beta_quadrant = yes scen_romulan_war = yes } } graphical_culture = generic_03 move_pop_sound_effect = "moving_pop_confirmation" uplifted_into = "VEN" trait = "trait_organic" }
+ZAH = { archetype = BIOLOGICAL playable = { has_delta_quadrant = yes } graphical_culture = zahl move_pop_sound_effect = "moving_pop_confirmation" uplifted_into = "ZAH" trait = "trait_organic" }
+ZAK = { archetype = BIOLOGICAL playable = { OR = { has_beta_quadrant = yes has_botf_galaxy = yes } } graphical_culture = generic_04 move_pop_sound_effect = "moving_pop_confirmation" uplifted_into = "ZAK" trait = "trait_organic" }
+
+QOM = { archetype = BIOLOGICAL playable = { has_delta_quadrant = yes } graphical_culture = generic_02 move_pop_sound_effect = "moving_pop_confirmation" uplifted_into = "QOM" trait = "trait_organic" }
+SER = { archetype = BIOLOGICAL playable = { has_gamma_quadrant = yes } graphical_culture = generic_02 move_pop_sound_effect = "moving_pop_confirmation" uplifted_into = "SER" trait = "trait_organic" }
+
+PAK = { archetype = BIOLOGICAL playable = { OR = { has_alpha_quadrant = yes has_botf_galaxy = yes } } graphical_culture = pakled move_pop_sound_effect = "moving_pop_confirmation" uplifted_into = "PAK" trait = "trait_organic" }
+EFR = { archetype = BIOLOGICAL playable = { has_beta_quadrant = yes } graphical_culture = generic_02 move_pop_sound_effect = "moving_pop_confirmation" uplifted_into = "EFR" trait = "trait_organic" }
+AMA = { archetype = BIOLOGICAL playable = { has_gamma_quadrant = yes } graphical_culture = generic_02 move_pop_sound_effect = "moving_pop_confirmation" uplifted_into = "AMA" trait = "trait_organic" }
+HAZ = { archetype = BIOLOGICAL playable = { has_delta_quadrant = yes } graphical_culture = hazari move_pop_sound_effect = "moving_pop_confirmation" uplifted_into = "HAZ" trait = "trait_organic" }
+RIS = { archetype = BIOLOGICAL playable = { in_game = no } graphical_culture = generic_02 move_pop_sound_effect = "moving_pop_confirmation" uplifted_into = "RIS" trait = "trait_organic" }
+GRA = { archetype = BIOLOGICAL playable = { has_alpha_quadrant = yes } graphical_culture = generic_08 move_pop_sound_effect = "moving_pop_confirmation" uplifted_into = "GRA" trait = "trait_organic" }
+COR = { archetype = BIOLOGICAL playable = { OR = { has_beta_quadrant = yes scen_border_war = yes } } graphical_culture = generic_02 move_pop_sound_effect = "moving_pop_confirmation" uplifted_into = "COR" trait = "trait_organic" }
+BAU = { archetype = BIOLOGICAL playable = { has_beta_quadrant = yes } graphical_culture = baul move_pop_sound_effect = "moving_pop_confirmation" uplifted_into = "BAU" trait = "trait_organic" }
+NGN = { archetype = BIOLOGICAL playable = { has_delta_quadrant = yes } graphical_culture = nygean move_pop_sound_effect = "moving_pop_confirmation" uplifted_into = "NGN" trait = "trait_organic" }
+VNT = { archetype = BIOLOGICAL playable = { in_game = no } graphical_culture = generic_02 move_pop_sound_effect = "moving_pop_confirmation" uplifted_into = "VNT" trait = "trait_organic" }
+VUG = { archetype = BIOLOGICAL playable = { has_alpha_quadrant = yes } graphical_culture = generic_02 move_pop_sound_effect = "moving_pop_confirmation" uplifted_into = "VUG" trait = "trait_organic" }
+ALD = { archetype = BIOLOGICAL playable = { has_beta_quadrant = yes } graphical_culture = generic_02 move_pop_sound_effect = "moving_pop_confirmation" uplifted_into = "ALD" trait = "trait_organic" }
+ZIB = { archetype = BIOLOGICAL playable = { has_alpha_quadrant = yes } graphical_culture = generic_02 move_pop_sound_effect = "moving_pop_confirmation" uplifted_into = "ZIB" trait = "trait_organic" }
+
+
+
+DRD = { archetype = ANDROID playable = { in_game = no } graphical_culture = generic_04 move_pop_sound_effect = "moving_pop_confirmation" uplifted_into = "DRD"  }
+
+
+MUG = { archetype = BIOLOGICAL playable = { in_game = no } graphical_culture = generic_04 move_pop_sound_effect = "moving_pop_confirmation" uplifted_into = "MUG" trait = "trait_organic"  }
+PRE_MUG = { archetype = PRESAPIENT playable = { in_game = no } graphical_culture = generic_04 move_pop_sound_effect = "moving_pop_confirmation" uplifted_into = "MUG" trait = "trait_organic" }
+
+###EVENT###
+CHO = { archetype = BIOLOGICAL playable = { in_game = no } graphical_culture = chodak move_pop_sound_effect = "moving_pop_confirmation" uplifted_into = "CHO" trait = "trait_organic" }
+ALT = { archetype = MACHINE playable = { in_game = no } graphical_culture = generic_04 move_pop_sound_effect = "moving_pop_confirmation" uplifted_into = "ALT"  }
+MER = { archetype = BIOLOGICAL playable = { in_game = no } graphical_culture = generic_04 move_pop_sound_effect = "moving_pop_confirmation" uplifted_into = "MER" trait = "trait_organic" }
+BTN = { archetype = BIOLOGICAL playable = { in_game = no } graphical_culture = generic_04 move_pop_sound_effect = "moving_pop_confirmation" uplifted_into = "BTN" trait = "trait_organic" }
+GUA = { archetype = BIOLOGICAL playable = { in_game = no } graphical_culture = generic_04 move_pop_sound_effect = "moving_pop_confirmation" uplifted_into = "GUA" trait = "trait_organic" }
+PRX = { archetype = BIOLOGICAL playable = { in_game = no } graphical_culture = generic_04 move_pop_sound_effect = "moving_pop_confirmation" uplifted_into = "PRX" trait = "trait_organic" }
+TKO = { archetype = BIOLOGICAL playable = { in_game = no } graphical_culture = generic_04 move_pop_sound_effect = "moving_pop_confirmation" uplifted_into = "TKO" trait = "trait_organic" }
+VIN = { archetype = BIOLOGICAL playable = { in_game = no } graphical_culture = generic_04 move_pop_sound_effect = "moving_pop_confirmation" uplifted_into = "VIN" trait = "trait_organic" }
+BER = { archetype = BIOLOGICAL playable = { in_game = no } graphical_culture = generic_04 move_pop_sound_effect = "moving_pop_confirmation" uplifted_into = "BER" trait = "trait_organic" }
+KOL = { archetype = BIOLOGICAL playable = { has_delta_quadrant = yes } graphical_culture = generic_04 move_pop_sound_effect = "moving_pop_confirmation" uplifted_into = "KOL"  trait = "trait_organic" }
+PRO = { archetype = BIOLOGICAL playable = { in_game = no } graphical_culture = generic_04 move_pop_sound_effect = "moving_pop_confirmation" uplifted_into = "PRO" trait = "trait_organic" }
+DWE = { archetype = BIOLOGICAL playable = { in_game = no } graphical_culture = generic_04 move_pop_sound_effect = "moving_pop_confirmation" uplifted_into = "DWE" trait = "trait_organic" }
+AGI = { archetype = MACHINE playable = { in_game = no } graphical_culture = generic_04 move_pop_sound_effect = "moving_pop_confirmation" uplifted_into = "AGI"  }
+ORB = { archetype = PHOTONIC playable = { in_game = no } graphical_culture = generic_04 move_pop_sound_effect = "moving_pop_confirmation" uplifted_into = "ORB"  }
+CUB = { archetype = PHOTONIC playable = { in_game = no } graphical_culture = generic_04 move_pop_sound_effect = "moving_pop_confirmation" uplifted_into = "CUB"  }
+OCU = { archetype = PHOTONIC playable = { in_game = no } graphical_culture = generic_04 move_pop_sound_effect = "moving_pop_confirmation" uplifted_into = "OCU"  }
+ZAL = { archetype = BIOLOGICAL playable = { in_game = no } graphical_culture = generic_02 move_pop_sound_effect = "moving_pop_confirmation" uplifted_into = "ZAL" trait = "trait_organic" }
+XYR = { archetype = BIOLOGICAL playable = { in_game = no } graphical_culture = generic_01 move_pop_sound_effect = "moving_pop_confirmation" uplifted_into = "XYR" trait = "trait_organic" }
+
+###SPECIAL###
+SYM = { archetype = SYMBIONT playable = { in_game = no } graphical_culture = generic_02 move_pop_sound_effect = "moving_pop_confirmation" uplifted_into = "SYM" leader_age_min = 90 leader_age_max = 300 trait = "trait_symbiont" }
+
+
+
+BOG = { archetype = BIOLOGICAL playable = { in_game = no } graphical_culture = first_federation move_pop_sound_effect = "moving_pop_confirmation" uplifted_into = "BOG" trait = "trait_organic" }
+FII = { archetype = BIOLOGICAL playable = { in_game = no } graphical_culture = first_federation move_pop_sound_effect = "moving_pop_confirmation" uplifted_into = "FII" trait = "trait_organic" }
+KIS = { archetype = BIOLOGICAL playable = { in_game = no } graphical_culture = first_federation move_pop_sound_effect = "moving_pop_confirmation" uplifted_into = "KIS" trait = "trait_organic" }
+LIN = { archetype = BIOLOGICAL playable = { has_alpha_quadrant = yes } graphical_culture = first_federation move_pop_sound_effect = "moving_pop_confirmation" uplifted_into = "LIN" trait = "trait_organic" }
+NIA = { archetype = BIOLOGICAL playable = { in_game = no } graphical_culture = first_federation move_pop_sound_effect = "moving_pop_confirmation" uplifted_into = "NIA" trait = "trait_organic" }
+TES = { archetype = BIOLOGICAL playable = { in_game = no } graphical_culture = first_federation move_pop_sound_effect = "moving_pop_confirmation" uplifted_into = "TES" trait = "trait_organic" }
+
+
+AKA = { archetype = BIOLOGICAL playable = { has_beta_quadrant = yes } graphical_culture = generic_02 move_pop_sound_effect = "moving_pop_confirmation" uplifted_into = "AKA" trait = "trait_organic" }
+MLC = { archetype = BIOLOGICAL playable = { OR = { has_alpha_quadrant = yes has_botf_galaxy = yes } } graphical_culture = generic_02 move_pop_sound_effect = "moving_pop_confirmation" uplifted_into = "MLC" trait = "trait_organic" }
+ATR = { archetype = BIOLOGICAL playable = { OR = { has_beta_quadrant = yes scen_romulan_war = yes } } graphical_culture = generic_02 move_pop_sound_effect = "moving_pop_confirmation" uplifted_into = "ATR" trait = "trait_organic" }
+HOR = { archetype = LITHOID playable = { in_game = no } graphical_culture = generic_02 move_pop_sound_effect = "moving_pop_confirmation" uplifted_into = "HOR" leader_age_min = 25 leader_age_max = 5000 trait = "trait_lithoid" }
+AGL = { archetype = BIOLOGICAL playable = { in_game = no } graphical_culture = generic_08 move_pop_sound_effect = "moving_pop_confirmation" uplifted_into = "AGL" trait = "trait_organic" }
+MIN = { archetype = BIOLOGICAL playable = { OR = { has_beta_quadrant = yes has_botf_galaxy = yes } } graphical_culture = generic_02 move_pop_sound_effect = "moving_pop_confirmation" uplifted_into = "MIN" trait = "trait_organic" }
+
+
+
+FUT = { archetype = BIOLOGICAL playable = { in_game = no } graphical_culture = generic_02 move_pop_sound_effect = "moving_pop_confirmation" uplifted_into = "FUT" trait = "trait_organic" }
+
+ALTAIR = { archetype = BIOLOGICAL playable = { in_game = no } graphical_culture = generic_02 move_pop_sound_effect = "moving_pop_confirmation" uplifted_into = "ALTAIR" trait = "trait_organic" }
+# ANTAR = { archetype = BIOLOGICAL playable = { in_game = no } graphical_culture = generic_02 move_pop_sound_effect = "moving_pop_confirmation" uplifted_into = "ANTAR" trait = "trait_organic" }
+ANTOS = { archetype = BIOLOGICAL playable = { in_game = no } graphical_culture = generic_02 move_pop_sound_effect = "moving_pop_confirmation" uplifted_into = "ANTOS" trait = "trait_organic" }
+ANO = { archetype = BIOLOGICAL playable = { in_game = no } graphical_culture = generic_02 move_pop_sound_effect = "moving_pop_confirmation" uplifted_into = "ANO" trait = "trait_organic" }
+GAL = { archetype = BIOLOGICAL playable = { in_game = no } graphical_culture = generic_02 move_pop_sound_effect = "moving_pop_confirmation" uplifted_into = "GAL" trait = "trait_organic" }
+
+ARBAZ = { archetype = BIOLOGICAL playable = { in_game = no } graphical_culture = generic_02 move_pop_sound_effect = "moving_pop_confirmation" uplifted_into = "ARBAZ" trait = "trait_organic" }
+ARDANA = { archetype = BIOLOGICAL playable = { in_game = no } graphical_culture = generic_02 move_pop_sound_effect = "moving_pop_confirmation" uplifted_into = "ARDANA" trait = "trait_organic" }
+ARGEL = { archetype = BIOLOGICAL playable = { in_game = no } graphical_culture = generic_08 move_pop_sound_effect = "moving_pop_confirmation" uplifted_into = "ARGEL" trait = "trait_organic" }
+
+CAP = { archetype = BIOLOGICAL playable = { in_game = no } graphical_culture = generic_02 move_pop_sound_effect = "moving_pop_confirmation" uplifted_into = "CAP" trait = "trait_organic" }
+CENTAUR = { archetype = BIOLOGICAL playable = { in_game = no } graphical_culture = generic_02 move_pop_sound_effect = "moving_pop_confirmation" uplifted_into = "CENTAUR" trait = "trait_organic" }
+# CORID = { archetype = BIOLOGICAL playable = { in_game = no } graphical_culture = generic_02 move_pop_sound_effect = "moving_pop_confirmation" uplifted_into = "CORID" trait = "trait_organic" }
+DORVAN = { archetype = BIOLOGICAL playable = { in_game = no } graphical_culture = generic_02 move_pop_sound_effect = "moving_pop_confirmation" uplifted_into = "DORVAN" trait = "trait_organic" }
+EKOS = { archetype = BIOLOGICAL playable = { in_game = no } graphical_culture = generic_02 move_pop_sound_effect = "moving_pop_confirmation" uplifted_into = "EKOS" trait = "trait_organic" }
+# ELAS = { archetype = BIOLOGICAL playable = { in_game = no } graphical_culture = generic_08 move_pop_sound_effect = "moving_pop_confirmation" uplifted_into = "ELAS" trait = "trait_organic" }
+FREMEN = { archetype = BIOLOGICAL playable = { in_game = no } graphical_culture = generic_02 move_pop_sound_effect = "moving_pop_confirmation" uplifted_into = "FREMEN" trait = "trait_organic" }
+HILL = { archetype = BIOLOGICAL playable = { in_game = no } graphical_culture = generic_02 move_pop_sound_effect = "moving_pop_confirmation" uplifted_into = "HILL" trait = "trait_organic" }
+IOTIA = { archetype = BIOLOGICAL playable = { in_game = no } graphical_culture = generic_02 move_pop_sound_effect = "moving_pop_confirmation" uplifted_into = "IOTIA" trait = "trait_organic" }
+KAYLAR = { archetype = BIOLOGICAL playable = { in_game = no } graphical_culture = generic_08 move_pop_sound_effect = "moving_pop_confirmation" uplifted_into = "KAYLAR" trait = "trait_organic" }
+KELIS = { archetype = BIOLOGICAL playable = { in_game = no } graphical_culture = generic_02 move_pop_sound_effect = "moving_pop_confirmation" uplifted_into = "KELIS" trait = "trait_organic" }
+KLAHA = { archetype = BIOLOGICAL playable = { in_game = no } graphical_culture = generic_02 move_pop_sound_effect = "moving_pop_confirmation" uplifted_into = "KLAHA" trait = "trait_organic" }
+KRESS = { archetype = BIOLOGICAL playable = { in_game = no } graphical_culture = generic_02 move_pop_sound_effect = "moving_pop_confirmation" uplifted_into = "KRESS" trait = "trait_organic" }
+LORIL = { archetype = BIOLOGICAL playable = { in_game = no } graphical_culture = generic_08 move_pop_sound_effect = "moving_pop_confirmation" uplifted_into = "LORIL" trait = "trait_organic" }
+MAD = { archetype = BIOLOGICAL playable = { in_game = no } graphical_culture = generic_02 move_pop_sound_effect = "moving_pop_confirmation" uplifted_into = "MAD" trait = "trait_organic" }
+
+ONLIES = { archetype = BIOLOGICAL playable = { in_game = no } graphical_culture = generic_02 move_pop_sound_effect = "moving_pop_confirmation" uplifted_into = "ONLIES" trait = "trait_organic" }
+PALKEO = { archetype = BIOLOGICAL playable = { in_game = no } graphical_culture = generic_08 move_pop_sound_effect = "moving_pop_confirmation" uplifted_into = "PALKEO" trait = "trait_organic" }
+PROTO_JEM = { archetype = PRESAPIENT playable = { in_game = no } graphical_culture = dominion move_pop_sound_effect = "moving_pop_confirmation" uplifted_into = "JEM" trait = "trait_organic" }
+PROTO_VOR = { archetype = PRESAPIENT playable = { in_game = no } graphical_culture = dominion move_pop_sound_effect = "moving_pop_confirmation" uplifted_into = "VOR" trait = "trait_organic"  }
+
+
+
+
+SELDON = { archetype = BIOLOGICAL playable = { in_game = no } graphical_culture = generic_02 move_pop_sound_effect = "moving_pop_confirmation" uplifted_into = "SELDON" trait = "trait_organic" }
+TARL = { archetype = BIOLOGICAL playable = { in_game = no } graphical_culture = generic_02 move_pop_sound_effect = "moving_pop_confirmation" uplifted_into = "TARL" trait = "trait_organic" }
+TOR = { archetype = BIOLOGICAL playable = { in_game = no } graphical_culture = generic_02 move_pop_sound_effect = "moving_pop_confirmation" uplifted_into = "TOR" trait = "trait_organic" }
+TOROTH = { archetype = BIOLOGICAL playable = { in_game = no } graphical_culture = generic_02 move_pop_sound_effect = "moving_pop_confirmation" uplifted_into = "TOROTH" trait = "trait_organic" }    #REMOVE
+VALAK = { archetype = BIOLOGICAL playable = { in_game = no } graphical_culture = generic_08 move_pop_sound_effect = "moving_pop_confirmation" uplifted_into = "VALAK" trait = "trait_organic" }
+
+
+VERID = { archetype = BIOLOGICAL playable = { in_game = no } graphical_culture = generic_08 move_pop_sound_effect = "moving_pop_confirmation" uplifted_into = "VERID" trait = "trait_organic" }
+ZEON = { archetype = BIOLOGICAL playable = { in_game = no } graphical_culture = generic_02 move_pop_sound_effect = "moving_pop_confirmation" uplifted_into = "ZEON" trait = "trait_organic" }
+
+
+
+
+
+#OLD
+ADD = { archetype = ANDROID playable = { in_game = no } graphical_culture = generic_02 move_pop_sound_effect = "moving_pop_confirmation" uplifted_into = "ADD"  }
+
+ANDROID = {
+	archetype = ANDROID
+	# playable = { in_game = no }
+	playable = { in_game = no }
+	gender = yes
+	use_climate_preference = no
+	leader_age_min = 1
+	graphical_culture = generic_02
+	move_pop_sound_effect = "moving_pop_confirmation"
+}
+PHOTONIC = {
+	archetype = PHOTONIC
+	# playable = { in_game = no }
+	playable = { in_game = no }
+	gender = yes
+	use_climate_preference = no
+	leader_age_min = 1	
+	graphical_culture = generic_02
+	move_pop_sound_effect = "moving_pop_confirmation"
+}
+
+ASSIMILATED = { archetype = BIOLOGICAL playable = { in_game = no } graphical_culture = generic_08 move_pop_sound_effect = "moving_pop_confirmation" uplifted_into = "ASSIMILATED"  }

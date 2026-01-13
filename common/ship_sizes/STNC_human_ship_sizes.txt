@@ -1,0 +1,36 @@
+###FRIGATE###
+inline_script = { script = "ships/frigate" MAP_ICON = "human" SHIP = "human_realta" TIER = "1" TARGET_LOCATORS = "2" CREW_COST = "default" }
+
+###Scout###
+inline_script = { script = "ships/scout" MAP_ICON = "human" SHIP = "human_foras" TIER = "0" TARGET_LOCATORS = "2" CREW_COST = "default" }
+inline_script = { script = "ships/scout" MAP_ICON = "human" SHIP = "human_fiosaiche" TIER = "5" TARGET_LOCATORS = "2" CREW_COST = "default" }
+
+###Attack Wing###
+inline_script = { script = "ships/attack_wing" MAP_ICON = "human" SHIP = "human_lir" TIER = "3" TARGET_LOCATORS = "6" CREW_COST = "default" }
+
+###Support Wing###
+inline_script = { script = "ships/support_wing" MAP_ICON = "human" SHIP = "human_juday" TIER = "7" TARGET_LOCATORS = "2" CREW_COST = "default" }
+  
+###DESTROYER###
+inline_script = { script = "ships/destroyer" MAP_ICON = "human" SHIP = "human_laidir" TIER = "5" TARGET_LOCATORS = "3" CREW_COST = "default" }
+
+###HEAVY ESCORT###
+inline_script = { script = "ships/heavy_escort" MAP_ICON = "human" SHIP = "human_seiche" TIER = "4" TARGET_LOCATORS = "3" CREW_COST = "default" }
+inline_script = { script = "ships/heavy_escort" MAP_ICON = "human" SHIP = "human_neit" TIER = "10" TARGET_LOCATORS = "3" CREW_COST = "default" }
+
+###LIGHT CRUISER###
+inline_script = { script = "ships/light_cruiser" MAP_ICON = "human" SHIP = "human_turas" TIER = "2" TARGET_LOCATORS = "2" CREW_COST = "default" }
+inline_script = { script = "ships/light_cruiser" MAP_ICON = "human" SHIP = "human_dion" TIER = "5" TARGET_LOCATORS = "3" CREW_COST = "default" }
+
+###BATTLECRUISER###
+inline_script = { script = "ships/battlecruiser" MAP_ICON = "human" SHIP = "human_slea" TIER = "3" TARGET_LOCATORS = "2" CREW_COST = "default" }
+inline_script = { script = "ships/battlecruiser" MAP_ICON = "human" SHIP = "human_morrigan" TIER = "6" TARGET_LOCATORS = "5" CREW_COST = "default" }
+
+###HEAVY CRUISER###
+inline_script = { script = "ships/heavy_cruiser" MAP_ICON = "human" SHIP = "human_garda" TIER = "4" TARGET_LOCATORS = "2" CREW_COST = "default" }
+   
+##BATTLESHIP###
+inline_script = { script = "ships/battleship" MAP_ICON = "human" SHIP = "human_bruid" TIER = "6" TARGET_LOCATORS = "2" CREW_COST = "default" }
+
+###DREADNOUGHT
+inline_script = { script = "ships/dreadnought" MAP_ICON = "human" SHIP = "human_aine" TIER = "7" TARGET_LOCATORS = "7" CREW_COST = "default" }

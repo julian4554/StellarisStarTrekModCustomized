@@ -1,0 +1,35 @@
+###FRIGATE###
+inline_script = { script = "ships/frigate" SHIP = "andorian_tanatahooef" TIER = "0" TARGET_LOCATORS = "2" CREW_COST = "default" MAP_ICON = "andorian" }
+
+###SCOUT###
+inline_script = { script = "ships/scout" SHIP = "andorian_gilinir" TIER = "0" TARGET_LOCATORS = "2" CREW_COST = "default" MAP_ICON = "andorian" }
+
+###SUPPORT WING###
+inline_script = { script = "ships/support_wing" SHIP = "andorian_tishratin" TIER = "2" TARGET_LOCATORS = "2" CREW_COST = "default" MAP_ICON = "andorian" }
+
+###DESTROYER###
+inline_script = { script = "ships/destroyer" SHIP = "andorian_atlirith" TIER = "1" TARGET_LOCATORS = "2" CREW_COST = "default" MAP_ICON = "andorian" }
+inline_script = { script = "ships/destroyer" SHIP = "andorian_ambika" TIER = "6" TARGET_LOCATORS = "2" CREW_COST = "default" MAP_ICON = "andorian" }
+
+###LIGHT CRUISER###
+inline_script = { script = "ships/light_cruiser" SHIP = "andorian_arev_challorn" TIER = "4" TARGET_LOCATORS = "2" CREW_COST = "default" MAP_ICON = "andorian" }
+
+##CRUISER###
+inline_script = { script = "ships/cruiser" SHIP = "andorian_kuthar" TIER = "5" TARGET_LOCATORS = "2" CREW_COST = "default" MAP_ICON = "andorian" }
+inline_script = { script = "ships/cruiser" SHIP = "andorian_osler" TIER = "8" TARGET_LOCATORS = "4" CREW_COST = "default" MAP_ICON = "andorian" }
+
+##BATTLECRUISER###
+inline_script = { script = "ships/battlecruiser" SHIP = "andorian_kumari" TIER = "3" TARGET_LOCATORS = "2" CREW_COST = "default" MAP_ICON = "andorian" }
+inline_script = { script = "ships/battlecruiser_xc" SHIP = "andorian_kumari" TIER = "3" TARGET_LOCATORS = "2" CREW_COST = "default" MAP_ICON = "andorian" }
+inline_script = { script = "ships/battlecruiser" SHIP = "andorian_charal" TIER = "7" TARGET_LOCATORS = "2" CREW_COST = "default" MAP_ICON = "andorian" }
+inline_script = { script = "ships/battlecruiser_xc" SHIP = "andorian_charal" TIER = "7" TARGET_LOCATORS = "2" CREW_COST = "default" MAP_ICON = "andorian" }
+
+##HEAVY CRUISER###
+inline_script = { script = "ships/heavy_cruiser" SHIP = "andorian_thris" TIER = "7" TARGET_LOCATORS = "2" CREW_COST = "default" MAP_ICON = "andorian" }
+
+##BATTLESHIP###
+inline_script = { script = "ships/battleship" SHIP = "andorian_lokune" TIER = "7" TARGET_LOCATORS = "2" CREW_COST = "default" MAP_ICON = "andorian" }
+
+
+##FLEET COMMAND CRUISER###
+inline_script = { script = "ships/fleet_command_cruiser" SHIP = "andorian_tarsk" TIER = "9" TARGET_LOCATORS = "5" CREW_COST = "default" MAP_ICON = "andorian" }

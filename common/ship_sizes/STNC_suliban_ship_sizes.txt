@@ -1,0 +1,31 @@
+###SCOUT###
+inline_script = { script = "ships/scout" MAP_ICON = "suliban" SHIP = "suliban_palla" TIER = "0" TARGET_LOCATORS = "2" CREW_COST = "default" }
+###FRIGATE###
+inline_script = { script = "ships/frigate" MAP_ICON = "suliban" SHIP = "suliban_movez" TIER = "4" TARGET_LOCATORS = "2" CREW_COST = "default" }
+###ATTACK WING###
+inline_script = { script = "ships/attack_wing" MAP_ICON = "suliban" SHIP = "suliban_kosal" TIER = "0" TARGET_LOCATORS = "2" CREW_COST = "default" }
+###SUPPORT WING###
+inline_script = { script = "ships/support_wing" MAP_ICON = "suliban" SHIP = "suliban_movel" TIER = "2" TARGET_LOCATORS = "2" CREW_COST = "default" }
+
+
+###HEAVY FRIGATE###
+inline_script = { script = "ships/heavy_frigate" MAP_ICON = "suliban" SHIP = "suliban_movezal" TIER = "6" TARGET_LOCATORS = "2" CREW_COST = "default" }
+
+###DESTROYER###
+inline_script = { script = "ships/destroyer" MAP_ICON = "suliban" SHIP = "suliban_kashe" TIER = "1" TARGET_LOCATORS = "2" CREW_COST = "default" }
+###LIGHT CRUISER###
+inline_script = { script = "ships/light_cruiser" MAP_ICON = "suliban" SHIP = "suliban_movulo" TIER = "7" TARGET_LOCATORS = "3" CREW_COST = "default" }
+
+##CRUISER###
+inline_script = { script = "ships/cruiser" MAP_ICON = "suliban" SHIP = "suliban_merin" TIER = "3" TARGET_LOCATORS = "2" CREW_COST = "default" }
+inline_script = { script = "ships/cruiser" MAP_ICON = "suliban" SHIP = "suliban_movulek" TIER = "8" TARGET_LOCATORS = "5" CREW_COST = "default" }
+##BATTLECRUISER###
+inline_script = { script = "ships/battlecruiser" MAP_ICON = "suliban_kosal" SHIP = "suliban_kosal_spiral" TIER = "5" TARGET_LOCATORS = "13" CREW_COST = "default" }
+##HEAVY CRUISER###
+inline_script = { script = "ships/heavy_cruiser" MAP_ICON = "suliban_movel" SHIP = "suliban_movel_lattice" TIER = "6" TARGET_LOCATORS = "4" CREW_COST = "default" }
+
+##BATTLESHIP###
+inline_script = { script = "ships/battleship" MAP_ICON = "suliban" SHIP = "suliban_kevelo" TIER = "6" TARGET_LOCATORS = "14" CREW_COST = "default" }
+
+##FLEET COMMAND CRUISER###
+inline_script = { script = "ships/fleet_command_cruiser" MAP_ICON = "suliban" SHIP = "suliban_alnek" TIER = "9" TARGET_LOCATORS = "5" CREW_COST = "default" }

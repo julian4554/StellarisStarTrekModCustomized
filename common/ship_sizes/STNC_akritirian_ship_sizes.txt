@@ -1,0 +1,11 @@
+###Frigate###
+inline_script = { script = "ships/frigate" SHIP = "akritirian_kariat" TIER = "0" TARGET_LOCATORS = "2" CREW_COST = "default" MAP_ICON = "akritirian" }
+
+###SCOUT###
+inline_script = { script = "ships/scout" SHIP = "akritirian_kritan" TIER = "0" TARGET_LOCATORS = "2" CREW_COST = "default" MAP_ICON = "akritirian" }
+
+###HEAVY ESCORT###
+inline_script = { script = "ships/heavy_escort" SHIP = "akritirian_tiral" TIER = "2" TARGET_LOCATORS = "2" CREW_COST = "default" MAP_ICON = "akritirian" }
+
+##BATTLECRUISER###
+inline_script = { script = "ships/battlecruiser" SHIP = "akritirian_arit" TIER = "4" TARGET_LOCATORS = "2" CREW_COST = "default" MAP_ICON = "akritirian" }

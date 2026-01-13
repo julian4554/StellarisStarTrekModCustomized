@@ -1,0 +1,28 @@
+###SCOUT###
+# inline_script = { script = "ships/scout" MAP_ICON = "sikarian" SHIP = "lurian_chatter" TIER = "0" TARGET_LOCATORS = "2" CREW_COST = "default" }
+
+###FRIGATE###
+# inline_script = { script = "ships/frigate" MAP_ICON = "sikarian" SHIP = "sikarian_dekoa" TIER = "5" TARGET_LOCATORS = "4" CREW_COST = "default" }
+
+# ###DESTROYER###
+inline_script = { script = "ships/light_cruiser" MAP_ICON = "sikarian" SHIP = "sikarian_fable" TIER = "7" TARGET_LOCATORS = "5" CREW_COST = "default" }
+
+# ###LIGHT CRUISER###
+# inline_script = { script = "ships/light_cruiser" MAP_ICON = "sikarian" SHIP = "lurian_enounce" TIER = "3" TARGET_LOCATORS = "3" CREW_COST = "default" }
+# inline_script = { script = "ships/light_cruiser_xc" MAP_ICON = "sikarian" SHIP = "sikarian_khara" TIER = "2" TARGET_LOCATORS = "2" CREW_COST = "default" }
+
+# ###CRUISER###
+# inline_script = { script = "ships/cruiser" MAP_ICON = "sikarian" SHIP = "sikarian_arandel" TIER = "8" TARGET_LOCATORS = "2" CREW_COST = "default" }
+# inline_script = { script = "ships/cruiser_xc" MAP_ICON = "sikarian" SHIP = "sikarian_arandel" TIER = "8" TARGET_LOCATORS = "2" CREW_COST = "default" }
+
+###BATTLECRUISER###
+# inline_script = { script = "ships/battlecruiser" MAP_ICON = "sikarian" SHIP = "flaxian_julasa" TIER = "4" TARGET_LOCATORS = "2" CREW_COST = "default" }
+
+# ###HEAVY CRUISER###
+# inline_script = { script = "ships/cruiser" MAP_ICON = "sikarian" SHIP = "sikarian_hedaya" TIER = "11" TARGET_LOCATORS = "2" CREW_COST = "default" }
+
+# ###COMMAND CRUISER###
+# inline_script = { script = "ships/command_cruiser" MAP_ICON = "sikarian" SHIP = "sikarian_indar" TIER = "6" TARGET_LOCATORS = "3" CREW_COST = "default" }
+
+# ###FLEET COMMAND CRUISER
+# inline_script = { script = "ships/fleet_command_cruiser" MAP_ICON = "sikarian" SHIP = "sikarian_iscandar" TIER = "7" TARGET_LOCATORS = "4" CREW_COST = "default" }

@@ -1,0 +1,85 @@
+###SCOUT###
+inline_script = { script = "ships/scout" MAP_ICON = "kelvan" SHIP = "kelvan_detector" TIER = "0" TARGET_LOCATORS = "2" CREW_COST = "default" }
+
+###ATTACK WING###
+inline_script = { script = "ships/attack_wing" MAP_ICON = "kelvan" SHIP = "kelvan_interceptor" TIER = "2" TARGET_LOCATORS = "5" CREW_COST = "default" }
+
+###CRUISER###
+inline_script = { script = "ships/cruiser" MAP_ICON = "kelvan" SHIP = "kelvan_incinerator" TIER = "3" TARGET_LOCATORS = "2" CREW_COST = "default" }
+
+##BATTLESHIP###
+inline_script = { script = "ships/battleship" MAP_ICON = "kelvan" SHIP = "kelvan_annihilator" TIER = "6" TARGET_LOCATORS = "2" CREW_COST = "default" }
+
+###DREADNOUGHT###
+inline_script = { script = "ships/dreadnought" MAP_ICON = "kelvan" SHIP = "kelvan_obliterator" TIER = "8" TARGET_LOCATORS = "4" CREW_COST = "default" }
+
+###CITY SHIP###
+kelvan_dominator = {
+	formation_priority = @dreadnought_formation_priority
+	max_speed = @city_ship_max_speed_10
+	acceleration = @city_ship_acceleration_10
+	rotation_speed = @city_ship_rotation_speed_10
+	collision_radius = 2
+	max_hitpoints = @city_ship_max_hitpoints_10
+	resources = {
+		category = ships
+		upkeep = { crew = @default_city_ship_crew_upkeep }
+		cost = { crew = @default_city_ship_crew_cost }
+		produces = {
+			crew = 50
+			energy = 250
+			minerals = 250
+			alloys = 100
+			components = 100
+			dilithium = 50
+			deuterium = 50
+			food = 50
+		}
+	}
+	modifier = {
+		sh_city_ship_base_stats = 1
+        starbase_shipyard_capacity_add = 2
+	}
+    ship_modifier = {
+        ship_size_value = @city_shipsize
+		ship_type_value = @city_ship_class_id
+        ship_class_value = @shipclass_cityship_value
+		ship_tier_value = 10
+    }
+	is_space_object = yes
+    combat_size_multiplier = 5
+	size_multiplier = 32
+	fleet_slot_size = 32
+	num_target_locators = 4
+	# is_space_station = no
+    can_disable = no
+	icon = ship_size_kelvan_dominator
+    icon_frame = 7 #probably unused, but mobile starbases are special
+    ship_class_icon_frame = 35
+	base_buildtime = @city_ship_base_buildtime_1
+	can_have_federation_design = no
+	enable_default_design = yes
+	default_behavior = carrier
+	prerequisites = { "tech_kelvan_dominator_1" }
+	potential_country = { can_design_ship = { ship = "kelvan_dominator" } }
+	class = shipclass_starbase
+	construction_type = starbase_shipyard
+	ship_roles = { brawler gunship explosive carrier screen artillery }
+	section_slots = { "mid" = { locator = "part1" } }
+	
+	required_component_set = "required_sensor_dreadnought"
+	required_component_set = "required_warp_dreadnought"
+	required_component_set = "required_impulse_dreadnought"
+	required_component_set = "required_hull_dreadnought"	
+	required_component_set = "required_shield_dreadnought"
+	required_component_set = "required_unique_dreadnought"
+	required_component_set = "required_countermeasures_dreadnought"
+    required_component_set = "required_mission_dreadnought"
+	potential_construction = {
+		can_construct_ship = { ship = "kelvan_dominator" }
+	}
+    ai_ship_data = {
+		min = 1
+        max = 2
+    }
+}

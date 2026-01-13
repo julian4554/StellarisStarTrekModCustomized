@@ -1,0 +1,14 @@
+###SCOUT###
+inline_script = { script = "ships/scout" MAP_ICON = "concordium" SHIP = "concordium_constable" TIER = "0" TARGET_LOCATORS = "2" CREW_COST = "default" }
+
+###FRIGATE###
+inline_script = { script = "ships/frigate" MAP_ICON = "concordium" SHIP = "concordium_guardian" TIER = "0" TARGET_LOCATORS = "2" CREW_COST = "default" }
+
+###DESTROYER###
+inline_script = { script = "ships/destroyer" MAP_ICON = "concordium" SHIP = "concordium_intervention" TIER = "2" TARGET_LOCATORS = "3" CREW_COST = "default" }
+
+##CRUISER###
+inline_script = { script = "ships/cruiser" MAP_ICON = "concordium" SHIP = "concordium_peacemaker" TIER = "4" TARGET_LOCATORS = "2" CREW_COST = "default" }
+
+##COMMAND CRUISER###
+inline_script = { script = "ships/command_cruiser" MAP_ICON = "concordium" SHIP = "concordium_justice" TIER = "6" TARGET_LOCATORS = "2" CREW_COST = "default" }

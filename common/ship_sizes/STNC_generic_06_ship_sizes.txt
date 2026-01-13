@@ -1,0 +1,14 @@
+###FRIGATE###
+inline_script = { script = "ships/frigate" MAP_ICON = "generic_06" SHIP = "generic_06_drael" TIER = "0" TARGET_LOCATORS = "2" CREW_COST = "default" }
+
+###SCOUT###
+inline_script = { script = "ships/scout" MAP_ICON = "generic_06" SHIP = "generic_06_draos" TIER = "0" TARGET_LOCATORS = "2" CREW_COST = "default" }
+
+##HEAVY ESCORT##
+inline_script = { script = "ships/heavy_escort" MAP_ICON = "generic_06" SHIP = "generic_06_elanopar" TIER = "2" TARGET_LOCATORS = "2" CREW_COST = "default" }
+
+###CRUISERS###
+inline_script = { script = "ships/cruiser" MAP_ICON = "generic_06" SHIP = "generic_06_iksaren" TIER = "4" TARGET_LOCATORS = "2" CREW_COST = "default" }
+
+##BATTLESHIPS###
+inline_script = { script = "ships/battleship" MAP_ICON = "generic_06" SHIP = "generic_06_grenjei" TIER = "7" TARGET_LOCATORS = "2" CREW_COST = "default" }

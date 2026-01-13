@@ -1,0 +1,11 @@
+###SCOUTS
+inline_script = { script = "ships/scout" MAP_ICON = "generic_01" SHIP = "generic_01_vexal" TIER = "0" TARGET_LOCATORS = "2" CREW_COST = "default" }
+
+###DESTROYER
+inline_script = { script = "ships/destroyer" MAP_ICON = "generic_01" SHIP = "generic_01_rafix" TIER = "2" TARGET_LOCATORS = "2" CREW_COST = "default" }
+
+###CRUISER
+inline_script = { script = "ships/cruiser" MAP_ICON = "generic_01" SHIP = "generic_01_plax" TIER = "4" TARGET_LOCATORS = "2" CREW_COST = "default" }
+
+###BATTLESHIP
+inline_script = { script = "ships/battleship" MAP_ICON = "generic_01" SHIP = "generic_01_cenox" TIER = "6" TARGET_LOCATORS = "2" CREW_COST = "default" }

@@ -1,0 +1,11 @@
+###SCOUTS###
+inline_script = { script = "ships/scout" MAP_ICON = "devore" SHIP = "devore_inspector" TIER = "0" TARGET_LOCATORS = "2" CREW_COST = "default" }
+
+###Support Wing###
+inline_script = { script = "ships/support_wing" MAP_ICON = "devore" SHIP = "devore_inquisition" TIER = "3" TARGET_LOCATORS = "2" CREW_COST = "default" }
+
+###HEAVY CRUISER###
+inline_script = { script = "ships/heavy_cruiser" MAP_ICON = "devore" SHIP = "devore_auditor" TIER = "4" TARGET_LOCATORS = "2" CREW_COST = "default" }
+
+###COMMAND CRUISER###
+inline_script = { script = "ships/command_cruiser" MAP_ICON = "devore" SHIP = "devore_overseer" TIER = "6" TARGET_LOCATORS = "2" CREW_COST = "default" }

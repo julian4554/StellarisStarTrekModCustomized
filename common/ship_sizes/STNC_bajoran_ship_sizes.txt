@@ -1,0 +1,20 @@
+###ATTACK WING###
+inline_script = { script = "ships/attack_wing" SHIP = "bajoran_piety" TIER = "1" TARGET_LOCATORS = "2" CREW_COST = "default" MAP_ICON = "bajoran" }
+
+###SCOUT###
+inline_script = { script = "ships/scout" SHIP = "bajoran_shabren" TIER = "0" TARGET_LOCATORS = "2" CREW_COST = "default" MAP_ICON = "bajoran" }
+
+###FRIGATE###
+inline_script = { script = "ships/frigate" SHIP = "bajoran_denorios" TIER = "7" TARGET_LOCATORS = "2" CREW_COST = "default" MAP_ICON = "bajoran" }
+
+###DESTROYER###
+inline_script = { script = "ships/destroyer" SHIP = "bajoran_pagh" TIER = "2" TARGET_LOCATORS = "2" CREW_COST = "default" MAP_ICON = "bajoran" }
+
+###LIGHT CRUISER###
+inline_script = { script = "ships/light_cruiser" SHIP = "bajoran_antares" TIER = "6" TARGET_LOCATORS = "2" CREW_COST = "default" MAP_ICON = "bajoran" }
+
+###CRUISER###
+inline_script = { script = "ships/cruiser" SHIP = "bajoran_ranjen" TIER = "3" TARGET_LOCATORS = "2" CREW_COST = "default" MAP_ICON = "bajoran" }
+
+##BATTLESHIP###
+inline_script = { script = "ships/battleship" SHIP = "bajoran_borhya" TIER = "5" TARGET_LOCATORS = "2" CREW_COST = "default" MAP_ICON = "bajoran" }

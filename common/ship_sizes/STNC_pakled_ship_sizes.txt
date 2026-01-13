@@ -1,0 +1,17 @@
+###SCOUT###
+inline_script = { script = "ships/scout" MAP_ICON = "pakled" SHIP = "pakled_monda" TIER = "0" TARGET_LOCATORS = "2" CREW_COST = "default" }
+
+###ATTACK WING###
+inline_script = { script = "ships/attack_wing" MAP_ICON = "pakled" SHIP = "pakled_harpy" TIER = "7" TARGET_LOCATORS = "2" CREW_COST = "default" }
+
+###DESTROYER###
+inline_script = { script = "ships/destroyer" MAP_ICON = "pakled" SHIP = "pakled_zungo" TIER = "1" TARGET_LOCATORS = "2" CREW_COST = "default" }
+
+##LIGHT CRUISER##
+inline_script = { script = "ships/light_cruiser" MAP_ICON = "pakled" SHIP = "pakled_ganho" TIER = "5" TARGET_LOCATORS = "2" CREW_COST = "default" }
+
+##CRUISER###
+inline_script = { script = "ships/cruiser" MAP_ICON = "pakled" SHIP = "pakled_parkah" TIER = "4" TARGET_LOCATORS = "2" CREW_COST = "default" }
+
+##HEAVY CRUISER###
+inline_script = { script = "ships/heavy_cruiser" MAP_ICON = "pakled" SHIP = "pakled_herkan" TIER = "6" TARGET_LOCATORS = "2" CREW_COST = "default" }

@@ -1,0 +1,14 @@
+#reloadable with 'reload stats'
+# This file is where you start when you want to configure something new, then go to sections
+
+###SCOUT###
+inline_script = { script = "ships/scout" MAP_ICON = "nausicaan" SHIP = "nausicaan_paregh" TIER = "0" TARGET_LOCATORS = "4" CREW_COST = "default" }
+
+#Frigate
+inline_script = { script = "ships/frigate" MAP_ICON = "nausicaan" SHIP = "nausicaan_ungraht" TIER = "0" TARGET_LOCATORS = "2" CREW_COST = "default" }
+
+#Light Cruiser
+inline_script = { script = "ships/light_cruiser" MAP_ICON = "nausicaan" SHIP = "nausicaan_kughet" TIER = "3" TARGET_LOCATORS = "3" CREW_COST = "default" }
+
+#BATTLESHIP#
+inline_script = { script = "ships/battleship" MAP_ICON = "nausicaan" SHIP = "nausicaan_jakrevh" TIER = "5" TARGET_LOCATORS = "3" CREW_COST = "default" }

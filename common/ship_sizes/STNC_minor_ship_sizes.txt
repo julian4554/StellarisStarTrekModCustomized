@@ -1,0 +1,3 @@
+###FRIGATE###
+#Takret#
+inline_script = { script = "ships/frigate" SHIP = "takret_melsus" TIER = "3" TARGET_LOCATORS = "3" CREW_COST = "default" MAP_ICON = "takret" }

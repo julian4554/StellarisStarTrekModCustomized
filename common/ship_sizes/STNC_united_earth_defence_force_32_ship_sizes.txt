@@ -1,0 +1,2 @@
+###BATTLESHIP###
+inline_script = { script = "ships/battleship" MAP_ICON = "united_earth_defence_force_32" SHIP = "united_earth_defence_force_32_rampart" TIER = "15" TARGET_LOCATORS = "8" CREW_COST = "default" }

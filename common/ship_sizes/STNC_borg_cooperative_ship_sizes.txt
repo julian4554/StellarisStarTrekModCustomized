@@ -1,0 +1,14 @@
+###SCOUT###
+inline_script = { script = "ships/scout" SHIP = "borg_cooperative_accord" TIER = "0" TARGET_LOCATORS = "2" CREW_COST = "default" MAP_ICON = "borg_cooperative" }
+
+###LIGHT CRUISERS###
+inline_script = { script = "ships/light_cruiser" SHIP = "borg_cooperative_congruence" TIER = "2" TARGET_LOCATORS = "3" CREW_COST = "default" MAP_ICON = "borg_cooperative" }
+
+###HEAVY CRUISERS###
+inline_script = { script = "ships/heavy_cruiser" SHIP = "borg_cooperative_euphony" TIER = "4" TARGET_LOCATORS = "2" CREW_COST = "default" MAP_ICON = "borg_cooperative" }
+
+###COMMAND CRUISERS###
+inline_script = { script = "ships/command_cruiser" SHIP = "borg_cooperative_consensus" TIER = "5" TARGET_LOCATORS = "2" CREW_COST = "default" MAP_ICON = "borg_cooperative" }
+
+###FLEET COMMAND CRUISERS###
+inline_script = { script = "ships/fleet_command_cruiser" SHIP = "borg_cooperative_solidarity" TIER = "8" TARGET_LOCATORS = "7" CREW_COST = "default" MAP_ICON = "borg_cooperative" }

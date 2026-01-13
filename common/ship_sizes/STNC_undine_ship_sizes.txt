@@ -1,0 +1,81 @@
+###FRIGATE###
+inline_script = { script = "ships/frigate" MAP_ICON = "undine" SHIP = "undine_nicor" TIER = "0" TARGET_LOCATORS = "2" CREW_COST = "default" }
+
+###SCOUT###
+inline_script = { script = "ships/scout" MAP_ICON = "undine" SHIP = "undine_nix" TIER = "0" TARGET_LOCATORS = "2" CREW_COST = "default" }
+
+###DESTROYER###
+inline_script = { script = "ships/destroyer" MAP_ICON = "undine" SHIP = "undine_styrga" TIER = "1" TARGET_LOCATORS = "2" CREW_COST = "default" }
+
+###CRUISER###
+inline_script = { script = "ships/cruiser" MAP_ICON = "undine" SHIP = "undine_hranfix" TIER = "2" TARGET_LOCATORS = "2" CREW_COST = "default" }
+
+###HEAVY CRUISER###
+inline_script = { script = "ships/heavy_cruiser" MAP_ICON = "undine" SHIP = "undine_nyuki" TIER = "4" TARGET_LOCATORS = "2" CREW_COST = "default" }
+
+##BATTLESHIP###
+inline_script = { script = "ships/battleship" MAP_ICON = "undine" SHIP = "undine_deofol" TIER = "3" TARGET_LOCATORS = "2" CREW_COST = "default" }
+
+###HEAVY ATTACK WING###
+inline_script = { script = "ships/heavy_attack_wing" MAP_ICON = "undine_nicor" SHIP = "undine_nicor_wing" TIER = "7" TARGET_LOCATORS = "9" CREW_COST = "default" }
+
+###HEAVY WEAPON PLATFORM###
+undine_nicor_wing_pk = {
+    entity = undine_nicor_wing_entity
+	formation_priority = @dreadnought_formation_priority
+	max_speed = @frigate_max_speed_7
+	acceleration = @frigate_acceleration_7
+	rotation_speed = @frigate_rotation_speed_7
+	collision_radius = 2
+	max_hitpoints = @dreadnought_max_hitpoints_7
+	resources = {
+		category = ships
+		upkeep = { crew = @default_heavy_attack_wing_crew_upkeep }
+		cost = { crew = @default_heavy_attack_wing_crew_cost }
+	}
+	modifier = {
+		sh_heavy_weapon_platform_base_stats = 1
+	}
+	combat_disengage_chance = @heavy_weapon_platform_disengagement_chance
+	ship_modifier = {
+		ship_size_value = @heavy_weapon_platform_size
+		ship_type_value = @heavy_weapon_platform_class_id
+        ship_class_value = @shipclass_military_special_value
+		ship_tier_value = 7
+	}
+	is_space_object = yes
+	size_multiplier = 16
+	fleet_slot_size = 8
+	num_target_locators = 9
+	is_space_station = no
+	icon = ship_size_undine_nicor_wing
+	base_buildtime = @dreadnought_base_buildtime_7
+	can_have_federation_design = no
+	enable_default_design = yes
+	default_behavior = artillery
+	prerequisites = { "tech_undine_nicor_wing_1" }
+	potential_country = { can_design_ship = { ship = "undine_nicor_wing" } }
+	class = shipclass_military_special
+	ship_roles = { brawler gunship explosive carrier screen artillery }
+	construction_type = starbase_shipyard
+	section_slots = { "mid" = { locator = "part1" } }
+	
+	required_component_set = "required_sensor_dreadnought"
+	required_component_set = "required_warp_dreadnought"
+	required_component_set = "required_impulse_dreadnought"
+	required_component_set = "required_hull_dreadnought"	
+	required_component_set = "required_shield_dreadnought"
+	required_component_set = "required_unique_dreadnought"
+	required_component_set = "required_countermeasures_dreadnought"
+    required_component_set = "required_mission_dreadnought"
+	potential_construction = {
+		host_has_dlc = "Apocalypse"
+        can_construct_ship = { ship = "undine_nicor_wing" }
+        owner = { planet_killers_banned = no }
+	}
+	ai_ship_data = {
+		min = 1
+        max = 2        
+    }
+}
+  

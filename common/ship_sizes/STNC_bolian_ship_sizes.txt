@@ -1,0 +1,15 @@
+###SCOUT###
+inline_script = { script = "ships/scout" SHIP = "bolian_starscream" TIER = "0" TARGET_LOCATORS = "2" CREW_COST = "default" MAP_ICON = "bolian" }
+
+
+###HEAVY FRIGATE###
+inline_script = { script = "ships/heavy_frigate" SHIP = "bolian_aetheric_orator" TIER = "5" TARGET_LOCATORS = "4" CREW_COST = "default" MAP_ICON = "bolian" }
+
+###DESTROYER###
+inline_script = { script = "ships/destroyer" SHIP = "bolian_resonant_advocate" TIER = "6" TARGET_LOCATORS = "4" CREW_COST = "default" MAP_ICON = "bolian" }
+
+###LIGHT CRUISER###
+inline_script = { script = "ships/light_cruiser" SHIP = "bolian_voidcaller" TIER = "3" TARGET_LOCATORS = "2" CREW_COST = "default" MAP_ICON = "bolian" }
+
+###COMMAND CRUISER###
+inline_script = { script = "ships/command_cruiser" SHIP = "bolian_stellar_conversant" TIER = "5" TARGET_LOCATORS = "5" CREW_COST = "default" MAP_ICON = "bolian" }

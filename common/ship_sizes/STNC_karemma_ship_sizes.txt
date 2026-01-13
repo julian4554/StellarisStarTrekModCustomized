@@ -1,0 +1,14 @@
+###FRIGATE###
+inline_script = { script = "ships/frigate" MAP_ICON = "karemma" SHIP = "karemma_hawker" TIER = "3" TARGET_LOCATORS = "2" CREW_COST = "default" }
+
+###SCOUT###
+inline_script = { script = "ships/scout" MAP_ICON = "karemma" SHIP = "karemma_broker" TIER = "0" TARGET_LOCATORS = "2" CREW_COST = "default" }
+
+###DESTROYER###
+inline_script = { script = "ships/destroyer" MAP_ICON = "karemma" SHIP = "karemma_pedlar" TIER = "2" TARGET_LOCATORS = "2" CREW_COST = "default" }
+
+##CRUISER###
+inline_script = { script = "ships/cruiser" MAP_ICON = "karemma" SHIP = "karemma_vendor" TIER = "4" TARGET_LOCATORS = "2" CREW_COST = "default" }
+
+##COMMAND CRUISER###
+inline_script = { script = "ships/command_cruiser" MAP_ICON = "karemma" SHIP = "karemma_magnate" TIER = "6" TARGET_LOCATORS = "2" CREW_COST = "default" }

@@ -1,0 +1,669 @@
+################
+# STARBASES #
+################
+
+@build_block_radius_starbase = 20
+@starbase_formation_priority = 1
+
+starbase_outpost ={
+	max_speed = 0.0
+	acceleration = 0.0
+	rotation_speed = 0.0
+    modifier = {
+		ship_evasion_mult = -1
+		ship_armor_add = 1000
+        starbase_defense_platform_capacity_add = 3
+        ship_sensor_range_add = 1
+	}
+    ship_modifier = {
+		ship_fire_rate_mult = 0.50
+		ship_weapon_range_mult = 0.20
+	}
+	max_hitpoints = @starbase_outpost_max_hitpoints_5
+    base_buildtime = 360
+    resources = {
+		category = starbase_stations
+		cost = { alloys = 100 crew = @default_outpost_crew_cost }
+		upkeep = { energy = 0.5 crew = @default_outpost_crew_upkeep }
+	}
+    
+    
+    
+    potential_construction = {
+		is_scope_type = planet
+		is_primary_star = yes
+		NOT = {
+			exists = orbital_defence
+		}
+	}
+
+	possible_construction = {
+        if = {
+            limit = {
+                exists = from
+                from = {
+                    is_minor_country = no
+                    is_stagnant_country = no
+                }
+            }
+            hidden_trigger = { always = yes }
+        }
+        else = {
+            solar_system = {
+                is_same_value = prev.capital_scope.solar_system
+            }
+        }
+    }
+    
+    combat_size_multiplier = 5                       
+	size_multiplier = 4
+	fleet_slot_size = 2
+    section_slots = {
+		"core" = { locator = "part1" }
+	}
+    
+    is_designable = no
+    num_target_locators = 0
+    is_space_station = no
+    can_have_federation_design = no
+    is_civilian = no
+    components_add_to_cost = no
+	can_disable = yes
+	flip_control_on_disable = yes
+    available_to_everyone = yes
+    
+	enable_default_design = yes	#if yes, countries will have an auto-generated design at start
+	prerequisites = { "tech_starbase_1" }
+	class = shipclass_starbase
+	
+    required_component_set = "required_sensor_frigate"
+	required_component_set = "required_hull_frigate"	
+	required_component_set = "required_shield_frigate"
+	required_component_set = "required_station_reactor_frigate"
+	
+	build_block_radius = @build_block_radius_starbase
+	formation_priority = @starbase_formation_priority
+	icon_frame = 1
+	icon = ship_size_military_station
+    
+    auto_upgrade = yes
+}
+  
+starbase_starport ={
+	max_speed = 0.0
+	acceleration = 0.0
+	rotation_speed = 0.0
+	modifier = {
+		ship_evasion_mult = -1
+		ship_armor_add = 2000
+		starbase_module_capacity_add = 2
+		starbase_building_capacity_add = 1
+        starbase_defense_platform_capacity_add = 6
+        ship_sensor_range_add = 1
+	}
+    ship_modifier = {
+		ship_fire_rate_mult = 0.50
+		ship_weapon_range_mult = 0.20
+	}
+    max_hitpoints = @starbase_starport_max_hitpoints_5
+    base_buildtime = 360                 
+    resources = {
+		category = starbase_stations
+		cost = { alloys = 250 crew = @default_starport_crew_cost }
+		upkeep = { energy = 2 crew = @default_starport_crew_upkeep }
+	}
+    combat_size_multiplier = 20
+	size_multiplier = 6
+	fleet_slot_size = 2
+    section_slots = {
+		"core" = { locator = "part1" }
+		"1" = { locator = "part2" }
+		"2" = { locator = "part3" }
+	}
+    is_designable = no               
+	num_target_locators = 0
+	is_space_station = no
+	can_have_federation_design = no
+    is_civilian = no
+    components_add_to_cost = no
+	can_disable = yes
+	flip_control_on_disable = yes
+    available_to_everyone = yes
+    
+	enable_default_design = yes	#if yes, countries will have an auto-generated design at start
+	prerequisites = { "tech_starbase_1" }
+	class = shipclass_starbase
+    #TODO: Change
+	required_component_set = "required_sensor_destroyer"
+	required_component_set = "required_hull_destroyer"
+	required_component_set = "required_shield_destroyer"
+	required_component_set = "required_station_reactor_destroyer"
+	# required_component_set = "required_unique_starbase"
+	build_block_radius = @build_block_radius_starbase
+	formation_priority = @starbase_formation_priority
+    icon_frame = 2
+    icon = ship_size_military_station
+	
+    potential_construction = {
+		NOT = { has_global_flag = "game_started" }
+	}
+
+	possible_construction = {
+		NOT = { has_global_flag = "game_started" }
+	}
+}
+  
+starbase_starhold ={
+	max_speed = 0.0
+	acceleration = 0.0
+	rotation_speed = 0.0
+	max_hitpoints = @starbase_starhold_max_hitpoints_5
+	can_disable = yes
+	flip_control_on_disable = yes
+	resources = {
+		category = starbase_stations
+		cost = { alloys = 750 crew = @default_starhold_crew_cost }
+		upkeep = { energy = 3 crew = @default_starhold_crew_upkeep }
+	}
+	modifier = {
+		ship_evasion_mult = -1
+		ship_armor_add = 5000
+		starbase_module_capacity_add = 4
+		starbase_building_capacity_add = 2
+        starbase_defense_platform_capacity_add = 9
+		ship_sensor_range_add = 1
+	}
+    ship_modifier = {
+		ship_fire_rate_mult = 0.50
+		ship_weapon_range_mult = 0.20
+	}
+	combat_size_multiplier = 30
+	size_multiplier = 8
+	fleet_slot_size = 2
+	num_target_locators = 0
+	is_space_station = no
+	icon_frame = 3
+    icon = ship_size_military_station
+	base_buildtime = 1080
+	is_designable = no
+	components_add_to_cost = no
+	can_have_federation_design = no
+	enable_default_design = yes
+	prerequisites = { "tech_starbase_3" }
+	class = shipclass_starbase
+	build_block_radius = @build_block_radius_starbase
+	formation_priority = @starbase_formation_priority
+	section_slots = {
+		"core" = { locator = "part1" }
+		"1" = { locator = "part2" }
+		"2" = { locator = "part3" }
+		"3" = { locator = "part4" }
+	}
+   #TODO: Change
+	required_component_set = "required_sensor_cruiser"
+	required_component_set = "required_hull_cruiser"
+	required_component_set = "required_shield_cruiser"
+	required_component_set = "required_station_reactor_cruiser"
+	# required_component_set = "required_unique_starbase"
+    potential_construction = {
+		always = no
+	}
+
+	possible_construction = {
+		always = no
+	}
+}
+  
+starbase_starfortress ={
+	max_speed = 0.0
+	acceleration = 0.0
+	rotation_speed = 0.0
+	max_hitpoints = @starbase_starfortress_max_hitpoints_5
+	can_disable = yes
+	flip_control_on_disable = yes
+	resources = {
+		category = starbase_stations
+		cost = { alloys = 2500 crew = @default_starfortress_crew_cost }
+		upkeep = { energy = 4 crew = @default_starfortress_crew_upkeep }
+	}
+	modifier = {
+		ship_evasion_mult = -1
+		ship_armor_add = 10000
+		starbase_module_capacity_add = 6
+		starbase_building_capacity_add = 3
+        starbase_defense_platform_capacity_add = 12
+		ship_sensor_range_add = 1
+
+	}
+    ship_modifier = {
+		ship_fire_rate_mult = 0.50
+		ship_weapon_range_mult = 0.20
+	}
+    combat_size_multiplier = 40
+	size_multiplier = 12
+	fleet_slot_size = 2
+	num_target_locators = 0
+	is_space_station = no
+	icon_frame = 4
+    icon = ship_size_military_station
+	base_buildtime = 1440
+	is_designable = no
+	components_add_to_cost = no
+	can_have_federation_design = no
+	enable_default_design = yes
+	prerequisites = { "tech_starbase_4" }
+	class = shipclass_starbase
+	build_block_radius = @build_block_radius_starbase
+	formation_priority = @starbase_formation_priority
+	section_slots = {
+		"core" = { locator = "part1" }
+		"1" = { locator = "part2" }
+		"2" = { locator = "part3" }
+		"3" = { locator = "part4" }
+		"4" = { locator = "part5" }
+	}
+   #TODO: Change
+	required_component_set = "required_sensor_battleship"
+	required_component_set = "required_hull_battleship"
+	required_component_set = "required_shield_battleship"
+	required_component_set = "required_station_reactor_battleship"
+	# required_component_set = "required_unique_starbase"
+    potential_construction = {
+		always = no
+	}
+
+	possible_construction = {
+		always = no
+	}
+}
+  
+starbase_citadel ={
+	max_speed = 0.0
+	acceleration = 0.0
+	rotation_speed = 0.0
+	max_hitpoints = @starbase_citadel_max_hitpoints_5
+	can_disable = yes
+	flip_control_on_disable = yes
+	resources = {
+		category = starbase_stations
+		cost = { alloys = 5000 crew = @default_citadel_crew_cost }
+		upkeep = { energy = 5 crew = @default_citadel_crew_upkeep }
+	}
+	modifier = {
+		ship_evasion_mult = -1
+		ship_armor_add = 20000
+		starbase_module_capacity_add = 6
+		starbase_building_capacity_add = 4
+        starbase_defense_platform_capacity_add = 15
+		ship_sensor_range_add = 1
+	}
+    ship_modifier = {
+		ship_fire_rate_mult = 0.50
+		ship_weapon_range_mult = 0.20
+	}
+    combat_size_multiplier = 50
+	size_multiplier = 16
+	fleet_slot_size = 2
+	num_target_locators = 0
+	is_space_station = no
+	icon_frame = 5
+    icon = ship_size_military_station
+	base_buildtime = 1800
+	is_designable = no
+	components_add_to_cost = no
+	can_have_federation_design = no
+	enable_default_design = yes
+	prerequisites = { "tech_starbase_5" }
+	class = shipclass_starbase
+	build_block_radius = @build_block_radius_starbase
+	formation_priority = @starbase_formation_priority
+	section_slots = {
+		"core" = { locator = "part1" }
+		"1" = { locator = "part2" }
+		"2" = { locator = "part3" }
+		"3" = { locator = "part4" }
+		"4" = { locator = "part5" }
+		"5" = { locator = "part6" }
+		"6" = { locator = "part7" }
+	}
+   #TODO: Change
+	required_component_set = "required_sensor_dreadnought"
+	required_component_set = "required_hull_dreadnought"	
+	required_component_set = "required_shield_dreadnought"
+	required_component_set = "required_station_reactor_dreadnought"
+	# required_component_set = "required_unique_starbase"
+    potential_construction = {
+		always = no
+	}
+
+	possible_construction = {
+		always = no
+	}
+}
+  
+
+starbase_swarm ={
+	max_speed = 0
+	acceleration = 0
+	rotation_speed = 0
+	max_hitpoints = 150000
+	can_disable = yes
+	flip_control_on_disable = yes
+	is_listed = no
+	graphical_culture = { "swarm_01" }
+	resources = {
+		category = starbase_stations
+		cost = { alloys = 3500 }
+	}
+	modifier = {
+		ship_evasion_mult = -1
+		ship_armor_add = 30000
+		ship_sensor_range_add = 1
+
+	}
+	size_multiplier = 4
+	fleet_slot_size = 2
+	num_target_locators = 0
+	is_space_station = no
+	icon_frame = -1
+	icon = ship_size_military_station
+	base_buildtime = 1800
+	is_designable = no
+	components_add_to_cost = no
+	can_have_federation_design = no
+	enable_default_design = no
+	class = shipclass_starbase
+	build_block_radius = @build_block_radius_starbase
+	formation_priority = @starbase_formation_priority
+	section_slots = {
+		"core" = { locator = "part1" }
+		"1" = { locator = "part2" }
+		"2" = { locator = "part3" }
+		"3" = { locator = "part4" }
+		"4" = { locator = "part5" }
+		"5" = { locator = "part6" }
+		"6" = { locator = "part7" }
+	}
+   #TODO: Change
+	required_component_set = "required_sensor_frigate"
+	required_component_set = "required_hull_frigate"	
+	required_component_set = "required_shield_frigate"	
+	# required_component_set = "required_unique_starbase"
+    potential_construction = {
+		always = no
+	}
+
+	possible_construction = {
+		always = no
+	}
+}
+  
+starbase_ai ={
+	max_speed = 0
+	acceleration = 0
+	rotation_speed = 0
+	max_hitpoints = 150000
+	can_disable = yes
+	flip_control_on_disable = yes
+	is_listed = no
+	graphical_culture = { "ai_01" }
+	resources = {
+		category = starbase_stations
+		cost = { alloys = 3500 }
+	}
+	modifier = {
+		ship_evasion_mult = -1
+		ship_armor_add = 20000
+		ship_shield_add = 20000
+		ship_sensor_range_add = 1
+
+	}
+	size_multiplier = 4
+	fleet_slot_size = 2
+	num_target_locators = 0
+	is_space_station = no
+	icon_frame = -1
+	icon = ship_size_military_station
+	base_buildtime = 1800
+	is_designable = no
+	components_add_to_cost = no
+	can_have_federation_design = no
+	enable_default_design = no
+	class = shipclass_starbase
+	build_block_radius = @build_block_radius_starbase
+	formation_priority = @starbase_formation_priority
+	section_slots = {
+		"core" = { locator = "part1" }
+		"1" = { locator = "part2" }
+		"2" = { locator = "part3" }
+		"3" = { locator = "part4" }
+		"4" = { locator = "part5" }
+		"5" = { locator = "part6" }
+		"6" = { locator = "part7" }
+	}
+   #TODO: Change
+	required_component_set = "required_sensor_frigate"
+	required_component_set = "required_hull_frigate"	
+	required_component_set = "required_shield_frigate"	
+	# required_component_set = "required_unique_starbase"
+    potential_construction = {
+		always = no
+	}
+
+	possible_construction = {
+		always = no
+	}
+}
+ 
+# Normal System Starbase
+starbase_exd_0 = {
+	graphical_culture = { "extra_dimensional_01" "extra_dimensional_02" "extra_dimensional_03" }
+	max_speed = 0.0
+	acceleration = 0.0
+	rotation_speed = 0.0
+	modifier = {
+		ship_evasion_mult = -1
+		ship_shield_add = 40000
+		ship_sensor_range_add = 1
+	}
+	ship_modifier = {
+		ship_weapon_range_mult = 0.20
+	}
+	max_hitpoints = 20000
+	base_buildtime = 730
+	combat_size_multiplier = 50
+	size_multiplier = 4
+	fleet_slot_size = 2
+	section_slots = { "core" = { locator = "root" } }
+	is_designable = no
+	num_target_locators = 0
+	is_space_station = no
+	can_have_federation_design = no
+	is_civilian = no
+	components_add_to_cost = no
+	is_listed = no
+	can_disable = no
+
+	enable_default_design = no	#if yes, countries will have an auto-generated design at start
+	class = shipclass_starbase
+
+	required_component_set = "sensor_components"
+	required_component_set = "combat_computers"
+
+	build_block_radius = @build_block_radius_starbase
+	formation_priority = @starbase_formation_priority
+	icon_frame = -1
+	icon = ship_size_military_station
+    potential_construction = {
+		always = no
+	}
+
+	possible_construction = {
+		always = no
+	}
+}
+ 
+starbase_exd ={
+	max_speed = 0
+	acceleration = 0
+	rotation_speed = 0
+	max_hitpoints = 150000
+	can_disable = yes
+	flip_control_on_disable = yes
+	is_listed = no
+	graphical_culture = { "extra_dimensional_01" "extra_dimensional_02" "extra_dimensional_03" }
+	modifier = {
+		ship_evasion_mult = -1
+		ship_shield_add = 80000
+		ship_armor_add = 10000
+		ship_sensor_range_add = 1
+
+	}
+	size_multiplier = 4
+	fleet_slot_size = 2
+	num_target_locators = 0
+	is_space_station = no
+	icon_frame = -1
+	icon = ship_size_military_station
+	base_buildtime = 1800
+	is_designable = no
+	components_add_to_cost = no
+	can_have_federation_design = no
+	enable_default_design = no
+	class = shipclass_starbase
+	build_block_radius = @build_block_radius_starbase
+	formation_priority = @starbase_formation_priority
+	section_slots = {
+		"core" = { locator = "part1" }
+		"1" = { locator = "part2" }
+		"2" = { locator = "part3" }
+		"3" = { locator = "part4" }
+		"4" = { locator = "part5" }
+		"5" = { locator = "part6" }
+		"6" = { locator = "part7" }
+	}
+   #TODO: Change
+	required_component_set = "required_sensor_frigate"
+	required_component_set = "required_hull_frigate"	
+	required_component_set = "required_shield_frigate"	
+	# required_component_set = "required_unique_starbase"
+    potential_construction = {
+		always = no
+	}
+
+	possible_construction = {
+		always = no
+	}
+}
+  
+starbase_marauder ={
+	max_speed = 0
+	acceleration = 0
+	rotation_speed = 0
+	max_hitpoints = 150000
+	can_disable = yes
+	flip_control_on_disable = yes
+	is_listed = no
+	graphical_culture = { "pirate_01" }
+	resources = {
+		category = starbase_stations
+		cost = { alloys = 3500 }
+	}
+	modifier = {
+		ship_evasion_mult = -1
+		ship_shield_add = 10000
+		ship_armor_add = 10000
+		ship_sensor_range_add = 1
+	}
+	size_multiplier = 4
+	fleet_slot_size = 2
+	num_target_locators = 0
+	is_space_station = no
+	icon_frame = -1
+	icon = ship_size_military_station
+	base_buildtime = 1800
+	is_designable = no
+	components_add_to_cost = no
+	can_have_federation_design = no
+	enable_default_design = no
+	class = shipclass_starbase
+	build_block_radius = @build_block_radius_starbase
+	formation_priority = @starbase_formation_priority
+	section_slots = {
+		"core" = { locator = "part1" }
+		"1" = { locator = "part2" }
+		"2" = { locator = "part3" }
+		"3" = { locator = "part4" }
+		"4" = { locator = "part5" }
+		"5" = { locator = "part6" }
+		"6" = { locator = "part7" }
+	}
+   #TODO: Change
+	required_component_set = "required_sensor_frigate"
+	required_component_set = "required_hull_frigate"	
+	required_component_set = "required_shield_frigate"	
+	# required_component_set = "required_unique_starbase"
+    potential_construction = {
+		always = no
+	}
+
+	possible_construction = {
+		always = no
+	}
+}
+  
+starbase_gatebuilders ={
+	max_speed = 0
+	acceleration = 0
+	rotation_speed = 0
+	max_hitpoints = 150000
+	can_disable = yes
+	flip_control_on_disable = yes
+	is_listed = no
+	resources = {
+		category = starbase_stations
+		cost = { alloys = 3500 }
+	}
+	modifier = {
+		ship_evasion_mult = -1
+		ship_shield_add = 10000
+		ship_armor_add = 10000
+		ship_sensor_range_add = 1
+
+	}
+	size_multiplier = 4
+	fleet_slot_size = 2
+	num_target_locators = 0
+	is_space_station = no
+	icon_frame = -1
+	icon = ship_size_military_station
+	base_buildtime = 1800
+	is_designable = no
+	components_add_to_cost = no
+	can_have_federation_design = no
+	enable_default_design = no
+	class = shipclass_starbase
+	build_block_radius = @build_block_radius_starbase
+	formation_priority = @starbase_formation_priority
+	section_slots = {
+		"core" = { locator = "part1" }
+		"1" = { locator = "part2" }
+		"2" = { locator = "part3" }
+		"3" = { locator = "part4" }
+		"4" = { locator = "part5" }
+		"5" = { locator = "part6" }
+		"6" = { locator = "part7" }
+	}
+   #TODO: Change
+	required_component_set = "required_sensor_frigate"
+	required_component_set = "required_hull_frigate"	
+	required_component_set = "required_shield_frigate"	
+	# required_component_set = "required_unique_starbase"
+    potential_construction = {
+		always = no
+	}
+
+	possible_construction = {
+		always = no
+	}
+}

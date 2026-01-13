@@ -1,0 +1,20 @@
+###SCOUT###
+inline_script = { script = "ships/scout" MAP_ICON = "tuterian" SHIP = "tuterian_edoulg" TIER = "0" TARGET_LOCATORS = "2" CREW_COST = "default" }
+
+###FRIGATE###
+inline_script = { script = "ships/frigate" MAP_ICON = "tuterian" SHIP = "tuterian_derehne" TIER = "5" TARGET_LOCATORS = "2" CREW_COST = "default" }
+
+###DESTROYER###
+inline_script = { script = "ships/destroyer" MAP_ICON = "tuterian" SHIP = "tuterian_umahel" TIER = "2" TARGET_LOCATORS = "3" CREW_COST = "default" }
+
+###LIGHT CRUISER###
+inline_script = { script = "ships/light_cruiser" MAP_ICON = "tuterian" SHIP = "tuterian_arehbes" TIER = "6" TARGET_LOCATORS = "4" CREW_COST = "default" }
+
+###CRUISER###
+inline_script = { script = "ships/cruiser" MAP_ICON = "tuterian" SHIP = "tuterian_holvhe" TIER = "4" TARGET_LOCATORS = "3" CREW_COST = "default" }
+
+###COMMAND CRUISER###
+inline_script = { script = "ships/command_cruiser" MAP_ICON = "tuterian" SHIP = "tuterian_gelvik" TIER = "7" TARGET_LOCATORS = "3" CREW_COST = "default" }
+
+###FLEET COMMAND CRUISERS###
+inline_script = { script = "ships/fleet_command_cruiser" MAP_ICON = "tuterian" SHIP = "tuterian_denuos" TIER = "9" TARGET_LOCATORS = "2" CREW_COST = "default" }

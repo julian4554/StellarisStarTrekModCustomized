@@ -1,0 +1,25 @@
+#reloadable with 'reload stats'
+# This file is where you start when you want to configure something new, then go to sections
+
+
+
+###SUPPORT WING###
+inline_script = { script = "ships/support_wing" MAP_ICON = "independent" SHIP = "independent_class_j" TIER = "4" TARGET_LOCATORS = "2" CREW_COST = "default" }
+inline_script = { script = "ships/support_wing" MAP_ICON = "independent" SHIP = "independent_la_sirena" TIER = "9" TARGET_LOCATORS = "2" CREW_COST = "default" }
+
+###ATTACK WING###
+inline_script = { script = "ships/attack_wing" MAP_ICON = "independent" SHIP = "independent_skoll" TIER = "11" TARGET_LOCATORS = "2" CREW_COST = "default" }
+
+###SCOUT###
+inline_script = { script = "ships/scout" MAP_ICON = "independent" SHIP = "independent_ekina" TIER = "7" TARGET_LOCATORS = "3" CREW_COST = "default" }
+inline_script = { script = "ships/scout" MAP_ICON = "independent" SHIP = "independent_phoenix" TIER = "11" TARGET_LOCATORS = "2" CREW_COST = "default" }
+
+###FRIGATE#
+inline_script = { script = "ships/frigate" MAP_ICON = "independent" SHIP = "miradorn_raider" TIER = "5" TARGET_LOCATORS = "2" CREW_COST = "default" }
+inline_script = { script = "ships/frigate" MAP_ICON = "independent" SHIP = "independent_nova_one" TIER = "11" TARGET_LOCATORS = "2" CREW_COST = "default" }
+
+###CRUISER###
+inline_script = { script = "ships/cruiser" MAP_ICON = "amarie" SHIP = "amarie_cruiser" TIER = "5" TARGET_LOCATORS = "2" CREW_COST = "default" }
+
+###BATTLESHIP###
+inline_script = { script = "ships/battleship" MAP_ICON = "independent" SHIP = "independent_shrike" TIER = "12" TARGET_LOCATORS = "5" CREW_COST = "default" }

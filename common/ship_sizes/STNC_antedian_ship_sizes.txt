@@ -1,0 +1,13 @@
+###SCOUT###
+inline_script = { script = "ships/scout" SHIP = "antedian_kallah" TIER = "0" TARGET_LOCATORS = "3" CREW_COST = "default" MAP_ICON = "antedian" }
+
+
+###Attack Wing###
+inline_script = { script = "ships/attack_wing" SHIP = "antedian_lelha" TIER = "2" TARGET_LOCATORS = "3" CREW_COST = "default" MAP_ICON = "antedian" }
+
+###CRUISER###
+inline_script = { script = "ships/cruiser" SHIP = "antedian_balup" TIER = "3" TARGET_LOCATORS = "3" CREW_COST = "default" MAP_ICON = "antedian" }
+
+
+###BATTLESHIP
+inline_script = { script = "ships/battleship" SHIP = "antedian_gahdla" TIER = "5" TARGET_LOCATORS = "3" CREW_COST = "default" MAP_ICON = "antedian" }

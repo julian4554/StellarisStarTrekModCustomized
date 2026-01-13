@@ -1,0 +1,38 @@
+###FRIGATES###
+inline_script = { script = "ships/frigate" MAP_ICON = "ferengi" SHIP = "ferengi_kelga" TIER = "0" TARGET_LOCATORS = "2" CREW_COST = "default" }
+inline_script = { script = "ships/frigate" MAP_ICON = "ferengi" SHIP = "ferengi_bonan" TIER = "3" TARGET_LOCATORS = "2" CREW_COST = "default" }
+
+###SCOUTS###
+inline_script = { script = "ships/scout" MAP_ICON = "ferengi" SHIP = "ferengi_nifera" TIER = "0" TARGET_LOCATORS = "2" CREW_COST = "default" }
+
+###SUPPORT WINGS###
+inline_script = { script = "ships/support_wing" MAP_ICON = "ferengi" SHIP = "ferengi_niarel" TIER = "5" TARGET_LOCATORS = "3" CREW_COST = "default" }
+
+###DESTROYERS###
+inline_script = { script = "ships/destroyer" MAP_ICON = "ferengi" SHIP = "ferengi_arken" TIER = "1" TARGET_LOCATORS = "3" CREW_COST = "default" }
+inline_script = { script = "ships/destroyer" MAP_ICON = "ferengi" SHIP = "ferengi_merat" TIER = "7" TARGET_LOCATORS = "2" CREW_COST = "default" }
+
+###HEAVY ESCORTS###
+inline_script = { script = "ships/heavy_escort" MAP_ICON = "ferengi" SHIP = "ferengi_bor" TIER = "5" TARGET_LOCATORS = "4" CREW_COST = "default" }
+inline_script = { script = "ships/heavy_escort" MAP_ICON = "ferengi" SHIP = "ferengi_garub" TIER = "11" TARGET_LOCATORS = "5" CREW_COST = "default" }
+
+###LIGHT CRUISERS###
+inline_script = { script = "ships/light_cruiser" MAP_ICON = "ferengi" SHIP = "ferengi_rkela" TIER = "3" TARGET_LOCATORS = "2" CREW_COST = "default" }
+inline_script = { script = "ships/light_cruiser_xc" MAP_ICON = "ferengi" SHIP = "ferengi_rkela" TIER = "3" TARGET_LOCATORS = "2" CREW_COST = "default" }
+
+###BATTLECRUISERS
+inline_script = { script = "ships/battlecruiser" MAP_ICON = "ferengi" SHIP = "ferengi_dendara" TIER = "6" TARGET_LOCATORS = "2" CREW_COST = "default" }
+inline_script = { script = "ships/battlecruiser" MAP_ICON = "ferengi" SHIP = "ferengi_nandi" TIER = "10" TARGET_LOCATORS = "5" CREW_COST = "default" }
+inline_script = { script = "ships/battlecruiser_xc" MAP_ICON = "ferengi" SHIP = "ferengi_nandi" TIER = "10" TARGET_LOCATORS = "5" CREW_COST = "default" }
+
+###COMMAND CRUISERS###
+inline_script = { script = "ships/command_cruiser" MAP_ICON = "ferengi" SHIP = "ferengi_zark" TIER = "3" TARGET_LOCATORS = "5" CREW_COST = "default" }
+inline_script = { script = "ships/command_cruiser_xc" MAP_ICON = "ferengi" SHIP = "ferengi_zark" TIER = "3" TARGET_LOCATORS = "5" CREW_COST = "default" }
+inline_script = { script = "ships/command_cruiser" MAP_ICON = "ferengi" SHIP = "ferengi_dkora" TIER = "7" TARGET_LOCATORS = "4" CREW_COST = "default" }
+inline_script = { script = "ships/command_cruiser_xc" MAP_ICON = "ferengi" SHIP = "ferengi_dkora" TIER = "7" TARGET_LOCATORS = "4" CREW_COST = "default" }
+
+##DREADNOUGHTS###
+inline_script = { script = "ships/dreadnought" MAP_ICON = "ferengi" SHIP = "ferengi_ooron" TIER = "7" TARGET_LOCATORS = "4" CREW_COST = "default" }
+
+##FLEET COMMAND CRUISERS###
+inline_script = { script = "ships/fleet_command_cruiser" MAP_ICON = "ferengi" SHIP = "ferengi_slugan" TIER = "8" TARGET_LOCATORS = "2" CREW_COST = "default" }

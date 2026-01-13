@@ -1,0 +1,34 @@
+###FRIGATE###
+inline_script = { script = "ships/frigate" MAP_ICON = "caitian" SHIP = "caitian_acris" TIER = "0" TARGET_LOCATORS = "2" CREW_COST = "default" }
+inline_script = { script = "ships/frigate" MAP_ICON = "caitian" SHIP = "caitian_clavum" TIER = "8" TARGET_LOCATORS = "3" CREW_COST = "default" }
+
+###SCOUT###
+inline_script = { script = "ships/scout" MAP_ICON = "caitian" SHIP = "caitian_lumiera" TIER = "0" TARGET_LOCATORS = "3" CREW_COST = "default" }
+
+
+###HEAVY ESCORT###
+inline_script = { script = "ships/heavy_escort" MAP_ICON = "caitian" SHIP = "caitian_occisor" TIER = "2" TARGET_LOCATORS = "2" CREW_COST = "default" }
+inline_script = { script = "ships/heavy_escort" MAP_ICON = "caitian" SHIP = "caitian_sicarius" TIER = "7" TARGET_LOCATORS = "4" CREW_COST = "default" }
+
+###CRUISER###
+inline_script = { script = "ships/cruiser" MAP_ICON = "caitian" SHIP = "caitian_impetus" TIER = "3" TARGET_LOCATORS = "3" CREW_COST = "default" }
+
+###HEAVY CRUISER###
+inline_script = { script = "ships/heavy_cruiser" MAP_ICON = "caitian" SHIP = "caitian_ignis" TIER = "3" TARGET_LOCATORS = "3" CREW_COST = "default" }
+
+##BATTLECRUISER###
+inline_script = { script = "ships/battlecruiser" MAP_ICON = "caitian" SHIP = "caitian_deicidae" TIER = "3" TARGET_LOCATORS = "2" CREW_COST = "default" }
+inline_script = { script = "ships/battlecruiser" MAP_ICON = "caitian" SHIP = "caitian_interfector" TIER = "8" TARGET_LOCATORS = "3" CREW_COST = "default" }
+
+##COMMAND CRUISER###
+inline_script = { script = "ships/command_cruiser" MAP_ICON = "caitian" SHIP = "caitian_solus" TIER = "5" TARGET_LOCATORS = "2" CREW_COST = "default" }
+inline_script = { script = "ships/command_cruiser" MAP_ICON = "caitian" SHIP = "caitian_alis" TIER = "9" TARGET_LOCATORS = "5" CREW_COST = "default" }
+
+###BATTLESHIP###
+inline_script = { script = "ships/battleship" MAP_ICON = "caitian" SHIP = "caitian_bellator" TIER = "9" TARGET_LOCATORS = "2" CREW_COST = "default" }
+
+###FLEET COMMAND CRUISER###
+inline_script = { script = "ships/fleet_command_cruiser" MAP_ICON = "caitian" SHIP = "caitian_atrox" TIER = "7" TARGET_LOCATORS = "2" CREW_COST = "default" }
+
+###DREADNAUGHT###
+inline_script = { script = "ships/dreadnought" MAP_ICON = "caitian" SHIP = "caitian_aspero" TIER = "10" TARGET_LOCATORS = "3" CREW_COST = "default" }

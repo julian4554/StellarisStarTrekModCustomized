@@ -1,0 +1,469 @@
+#type = aesthetic_wonder
+#type = historical_item
+#type = xeno_geology
+
+
+#rarity = common
+#rarity = rare
+#rarity = epic
+#rarity = exceptional
+
+#AESTHETIC#
+elachi_memorial_obelisk = {
+	icon = "STNC_GFX_specimen_elachi_memorial_obelisk"
+	type = aesthetic_wonder
+	inline_script = { script = "grand_archive/set_specimen_rarity" RARITY = common }
+    triggered_country_modifier = {
+		mult = value:aesthetic_wonder_specimens_modifiers_mult
+		country_unity_produces_mult = 0.02
+	}
+}
+moriarty_empty_photonic_matrix = {
+	icon = "STNC_GFX_specimen_moriarty_empty_photonic_matrix"
+	type = aesthetic_wonder
+	inline_script = { script = "grand_archive/set_specimen_rarity" RARITY = common }
+    triggered_country_modifier = {
+		mult = value:aesthetic_wonder_specimens_modifiers_mult
+        category_holography_research_speed_mult = 0.025
+	} 
+}
+veltan_lust_idol = {
+	icon = "STNC_GFX_specimen_veltan_lust_idol"
+	type = aesthetic_wonder
+	inline_script = { script = "grand_archive/set_specimen_rarity" RARITY = rare }
+    triggered_country_modifier = {
+		mult = value:aesthetic_wonder_specimens_modifiers_mult
+		biological_logistic_growth_mult = 0.01
+	}
+}
+kurlan_naiskos = {
+	icon = "STNC_GFX_specimen_kurlan_naiskos"
+	type = aesthetic_wonder
+	inline_script = { script = "grand_archive/set_specimen_rarity" RARITY = epic }
+    resources = { 
+        produces = { society_research = 20 } 
+    }
+}
+hastoroth_assault_drone = {
+	icon = "STNC_GFX_specimen_hastoroth_assault_drone"
+	type = aesthetic_wonder
+	inline_script = { script = "grand_archive/set_specimen_rarity" RARITY = epic }
+    triggered_country_modifier = {
+		mult = value:aesthetic_wonder_specimens_modifiers_mult
+		ship_orbital_bombardment_pop_damage_mult = 0.05
+	}
+}
+human_ocd_player = {
+	icon = "STNC_GFX_specimen_human_ocd_player"
+	type = aesthetic_wonder
+	inline_script = { script = "grand_archive/set_specimen_rarity" RARITY = common }
+    triggered_country_modifier = {
+		mult = value:aesthetic_wonder_specimens_modifiers_mult
+		planet_entertainers_produces_mult = 0.025
+	}
+}
+iconian_hearts_harmony = {
+	icon = "STNC_GFX_specimen_iconian_hearts_harmony"
+	type = aesthetic_wonder
+	inline_script = { script = "grand_archive/set_specimen_rarity" RARITY = epic }
+    triggered_country_modifier = {
+		mult = value:aesthetic_wonder_specimens_modifiers_mult
+		planet_entertainers_produces_mult = 0.05
+	}
+}
+solanae_examination_table = {
+	icon = "STNC_GFX_specimen_solanae_examination_table"
+	type = aesthetic_wonder
+	inline_script = { script = "grand_archive/set_specimen_rarity" RARITY = rare }
+    triggered_country_modifier = {
+		mult = value:aesthetic_wonder_specimens_modifiers_mult
+        category_biology_research_speed_mult = 0.05
+	} 
+}
+
+forgotten_equation_energy_dissipation = {
+	icon = "STNC_GFX_specimen_forgotten_equation"
+	type = aesthetic_wonder
+	inline_script = { script = "grand_archive/set_specimen_rarity" RARITY = rare }
+    resources = { 
+        produces = { physics_research = 5 } 
+    }
+    triggered_country_modifier = {
+        custom_tooltip = specimen_forgotten_equation_energy_dissipation
+    }
+}
+forgotten_equation_transwarp_physics = {
+	icon = "STNC_GFX_specimen_forgotten_equation"
+	type = aesthetic_wonder
+	inline_script = { script = "grand_archive/set_specimen_rarity" RARITY = rare }
+    resources = { 
+        produces = { physics_research = 5 } 
+    } 
+    triggered_country_modifier = {
+        custom_tooltip = specimen_forgotten_equation_transwarp_physics
+    }
+}
+forgotten_equation_singularity_manipulation = {
+	icon = "STNC_GFX_specimen_forgotten_equation"
+	type = aesthetic_wonder
+	inline_script = { script = "grand_archive/set_specimen_rarity" RARITY = rare }
+    resources = { 
+        produces = { physics_research = 5 } 
+    } 
+    triggered_country_modifier = {
+        custom_tooltip = specimen_forgotten_equation_singularity_manipulation
+    }
+}
+forgotten_equation_graviton_manipulation = {
+	icon = "STNC_GFX_specimen_forgotten_equation"
+	type = aesthetic_wonder
+	inline_script = { script = "grand_archive/set_specimen_rarity" RARITY = rare }
+    resources = { 
+        produces = { physics_research = 5 } 
+    } 
+    triggered_country_modifier = {
+        custom_tooltip = specimen_forgotten_equation_graviton_manipulation
+    }
+}
+forgotten_equation_transphasic_compression = {
+	icon = "STNC_GFX_specimen_forgotten_equation"
+	type = aesthetic_wonder
+	inline_script = { script = "grand_archive/set_specimen_rarity" RARITY = rare }
+    resources = { 
+        produces = { physics_research = 5 } 
+    } 
+    triggered_country_modifier = {
+        custom_tooltip = specimen_forgotten_equation_transphasic_compression
+    }
+}
+forgotten_equation_quantum_propulsion = {
+	icon = "STNC_GFX_specimen_forgotten_equation"
+	type = aesthetic_wonder
+	inline_script = { script = "grand_archive/set_specimen_rarity" RARITY = rare }
+    resources = { 
+        produces = { physics_research = 5 } 
+    } 
+    triggered_country_modifier = {
+        custom_tooltip = specimen_forgotten_equation_quantum_propulsion
+    }
+}
+
+#HISTORICAL#
+andorian_banner_of_krotus = {
+	icon = "STNC_GFX_specimen_andorian_banner_of_krotus"
+	type = historical_item
+	inline_script = { script = "grand_archive/set_specimen_rarity" RARITY = rare }
+    triggered_country_modifier = {
+		mult = value:historical_item_specimens_modifiers_mult
+		army_morale = 0.10
+	}
+}
+willie_mays_baseball_card = {
+	icon = "STNC_GFX_specimen_willie_mays_baseball_card"
+	type = historical_item
+	inline_script = { script = "grand_archive/set_specimen_rarity" RARITY = common }
+	triggered_country_modifier = {
+		mult = value:historical_item_specimens_modifiers_mult
+		pop_cat_worker_happiness = 0.02
+	}
+}
+hotel_royale = {
+	icon = "STNC_GFX_specimen_hotel_royale"
+	type = historical_item
+	inline_script = { script = "grand_archive/set_specimen_rarity" RARITY = common }
+	resources = { 
+        produces = { society_research = 5 } 
+    }
+}
+legendary_marine_biologist_notes = {
+	icon = "STNC_GFX_specimen_legendary_marine_biologist_notes"
+	type = historical_item
+	inline_script = { script = "grand_archive/set_specimen_rarity" RARITY = common }
+	resources = { 
+        produces = { society_research = 5 } 
+    }
+}
+the_lodge = {
+	icon = "STNC_GFX_specimen_the_lodge"
+	type = historical_item
+	inline_script = { script = "grand_archive/set_specimen_rarity" RARITY = common }
+	resources = { 
+        produces = { society_research = 5 } 
+    }
+}
+elachi_voting_terminal = {
+	icon = "STNC_GFX_specimen_elachi_voting_terminal"
+	type = historical_item
+	inline_script = { script = "grand_archive/set_specimen_rarity" RARITY = common }
+	resources = { 
+        produces = { society_research = 5 } 
+    }
+}
+orion_first_constitution = {
+	icon = "STNC_GFX_specimen_orion_first_constitution"
+	type = historical_item
+	inline_script = { script = "grand_archive/set_specimen_rarity" RARITY = rare }
+	resources = { 
+        produces = { society_research = 10 } 
+    }
+}
+varon_t_disruptor = {
+	icon = "STNC_GFX_specimen_varon_t_disruptor"
+	type = historical_item
+	inline_script = { script = "grand_archive/set_specimen_rarity" RARITY = epic }
+	triggered_country_modifier = {
+		mult = value:historical_item_specimens_modifiers_mult
+		army_morale_damage_mult = 0.15
+	}
+}
+kentari_monument_of_fate = {
+	icon = "STNC_GFX_specimen_kentari_monument_of_fate"
+	type = historical_item
+	inline_script = { script = "grand_archive/set_specimen_rarity" RARITY = epic }
+	triggered_country_modifier = {
+		potential = { 
+            is_species_class = LUK
+            is_regular_empire = yes
+        }
+        mult = value:historical_item_specimens_modifiers_mult
+		planet_jobs_alloys_produces_mult = 0.10
+	}
+    triggered_country_modifier = {
+		potential = { 
+            NOT = { is_species_class = LUK }
+            is_regular_empire = yes
+        }
+        mult = value:historical_item_specimens_modifiers_mult
+		planet_jobs_alloys_produces_mult = 0.05
+	}
+}
+slaver_weapon_1 = {
+	icon = "STNC_GFX_specimen_slaver_weapon_1"
+	type = historical_item
+	inline_script = { script = "grand_archive/set_specimen_rarity" RARITY = exceptional }
+    resources = { 
+        produces = { physics_research = 40 } 
+    }
+}
+valt_and_garuths_ashes = {
+	icon = "STNC_GFX_specimen_valt_and_garuths_ashes"
+	type = historical_item
+	inline_script = { script = "grand_archive/set_specimen_rarity" RARITY = common }	
+    triggered_country_modifier = {
+        potential = { is_species_class = VAL is_regular_empire = yes }
+        mult = value:historical_item_specimens_modifiers_mult
+        country_unity_produces_mult = 0.05
+    }
+    triggered_country_modifier = {
+        potential = { is_species_class = KRI is_regular_empire = yes }
+        mult = value:historical_item_specimens_modifiers_mult
+        country_unity_produces_mult = 0.03
+    }
+    resources = { 
+        produces = { 
+            trigger = { 
+                owner = { 
+                    OR = {
+                        NOR = { is_species_class = KRI is_species_class = VAL } 
+                        is_regular_empire = no
+                    }
+                }
+            }
+            society_research = 5
+        } 
+    }
+}
+garuths_bridal_gown = {
+	icon = "STNC_GFX_specimen_garuths_bridal_gown"
+	type = historical_item
+	inline_script = { script = "grand_archive/set_specimen_rarity" RARITY = common }	
+    triggered_country_modifier = {
+        potential = { is_species_class = VAL is_regular_empire = yes }
+        mult = value:historical_item_specimens_modifiers_mult
+        country_unity_produces_mult = 0.03
+    }
+    triggered_country_modifier = {
+        potential = { is_species_class = KRI is_regular_empire = yes }
+        mult = value:historical_item_specimens_modifiers_mult
+        country_unity_produces_mult = 0.05
+    }
+    resources = { 
+        produces = { 
+            trigger = { 
+                owner = { 
+                    OR = {
+                        NOR = { is_species_class = KRI is_species_class = VAL } 
+                        is_regular_empire = no
+                    }
+                }
+            }
+            society_research = 5
+        } 
+    }
+}
+klingon_first_warp_drive_fragment = {
+	icon = "STNC_GFX_specimen_klingon_first_warp_drive_fragment"
+	type = historical_item
+	inline_script = { script = "grand_archive/set_specimen_rarity" RARITY = rare }
+    resources = { 
+        produces = { engineering_research = 10 } 
+    } 
+}
+
+
+
+#XENO GEOLOGY#
+shapeshifting_locket = {
+	icon = "STNC_GFX_specimen_shapeshifting_locket"
+	type = xeno_geology
+	inline_script = { script = "grand_archive/set_specimen_rarity" RARITY = common }
+    triggered_country_modifier = {
+		mult = value:xeno_geology_specimens_modifiers_mult
+		intel_decryption_mult = 0.025
+	}   
+}
+paghvaram = {
+	icon = "STNC_GFX_specimen_paghvaram"
+	type = xeno_geology
+	inline_script = { script = "grand_archive/set_specimen_rarity" RARITY = epic }
+    resources = { 
+        produces = { physics_research = 20 } 
+    } 
+}
+vulcan_sky_glass = {
+	icon = "STNC_GFX_specimen_vulcan_sky_glass"
+	type = xeno_geology
+	inline_script = { script = "grand_archive/set_specimen_rarity" RARITY = common }
+    triggered_country_modifier = {
+		mult = value:xeno_geology_specimens_modifiers_mult
+		planet_jobs_unity_produces_mult = 0.025
+	}
+}
+trill_joined_stone_carving = {
+	icon = "STNC_GFX_specimen_trill_joined_stone_carving"
+	type = xeno_geology
+	inline_script = { script = "grand_archive/set_specimen_rarity" RARITY = rare }
+    resources = { 
+        produces = { unity = 10 } 
+    }
+}
+fentaran_crystal_shard = {
+	icon = "STNC_GFX_specimen_fentaran_crystal_shard"
+	type = xeno_geology
+	inline_script = { script = "grand_archive/set_specimen_rarity" RARITY = rare }
+    resources = { 
+        produces = { physics_research = 10 } 
+    }
+}
+
+
+#XENO BIOLOGY#
+buhgoon_carapace = {
+	icon = "STNC_GFX_specimen_buhgoon_carapace"
+	type = xeno_biology
+	inline_script = { script = "grand_archive/set_specimen_rarity" RARITY = epic }
+    triggered_country_modifier = {
+		mult = value:xeno_biology_specimens_modifiers_mult
+		ship_additional_cloaking_strength_add = 1
+	} 
+}
+dormant_prototaxites_stellaviatori_spore = {
+	icon = "STNC_GFX_specimen_dormant_prototaxites_stellaviatori_spore"
+	type = xeno_biology
+	inline_script = { script = "grand_archive/set_specimen_rarity" RARITY = exceptional }
+    triggered_country_modifier = {
+		mult = value:xeno_biology_specimens_modifiers_mult
+		category_biology_research_speed_mult = 0.05
+	} 
+}
+symbiogenetic_orchid = {
+	icon = "STNC_GFX_specimen_symbiogenetic_orchid"
+	type = xeno_biology
+	inline_script = { script = "grand_archive/set_specimen_rarity" RARITY = rare }
+    triggered_country_modifier = {
+		mult = value:xeno_biology_specimens_modifiers_mult
+        category_biology_research_speed_mult = 0.02
+	} 
+}
+tribleustes_ventricosus = {
+    icon = "STNC_GFX_specimen_tribleustes_ventricosus"
+	type = xeno_biology
+	inline_script = { script = "grand_archive/set_specimen_rarity" RARITY = common }
+    triggered_country_modifier = {
+		mult = value:xeno_biology_specimens_modifiers_mult
+        potential = { 
+            NOT = { is_species_class = KLI } 
+            is_regular_empire = yes
+        }
+        pop_happiness = 0.02
+	}
+    triggered_country_modifier = {
+		mult = value:xeno_biology_specimens_modifiers_mult
+        potential = { 
+            is_assimilator = yes
+        }
+        planet_pop_assembly_mult = 0.02
+	}
+    resources = { 
+        produces = { 
+            trigger = { 
+                owner = {
+                    OR = {
+                        AND = { is_species_class = KLI is_regular_empire = yes }
+                        is_undine_empire = yes
+                    }
+                }
+            } 
+            food = 10 
+        }
+    }
+}
+macrovirus = {
+	icon = "STNC_GFX_specimen_macrovirus"
+	type = xeno_biology
+	inline_script = { script = "grand_archive/set_specimen_rarity" RARITY = rare }
+    triggered_country_modifier = {
+		mult = value:xeno_biology_specimens_modifiers_mult
+        country_disease_immunity = 0.10
+	} 
+}
+assimilated_macrovirus = {
+	icon = "STNC_GFX_specimen_assimilated_macrovirus"
+	type = xeno_biology
+	inline_script = { script = "grand_archive/set_specimen_rarity" RARITY = rare }
+    triggered_country_modifier = {
+		mult = value:xeno_biology_specimens_modifiers_mult
+        country_assimilation_success_chance = 0.10
+	} 
+}
+fossilised_gormagander = {
+	icon = "STNC_GFX_specimen_fossilised_gormagander"
+	type = xeno_biology
+	inline_script = { script = "grand_archive/set_specimen_rarity" RARITY = rare }
+    triggered_country_modifier = {
+		mult = value:xeno_biology_specimens_modifiers_mult
+		category_voidcraft_research_speed_mult = 0.02
+	} 
+}
+iconian_bio_engraved_pod = {
+    icon = "STNC_GFX_specimen_iconian_bio_engraved_pod"
+	type = xeno_biology
+	inline_script = { script = "grand_archive/set_specimen_rarity" RARITY = rare }
+    resources = { 
+        produces = { society_research = 10 } 
+    } 
+}
+fossilised_symbiont = {
+	icon = "STNC_GFX_specimen_fossilised_symbiont"
+	type = xeno_biology
+	inline_script = { script = "grand_archive/set_specimen_rarity" RARITY = rare }
+    triggered_country_modifier = {
+		potential = { has_symbiosis_commission_institution = no }
+        mult = value:xeno_biology_specimens_modifiers_mult
+		category_biology_research_speed_mult = 0.02
+	}
+    triggered_country_modifier = {
+		potential = { has_symbiosis_commission_institution = yes }
+        country_symbiont_capacity = 1
+	}
+}

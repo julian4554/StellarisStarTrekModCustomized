@@ -1,0 +1,76 @@
+###FRIGATE###
+inline_script = { script = "ships/frigate" MAP_ICON = "reman" SHIP = "reman_dagger" TIER = "0" TARGET_LOCATORS = "2" CREW_COST = "default" }
+
+###ATTACK WING
+inline_script = { script = "ships/attack_wing" MAP_ICON = "reman" SHIP = "reman_yatagan" TIER = "2" TARGET_LOCATORS = "2" CREW_COST = "default" }
+
+###DESTROYER
+inline_script = { script = "ships/destroyer" MAP_ICON = "reman" SHIP = "reman_xiphos" TIER = "2" TARGET_LOCATORS = "3" CREW_COST = "default" }
+inline_script = { script = "ships/destroyer" MAP_ICON = "reman" SHIP = "reman_scythe" TIER = "7" TARGET_LOCATORS = "2" CREW_COST = "default" }
+
+###CRUISER
+inline_script = { script = "ships/cruiser" MAP_ICON = "reman" SHIP = "reman_katan" TIER = "3" TARGET_LOCATORS = "2" CREW_COST = "default" }
+
+##BATTLESHIP###
+inline_script = { script = "ships/battleship" MAP_ICON = "reman" SHIP = "reman_saif" TIER = "5" TARGET_LOCATORS = "2" CREW_COST = "default" }
+
+###DREADNAUGHT###
+inline_script = { script = "ships/dreadnought" MAP_ICON = "reman" SHIP = "reman_scimitar" TIER = "10" TARGET_LOCATORS = "4" CREW_COST = "default" }
+reman_scimitar_pk = {
+	entity = reman_scimitar_entity
+    formation_priority = @dreadnought_formation_priority
+	max_speed = @dreadnought_max_speed_10
+	acceleration = @dreadnought_acceleration_10
+	rotation_speed = @dreadnought_rotation_speed_10
+	collision_radius = 3
+	max_hitpoints = @dreadnought_max_hitpoints_10
+	resources = {
+		category = ships
+		upkeep = { crew = @default_heavy_weapon_platform_crew_upkeep }
+		cost = { crew = @default_heavy_weapon_platform_crew_cost }
+	}
+	modifier = {
+		sh_heavy_weapon_platform_base_stats = 1
+	}
+	combat_disengage_chance = @heavy_weapon_platform_disengagement_chance
+	ship_modifier = {
+		ship_size_value = @heavy_weapon_platform_size
+		ship_type_value = @heavy_weapon_platform_class_id
+        ship_class_value = @shipclass_military_special_value
+		ship_tier_value = 0
+	}
+	is_space_object = yes
+	size_multiplier = 16
+	fleet_slot_size = 8
+	num_target_locators = 4
+	is_space_station = no
+	icon = ship_size_reman_scimitar
+	base_buildtime = @dreadnought_base_buildtime_10
+	can_have_federation_design = no
+	enable_default_design = yes
+	default_behavior = artillery
+	prerequisites = { "tech_reman_scimitar_1" }
+	potential_country = { can_design_ship = { ship = "reman_scimitar" } }
+	class = shipclass_military_special
+	ship_roles = { brawler gunship explosive carrier screen artillery }
+	construction_type = starbase_shipyard
+	section_slots = { "mid" = { locator = "part1" } }
+	
+	required_component_set = "required_sensor_dreadnought"
+	required_component_set = "required_warp_dreadnought"
+	required_component_set = "required_impulse_dreadnought"
+	required_component_set = "required_hull_dreadnought"	
+	required_component_set = "required_shield_dreadnought"
+	required_component_set = "required_unique_dreadnought"
+	required_component_set = "required_countermeasures_dreadnought"
+    required_component_set = "required_mission_dreadnought"
+	potential_construction = {
+		host_has_dlc = "Apocalypse"
+        can_construct_ship = { ship = "reman_scimitar" }
+        owner = { planet_killers_banned = no }
+	}
+    ai_ship_data = {
+		min = 1
+        max = 2        
+    }
+}

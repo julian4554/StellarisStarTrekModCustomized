@@ -1,0 +1,36 @@
+   
+colossus ={
+	formation_priority = 4
+	max_speed = 40
+	acceleration = 0.2
+	rotation_speed = 0.15
+	max_hitpoints = 16000
+	is_listed = no
+	graphical_culture = { "plantoid_01" "mammalian_01" "reptilian_01" "avian_01" "molluscoid_01" "fungoid_01" "arthropoid_01" }
+	resources = {
+		category = ships
+	}
+	modifier = {
+		ship_evasion_mult = -0.9
+	}
+	is_space_object = yes
+	fleet_slot_size = 1
+	num_target_locators = 2
+	is_space_station = no
+	icon = ship_size_military_32
+	can_have_federation_design = no
+	default_behavior = skirmisher_mid_range_default
+	# prerequisites = { "tech_hero_ships" }
+	potential_country = { always = no }
+	class = shipclass_military
+	construction_type = starbase_shipyard
+	section_slots = { "stern" = { locator = "part1" } "mid" = { locator = "part1" } }
+    #TODO: Change
+	required_component_set = "required_mission_frigate"
+	required_component_set = "required_sensor_frigate"
+	required_component_set = "required_warp_frigate"
+	required_component_set = "required_impulse_frigate"
+	required_component_set = "required_hull_frigate"	
+	required_component_set = "required_shield_frigate"	
+}
+   

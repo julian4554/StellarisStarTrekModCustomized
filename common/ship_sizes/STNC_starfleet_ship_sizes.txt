@@ -1,0 +1,198 @@
+###FRIGATE###
+inline_script = { script = "ships/frigate" MAP_ICON = "starfleet_nx" SHIP = "starfleet_emmette" TIER = "0" TARGET_LOCATORS = "3" CREW_COST = "default" }
+inline_script = { script = "ships/frigate" MAP_ICON = "starfleet_nx" SHIP = "starfleet_icarus" TIER = "2" TARGET_LOCATORS = "2" CREW_COST = "default" }
+inline_script = { script = "ships/frigate" MAP_ICON = "starfleet_tos" SHIP = "starfleet_malachowski" TIER = "3" TARGET_LOCATORS = "3" CREW_COST = "default" }
+inline_script = { script = "ships/frigate" MAP_ICON = "starfleet_tos" SHIP = "starfleet_magee" TIER = "3" TARGET_LOCATORS = "2" CREW_COST = "default" }
+inline_script = { script = "ships/frigate" MAP_ICON = "starfleet_tos" SHIP = "starfleet_hermes" TIER = "3" TARGET_LOCATORS = "2" CREW_COST = "default" }
+inline_script = { script = "ships/frigate" MAP_ICON = "starfleet_tos" SHIP = "starfleet_andela" TIER = "4" TARGET_LOCATORS = "2" CREW_COST = "default" }
+inline_script = { script = "ships/frigate" MAP_ICON = "starfleet_tos" SHIP = "starfleet_saladin" TIER = "4" TARGET_LOCATORS = "3" CREW_COST = "default" }
+inline_script = { script = "ships/frigate" MAP_ICON = "starfleet_tos" SHIP = "starfleet_strider" TIER = "5" TARGET_LOCATORS = "2" CREW_COST = "default" }   #TODO move to 2
+inline_script = { script = "ships/frigate" MAP_ICON = "starfleet_tos" SHIP = "starfleet_okinawa" TIER = "5" TARGET_LOCATORS = "4" CREW_COST = "default" }
+inline_script = { script = "ships/frigate" MAP_ICON = "starfleet_tos" SHIP = "starfleet_blunden" TIER = "6" TARGET_LOCATORS = "3" CREW_COST = "default" }
+inline_script = { script = "ships/frigate" MAP_ICON = "starfleet_tos" SHIP = "starfleet_leander" TIER = "7" TARGET_LOCATORS = "6" CREW_COST = "default" }
+inline_script = { script = "ships/frigate" MAP_ICON = "starfleet_tng" SHIP = "starfleet_saber" TIER = "9" TARGET_LOCATORS = "2" CREW_COST = "default" }
+inline_script = { script = "ships/frigate" MAP_ICON = "starfleet_tng" SHIP = "starfleet_galen" TIER = "9" TARGET_LOCATORS = "2" CREW_COST = "default" }
+inline_script = { script = "ships/frigate" MAP_ICON = "starfleet_tng" SHIP = "starfleet_ferrus" TIER = "10" TARGET_LOCATORS = "2" CREW_COST = "default" }
+inline_script = { script = "ships/frigate" MAP_ICON = "starfleet_tng" SHIP = "starfleet_aquarius" TIER = "11" TARGET_LOCATORS = "2" CREW_COST = "default" }
+inline_script = { script = "ships/frigate" MAP_ICON = "starfleet_tng" SHIP = "starfleet_sugihara" TIER = "12" TARGET_LOCATORS = "3" CREW_COST = "default" }
+
+###Scout###
+inline_script = { script = "ships/scout" MAP_ICON = "starfleet_nx" SHIP = "starfleet_declaration" TIER = "0" TARGET_LOCATORS = "3" CREW_COST = "default" }
+inline_script = { script = "ships/scout" MAP_ICON = "starfleet_nx" SHIP = "starfleet_freedom" TIER = "0" TARGET_LOCATORS = "3" CREW_COST = "default" }
+inline_script = { script = "ships/scout" MAP_ICON = "starfleet_nx" SHIP = "starfleet_ganymede" TIER = "1" TARGET_LOCATORS = "2" CREW_COST = "default" }
+inline_script = { script = "ships/scout" MAP_ICON = "starfleet_tos" SHIP = "starfleet_hernandez" TIER = "3" TARGET_LOCATORS = "2" CREW_COST = "default" }
+inline_script = { script = "ships/scout" MAP_ICON = "starfleet_tos" SHIP = "starfleet_pioneer" TIER = "4" TARGET_LOCATORS = "2" CREW_COST = "default" }
+inline_script = { script = "ships/scout" MAP_ICON = "starfleet_tos" SHIP = "starfleet_oberth" TIER = "5" TARGET_LOCATORS = "2" CREW_COST = "default" }
+inline_script = { script = "ships/scout" MAP_ICON = "starfleet_tng" SHIP = "starfleet_firebrand" TIER = "8" TARGET_LOCATORS = "3" CREW_COST = "default" }
+inline_script = { script = "ships/scout" MAP_ICON = "starfleet_tng" SHIP = "starfleet_nova" TIER = "9" TARGET_LOCATORS = "2" CREW_COST = "default" }
+inline_script = { script = "ships/scout" MAP_ICON = "starfleet_tng" SHIP = "starfleet_aegean" TIER = "10" TARGET_LOCATORS = "2" CREW_COST = "default" }
+inline_script = { script = "ships/scout" MAP_ICON = "starfleet_tng" SHIP = "starfleet_juno" TIER = "11" TARGET_LOCATORS = "3" CREW_COST = "default" }
+inline_script = { script = "ships/scout" MAP_ICON = "starfleet_tng" SHIP = "starfleet_april" TIER = "12" TARGET_LOCATORS = "3" CREW_COST = "default" }
+inline_script = { script = "ships/scout" MAP_ICON = "starfleet_tng" SHIP = "starfleet_dauntless" TIER = "12" TARGET_LOCATORS = "3" CREW_COST = "default" }
+inline_script = { script = "ships/scout" MAP_ICON = "starfleet_tng" SHIP = "starfleet_protostar" TIER = "12" TARGET_LOCATORS = "3" CREW_COST = "default" }
+
+###ATTACK WING###
+inline_script = { script = "ships/attack_wing" MAP_ICON = "starfleet_tos" SHIP = "starfleet_peregrine" TIER = "7" TARGET_LOCATORS = "3" CREW_COST = "default" }
+
+###SUPPORT WINGS###
+inline_script = { script = "ships/support_wing" MAP_ICON = "starfleet_tos" SHIP = "starfleet_archer" TIER = "4" TARGET_LOCATORS = "2" CREW_COST = "default" }
+inline_script = { script = "ships/support_wing" MAP_ICON = "starfleet_tos" SHIP = "starfleet_danube" TIER = "8" TARGET_LOCATORS = "3" CREW_COST = "default" }
+inline_script = { script = "ships/support_wing" MAP_ICON = "starfleet_tng" SHIP = "starfleet_venture" TIER = "10" TARGET_LOCATORS = "3" CREW_COST = "default" }
+inline_script = { script = "ships/support_wing" MAP_ICON = "starfleet_tng" SHIP = "starfleet_arrow" TIER = "11" TARGET_LOCATORS = "2" CREW_COST = "default" }   
+
+###HEAVY FRIGATE###
+inline_script = { script = "ships/heavy_frigate" MAP_ICON = "starfleet_nx" SHIP = "starfleet_mercury" TIER = "1" TARGET_LOCATORS = "2" CREW_COST = "default" }
+inline_script = { script = "ships/heavy_frigate" MAP_ICON = "starfleet_tos" SHIP = "starfleet_akula" TIER = "4" TARGET_LOCATORS = "2" CREW_COST = "default" }
+inline_script = { script = "ships/heavy_frigate" MAP_ICON = "starfleet_tng" SHIP = "starfleet_challenger" TIER = "8" TARGET_LOCATORS = "6" CREW_COST = "default" }
+inline_script = { script = "ships/heavy_frigate" MAP_ICON = "starfleet_tng" SHIP = "starfleet_interceptor" TIER = "10" TARGET_LOCATORS = "5" CREW_COST = "default" }
+
+###DESTROYER###
+inline_script = { script = "ships/destroyer" MAP_ICON = "starfleet_nx" SHIP = "starfleet_intrepid_type" TIER = "1" TARGET_LOCATORS = "2" CREW_COST = "default" }
+inline_script = { script = "ships/destroyer" MAP_ICON = "starfleet_nx" SHIP = "starfleet_daedalus" TIER = "2" TARGET_LOCATORS = "2" CREW_COST = "default" }
+inline_script = { script = "ships/destroyer" MAP_ICON = "starfleet_tos" SHIP = "starfleet_hoover" TIER = "3" TARGET_LOCATORS = "2" CREW_COST = "default" }
+inline_script = { script = "ships/destroyer" MAP_ICON = "starfleet_tos" SHIP = "starfleet_walker" TIER = "3" TARGET_LOCATORS = "2" CREW_COST = "default" }
+inline_script = { script = "ships/destroyer" MAP_ICON = "starfleet_tos" SHIP = "starfleet_gral" TIER = "4" TARGET_LOCATORS = "2" CREW_COST = "default" }
+inline_script = { script = "ships/destroyer" MAP_ICON = "starfleet_tos" SHIP = "starfleet_detroyat" TIER = "4" TARGET_LOCATORS = "4" CREW_COST = "default" }
+inline_script = { script = "ships/destroyer" MAP_ICON = "starfleet_tos" SHIP = "starfleet_kelvin" TIER = "4" TARGET_LOCATORS = "2" CREW_COST = "default" }
+inline_script = { script = "ships/destroyer" MAP_ICON = "starfleet_tos" SHIP = "starfleet_talas" TIER = "4" TARGET_LOCATORS = "2" CREW_COST = "default" }
+inline_script = { script = "ships/destroyer" MAP_ICON = "starfleet_tos" SHIP = "starfleet_sselssen" TIER = "5" TARGET_LOCATORS = "4" CREW_COST = "default" }
+inline_script = { script = "ships/destroyer" MAP_ICON = "starfleet_tos" SHIP = "starfleet_orkney" TIER = "5" TARGET_LOCATORS = "4" CREW_COST = "default" }
+inline_script = { script = "ships/destroyer" MAP_ICON = "starfleet_tos" SHIP = "starfleet_centaur" TIER = "6" TARGET_LOCATORS = "2" CREW_COST = "default" }
+inline_script = { script = "ships/destroyer" MAP_ICON = "starfleet_tos" SHIP = "starfleet_larkin" TIER = "6" TARGET_LOCATORS = "2" CREW_COST = "default" }
+inline_script = { script = "ships/destroyer" MAP_ICON = "starfleet_tos" SHIP = "starfleet_chichester" TIER = "7" TARGET_LOCATORS = "2" CREW_COST = "default" }
+inline_script = { script = "ships/destroyer" MAP_ICON = "starfleet_tng" SHIP = "starfleet_new_orleans" TIER = "8" TARGET_LOCATORS = "5" CREW_COST = "default" }
+inline_script = { script = "ships/destroyer" MAP_ICON = "starfleet_tng" SHIP = "starfleet_cheyenne" TIER = "8" TARGET_LOCATORS = "5" CREW_COST = "default" }
+inline_script = { script = "ships/destroyer" MAP_ICON = "starfleet_tng" SHIP = "starfleet_norway" TIER = "9" TARGET_LOCATORS = "2" CREW_COST = "default" }
+inline_script = { script = "ships/destroyer" MAP_ICON = "starfleet_tng" SHIP = "starfleet_california" TIER = "9" TARGET_LOCATORS = "4" CREW_COST = "default" }
+inline_script = { script = "ships/destroyer_xc" MAP_ICON = "starfleet_tng" SHIP = "starfleet_california" TIER = "9" TARGET_LOCATORS = "4" CREW_COST = "default" }
+inline_script = { script = "ships/destroyer" MAP_ICON = "starfleet_tng" SHIP = "starfleet_iwo_jima" TIER = "10" TARGET_LOCATORS = "4" CREW_COST = "default" }
+inline_script = { script = "ships/destroyer" MAP_ICON = "starfleet_tng" SHIP = "starfleet_abante" TIER = "12" TARGET_LOCATORS = "4" CREW_COST = "default" }
+
+###HEAVY ESCORT
+inline_script = { script = "ships/heavy_escort" MAP_ICON = "starfleet_nx" SHIP = "starfleet_saturn" TIER = "1" TARGET_LOCATORS = "2" CREW_COST = "default" }
+inline_script = { script = "ships/heavy_escort" MAP_ICON = "starfleet_nx" SHIP = "starfleet_minuteman" TIER = "2" TARGET_LOCATORS = "2" CREW_COST = "default" }
+inline_script = { script = "ships/heavy_escort" MAP_ICON = "starfleet_tos" SHIP = "starfleet_engle" TIER = "3" TARGET_LOCATORS = "4" CREW_COST = "default" }
+inline_script = { script = "ships/heavy_escort" MAP_ICON = "starfleet_tos" SHIP = "starfleet_col_andor" TIER = "3" TARGET_LOCATORS = "3" CREW_COST = "default" }
+inline_script = { script = "ships/heavy_escort" MAP_ICON = "starfleet_tos" SHIP = "starfleet_rihannsu" TIER = "4" TARGET_LOCATORS = "3" CREW_COST = "default" }
+inline_script = { script = "ships/heavy_escort" MAP_ICON = "starfleet_tng" SHIP = "starfleet_defiant" TIER = "9" TARGET_LOCATORS = "2" CREW_COST = "default" }
+inline_script = { script = "ships/heavy_escort" MAP_ICON = "starfleet_tng" SHIP = "starfleet_amut_adri" TIER = "9" TARGET_LOCATORS = "2" CREW_COST = "default" }
+inline_script = { script = "ships/heavy_escort" MAP_ICON = "starfleet_tng" SHIP = "starfleet_cor_inh" TIER = "10" TARGET_LOCATORS = "4" CREW_COST = "default" }
+inline_script = { script = "ships/heavy_escort" MAP_ICON = "starfleet_tng" SHIP = "starfleet_valiant" TIER = "11" TARGET_LOCATORS = "2" CREW_COST = "default" }
+inline_script = { script = "ships/heavy_escort" MAP_ICON = "starfleet_tng" SHIP = "starfleet_texas" TIER = "11" TARGET_LOCATORS = "2" CREW_COST = "default" }
+
+###LIGHT SUPPORT CRUISER###
+inline_script = { script = "ships/light_support_cruiser" MAP_ICON = "starfleet_nx" SHIP = "starfleet_ironclad" TIER = "1" TARGET_LOCATORS = "4" CREW_COST = "default" }
+
+###LIGHT CRUISER###
+inline_script = { script = "ships/light_cruiser" MAP_ICON = "starfleet_nx" SHIP = "starfleet_nx" TIER = "1" TARGET_LOCATORS = "2" CREW_COST = "default" }
+inline_script = { script = "ships/light_cruiser_xc" MAP_ICON = "starfleet_nx" SHIP = "starfleet_nx" TIER = "1" TARGET_LOCATORS = "2" CREW_COST = "default" }
+inline_script = { script = "ships/light_cruiser" MAP_ICON = "starfleet_nx" SHIP = "starfleet_poseidon" TIER = "1" TARGET_LOCATORS = "2" CREW_COST = "default" }
+inline_script = { script = "ships/light_cruiser" MAP_ICON = "starfleet_tos" SHIP = "starfleet_bonaventure" TIER = "3" TARGET_LOCATORS = "3" CREW_COST = "default" }
+inline_script = { script = "ships/light_cruiser_xc" MAP_ICON = "starfleet_tos" SHIP = "starfleet_bonaventure" TIER = "3" TARGET_LOCATORS = "3" CREW_COST = "default" }
+inline_script = { script = "ships/light_cruiser" MAP_ICON = "starfleet_tos" SHIP = "starfleet_miranda" TIER = "4" TARGET_LOCATORS = "2" CREW_COST = "default" }
+inline_script = { script = "ships/light_cruiser" MAP_ICON = "starfleet_tos" SHIP = "starfleet_spokane" TIER = "7" TARGET_LOCATORS = "2" CREW_COST = "default" }
+inline_script = { script = "ships/light_cruiser" MAP_ICON = "starfleet_tng" SHIP = "starfleet_niagara" TIER = "8" TARGET_LOCATORS = "6" CREW_COST = "default" }
+inline_script = { script = "ships/light_cruiser" MAP_ICON = "starfleet_tng" SHIP = "starfleet_intrepid_class" TIER = "9" TARGET_LOCATORS = "5" CREW_COST = "default" }
+inline_script = { script = "ships/light_cruiser_xc" MAP_ICON = "starfleet_tng" SHIP = "starfleet_intrepid_class" TIER = "9" TARGET_LOCATORS = "2" CREW_COST = "default" }
+inline_script = { script = "ships/light_cruiser" MAP_ICON = "starfleet_tng" SHIP = "starfleet_steamrunner" TIER = "9" TARGET_LOCATORS = "2" CREW_COST = "default" }
+inline_script = { script = "ships/light_cruiser" MAP_ICON = "starfleet_tng" SHIP = "starfleet_seeker" TIER = "10" TARGET_LOCATORS = "2" CREW_COST = "default" }
+inline_script = { script = "ships/light_cruiser" MAP_ICON = "starfleet_tng" SHIP = "starfleet_vivace" TIER = "12" TARGET_LOCATORS = "2" CREW_COST = "default" }
+inline_script = { script = "ships/light_cruiser_xc" MAP_ICON = "starfleet_tng" SHIP = "starfleet_vivace" TIER = "12" TARGET_LOCATORS = "2" CREW_COST = "default" }
+
+###CRUISER###
+inline_script = { script = "ships/cruiser" MAP_ICON = "starfleet_nx" SHIP = "starfleet_yorktown" TIER = "2" TARGET_LOCATORS = "2" CREW_COST = "default" }
+inline_script = { script = "ships/cruiser" MAP_ICON = "starfleet_tos" SHIP = "starfleet_farragut" TIER = "3" TARGET_LOCATORS = "3" CREW_COST = "default" }
+inline_script = { script = "ships/cruiser" MAP_ICON = "starfleet_tos" SHIP = "starfleet_hiawatha" TIER = "3" TARGET_LOCATORS = "4" CREW_COST = "default" }
+inline_script = { script = "ships/cruiser" MAP_ICON = "starfleet_tos" SHIP = "starfleet_crossfield" TIER = "3" TARGET_LOCATORS = "2" CREW_COST = "default" }
+inline_script = { script = "ships/cruiser_xc" MAP_ICON = "starfleet_tos" SHIP = "starfleet_crossfield" TIER = "3" TARGET_LOCATORS = "2" CREW_COST = "default" }
+inline_script = { script = "ships/cruiser" MAP_ICON = "starfleet_tos" SHIP = "starfleet_shepard" TIER = "3" TARGET_LOCATORS = "2" CREW_COST = "default" }
+inline_script = { script = "ships/cruiser" MAP_ICON = "starfleet_tos" SHIP = "starfleet_ares" TIER = "4" TARGET_LOCATORS = "4" CREW_COST = "default" }
+inline_script = { script = "ships/cruiser" MAP_ICON = "starfleet_tos" SHIP = "starfleet_tpol" TIER = "4" TARGET_LOCATORS = "2" CREW_COST = "default" }
+inline_script = { script = "ships/cruiser" MAP_ICON = "starfleet_tos" SHIP = "starfleet_curry" TIER = "6" TARGET_LOCATORS = "2" CREW_COST = "default" }
+inline_script = { script = "ships/cruiser" MAP_ICON = "starfleet_tos" SHIP = "starfleet_constellation" TIER = "6" TARGET_LOCATORS = "2" CREW_COST = "default" }
+inline_script = { script = "ships/cruiser" MAP_ICON = "starfleet_tos" SHIP = "starfleet_pegasus" TIER = "7" TARGET_LOCATORS = "2" CREW_COST = "default" }
+inline_script = { script = "ships/cruiser" MAP_ICON = "starfleet_tos" SHIP = "starfleet_vedek" TIER = "7" TARGET_LOCATORS = "2" CREW_COST = "default" }
+inline_script = { script = "ships/cruiser" MAP_ICON = "starfleet_tos" SHIP = "starfleet_springfield" TIER = "8" TARGET_LOCATORS = "2" CREW_COST = "default" }
+inline_script = { script = "ships/cruiser" MAP_ICON = "starfleet_tng" SHIP = "starfleet_zodiac" TIER = "8" TARGET_LOCATORS = "4" CREW_COST = "default" }
+inline_script = { script = "ships/cruiser" MAP_ICON = "starfleet_tng" SHIP = "starfleet_new_republic" TIER = "9" TARGET_LOCATORS = "4" CREW_COST = "default" }
+inline_script = { script = "ships/cruiser" MAP_ICON = "starfleet_tng" SHIP = "starfleet_luna" TIER = "10" TARGET_LOCATORS = "2" CREW_COST = "default" }
+inline_script = { script = "ships/cruiser" MAP_ICON = "starfleet_tng" SHIP = "starfleet_fisher" TIER = "10" TARGET_LOCATORS = "2" CREW_COST = "default" }
+inline_script = { script = "ships/cruiser" MAP_ICON = "starfleet_tng" SHIP = "starfleet_olympic" TIER = "10" TARGET_LOCATORS = "5" CREW_COST = "default" }
+inline_script = { script = "ships/cruiser" MAP_ICON = "starfleet_tng" SHIP = "starfleet_parliament" TIER = "11" TARGET_LOCATORS = "2" CREW_COST = "default" }
+inline_script = { script = "ships/cruiser" MAP_ICON = "starfleet_tng" SHIP = "starfleet_echelon" TIER = "12" TARGET_LOCATORS = "4" CREW_COST = "default" }
+inline_script = { script = "ships/cruiser" MAP_ICON = "starfleet_tng" SHIP = "starfleet_wanderer" TIER = "12" TARGET_LOCATORS = "4" CREW_COST = "default" }
+inline_script = { script = "ships/cruiser_xc" MAP_ICON = "starfleet_tng" SHIP = "starfleet_wanderer" TIER = "12" TARGET_LOCATORS = "4" CREW_COST = "default" }
+
+###BATTLECRUISER###
+inline_script = { script = "ships/battlecruiser" MAP_ICON = "starfleet_tos" SHIP = "starfleet_cardenas" TIER = "3" TARGET_LOCATORS = "2" CREW_COST = "default" }
+inline_script = { script = "ships/battlecruiser" MAP_ICON = "starfleet_tos" SHIP = "starfleet_radiant" TIER = "4" TARGET_LOCATORS = "6" CREW_COST = "default" }
+inline_script = { script = "ships/battlecruiser" MAP_ICON = "starfleet_tos" SHIP = "starfleet_excelsior" TIER = "6" TARGET_LOCATORS = "2" CREW_COST = "default" }
+inline_script = { script = "ships/battlecruiser_xc" MAP_ICON = "starfleet_tos" SHIP = "starfleet_excelsior" TIER = "6" TARGET_LOCATORS = "2" CREW_COST = "default" }
+inline_script = { script = "ships/battlecruiser" MAP_ICON = "starfleet_tng" SHIP = "starfleet_akira" TIER = "9" TARGET_LOCATORS = "2" CREW_COST = "default" }
+inline_script = { script = "ships/battlecruiser" MAP_ICON = "starfleet_tng" SHIP = "starfleet_maqoch" TIER = "9" TARGET_LOCATORS = "4" CREW_COST = "default" }
+inline_script = { script = "ships/battlecruiser" MAP_ICON = "starfleet_tng" SHIP = "starfleet_prometheus" TIER = "10" TARGET_LOCATORS = "2" CREW_COST = "default" }
+inline_script = { script = "ships/battlecruiser" MAP_ICON = "starfleet_tng" SHIP = "starfleet_eximius" TIER = "10" TARGET_LOCATORS = "2" CREW_COST = "default" }
+inline_script = { script = "ships/battlecruiser" MAP_ICON = "starfleet_tng" SHIP = "starfleet_daimon" TIER = "11" TARGET_LOCATORS = "2" CREW_COST = "default" }
+inline_script = { script = "ships/battlecruiser" MAP_ICON = "starfleet_tng" SHIP = "starfleet_courageous" TIER = "11" TARGET_LOCATORS = "2" CREW_COST = "default" }
+inline_script = { script = "ships/battlecruiser" MAP_ICON = "starfleet_tng" SHIP = "starfleet_ferox" TIER = "11" TARGET_LOCATORS = "5" CREW_COST = "default" }
+inline_script = { script = "ships/battlecruiser" MAP_ICON = "starfleet_tng" SHIP = "starfleet_leonidas" TIER = "12" TARGET_LOCATORS = "2" CREW_COST = "default" }
+inline_script = { script = "ships/battlecruiser" MAP_ICON = "starfleet_tng" SHIP = "starfleet_edmonton" TIER = "12" TARGET_LOCATORS = "5" CREW_COST = "default" }
+inline_script = { script = "ships/battlecruiser" MAP_ICON = "starfleet_tng" SHIP = "starfleet_eureka" TIER = "12" TARGET_LOCATORS = "2" CREW_COST = "default" }
+inline_script = { script = "ships/battlecruiser" MAP_ICON = "starfleet_tng" SHIP = "starfleet_sagan" TIER = "12" TARGET_LOCATORS = "6" CREW_COST = "default" }
+
+###HEAVY CRUISER###
+inline_script = { script = "ships/heavy_cruiser" MAP_ICON = "starfleet_tos" SHIP = "starfleet_nimitz" TIER = "3" TARGET_LOCATORS = "6" CREW_COST = "default" }
+inline_script = { script = "ships/heavy_cruiser" MAP_ICON = "starfleet_tos" SHIP = "starfleet_constitution" TIER = "3" TARGET_LOCATORS = "2" CREW_COST = "default" }
+inline_script = { script = "ships/heavy_cruiser_xc" MAP_ICON = "starfleet_tos" SHIP = "starfleet_constitution" TIER = "3" TARGET_LOCATORS = "2" CREW_COST = "default" }
+inline_script = { script = "ships/heavy_cruiser" MAP_ICON = "starfleet_tos" SHIP = "starfleet_walcott" TIER = "4" TARGET_LOCATORS = "5" CREW_COST = "default" }
+inline_script = { script = "ships/heavy_cruiser" MAP_ICON = "starfleet_tos" SHIP = "starfleet_shangri_la" TIER = "5" TARGET_LOCATORS = "4" CREW_COST = "default" }
+inline_script = { script = "ships/heavy_cruiser" MAP_ICON = "starfleet_tos" SHIP = "starfleet_lexington" TIER = "7" TARGET_LOCATORS = "2" CREW_COST = "default" }
+inline_script = { script = "ships/heavy_cruiser" MAP_ICON = "starfleet_tng" SHIP = "starfleet_kiri_kin_tha" TIER = "8" TARGET_LOCATORS = "3" CREW_COST = "default" }
+inline_script = { script = "ships/heavy_cruiser" MAP_ICON = "starfleet_tng" SHIP = "starfleet_insignia" TIER = "9" TARGET_LOCATORS = "5" CREW_COST = "default" }
+inline_script = { script = "ships/heavy_cruiser" MAP_ICON = "starfleet_tng" SHIP = "starfleet_typhon" TIER = "10" TARGET_LOCATORS = "4" CREW_COST = "default" }
+inline_script = { script = "ships/heavy_cruiser" MAP_ICON = "starfleet_tng" SHIP = "starfleet_korolev" TIER = "10" TARGET_LOCATORS = "2" CREW_COST = "default" }
+inline_script = { script = "ships/heavy_cruiser" MAP_ICON = "starfleet_tng" SHIP = "starfleet_venus" TIER = "11" TARGET_LOCATORS = "2" CREW_COST = "default" }
+inline_script = { script = "ships/heavy_cruiser" MAP_ICON = "starfleet_tng" SHIP = "starfleet_blass" TIER = "12" TARGET_LOCATORS = "4" CREW_COST = "default" }
+inline_script = { script = "ships/heavy_cruiser" MAP_ICON = "starfleet_tng" SHIP = "starfleet_duderstadt" TIER = "12" TARGET_LOCATORS = "5" CREW_COST = "default" }
+
+###COMMAND CRUISER###
+inline_script = { script = "ships/command_cruiser" MAP_ICON = "starfleet_tos" SHIP = "starfleet_federation" TIER = "4" TARGET_LOCATORS = "2" CREW_COST = "default" }
+inline_script = { script = "ships/command_cruiser" MAP_ICON = "starfleet_tos" SHIP = "starfleet_mcquarrie" TIER = "4" TARGET_LOCATORS = "4" CREW_COST = "default" }
+
+inline_script = { script = "ships/command_cruiser" MAP_ICON = "starfleet_tos" SHIP = "starfleet_ambassador" TIER = "7" TARGET_LOCATORS = "4" CREW_COST = "default" }
+inline_script = { script = "ships/command_cruiser_xc" MAP_ICON = "starfleet_tos" SHIP = "starfleet_ambassador" TIER = "7" TARGET_LOCATORS = "2" CREW_COST = "default" }
+inline_script = { script = "ships/command_cruiser" MAP_ICON = "starfleet_tng" SHIP = "starfleet_galaxy" TIER = "8" TARGET_LOCATORS = "2" CREW_COST = "default" }
+inline_script = { script = "ships/command_cruiser_separation" MAP_ICON = "starfleet_tng" SHIP = "starfleet_galaxy" TIER = "8" TARGET_LOCATORS = "4" CREW_COST = "default" SEPARATION = "1" SEPARATIONS = "2" MODIFIER = "saucer" }
+inline_script = { script = "ships/command_cruiser_separation" MAP_ICON = "starfleet_tng" SHIP = "starfleet_galaxy" TIER = "8" TARGET_LOCATORS = "2" CREW_COST = "default" SEPARATION = "2" SEPARATIONS = "2" MODIFIER = "stardrive" }
+inline_script = { script = "ships/command_cruiser_xc" MAP_ICON = "starfleet_tng" SHIP = "starfleet_galaxy" TIER = "8" TARGET_LOCATORS = "2" CREW_COST = "default" }
+inline_script = { script = "ships/command_cruiser_xc_separation" MAP_ICON = "starfleet_tng" SHIP = "starfleet_galaxy" TIER = "8" TARGET_LOCATORS = "4" CREW_COST = "default" SEPARATION = "1" SEPARATIONS = "2" MODIFIER = "saucer" }
+inline_script = { script = "ships/command_cruiser_xc_separation" MAP_ICON = "starfleet_tng" SHIP = "starfleet_galaxy" TIER = "8" TARGET_LOCATORS = "2" CREW_COST = "default" SEPARATION = "2" SEPARATIONS = "2" MODIFIER = "stardrive" }
+inline_script = { script = "ships/command_cruiser" MAP_ICON = "starfleet_tng" SHIP = "starfleet_nebula" TIER = "8" TARGET_LOCATORS = "4" CREW_COST = "default" }
+inline_script = { script = "ships/command_cruiser" MAP_ICON = "starfleet_tng" SHIP = "starfleet_century" TIER = "10" TARGET_LOCATORS = "2" CREW_COST = "default" }
+inline_script = { script = "ships/command_cruiser" MAP_ICON = "starfleet_tng" SHIP = "starfleet_vesta" TIER = "10" TARGET_LOCATORS = "2" CREW_COST = "default" }
+inline_script = { script = "ships/command_cruiser" MAP_ICON = "starfleet_tng" SHIP = "starfleet_lamarr" TIER = "11" TARGET_LOCATORS = "5" CREW_COST = "default" }
+inline_script = { script = "ships/command_cruiser_xc" MAP_ICON = "starfleet_tng" SHIP = "starfleet_lamarr" TIER = "11" TARGET_LOCATORS = "5" CREW_COST = "default" }
+inline_script = { script = "ships/command_cruiser" MAP_ICON = "starfleet_tng" SHIP = "starfleet_velox" TIER = "11" TARGET_LOCATORS = "2" CREW_COST = "default" }
+inline_script = { script = "ships/command_cruiser_xc" MAP_ICON = "starfleet_tng" SHIP = "starfleet_velox" TIER = "11" TARGET_LOCATORS = "2" CREW_COST = "default" }
+
+###BATTLESHIP
+inline_script = { script = "ships/battleship" MAP_ICON = "starfleet_tos" SHIP = "starfleet_atlas" TIER = "3" TARGET_LOCATORS = "7" CREW_COST = "default" }
+inline_script = { script = "ships/battleship" MAP_ICON = "starfleet_tos" SHIP = "starfleet_icon" TIER = "4" TARGET_LOCATORS = "4" CREW_COST = "default" }
+inline_script = { script = "ships/battleship" MAP_ICON = "starfleet_tos" SHIP = "starfleet_khitomer" TIER = "5" TARGET_LOCATORS = "4" CREW_COST = "default" }
+inline_script = { script = "ships/battleship" MAP_ICON = "starfleet_tng" SHIP = "starfleet_sovereign" TIER = "9" TARGET_LOCATORS = "2" CREW_COST = "default" }
+inline_script = { script = "ships/battleship_xc" MAP_ICON = "starfleet_tng" SHIP = "starfleet_sovereign" TIER = "9" TARGET_LOCATORS = "2" CREW_COST = "default" }
+inline_script = { script = "ships/battleship" MAP_ICON = "starfleet_tng" SHIP = "starfleet_obena" TIER = "10" TARGET_LOCATORS = "2" CREW_COST = "default" }
+inline_script = { script = "ships/battleship" MAP_ICON = "starfleet_tng" SHIP = "starfleet_alliance" TIER = "11" TARGET_LOCATORS = "4" CREW_COST = "default" }
+inline_script = { script = "ships/battleship" MAP_ICON = "starfleet_tng" SHIP = "starfleet_inquiry" TIER = "12" TARGET_LOCATORS = "2" CREW_COST = "default" }
+
+###DREADNOUGHT
+inline_script = { script = "ships/dreadnought" MAP_ICON = "starfleet_tos" SHIP = "starfleet_proxima" TIER = "4" TARGET_LOCATORS = "2" CREW_COST = "default" }
+inline_script = { script = "ships/dreadnought" MAP_ICON = "starfleet_tng" SHIP = "starfleet_polaris" TIER = "10" TARGET_LOCATORS = "2" CREW_COST = "default" }
+inline_script = { script = "ships/dreadnought" MAP_ICON = "starfleet_tng" SHIP = "starfleet_argonaut" TIER = "10" TARGET_LOCATORS = "2" CREW_COST = "default" }
+inline_script = { script = "ships/dreadnought" MAP_ICON = "starfleet_tng" SHIP = "starfleet_typhoon" TIER = "11" TARGET_LOCATORS = "5" CREW_COST = "default" }
+
+###FLEET COMMAND CRUISER
+inline_script = { script = "ships/fleet_command_cruiser" MAP_ICON = "starfleet_tos" SHIP = "starfleet_ark_royal" TIER = "5" TARGET_LOCATORS = "5" CREW_COST = "default" }
+inline_script = { script = "ships/fleet_command_cruiser" MAP_ICON = "starfleet_tng" SHIP = "starfleet_excalibur" TIER = "10" TARGET_LOCATORS = "2" CREW_COST = "default" }
+inline_script = { script = "ships/fleet_command_cruiser" MAP_ICON = "starfleet_tng" SHIP = "starfleet_odyssey" TIER = "11" TARGET_LOCATORS = "2" CREW_COST = "default" }
+inline_script = { script = "ships/fleet_command_cruiser_xc" MAP_ICON = "starfleet_tng" SHIP = "starfleet_odyssey" TIER = "11" TARGET_LOCATORS = "2" CREW_COST = "default" }
